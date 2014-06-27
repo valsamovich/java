@@ -1,3 +1,6 @@
+# Created by http://www.gitignore.io
+
+### Java ###
 *.class
 
 # Mobile Tools for Java (J2ME)

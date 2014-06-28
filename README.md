@@ -27,7 +27,7 @@ Day 2 - Class and Object, Constructors, OOP
  - OOP - Overloading
  - Sample Project
 
-Day 3 - Class and Object, Constructors, OOP
+Day 3 - Special keywords, Inheritance, Overriding
 ------------------------
 
  - Abstract class: class which has empty methods and fully defined methods

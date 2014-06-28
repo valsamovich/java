@@ -26,3 +26,14 @@ Day 2 - Class and Object, Constructors, OOP
  - OOP - Data hiding
  - OOP - Overloading
  - Sample Project
+
+Day 3 - Class and Object, Constructors, OOP
+------------------------
+
+ - Abstract class: class which has empty methods and fully defined methods
+ - OOP Inheritance: when a class acquires the properties of another class
+ - OOP Overriding: when a method in the subclass has the same signature 
+ - Interface is aclass with only empty methods
+ - Static data, static method. Static is one per class, but not one per object
+ - Super keyword is used to access super class data and methods
+

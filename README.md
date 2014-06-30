@@ -70,12 +70,17 @@ Java Programming Cheatsheet
             Getter and Setter - Accessor and Mutator
 
 	Data hiding is help to protect the data and used "access modifiers".
-	Modifier	Class 	Package  Subclass  World(project)
-	public		Y     	Y	     Y              Y
-	protected	Y     	Y	     Y	          N
-	default 	            Y     	Y	     N	          N
-	private		N     	N	     N	          N
-
+	---------------------------------------------------------------
+	Modifier      |	Class 	  | Package   | Subclass  | Project   
+	--------------|-----------|-----------|-----------|------------
+	public	      | Y     	  | Y	      | Y         | Y
+	--------------|-----------|-----------|-----------|------------
+	protected     |	Y     	  | Y	      | Y	  | N
+	--------------|-----------|-----------|-----------|------------
+	default       |	Y     	  | Y	      | N	  | N
+	--------------|-----------|-----------|-----------|------------
+	private	      |	N     	  | N	      | N	  | N
+	---------------------------------------------------------------
 
 ### Java OOP - Polymorphism (Overloading, Overriding)
 
@@ -85,7 +90,6 @@ Java Programming Cheatsheet
 	Overriding is when a method in the subclass has the same signature 
 	as a method in the super class, then the subclass method takes precedence
 
-
 ### Java OOP - Inheritance (Abstract classes, Interfaces)
 
 	Inheritance is when a class acquires(extend) the properties of another class.
@@ -93,7 +97,6 @@ Java Programming Cheatsheet
 	Abstract class is a class which has empty methods and fully defined methods.
 
 	Interface is a class with only empty methods.
-
 
 ### Java debugging
 

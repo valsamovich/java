@@ -71,7 +71,7 @@ Java Programming Cheatsheet
 	Change the variables value
 	exception handler components: try { } catch (ExceptionType name) {}
 
-### Java Collections (List, ArrayList, HashMap, generics) 3:08:32
+### Java Collections (List, ArrayList, HashMap, generics)
 
 	Non generic list, can add anything:  List list = new ArrayList();
 	Generic list, can add specific: List<String> gList = new ArrayList<String>();

@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the basic java rules, syntax, examples, and object-Oriented Programming principles. Each example is designed to easy understand the Java Programming. Tutorial is divided in days. which contains examples and exercises.
+Java development tutorial. It's include the basic java rules, syntax, examples, and object-Oriented Programming principles. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in days, which contains examples and exercises.
 
 
 Java Programming Cheatsheet

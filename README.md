@@ -7,7 +7,7 @@ Java development tutorial. It's include the basic java rules, syntax, examples, 
 Java Programming Cheatsheet
 ---------------------------
 
-### Java (Data, Syntax, Method, Class, Object, This, Super, Final, Constructor)
+### Java (Data, Method, Class, Object, This, Super, Final, Constructor)
 
 	Primitive data types: byte, short, int, long, float, double, char, boolean 
 	For loop: for(initial value; condition; increment/decrement)

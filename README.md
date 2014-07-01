@@ -20,7 +20,10 @@ For loop:
 	}
 	
 
-Object is a copy or instance of a class.
+Object is a copy or instance of a class:
+
+	Object object  = new Object();
+	
 Class is a template for an object. Class has data & methods.
 "Super" keyword id used to access superclass data and methods
 "This" keyword is used to access  class level data

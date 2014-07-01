@@ -12,10 +12,10 @@ Java Programming Cheatsheet
 Primitive data types: byte, short, int, long, float, double, char, boolean 
 For loop: for(initial value; condition; increment/decrement)
 
-	Object is a copy or instance of a class.
-	Class is a template for an object. Class has data & methods.
-	"Super" keyword id used to access superclass data and methods
-	"This" keyword is used to access  class level data
+Object is a copy or instance of a class.
+Class is a template for an object. Class has data & methods.
+"Super" keyword id used to access superclass data and methods
+"This" keyword is used to access  class level data
 
 	"Static" is one per class, but not one per object 
 	"Static" methods can only access other static data & methods

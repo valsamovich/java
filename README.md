@@ -10,9 +10,11 @@ Java Programming Cheatsheet
 ### Java (Data, Method, Class, Object, Keywords, Constructor)
 
 Primitive data types: 
+
 	byte, short, int, long, float, double, char, boolean 
 
 For loop:
+
 	for(int x = 10; x < 20; x = x+1) {
 		// code block to be executed
 	}

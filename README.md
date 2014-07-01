@@ -13,20 +13,24 @@ Primitive data types:
 
 	byte, short, int, long, float, double, char, boolean 
 
-For loop:
-
+Java Loops:
+	// For loop
 	for(int x = 10; x < 20; x = x+1) {
 		// code block to be executed
 	}
 	
-
+	// While loop
+	while(i < 10) {
+		// code block to be executed
+	}
+	
 Object is a copy or instance of a class:
 
 	Object object  = new Object();
 	
-Class is a template for an object. Class has data & methods.
-"Super" keyword id used to access superclass data and methods
-"This" keyword is used to access  class level data
+	Class is a template for an object. Class has data & methods.
+	"Super" keyword id used to access superclass data and methods
+	"This" keyword is used to access  class level data
 
 	"Static" is one per class, but not one per object 
 	"Static" methods can only access other static data & methods

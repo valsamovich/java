@@ -36,17 +36,17 @@ Java Programming Cheatsheet
             Getter and Setter - Accessor and Mutator
 
 	Data hiding is help to protect the data and used "access modifiers".
-	---------------------------------------------------------------
+	
 	Modifier      |	Class 	  | Package   | Subclass  | Project   
 	--------------|-----------|-----------|-----------|------------
 	public	      | Y     	  | Y	      | Y         | Y
-	--------------|-----------|-----------|-----------|------------
+		      |           |           |           |
 	protected     |	Y     	  | Y	      | Y         | N
-	--------------|-----------|-----------|-----------|------------
+	
 	default       |	Y     	  | Y	      | N         | N
-	--------------|-----------|-----------|-----------|------------
+	
 	private	      |	N     	  | N	      | N         | N
-	---------------------------------------------------------------
+	
 
 ### Java OOP - Polymorphism (Overloading, Overriding)
 

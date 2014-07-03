@@ -108,4 +108,4 @@ Generic list, can add specific:
 Using the applet tag
 	
 	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
-	<object></object>
+	<object>Name of the object-applet</object>

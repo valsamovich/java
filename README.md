@@ -83,7 +83,14 @@ Data hiding is help to protect the data and used "access modifiers".
 	Break points -> Step Into, Over and Return
 	Exception and conditional Breakpoints
 	Change the variables value
-	exception handler components: try { } catch (ExceptionType name) {}
+	
+Exception handler components: 
+
+	try { 
+		// code block to be executed
+	} catch (ExceptionType name) {
+		// code block to be executed - exception
+	}
 
 ### Java Collections (List, ArrayList, HashMap, generics)
 

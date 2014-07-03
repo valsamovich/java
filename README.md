@@ -94,11 +94,18 @@ Exception handler components:
 
 ### Java Collections (List, ArrayList, HashMap, generics)
 
-	Non generic list, can add anything:  List list = new ArrayList();
-	Generic list, can add specific: List<String> gList = new ArrayList<String>();
+Non generic list, can add anything:  
+
+	List list = new ArrayList();
+	
+Generic list, can add specific: 
+
+	List<String> gList = new ArrayList<String>();
 
 
 ### Java applets
 
-	Using the applet tag
-	The purpose of the <object> element is to support HTML helpers (plug-ins).
+Using the applet tag
+	
+	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
+	<object></object>

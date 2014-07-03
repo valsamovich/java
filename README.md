@@ -48,19 +48,17 @@ Object is a copy or instance of a class:
 
 ### Java OOP - Encapsulation (Data hiding - Access modifiers)
 
-	Encapsulation is a data & methods that act on the data.
+Encapsulation is a data & methods that act on the data.
+
             Getter and Setter - Accessor and Mutator
 
-	Data hiding is help to protect the data and used "access modifiers".
+Data hiding is help to protect the data and used "access modifiers".
 	
 	Modifier      |	Class 	  | Package   | Subclass  | Project   
 	--------------|-----------|-----------|-----------|------------
 	public	      | Y     	  | Y	      | Y         | Y
-	--------------|-----------|-----------|-----------|------------
 	protected     |	Y     	  | Y	      | Y         | N
-	--------------|-----------|-----------|-----------|------------
 	default       |	Y     	  | Y	      | N         | N
-	--------------|-----------|-----------|-----------|------------
 	private	      |	N     	  | N	      | N         | N
 	
 

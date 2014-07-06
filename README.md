@@ -71,7 +71,8 @@ Data hiding is help to protect the data and used "access modifiers".
 
 - Inheritance is when a class acquires(extend) the properties of another class.
 - Abstract class is a class which has empty methods and fully defined methods.
-- Interface is a class with only empty methods.
+
+Interface is a class with only empty methods.
 
 	public interface NameOfInterface {
    		// empty methods 

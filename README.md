@@ -80,10 +80,10 @@ Data hiding is help to protect the data and used "access modifiers".
 
 ### Java debugging
 
-	Break points -> Step Into, Over and Return
-	Exception and conditional Breakpoints
-	Change the variables value
-	
+- Break points -> Step Into, Over and Return
+- Exception and conditional Breakpoints
+- Change the variables value
+
 Exception handler components: 
 
 	try { 

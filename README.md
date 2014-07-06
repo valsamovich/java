@@ -73,6 +73,10 @@ Data hiding is help to protect the data and used "access modifiers".
 - Abstract class is a class which has empty methods and fully defined methods.
 - Interface is a class with only empty methods.
 
+	public interface NameOfInterface {
+   		// empty methods 
+	}
+
 ### Java debugging
 
 - Break points -> Step Into, Over and Return

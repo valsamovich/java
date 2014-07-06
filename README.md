@@ -72,11 +72,9 @@ Data hiding is help to protect the data and used "access modifiers".
 
 ### Java OOP - Inheritance (Abstract classes, Interfaces)
 
-	Inheritance is when a class acquires(extend) the properties of another class.
-
-	Abstract class is a class which has empty methods and fully defined methods.
-
-	Interface is a class with only empty methods.
+- Inheritance is when a class acquires(extend) the properties of another class.
+- Abstract class is a class which has empty methods and fully defined methods.
+- Interface is a class with only empty methods.
 
 ### Java debugging
 

@@ -64,11 +64,8 @@ Data hiding is help to protect the data and used "access modifiers".
 
 ### Java OOP - Polymorphism (Overloading, Overriding)
 
-	Overloading is when methods of the same name are differentiated by their 
-	passing arguments.
-
-	Overriding is when a method in the subclass has the same signature 
-	as a method in the super class, then the subclass method takes precedence
+- Overloading is when methods of the same name are differentiated by their passing arguments.
+- Overriding is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
 
 ### Java OOP - Inheritance (Abstract classes, Interfaces)
 

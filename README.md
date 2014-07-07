@@ -15,14 +15,26 @@ Primitive data types:
 
 Java Loops:
 
-	// For loop
+	// for loop
 	for(int x = 10; x < 20; x = x+1) {
 		// code block to be executed
 	}
 	
+	// infinite loop
+	for (initialization; termination; increment) {
+    		// statement(s)
+	}
+	
+	
 	// While loop
 	while(i < 10) {
 		// code block to be executed
+	}
+	
+	// infinite loop
+	for ( ; ; ) {
+    
+    // code goes here
 	}
 	
 Object is a copy or instance of a class:

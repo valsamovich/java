@@ -9,32 +9,24 @@ Java Programming Cheatsheet
 
 ### Java (Data, Method, Class, Object, Keywords, Constructor)
 
-Primitive data types: 
+Primitive data types:
 
 	byte, short, int, long, float, double, char, boolean 
 
-Java Loops:
+Control Flow Statements:
 
-	// for loop
-	for(int x = 10; x < 20; x = x+1) {
-		// code block to be executed
-	}
-	
 	// infinite loop
 	for (initialization; termination; increment) {
     		// statement(s)
 	}
 	
-	
-	// While loop
-	while(i < 10) {
-		// code block to be executed
-	}
-	
-	// infinite loop
-	for ( ; ; ) {
-    
-    // code goes here
+	// example
+	class ForDemo {
+    		public static void main(String[] args){
+         		for(int i=1; i<11; i++){
+              			System.out.println("Count is: " + i);
+         		}
+    		}
 	}
 	
 Object is a copy or instance of a class:

@@ -9,11 +9,13 @@ Java Programming Cheatsheet
 
 ### Java (Data, Method, Class, Object, Keywords, Constructor)
 
-Primitive data types:
+####Primitive data types:
 
 	byte, short, int, long, float, double, char, boolean 
 
-Control Flow Statements:
+####Control Flow Statements:
+
+- The for Statement
 
 	// infinite loop
 	for (initialization; termination; increment) {

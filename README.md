@@ -8,7 +8,7 @@ Java development tutorial. It's include the basic java rules, syntax, examples, 
 Java Basics
 -----------
 
-###Primitive Data Types, Arrays
+###Primitive Data Types
 
 The Java programming language is statically-typed, which means that all variables must first be declared before they can be used.
 
@@ -32,8 +32,22 @@ Default Values:
 
 An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
 	
-	// declares an array of integers
-	int[] anArray;
+	class ArrayDemo {
+		publis stativ void main (String[] args) {
+			// declares an array og integers
+			int[] anArray;
+			
+			// allocate memory for 3 integers
+			anArray = new int[3];
+			
+			// initialize first element
+			anArray[0] = 10;
+			// intialize second element
+			anArray[1] = 20;
+			// and so forth
+			andArray[2] = 30;
+		}
+	}
 
 ###Control Flow Statements
 

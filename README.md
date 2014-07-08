@@ -12,9 +12,9 @@ Java (Data, Method, Class, Object, Keywords, Constructor)
 
 	byte, short, int, long, float, double, char, boolean 
 
-###Control Flow Statements:
+###Control Flow Statements
 
-- The for Statement
+The for Statement:
 
 	// infinite loop
 	for (initialization; termination; increment) {

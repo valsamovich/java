@@ -5,8 +5,8 @@ Java development tutorial. It's include the basic java rules, syntax, examples, 
 
 
 
-Java (Data, Method, Class, Object, Keywords, Constructor)
----------------------------------------------------------
+Java Basics
+-----------
 
 ###Primitive data types:
 

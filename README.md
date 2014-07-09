@@ -3,7 +3,20 @@ java-tutorial
 
 Java development tutorial. It's include the basic java rules, syntax, examples, and object-Oriented Programming principles. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in days, which contains examples and exercises.
 
+Object-Oriented Programming Concepts
+------------------------------------
 
+###Object
+
+Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
+
+###Class
+
+A class is a blueprint or prototype from which objects are created. Example: There may be thousands of other phones in existence, all of the same make and model. Each phone was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your phone is an instance of the class of objects known as phones.
+
+###Inheritance
+
+Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. For example, Phone is the superclass of Touch Phone, Smart Phone, and TandemBike. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses:
 
 Java Basics
 -----------

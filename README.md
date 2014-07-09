@@ -3,16 +3,115 @@ java-tutorial
 
 Java development tutorial. It's include the basic java rules, syntax, examples, and object-Oriented Programming principles. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in days, which contains examples and exercises.
 
+Object-Oriented Programming Concepts
+------------------------------------
 
-Java Programming Cheatsheet
----------------------------
+###Object
 
-### Java (Data, Method, Class, Object, Keywords, Constructor)
+Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
 
-	Primitive data types: byte, short, int, long, float, double, char, boolean 
-	For loop: for(initial value; condition; increment/decrement)
+###Class
 
-	Object is a copy or instance of a class.
+A class is a blueprint or prototype from which objects are created. In object-oriented terms, Any Sub-Object is an instance of the class of objects known as Main-Object.
+
+###Inheritance
+
+Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses.
+
+###Interface
+
+An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.
+
+###Package
+
+A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
+
+Java Basics
+-----------
+
+###Primitive Data Types
+
+The Java programming language is statically-typed, which means that all variables must first be declared before they can be used.
+
+	int gear = 1;
+
+Data Type | Default Value | Bit                            | Min and Max Value              
+----------|---------------|--------------------------------|-----------------------------------------------------
+byte	  | 0    	  | 8-bit                          | -128 and -127 (inclusive)
+short     | 0    	  | 16-bit                         | -32,768 and 32,767 (inclusive)
+int       | 0             | 32-bit                         | -2(in 31st) and 2(in 31st)-1
+long      | 0L            | 64-bit                         | -2(in 63rd) and 2(in 63rd)-1
+float     | 0.0f          | 32-bit IEEE 754 floating point | specified in the Floating-Point types
+double    | 0.0d          | 64-bit IEEE 754 floating point | specified in the Floating-Point types
+char      | '\u0000'      | 16-bit Unicode character       | '\u0000' (or 0) and '\uffff'  (or 65,535 inclusive)
+String    | null          |                                |
+boolean   | false         | 1-bit and "size" isn't defined | true and false
+Object    | null          |                                |
+
+###Arrays
+
+An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
+	
+	class ArrayDemo {
+		publis stativ void main (String[] args) {
+			// declares an array og integers
+			int[] anArray;
+			
+			// allocate memory for 3 integers
+			anArray = new int[3];
+			
+			// initialize first element
+			anArray[0] = 10;
+			// intialize second element
+			anArray[1] = 20;
+			// and so forth
+			andArray[2] = 30;
+		}
+	}
+
+###Operators
+
+Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+
+	Operators by Presedence | Precedence	   
+	------------------------|----------------------------------------
+	postfix	                | expr++ expr--   	  
+	unary                   | ++expr --expr +expr -expr ~ !    	  
+	multiplicative          | * / %
+	additive                | 0L
+	shift			| << >> >>>
+	relational		| < > <= >= instanceof
+	equality		| == !=
+	bitwise AND		| &
+	bitwise exclusive OR	| ^
+	bitwise inclusive OR	| |
+	logical AND		| &&
+	logical OR		| ||
+	ternary			| ? :
+	assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
+
+###Control Flow Statements
+
+The for Statement:
+
+	// infinite loop
+	for (initialization; termination; increment) {
+    		// statement(s)
+	}
+	
+	// example
+	class ForDemo {
+    		public static void main(String[] args){
+         		for(int i=1; i<11; i++){
+              			System.out.println("Count is: " + i);
+         		}
+    		}
+	}
+
+Object is a copy or instance of a class:
+
+	Object object  = new Object();
+	
 	Class is a template for an object. Class has data & methods.
 	"Super" keyword id used to access superclass data and methods
 	"This" keyword is used to access  class level data
@@ -32,52 +131,64 @@ Java Programming Cheatsheet
 
 ### Java OOP - Encapsulation (Data hiding - Access modifiers)
 
-	Encapsulation is a data & methods that act on the data.
+Encapsulation is a data & methods that act on the data.
+
             Getter and Setter - Accessor and Mutator
 
-	Data hiding is help to protect the data and used "access modifiers".
-	---------------------------------------------------------------
+Data hiding is help to protect the data and used "access modifiers".
+	
 	Modifier      |	Class 	  | Package   | Subclass  | Project   
 	--------------|-----------|-----------|-----------|------------
 	public	      | Y     	  | Y	      | Y         | Y
-	--------------|-----------|-----------|-----------|------------
 	protected     |	Y     	  | Y	      | Y         | N
-	--------------|-----------|-----------|-----------|------------
 	default       |	Y     	  | Y	      | N         | N
-	--------------|-----------|-----------|-----------|------------
 	private	      |	N     	  | N	      | N         | N
-	---------------------------------------------------------------
+	
 
 ### Java OOP - Polymorphism (Overloading, Overriding)
 
-	Overloading is when methods of the same name are differentiated by their 
-	passing arguments.
-
-	Overriding is when a method in the subclass has the same signature 
-	as a method in the super class, then the subclass method takes precedence
+- Overloading is when methods of the same name are differentiated by their passing arguments.
+- Overriding is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
 
 ### Java OOP - Inheritance (Abstract classes, Interfaces)
 
-	Inheritance is when a class acquires(extend) the properties of another class.
+- Inheritance is when a class acquires(extend) the properties of another class.
+- Abstract class is a class which has empty methods and fully defined methods.
 
-	Abstract class is a class which has empty methods and fully defined methods.
+Interface is a class with only empty methods.
 
-	Interface is a class with only empty methods.
+	public interface NameOfInterface {
+   		// empty methods 
+	}
 
 ### Java debugging
 
-	Break points -> Step Into, Over and Return
-	Exception and conditional Breakpoints
-	Change the variables value
-	exception handler components: try { } catch (ExceptionType name) {}
+- Break points -> Step Into, Over and Return
+- Exception and conditional Breakpoints
+- Change the variables value
+
+Exception handler components: 
+
+	try { 
+		// code block to be executed
+	} catch (ExceptionType name) {
+		// code block to be executed - exception
+	}
 
 ### Java Collections (List, ArrayList, HashMap, generics)
 
-	Non generic list, can add anything:  List list = new ArrayList();
-	Generic list, can add specific: List<String> gList = new ArrayList<String>();
+Non generic list, can add anything:  
+
+	List list = new ArrayList();
+	
+Generic list, can add specific: 
+
+	List<String> gList = new ArrayList<String>();
 
 
 ### Java applets
 
-	Using the applet tag
-	The purpose of the <object> element is to support HTML helpers (plug-ins).
+Using the applet tag
+	
+	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
+	<object>Name of the object-applet</object>

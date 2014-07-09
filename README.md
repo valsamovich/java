@@ -12,11 +12,19 @@ Objects are key to understanding object-oriented technology and a software bundl
 
 ###Class
 
-A class is a blueprint or prototype from which objects are created. Example: There may be thousands of other phones in existence, all of the same make and model. Each phone was built from the same set of blueprints and therefore contains the same components. In object-oriented terms, we say that your phone is an instance of the class of objects known as phones.
+A class is a blueprint or prototype from which objects are created. In object-oriented terms, Any Sub-Object is an instance of the class of objects known as Main-Object.
 
 ###Inheritance
 
-Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. For example, Phone is the superclass of Touch Phone, Smart Phone, and TandemBike. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses:
+Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses.
+
+###Interface
+
+An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.
+
+###Package
+
+A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
 
 Java Basics
 -----------

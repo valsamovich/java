@@ -37,18 +37,18 @@ The Java programming language is statically-typed, which means that all variable
 
 Default Values:
 
-	Data Type  | Default Value  | Min-Max Value |
-	-----------|----------------|---------------|
-	byte	   | 0    	    | -128 -127
-	short      | 0    	  
-	int        | 0  
-	long       | 0L
-	float      | 0.0f
-	double     | 0.0d
-	char       | '\u0000'
-	String     | null
-	boolean    | false
-	Object     | null
+	Data Type | Default Value | Bit                            | Min and Max Value              
+	----------|---------------|--------------------------------|--------------------------------
+	byte	  | 0    	  | 8-bit                          | -128 and -127 (inclusive)
+	short     | 0    	  | 16-bit                         | -32,768 and 32,767 (inclusive)
+	int       | 0             | 32-bit                         | -2(in 31st) and 2(in 31st)-1
+	long      | 0L            | 64-bit                         | -2(in 63rd) and 2(in 63rd)-1
+	float     | 0.0f          | 32-bit IEEE 754 floating point | specified in the Floating-Point
+	double    | 0.0d          | 64-bit IEEE 754 floating point | specified in the Floating-Point
+	char      | '\u0000'      | 16-bit Unicode character       | '\u0000' (or 0) and '\uffff'
+	String    | null          |                                |
+	boolean   | false         | 1-bit                          | true and false
+	Object    | null          |                                |
 
 ###Arrays
 

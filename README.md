@@ -45,7 +45,7 @@ float     | 0.0f          | 32-bit IEEE 754 floating point | specified in the Fl
 double    | 0.0d          | 64-bit IEEE 754 floating point | specified in the Floating-Point types
 char      | '\u0000'      | 16-bit Unicode character       | '\u0000' (or 0) and '\uffff'  (or 65,535 inclusive)
 String    | null          |                                |
-boolean   | false         | 1-bit                          | true and false
+boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
 
 ###Arrays

@@ -71,24 +71,35 @@ An array is a container object that holds a fixed number of values of a single t
 
 ###Operators
 
-Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+Operators are special symbols that perform operations on one, two, or three operands, and then return a result.
 
-	Operators by Presedence | Precedence	   
-	------------------------|----------------------------------------
-	postfix	                | expr++ expr--   	  
-	unary                   | ++expr --expr +expr -expr ~ !    	  
-	multiplicative          | * / %
-	additive                | 0L
-	shift			| << >> >>>
-	relational		| < > <= >= instanceof
-	equality		| == !=
-	bitwise AND		| &
-	bitwise exclusive OR	| ^
-	bitwise inclusive OR	| |
-	logical AND		| &&
-	logical OR		| ||
-	ternary			| ? :
-	assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
+Operators by Presedence | Precedence	   
+------------------------|----------------------------------------
+postfix	                | expr++ expr--   	  
+unary                   | ++expr --expr +expr -expr ~ !    	  
+multiplicative          | * / %
+additive                | 0L
+shift			| << >> >>>
+relational		| < > <= >= instanceof
+equality		| == !=
+bitwise AND		| &
+bitwise exclusive OR	| ^
+bitwise inclusive OR	| |
+logical AND		| &&
+logical OR		| ||
+ternary			| ? :
+assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
+
+The Arithmetic Operators
+
+Oerator | Description	   
+--------|--------------------------------------------------------
+      + | additive operator (also used for String concatenation)
+      - | subtraction operator
+      * | multiplication operator
+      / | division operator
+      % | remainder operator
+  
 
 ###Control Flow Statements
 

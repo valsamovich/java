@@ -90,6 +90,12 @@ logical OR		| ||
 ternary			| ? :
 assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
 
+The Simple Assignment Operator
+
+Oerator | Description	   
+--------|------------------------------------------------
+      = | assignment operator (value, object references)
+
 The Arithmetic Operators
 
 Oerator | Description	   
@@ -100,6 +106,15 @@ Oerator | Description
       / | division operator
       % | remainder operator
   
+The Unary Operators
+
+Oerator | Description	   
+--------|-------------------------------------------------------------------------------------------
+      + | Unary plus operator; indicates positive value (numbers are positive without this, however)
+      - | Unary minus operator; negates an expression
+     ++ | Increment operator; increments a value by 1
+     -- | Decrement operator; decrements a value by 1
+      ! | Logical complement operator; inverts the value of a boolean
 
 ###Control Flow Statements
 

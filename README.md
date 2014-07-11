@@ -257,9 +257,9 @@ Java Class
   		}
 	} 
 	
-	package com.vogella.junit.first;
-
 JUnit Test
+
+	package com.valerysamovich.junit.first;
 
 	import static org.junit.Assert.assertEquals;
 	import org.junit.Test;

@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the java Object-Oriented Programming Concepts, Java Basics, Classes and Objects, Annotations, Interfaces and Inheritance, Numbers and Strings, Generics and Packages. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial. It's include the java Object-Oriented Programming Concepts, Java Basics, Classes and Objects, Annotations, Interfaces and Inheritance, Numbers and Strings, Generics, Packages, JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
 Object-Oriented Programming Concepts
 ------------------------------------
@@ -234,3 +234,41 @@ Using the applet tag
 	
 	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
 	<object>Name of the object-applet</object>
+
+Testing
+-------
+
+####Unit testing with JUnit
+
+A unit test is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
+
+Java Class
+
+	package com.valerysamovich.java.junit.first;
+	
+	// My Class
+	public class MyClass {
+  		public int multiply(int x, int y) {
+    			// the following is just an example
+    			if (x > 999) {
+      				throw new IllegalArgumentException("X should be less than 1000");
+    			}
+    			return x / y;
+  		}
+	} 
+	
+	package com.vogella.junit.first;
+
+JUnit Test
+
+	import static org.junit.Assert.assertEquals;
+	import org.junit.Test;
+
+	public class MyClassTest {
+  
+  		@Test(expected = IllegalArgumentException.class)
+  		public void testExceptionIsThrown() {
+    			MyClass tester = new MyClass();
+    		tester.multiply(1000, 5);
+  		}
+  	}

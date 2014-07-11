@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the basic java rules, syntax, examples, and object-Oriented Programming principles. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in days, which contains examples and exercises.
+Java development tutorial. It's include the java Object-Oriented Programming Concepts, Java Basics, Classes and Objects, Annotations, Interfaces and Inheritance, Numbers and Strings, Generics and Packages. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
 Object-Oriented Programming Concepts
 ------------------------------------
@@ -71,24 +71,61 @@ An array is a container object that holds a fixed number of values of a single t
 
 ###Operators
 
-Operators are special symbols that perform specific operations on one, two, or three operands, and then return a result.
+Operators are special symbols that perform operations on one, two, or three operands, and then return a result.
 
-	Operators by Presedence | Precedence	   
-	------------------------|----------------------------------------
-	postfix	                | expr++ expr--   	  
-	unary                   | ++expr --expr +expr -expr ~ !    	  
-	multiplicative          | * / %
-	additive                | 0L
-	shift			| << >> >>>
-	relational		| < > <= >= instanceof
-	equality		| == !=
-	bitwise AND		| &
-	bitwise exclusive OR	| ^
-	bitwise inclusive OR	| |
-	logical AND		| &&
-	logical OR		| ||
-	ternary			| ? :
-	assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
+Operators by Presedence | Precedence	   
+------------------------|----------------------------------------
+postfix	                | expr++ expr--   	  
+unary                   | ++expr --expr +expr -expr ~ !    	  
+multiplicative          | * / %
+additive                | 0L
+shift			| << >> >>>
+relational		| < > <= >= instanceof
+equality		| == !=
+bitwise AND		| &
+bitwise exclusive OR	| ^
+bitwise inclusive OR	| |
+logical AND		| &&
+logical OR		| ||
+ternary			| ? :
+assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
+
+The Simple Assignment Operator
+
+Operator | Description	   
+---------|------------------------------------------------
+      =  | assignment operator (value, object references)
+
+The Arithmetic Operators
+
+Operator | Description	   
+---------|--------------------------------------------------------
+      +  | additive operator (also used for String concatenation)
+      -  | subtraction operator
+      *  | multiplication operator
+      /  | division operator
+      %  | remainder operator
+  
+The Unary Operators
+
+Operator | Description	   
+---------|-------------------------------------------------------------------------------------------
+      +  | Unary plus operator; indicates positive value (numbers are positive without this, however)
+      -  | Unary minus operator; negates an expression
+     ++  | Increment operator; increments a value by 1
+     --  | Decrement operator; decrements a value by 1
+      !  | Logical complement operator; inverts the value of a boolean
+      
+The Equality and Relational Operators
+
+Operator | Description	   
+---------|--------------------------
+      == | equal to
+      != | not equal to
+       > | greater than
+      >= | greater than or equal to
+       < | less than
+      <= | less than or equal to
 
 ###Control Flow Statements
 

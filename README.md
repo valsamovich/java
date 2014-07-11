@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the java Object-Oriented Programming Concepts, [Java Basics](https://github.com/valerysamovich/java-tutorial#basics), Classes and Objects, Annotations, Interfaces and Inheritance, Numbers and Strings, Generics, Packages, JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial. It's include the java [Object-Oriented Programming] Concepts(https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics), Classes and Objects, Annotations, Interfaces and Inheritance, Numbers and Strings, Generics, Packages, JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
 Object-Oriented Programming Concepts
 ------------------------------------

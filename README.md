@@ -26,8 +26,8 @@ An interface is a contract between a class and the outside world. When a class i
 
 A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
 
-Java Basics
------------
+Basics
+------
 
 ###Primitive Data Types
 
@@ -165,6 +165,11 @@ Object is a copy or instance of a class:
 	It is used to set default values.
 	Does not return anything including void.
 
+Objects
+-------
+
+Classes
+-------
 
 ### Java OOP - Encapsulation (Data hiding - Access modifiers)
 

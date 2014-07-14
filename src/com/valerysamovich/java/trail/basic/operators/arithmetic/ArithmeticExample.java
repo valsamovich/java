@@ -5,7 +5,7 @@ public class ArithmeticExample {
     public static void main(String[] args) {
         
         // result is now 3
-        int result =1 + 2;
+        int result = 1 + 2;
         System.out.println(result);
         
         // result is now 2

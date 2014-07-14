@@ -6,30 +6,30 @@ Java development tutorial. It's include the java [Object-Oriented Programming Co
 Object-Oriented Programming Concepts
 ------------------------------------
 
-####Object
+###Object
 
 Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
 
-####Class
+###Class
 
 A class is a blueprint or prototype from which objects are created. In object-oriented terms, Any Sub-Object is an instance of the class of objects known as Main-Object.
 
-####Inheritance
+###Inheritance
 
 Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses.
 
-####Interface
+###Interface
 
 An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.
 
-####Package
+###Package
 
 A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
 
 Basics
 ------
 
-####Primitive Data Types
+###Primitive Data Types
 
 The Java programming language is statically-typed, which means that all variables must first be declared before they can be used.
 
@@ -48,7 +48,7 @@ String    | null          |                                |
 boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
 
-####Arrays
+###Arrays
 
 An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
 	
@@ -69,6 +69,13 @@ An array is a container object that holds a fixed number of values of a single t
 		}
 	}
 
+Copying Arrays
+
+	// system class has an arraycopy() method
+	// can use to efficiently copy data from one array into another
+	public static void arraycopy(Object src, int srcPos,
+        	Object dest, int destPos, int length)
+        	
 ####Operators
 
 Operators are special symbols that perform operations on one, two, or three operands, and then return a result.

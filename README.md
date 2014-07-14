@@ -29,10 +29,12 @@ A package is a namespace that organizes a set of related classes and interfaces.
 Basics
 ------
 
+###Variables
+The Java programming language use both **"fields"** and **"variables"** as part of its terminology. Instance variables (non-static fields) are unique to each instance of a class. Class variables (static fields) are fields declared with the static modifier; there is exactly one copy of a class variable, regardless of how many times the class has been instantiated. Local variables store temporary state inside a method. Parameters are variables that provide extra information to a method; both local variables and parameters are always classified as "variables" (not "fields").
+
 ###Primitive Data Types
 
-The Java programming language is statically-typed, which means that all variables must first be declared before they can be used.
-
+The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
 	int gear = 1;
 
 Data Type | Default Value | Bit                            | Min and Max Value              

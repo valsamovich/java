@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic.operators.arithmetic;
+package com.valerysamovich.java.trail.basic.operators;
 
 public class ArithmeticExample {
 

@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic.operators.compound;
+package com.valerysamovich.java.trail.basic.operators;
 
 public class CompoundExample {
 

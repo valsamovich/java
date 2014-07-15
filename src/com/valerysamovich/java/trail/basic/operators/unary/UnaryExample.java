@@ -1,4 +1,4 @@
-/*
+/**
  * @file UnaryExample.java
  * @author - Valery Samovich
  * @version 1.0

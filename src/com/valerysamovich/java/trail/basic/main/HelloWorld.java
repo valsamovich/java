@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic;
+package com.valerysamovich.java.trail.basic.main;
 
 public class HelloWorld {
     

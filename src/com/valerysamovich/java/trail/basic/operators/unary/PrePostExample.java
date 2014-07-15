@@ -1,3 +1,10 @@
+/**
+ * @file PrePostExample.java
+ * @author - Valery Samovich
+ * @version 1.0
+ * @date 07/14/2014
+ */
+
 package com.valerysamovich.java.trail.basic.operators.unary;
 
 public class PrePostExample {
@@ -5,7 +12,8 @@ public class PrePostExample {
     public static void main(String[] args) {
         
         int i = 3;
-        i++;
+        // postfix
+        i++; 
         
         // result is 4
         System.out.println(i);
@@ -14,7 +22,7 @@ public class PrePostExample {
         // result is now 5
         System.out.println(i);
         
-        // result is now 6
+        // result is now 6 with prefix
         System.out.println(++i);
         
         // result is now 6

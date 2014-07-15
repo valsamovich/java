@@ -1,5 +1,5 @@
 /**
- * @file ConditionalExample1.java
+ * @file ConditionalExample.java
  * @author - Valery Samovich
  * @version 1.0
  * @date 07/14/2014
@@ -7,7 +7,7 @@
 
 package com.valerysamovich.java.trail.basic.operators.conditional;
 
-public class ConditionalExample1 {
+public class ConditionalExample {
 
     public static void main(String[] args) {
         

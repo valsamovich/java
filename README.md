@@ -78,7 +78,7 @@ Copying Arrays
 	public static void arraycopy(Object src, int srcPos,
         	Object dest, int destPos, int length)
         	
-####Operators
+###Operators
 
 Operators are special symbols that perform operations on one, two, or three operands, and then return a result.
 
@@ -136,7 +136,16 @@ Operator | Description
        < | less than
       <= | less than or equal to
 
-####Control Flow Statements
+The Conditional Operators (perform operation on two boolean expressions)
+
+Operator         | Description	   
+-----------------|-------------------------------------------
+      &&         | conditional-AND
+                 | conditional-OR
+      ?:         | ternary operator (shorthand if-then-else)
+      instanceof | type comparison operator
+
+###Control Flow Statements
 
 The for Statement:
 

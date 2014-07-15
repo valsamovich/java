@@ -136,6 +136,15 @@ Operator | Description
        < | less than
       <= | less than or equal to
 
+The Conditional Operators (perform operation on two boolean expressions)
+
+Operator         | Description	   
+-----------------|-------------------------------------------
+      &&         | conditional-AND
+      ||         | conditional-OR
+      ?:         | ternary operator (shorthand if-then-else)
+      instanceof | type comparison operator
+
 ###Control Flow Statements
 
 The for Statement:

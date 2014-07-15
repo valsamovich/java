@@ -5,7 +5,7 @@
  * @date 07/14/2014
  */
 
-package com.valerysamovich.java.trail.basic.operators;
+package com.valerysamovich.java.trail.basic.operators.unary;
 
 public class UnaryExample {
 

@@ -1,3 +1,10 @@
+/**
+ * @file CompoundExample.java
+ * @author - Valery Samovich
+ * @version 1.0
+ * @date 07/14/2014
+ */
+
 package com.valerysamovich.java.trail.basic.operators.arithmetic;
 
 public class CompoundExample {

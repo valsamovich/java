@@ -103,17 +103,17 @@ The Simple Assignment Operator
 
 Operator | Description	   
 ---------|------------------------------------------------
-      =  | assignment operator (value, object references)
+      =  | Assignment operator (value, object references)
 
 The Arithmetic Operators
 
 Operator | Description	   
 ---------|--------------------------------------------------------
-      +  | additive operator (also used for String concatenation)
-      -  | subtraction operator
-      *  | multiplication operator
-      /  | division operator
-      %  | remainder operator
+      +  | Additive operator (also used for String concatenation)
+      -  | Subtraction operator
+      *  | Multiplication operator
+      /  | Division operator
+      %  | Remainder operator
   
 The Unary Operators
 
@@ -129,30 +129,33 @@ The Equality and Relational Operators
 
 Operator | Description	   
 ---------|--------------------------
-      == | equal to
-      != | not equal to
-       > | greater than
-      >= | greater than or equal to
-       < | less than
-      <= | less than or equal to
+      == | Equal to
+      != | Not equal to
+       > | Greater than
+      >= | Greater than or equal to
+       < | Less than
+      <= | Less than or equal to
 
 The Conditional Operators (perform operation on two boolean expressions)
 
-Operator         | Description	   
------------------|-------------------------------------------
-      &&         | conditional-AND
-      \||        | conditional-OR
-      ?:         | ternary operator (shorthand if-then-else)
-      instanceof | type comparison operator
+Operator      | Description	   
+--------------|-------------------------------------------
+&&            | Conditional-AND
+&#124; &#124; | Conditional-OR
+?:            | Ternary operator (shorthand if-then-else)
+instanceof    | Type comparison operator
       
 Bitwise and Bit Shift Operators
 
 Operator | Description	   
--------- |-----------------------------------------------------------
-&        | bitwise operator performs a bitwise AND oeration 
-^        | bitwise operator perform a bitwise exclusive OR operation
-\|       | bitwise operator perform a bitwise inclusive OR operation
-
+-------- |------------------------------------------------------------------
+~        | Unary bitwise complement
+<<       | Signed left shift
+>>       | Signed right shift
+>>>      | Unsigned right shift
+&        | Bitwise AND - performs a bitwise AND oeration 
+^        | Bitwise exclusive  OR - perform a bitwise exclusive OR operation
+&#124;   | Bitwise inclusive  OR - perform a bitwise inclusive OR operation
 
 ###Control Flow Statements
 

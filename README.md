@@ -141,18 +141,18 @@ The Conditional Operators (perform operation on two boolean expressions)
 Operator         | Description	   
 -----------------|-------------------------------------------
       &&         | conditional-AND
-      \||\       | conditional-OR
+      \||        | conditional-OR
       ?:         | ternary operator (shorthand if-then-else)
       instanceof | type comparison operator
       
 Bitwise and Bit Shift Operators
 
-Operator         | Description	   
------------------|-------------------------------------------
-      &&         | conditional-AND
-                 | conditional-OR
-      ?:         | ternary operator (shorthand if-then-else)
-      instanceof | type comparison operator
+Operator | Description	   
+-------- |-----------------------------------------------------------
+&        | bitwise operator performs a bitwise AND oeration 
+^        | bitwise operator perform a bitwise exclusive OR operation
+\|       | bitwise operator perform a bitwise inclusive OR operation
+
 
 ###Control Flow Statements
 

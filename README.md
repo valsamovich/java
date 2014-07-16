@@ -178,8 +178,10 @@ Operator | Description
 
  - An **expresions** is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.
 
+
 	// arithmetic expression
 	int result = 1 + 2; 
+
 
  - A **statement** is a forms a complete unit of execution. The following types of expressions can be made into a statement by terminating the expression with a semicolon (;).
 

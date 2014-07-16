@@ -8,7 +8,7 @@ Object-Oriented Programming Concepts
 
 ###Object
 
-Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in fields (variables in some programming languages) and exposes its behavior through methods (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
+Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in **fields** (variables in some programming languages) and exposes its behavior through **methods** (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
 
 ###Class
 
@@ -30,7 +30,24 @@ Basics
 ------
 
 ###Variables
-The Java programming language use both **"fields"** and **"variables"** as part of its terminology. Instance variables (non-static fields) are unique to each instance of a class. Class variables (static fields) are fields declared with the static modifier; there is exactly one copy of a class variable, regardless of how many times the class has been instantiated. Local variables store temporary state inside a method. Parameters are variables that provide extra information to a method; both local variables and parameters are always classified as "variables" (not "fields").
+The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
+
+ - **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
+
+	int value = 10;
+
+ - **Class Variables (Static Fields)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
+
+	static int value = value++;
+ 
+ - **Local Variables** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
+
+	int count = 0;
+
+ - **Parameters** Parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers).
+
+	// args variable is the parameter to main method
+	public static void main(String[] args) {} 
 
 ###Primitive Data Types
 
@@ -71,7 +88,7 @@ An array is a container object that holds a fixed number of values of a single t
 		}
 	}
 
-Copying Arrays
+**Copying Arrays**
 
 	// system class has an arraycopy() method
 	// can use to efficiently copy data from one array into another
@@ -99,13 +116,13 @@ logical OR		| ||
 ternary			| ? :
 assignment		| = += -= *= /= %= &= ^= |= <<= >>= >>>=
 
-The Simple Assignment Operator
+**The Assignment Operators**
 
 Operator | Description	   
 ---------|------------------------------------------------
       =  | Assignment operator (value, object references)
 
-The Arithmetic Operators
+**The Arithmetic Operators**
 
 Operator | Description	   
 ---------|--------------------------------------------------------
@@ -115,7 +132,7 @@ Operator | Description
       /  | Division operator
       %  | Remainder operator
   
-The Unary Operators
+**The Unary Operators**
 
 Operator | Description	   
 ---------|-------------------------------------------------------------------------------------------
@@ -125,7 +142,7 @@ Operator | Description
      --  | Decrement operator; decrements a value by 1
       !  | Logical complement operator; inverts the value of a boolean
       
-The Equality and Relational Operators
+**The Equality and Relational Operators**
 
 Operator | Description	   
 ---------|--------------------------
@@ -136,16 +153,16 @@ Operator | Description
        < | Less than
       <= | Less than or equal to
 
-The Conditional Operators (perform operation on two boolean expressions)
+**The Conditional Operators** (perform operation on two boolean expressions)
 
 Operator      | Description	   
---------------|-------------------------------------------
+--------------|------------------------------------------------------------------------------------
 &&            | Conditional-AND
 &#124; &#124; | Conditional-OR
-?:            | Ternary operator (shorthand if-then-else)
+?:            | Ternary operator (shorthand if-then-else) result = someCondition ? value1 : value2
 instanceof    | Type comparison operator
       
-Bitwise and Bit Shift Operators
+**Bitwise and Bit Shift Operators**
 
 Operator | Description	   
 -------- |------------------------------------------------------------------
@@ -156,6 +173,23 @@ Operator | Description
 &        | Bitwise AND - performs a bitwise AND oeration 
 ^        | Bitwise exclusive  OR - perform a bitwise exclusive OR operation
 &#124;   | Bitwise inclusive  OR - perform a bitwise inclusive OR operation
+
+###Expressions, Statements, and Blocks
+
+ - An **expresions** is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.
+
+	// arithmetic expression
+	int result = 1 + 2; 
+
+ - A **statement** is a forms a complete unit of execution. The following types of expressions can be made into a statement by terminating the expression with a semicolon (;).
+
+	// object creation statement
+	Object myObject = new Object();
+
+ - A **block** is a group of zero or more statements between balanced braces and can be used anywhere a single statement is allowed. 
+
+	// if block
+	if(someCondition) {...}
 
 ###Control Flow Statements
 

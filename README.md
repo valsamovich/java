@@ -146,12 +146,12 @@ Operator | Description
 
 Operator | Description	   
 ---------|--------------------------
-      == | Equal to
-      != | Not equal to
-       > | Greater than
-      >= | Greater than or equal to
-       < | Less than
-      <= | Less than or equal to
+==       | Equal to
+!=       | Not equal to
+ >       | Greater than
+>=       | Greater than or equal to
+<        | Less than
+<=       | Less than or equal to
 
 **The Conditional Operators** (perform operation on two boolean expressions)
 
@@ -191,10 +191,36 @@ A **statement** is a forms a complete unit of execution. The following types of 
 A **block** is a group of zero or more statements between balanced braces and can be used anywhere a single statement is allowed. 
 
 	// if block
-	if(someCondition) {...}
+	if(condition) {...}
 
 ###Control Flow Statements
 
+The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code. The section describes the decision-making statements (if-then, if-then-else, switch), the looping statements (for, while, do-while), and the branching statements (break, continue, return) supported by the Java programming language.
+
+**The if-then Statement**
+
+	if (condition) {
+		// statement(s)
+	}
+
+**The if-then-else Statement**
+
+	if (condition) {
+		// statement(s)
+	} else {
+		// statement(s)
+	}
+	
+**The switch Statement**
+
+	switch (value) {
+            case 1:  // statement(s)
+                     break;
+            case 2:  // statement(s)
+                     break;
+            // ...and so on
+        }
+	
 The for Statement:
 
 	// infinite loop
@@ -210,6 +236,12 @@ The for Statement:
          		}
     		}
 	}
+
+Objects
+-------
+
+Classes
+-------
 
 Object is a copy or instance of a class:
 
@@ -231,11 +263,7 @@ Object is a copy or instance of a class:
 	It is used to set default values.
 	Does not return anything including void.
 
-Objects
--------
 
-Classes
--------
 
 ### Java OOP - Encapsulation (Data hiding - Access modifiers)
 

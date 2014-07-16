@@ -141,6 +141,15 @@ The Conditional Operators (perform operation on two boolean expressions)
 Operator         | Description	   
 -----------------|-------------------------------------------
       &&         | conditional-AND
+      \||        | conditional-OR
+      ?:         | ternary operator (shorthand if-then-else)
+      instanceof | type comparison operator
+      
+Bitwise and Bit Shift Operators
+
+Operator         | Description	   
+-----------------|-------------------------------------------
+      &&         | conditional-AND
                  | conditional-OR
       ?:         | ternary operator (shorthand if-then-else)
       instanceof | type comparison operator

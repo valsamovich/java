@@ -243,6 +243,9 @@ Objects
 Classes
 -------
 
+Annotations
+-----------
+
 Object is a copy or instance of a class:
 
 	Object object  = new Object();

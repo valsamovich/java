@@ -52,6 +52,7 @@ The Java programming language use both **"fields"** and **"variables"** as part 
 ###Primitive Data Types
 
 The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
+
 	int gear = 1;
 
 Data Type | Default Value | Bit                            | Min and Max Value              
@@ -240,19 +241,9 @@ The for Statement:
 Objects
 -------
 
-Classes
--------
-
-Annotations
------------
-
 Object is a copy or instance of a class:
 
 	Object object  = new Object();
-	
-	Class is a template for an object. Class has data & methods.
-	"Super" keyword id used to access superclass data and methods
-	"This" keyword is used to access  class level data
 
 	"Static" is one per class, but not one per object 
 	"Static" methods can only access other static data & methods
@@ -266,7 +257,17 @@ Object is a copy or instance of a class:
 	It is used to set default values.
 	Does not return anything including void.
 
+Classes
+-------
+ - Class is a template for an object. Class has data & methods.
 
+Annotations
+-----------
+
+Keywords
+--------
+- "Super" keyword id used to access superclass data and methods
+- "This" keyword is used to access  class level data
 
 ### Java OOP - Encapsulation (Data hiding - Access modifiers)
 

@@ -222,7 +222,7 @@ The statements inside your source files are generally executed from top to botto
             // ...and so on
         }
 	
-The for Statement:
+**The for Statement**
 
 	// infinite loop
 	for (initialization; termination; increment) {

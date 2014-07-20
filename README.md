@@ -245,13 +245,6 @@ Object is a copy or instance of a class:
 
 	Object object  = new Object();
 
-	"Static" is one per class, but not one per object 
-	"Static" methods can only access other static data & methods
-
-	"Final" keyword can be applied to data,methods, and classes.
-	Final data is constant. Cannot be changed.
-	Final methods cannot be overridden. Final classes cannot be sub classed.
-
 	Constructor is a method that has the same name as the class.
 	It is executed when an object is created.
 	It is used to set default values.
@@ -266,6 +259,11 @@ Annotations
 
 Keywords
 --------
+- "Static" is one per class, but not one per object 
+-"Static" methods can only access other static data & methods
+- Final data is constant. Cannot be changed.
+- Final methods cannot be overridden. Final classes cannot be sub classed.
+- "Final" keyword can be applied to data,methods, and classes.
 - "Super" keyword id used to access superclass data and methods
 - "This" keyword is used to access  class level data
 

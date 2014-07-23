@@ -1,11 +1,21 @@
+/**
+ * @file SwichDemo.java
+ * @author - Valery Samovich
+ * @version 1.0
+ * @date 07/23/2014
+ */
+
 package com.valerysamovich.java.trail.basic.statements.switchstatement;
 
 public class SwitchDemo {
 
     public static void main(String[] args) {
         
+        // variables
         int  month = 8;
         String monthString;
+        
+        //switch statement
         switch (month) {
             case 1: monthString = "January";
                     break;
@@ -34,8 +44,9 @@ public class SwitchDemo {
             default: monthString = "Invalid month";
                     break;
         }
+        
         System.out.println(monthString);
-
+        
     }
 
 }

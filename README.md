@@ -198,7 +198,7 @@ A **block** is a group of zero or more statements between balanced braces and ca
 
 The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code. The section describes the decision-making statements (if-then, if-then-else, switch), the looping statements (for, while, do-while), and the branching statements (break, continue, return) supported by the Java programming language.
 
-**The if-then Statement**
+[**The if-then Statement**. Click for example] (https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/ifstatement/IfExample.java)
 
 	if (condition) {
 		// statement(s)

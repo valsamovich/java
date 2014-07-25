@@ -1,10 +1,9 @@
 /**
  * Example is demonstrate the syntax and use of the while statement. The while
  * statement continually executes a block of statement(s) while a particular 
- * condition is true. If the expression to true, the while statement executes 
- * the statement(s) in the while block. The while statement continues testing 
- * the expression and executing its block until the expression evaluates to 
- * false. Example is print the values from 1 to 10.
+ * boolean condition is true. The while statement continues testing the 
+ * expression and executing its block until the expression evaluates to false. 
+ * Example is print the values from 1 to 10.
  * 
  * @file WhileExample.java
  * @author - Valery Samovich

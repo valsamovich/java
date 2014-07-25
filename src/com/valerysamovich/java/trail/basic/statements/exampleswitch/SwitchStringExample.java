@@ -4,6 +4,7 @@
  * @version 1.0
  * @date 07/24/2014
  */
+
 package com.valerysamovich.java.trail.basic.statements.exampleswitch;
 
 public class SwitchStringExample {

@@ -1,5 +1,5 @@
 /**
- * Example is demonstrate the syntax and use the while statement. The while
+ * Example is demonstrate the syntax and use of the while statement. The while
  * statement continually executes a block of statements while a particular 
  * condition is true.
  * 

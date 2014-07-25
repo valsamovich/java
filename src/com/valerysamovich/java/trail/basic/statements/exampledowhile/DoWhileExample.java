@@ -1,5 +1,5 @@
 /**
- * Example is demonstrate the do-while example.
+ * Example is demonstrate the do-while control flow statement.
  * 
  * @file WhileExample.java
  * @author - Valery Samovich

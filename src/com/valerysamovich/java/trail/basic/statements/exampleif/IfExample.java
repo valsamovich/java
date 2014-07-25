@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic.statements.ifstatement;
+package com.valerysamovich.java.trail.basic.statements.exampleif;
 
 public class IfExample {
 

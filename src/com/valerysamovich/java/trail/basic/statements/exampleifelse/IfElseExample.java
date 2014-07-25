@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic.statements.ifelsestatement;
+package com.valerysamovich.java.trail.basic.statements.exampleifelse;
 
 public class IfElseExample {
 

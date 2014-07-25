@@ -5,7 +5,7 @@
  * @date 07/23/2014
  */
 
-package com.valerysamovich.java.trail.basic.statements.switchstatement;
+package com.valerysamovich.java.trail.basic.statements.exampleswitch;
 
 public class SwitchDemoFallThrough {
 

@@ -1,4 +1,4 @@
-package com.valerysamovich.java.trail.basic.statements.switchstatement;
+package com.valerysamovich.java.trail.basic.statements.exampleswitch;
 
 public class SwitchDemo2 {
 

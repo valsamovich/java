@@ -5,7 +5,7 @@
  * @date 07/14/2014
  */
 
-package com.valerysamovich.java.trail.basic.statements.simple;
+package com.valerysamovich.java.trail.basic.statements.statement;
 
 
 public class StatementExample {

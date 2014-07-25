@@ -221,6 +221,18 @@ The statements inside your source files are generally executed from top to botto
                      break;
             // ...and so on
         }
+
+**The while and do-while Statements**
+	
+	// while statement
+	while (condition) {
+		// statement(s)
+	}
+	
+	// do-while statement
+	do{
+		// statement(s)
+	} while (expression);
 	
 **The for Statement**
 

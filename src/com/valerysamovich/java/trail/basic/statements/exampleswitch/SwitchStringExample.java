@@ -1,4 +1,6 @@
 /**
+ * The example is demonstrate the use switch control flow statement with string.
+ * 
  * @file SwitchStringExample.java
  * @author - Valery Samovich
  * @version 1.0

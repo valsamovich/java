@@ -1,7 +1,9 @@
 /**
- * Example is demonstrate the do-while control flow statement.
+ * Example is demonstrate the do-while control flow statement. Do-while 
+ * evaluates its expression at the bottom of the loop. Therefore, the statement 
+ * within the do block are always executed at least once.
  * 
- * @file WhileExample.java
+ * @file DoWhileExample.java
  * @author - Valery Samovich
  * @version 1.0
  * @date 07/24/2014
@@ -14,12 +16,7 @@ public class DoWhileExample {
         
         int count = 1;
         
-        /*
-         * Do-while evaluates its expression at the bottom of the loop. 
-         * Therefore, the statement within the do block are always executed at 
-         * least once.
-         */
-        
+        // do-while statement
         do {
             System.out.println("Count is : " + count);
             count++;

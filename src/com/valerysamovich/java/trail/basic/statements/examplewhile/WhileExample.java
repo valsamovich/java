@@ -13,15 +13,18 @@ package com.valerysamovich.java.trail.basic.statements.examplewhile;
 
 public class WhileExample {
     
-    /*
-     * Main method
-     */
     public static void main(String[] args) {
         
-        // vars
+        // variable
         int count = 1;
         
-        // The while statement evaluates expression, which must a boolean true
+        /*
+         * The while statement evaluates expression, which must return a boolean
+         * value. I f the expression to true, the while statement executes the 
+         * statement(s) in the while block. The while statement continues 
+         * testing the expression and executing its block until the expression
+         * evaluates to false. Example is print the values from 1 to 10.
+         */
         while (count < 11) {
             System.out.println("Count is " + count);
         }

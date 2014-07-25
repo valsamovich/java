@@ -27,6 +27,7 @@ public class WhileExample {
          */
         while (count < 11) {
             System.out.println("Count is " + count);
+            count++;
         }
 
     }

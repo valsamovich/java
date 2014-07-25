@@ -15,7 +15,9 @@ public class SwitchDemo {
         int  month = 8;
         String monthString;
         
-        //switch statement
+        /**
+         * Switch statement can have a number of possible execution paths. 
+         */
         switch (month) {
             case 1: monthString = "January";
                     break;

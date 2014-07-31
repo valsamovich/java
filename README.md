@@ -240,18 +240,6 @@ The statements inside your source files are generally executed from top to botto
 	for (initialization; termination; increment) {
     		// statement(s)
 	}
-	
-	// example
-	class ForDemo {
-    		public static void main(String[] args){
-         		for(int i=1; i<11; i++){
-              			System.out.println("Count is: " + i);
-         		}
-    		}
-	}
-
-
-
 
 Objects
 -------
@@ -275,10 +263,10 @@ Annotations
 **Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate.
  
  - **Information for the compiler** — Annotations can be used by the compiler to detect errors or suppress warnings.
- - **Compile-time and deployment-time processing** — Software tools can process annotation information to generate code, XML files, and so forth.
+ - **Compile-time and deployment-time processing** — Software tools can process annotation to generate code or XML files.
  - **Runtime processing** — Some annotations are available to be examined at runtime. 
- 
- 	// The at sign character (@) indicates to the compiler that what follows is an annotation
+
+	// The at sign character (@) indicates to the compiler that what follows is an annotation
  	@Override
 
 Keywords

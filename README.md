@@ -268,6 +268,24 @@ Annotations
 
 	// The at sign character (@) indicates to the compiler that what follows is an annotation
  	@Override
+ 	void myTestClass() {...}
+ 	
+ 	// Annotation with elements
+ 	@Author(
+ 		name = "John Doe",
+ 		date = "3/27/2003"
+ 	)
+ 	class MyClass() {...}
+ 	
+ 	// Multiple annotations
+ 	@Author(name = "Jane Doe")
+ 	@EBook
+ 	class MyClass() {...}
+ 	
+ 	// Repeating annotations - supported of the Java SE * release
+ 	@Author(name = "Jane Doe")
+ 	@Author(name = "John Smith")
+ 	class myClass() {...}
 
 Keywords
 --------

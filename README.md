@@ -262,31 +262,13 @@ Annotations
 
 **Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate.
  
- - **Information for the compiler** — Annotations can be used by the compiler to detect errors or suppress warnings.
- - **Compile-time and deployment-time processing** — Software tools can process annotation to generate code or XML files.
- - **Runtime processing** — Some annotations are available to be examined at runtime. 
-
+- **Information for the compiler** — Annotations can be used by the compiler to detect errors or suppress warnings.
+- **Compile-time and deployment-time processing** — Software tools can process annotation to generate code or XML files.
+- **Runtime processing** — Some annotations are available to be examined at runtime. 
 
 	// The at sign character (@) indicates to the compiler that what follows is an annotation
  	@Override
  	void myTestClass() {...}
- 	
- 	// Annotation with elements
- 	@Author(
- 		name = "John Doe",
- 		date = "3/27/2003"
- 	)
- 	class MyClass() {...}
- 	
- 	// Multiple annotations
- 	@Author(name = "Jane Doe")
- 	@EBook
- 	class MyClass() {...}
- 	
- 	// Repeating annotations - supported of the Java SE * release
- 	@Author(name = "Jane Doe")
- 	@Author(name = "John Smith")
- 	class myClass() {...}
 
 Keywords
 --------

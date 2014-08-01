@@ -260,7 +260,7 @@ Classes
 Annotations
 -----------
 
-**Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate. Annotations can be applied to declarations: declarations of classes, fields, methods, and other program elements. As of the Java SE 8 release, annotations can also be applied to the use of types.
+**Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate. Annotations can be applied to declarations: declarations of classes, fields, methods, and other program elements. As of the [Java SE 8 release](http://docs.oracle.com/javase/8/docs/api/), annotations can also be applied to the use of types.
  
 - **Information for the compiler** — Annotations can be used by the compiler to detect errors or suppress warnings.
 - **Compile-time and deployment-time processing** — Software tools can process annotation to generate code or XML files.

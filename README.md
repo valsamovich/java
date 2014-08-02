@@ -300,6 +300,8 @@ The format of an Annotations
 		// Annotation element definitions
 	)
 
+**Predefined Annotation Types** isdefined in java.lang are @Deprecated, @Override, and @SuppressWarnings.
+
 Keywords
 --------
 - "Static" is one per class, but not one per object 

@@ -293,6 +293,12 @@ The format of an Annotations
     	new @Interned MyObject();
 	// Java 8 - Type cast
     	myString = (@NonNull String) str;
+    	
+**Anntotation Type** definition is an interface defintion where the keyword *interface* is preceded by the sign (@) (@ = AT, as in annotation type). Annotation types are form of *interface*.
+
+	@ @interface ClassType (
+		// Annotation element definitions
+	)
 
 Keywords
 --------

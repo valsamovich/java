@@ -293,14 +293,18 @@ The format of an Annotations
     	new @Interned MyObject();
 	// Java 8 - Type cast
     	myString = (@NonNull String) str;
-    	
+
+###Annotation Types
+
 **Anntotation Type** definition is an interface defintion where the keyword *interface* is preceded by the sign (@) (@ = AT, as in annotation type). Annotation types are form of *interface*.
 
 	@ @interface ClassType (
 		// Annotation element definitions
 	)
 
-**Predefined Annotation Types** isdefined in java.lang are **@Deprecated** (annotation indicates that the marcked element is deprecated and should no longer be used), **@Override** (annotation informs the compiler that the element is meant to overridean elementdeclared in a superclass), and **@SuppressWarnings** (annotation tells the compiler to suppress specific warningsthat it would otherwise generate).
+###Predefined Annotation Types
+
+**@Deprecated** annotation indicates that the marcked element is deprecated and should no longer be used.
 
 	/**
 	 * @deprecated
@@ -309,22 +313,27 @@ The format of an Annotations
 	@Deprecated
 	static void() {...}
 
-	/**
-	 * @override
-	 * mark method as a superclass method that has been overridden
-	 */
+**@Override** annotation informs the compiler that the element is meant to overridean elementdeclared in a superclass.
+
+
+	// mark method as a superclass method that has been overridden
 	@Override
 	int overriddenMethod() {...}
 
-	/**
-	 * @suppresswarnings
-	 * use a deprecated method and tell compiler not to generate a warning
-	 */
+
+**@SuppressWarnings** (annotation tells the compiler to suppress specific warningsthat it would otherwise generate).
+
+	// use a deprecated method and tell compiler not to generate a warning
 	@SuppressWarnings("deprecation")
 	void useDeprecatedMethod() {
 		// deprecation warning - suppressed
 		objectOne.deprecatedMethod();
 	}
+
+	// suppress multiple categories of warnings
+	@SuppressWarnings({"unchecked", "deprecation"})
+
+**@SaveVarargs** annotation, when applied to a method or constructor,asserts that the code does not perform potentially unsafe operations on its varargs parameter.
 
 Keywords
 --------

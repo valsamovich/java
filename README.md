@@ -333,7 +333,36 @@ The format of an Annotations
 	// suppress multiple categories of warnings
 	@SuppressWarnings({"unchecked", "deprecation"})
 
-**@SaveVarargs** annotation, when applied to a method or constructor,asserts that the code does not perform potentially unsafe operations on its varargs parameter.
+**@SaveVarargs** annotation, when applied to a method or constructor, asserts that the code does not perform potentially unsafe operations on its varargs parameter.
+
+**@FunctionalInterface** annotation, introduduced in Java SE 8, indicates that the type declaration is intended to be a functional interface.
+
+###Meta-Annotations
+
+It's annotations that apply to other annotations. Defined in java.lan.annotation. 
+
+**@Retention** annotation specifies how the marked annotation is stored.
+
+- RetentionPolicy.SOURCE – The marked annotation is retained only in the source level and is ignored by the compiler.
+- RetentionPolicy.CLASS – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM).
+- RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment.
+
+**@Documented** annotation indicates that whenever the specified annotation is used those elements should be documented using the Javadoc tool.
+
+**@Target** annotation marks another annotation to restrict what kind of Java elements the annotation can be applied to. A target annotation specifies one of the following element types as its value:
+
+- ElementType.ANNOTATION_TYPE can be applied to an annotation type.
+- ElementType.CONSTRUCTOR can be applied to a constructor.
+- ElementType.FIELD can be applied to a field or property.
+- ElementType.LOCAL_VARIABLE can be applied to a local variable.
+- ElementType.METHOD can be applied to a method-level annotation.
+- ElementType.PACKAGE can be applied to a package declaration.
+- ElementType.PARAMETER can be applied to the parameters of a method.
+- ElementType.TYPE can be applied to any element of a class.
+
+**@Inherited** annotation indicates that the annotation type can be inherited from the super class.
+
+**@Repeatable** annotation, introduced in Java SE 8, indicates that the marked annotation can be applied more than once to the same declaration or type use.
 
 Keywords
 --------

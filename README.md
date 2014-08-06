@@ -38,11 +38,13 @@ The Java programming language use both **"fields"** and **"variables"** as part 
 	int value = 10;
 
 **Class Variables (Static Fields)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
-
+	
+	// var declaration
 	static int value = value++;
  
 **Local Variables** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
-
+	
+	// var declaration
 	int count = 0;
 
 **Parameters** Parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers).

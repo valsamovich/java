@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the java [Object-Oriented Programming Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics), [Classes](https://github.com/valerysamovich/java-tutorial#classes) and [Objects](https://github.com/valerysamovich/java-tutorial#objects), [Annotations](https://github.com/valerysamovich/java-tutorial#annotations), Interfaces and Inheritance, Numbers and Strings, Generics, Packages, JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial. It's include the java [Object-Oriented Programming Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics), [Classes](https://github.com/valerysamovich/java-tutorial#classes) and [Objects](https://github.com/valerysamovich/java-tutorial#objects), [Annotations](https://github.com/valerysamovich/java-tutorial#annotations), [Interfaces](https://github.com/valerysamovich/java-tutorial#interfaces) and [Inheritance](https://github.com/valerysamovich/java-tutorial#inheritance), [Numbers](https://github.com/valerysamovich/java-tutorial#numbers) and [Strings](https://github.com/valerysamovich/java-tutorial#strings), [Generics](https://github.com/valerysamovich/java-tutorial#generics), Packages, JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
 Object-Oriented Programming Concepts
 ------------------------------------
@@ -366,6 +366,21 @@ It's annotations that apply to other annotations. Defined in java.lan.annotation
 **@Inherited** annotation indicates that the annotation type can be inherited from the super class.
 
 **@Repeatable** annotation, introduced in Java SE 8, indicates that the marked annotation can be applied more than once to the same declaration or type use.
+
+Interfaces
+----------
+
+Inheritance
+-----------
+
+Numbers
+-------
+
+Strings
+-------
+
+Generics
+--------
 
 Keywords
 --------

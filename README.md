@@ -382,7 +382,11 @@ Strings
 Generics
 --------
 
+Generics enable types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
 
+- Stronger type checks at compile time
+- Elimination of casts
+- Enabling programmers to implement generic algorithms
 
 Keywords
 --------

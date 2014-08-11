@@ -389,6 +389,9 @@ Generics enable types(classes and interfaces) to be parameters when defining cla
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
 
+Packages
+--------
+
 Keywords
 --------
 - "Static" is one per class, but not one per object 

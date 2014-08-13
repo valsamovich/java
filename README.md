@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial include: [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Basics](https://github.com/valerysamovich/java-tutorial#basics), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced), [Testing](https://github.com/valerysamovich/java-tutorial#testings), [Debugging](https://github.com/valerysamovich/java-tutorial#testings). Its designed to understand the Java Programming wi[h no experience. Tutorial is divided in section (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics)(Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced)(Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
@@ -409,42 +409,7 @@ Generics enable types(classes and interfaces) to be parameters when defining cla
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
 
-Keywords
---------
-- "Static" is one per class, but not one per object 
--"Static" methods can only access other static data & methods
-- Final data is constant. Cannot be changed.
-- Final methods cannot be overridden. Final classes cannot be sub classed.
-- "Final" keyword can be applied to data,methods, and classes.
-- "Super" keyword id used to access superclass data and methods
-- "This" keyword is used to access  class level data
-
-### Java debugging
-
-- Break points -> Step Into, Over and Return
-- Exception and conditional Breakpoints
-- Change the variables value
-
-Exception handler components: 
-
-	try { 
-		// code block to be executed
-	} catch (ExceptionType name) {
-		// code block to be executed - exception
-	}
-
-### Java Collections (List, ArrayList, HashMap, generics)
-
-Non generic list, can add anything:  
-
-	List list = new ArrayList();
-	
-Generic list, can add specific: 
-
-	List<String> gList = new ArrayList<String>();
-
-
-### Java applets
+###Applets
 
 Using the applet tag
 	
@@ -488,3 +453,39 @@ JUnit Test
     		tester.multiply(1000, 5);
   		}
   	}
+
+Debugging
+---------
+
+- Break points -> Step Into, Over and Return
+- Exception and conditional Breakpoints
+- Change the variables value
+
+Exception handler components: 
+
+	try { 
+		// code block to be executed
+	} catch (ExceptionType name) {
+		// code block to be executed - exception
+	}
+
+### Java Collections (List, ArrayList, HashMap, generics)
+
+Non generic list, can add anything:  
+
+	List list = new ArrayList();
+	
+Generic list, can add specific: 
+
+	List<String> gList = new ArrayList<String>();
+
+Appendix
+--------
+
+- "Static" is one per class, but not one per object 
+-"Static" methods can only access other static data & methods
+- Final data is constant. Cannot be changed.
+- Final methods cannot be overridden. Final classes cannot be sub classed.
+- "Final" keyword can be applied to data,methods, and classes.
+- "Super" keyword id used to access superclass data and methods
+- "This" keyword is used to access  class level data

@@ -1,11 +1,15 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the java [Object-Oriented Programming Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics), [Classes](https://github.com/valerysamovich/java-tutorial#classes) and [Objects](https://github.com/valerysamovich/java-tutorial#objects), [Annotations](https://github.com/valerysamovich/java-tutorial#annotations), [Interfaces](https://github.com/valerysamovich/java-tutorial#interfaces) and [Inheritance](https://github.com/valerysamovich/java-tutorial#inheritance), [Numbers](https://github.com/valerysamovich/java-tutorial#numbers) and [Strings](https://github.com/valerysamovich/java-tutorial#strings), [Generics](https://github.com/valerysamovich/java-tutorial#generics), 
-[Packages](https://github.com/valerysamovich/java-tutorial#packages), JUnit Testing. Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in lessons (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial. It's include the java 
+[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), 
+[Java Basics](https://github.com/valerysamovich/java-tutorial#basics),
+[Java OOP](https://github.com/valerysamovich/java-tutorial#OOP),
+[Java Advanced](https://github.com/valerysamovich/java-tutorial#advanced),
+[Testing](https://github.com/valerysamovich/java-tutorial#testings). Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in section (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
-Object-Oriented Programming Concepts
-------------------------------------
+Object-Oriented Programming (OOP) Concepts
+------------------------------------------
 
 ###Object
 
@@ -31,6 +35,7 @@ Basics
 ------
 
 ###Variables
+
 The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
 
 **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
@@ -245,8 +250,7 @@ The statements inside your source files are generally executed from top to botto
     		// statement(s)
 	}
 
-Objects
--------
+###Objects
 
 Object is a copy or instance of a class:
 
@@ -257,12 +261,14 @@ Object is a copy or instance of a class:
 	It is used to set default values.
 	Does not return anything including void.
 
-Classes
--------
+###Classes
+
  - Class is a template for an object. Class has data & methods.
 
-Annotations
------------
+Java Advanced
+-------------
+
+###Annotations
 
 **Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate. Annotations can be applied to declarations: declarations of classes, fields, methods, and other program elements. As of the [Java SE 8 release](http://docs.oracle.com/javase/8/docs/api/), annotations can also be applied to the use of types.
  
@@ -298,15 +304,12 @@ The format of an Annotations
 	// Java 8 - Type cast
     	myString = (@NonNull String) str;
 
-###Annotation Types
 
 **Anntotation Type** definition is an interface defintion where the keyword *interface* is preceded by the sign (@) (@ = AT, as in annotation type). Annotation types are form of *interface*.
 
 	@ @interface ClassType (
 		// Annotation element definitions
 	)
-
-###Predefined Annotation Types
 
 **@Deprecated** annotation indicates that the marcked element is deprecated and should no longer be used.
 
@@ -341,9 +344,9 @@ The format of an Annotations
 
 **@FunctionalInterface** annotation, introduduced in Java SE 8, indicates that the type declaration is intended to be a functional interface.
 
-###Meta-Annotations
 
-It's annotations that apply to other annotations. Defined in java.lan.annotation. 
+
+Meta-Annotations is annotation that apply to other annotations. Defined in java.lan.annotation. 
 
 **@Retention** annotation specifies how the marked annotation is stored.
 
@@ -368,29 +371,13 @@ It's annotations that apply to other annotations. Defined in java.lan.annotation
 
 **@Repeatable** annotation, introduced in Java SE 8, indicates that the marked annotation can be applied more than once to the same declaration or type use.
 
-Interfaces
-----------
-
-Inheritance
------------
-
-Numbers
--------
-
-Strings
--------
-
-Generics
---------
+###Generics
 
 Generics enable types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
 
 - Stronger type checks at compile time
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
-
-Packages
---------
 
 Keywords
 --------

@@ -409,13 +409,29 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
 
+Generic example
+
+	List<String> genericList = new ArrayList<String>();
+
 **Generic Methods** can be called with arguments of different types. Based on the types of the arguments to the generic method, the compiler handles each method call approprietary. Generic Method Rules:
 
-- All generic method declarations have a type parameter section delimited by angle brackets (< and >) that precedes the method's return type.
-- Each type parameter section contains one or more type parameters separated by commas. A type parameter, also known as a type variable, is an identifier that specifies a generic type name.
-- The type parameters can be used to declare the return type and act as placeholders for the types of the arguments passed to the generic method, which are known as actual type arguments.
-- A generic method's body is declared like that of any other method. Note that type parameters can represent only reference types, not primitive types (like int, double and char).
+- Declarations have a type parameter with angle brackets < ... >, which precedes with return type.
+- Geneneric type name or Type parameters (type variable) separated by commas. 
+- The type parameters can be used to declare the return type and act as placeholders.
+- A generic method's body is declared any other method. Parameters can represent only reference types.
 
+Generic Method
+
+	public static <E> void printArray(E[] inputArray) {
+		// statement(s)
+	}
+
+**Bounded Type Parameters** can help to restrict the kinds of types that are allowed to be passed to a type parameter. To declare a bounded type parameter, list the type parameters name, followed by the extends keyword, follow by its upper bound.
+
+	public static <T extends Coparable<T>> T maximum(T x, T y, T z) {
+		// statement(s)
+	}
+	
 ###Applets
 
 Using the applet tag

@@ -1,12 +1,15 @@
 java-tutorial
 =============
 
-Java development tutorial. It's include the java 
-[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics),
-[OOP](https://github.com/valerysamovich/java-tutorial#OOP),
-[Advanced](https://github.com/valerysamovich/java-tutorial#advanced),
-[Testing](https://github.com/valerysamovich/java-tutorial#testings). Each example are designed to easy understand the Java Programming with no experience . Tutorial is divided in section (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
+Java development tutorial include:
+- [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts),
+- [Basics](https://github.com/valerysamovich/java-tutorial#basics),
+- [OOP](https://github.com/valerysamovich/java-tutorial#OOP),
+- [Advanced](https://github.com/valerysamovich/java-tutorial#advanced),
+- [Testing](https://github.com/valerysamovich/java-tutorial#testings), 
+- [Debugging](https://github.com/valerysamovich/java-tutorial#testings). 
+
+Its designed to understand the Java Programming wi[h no experience. Tutorial is divided in section (com.valerysamovich.java package) or days (com.valerysamovich.patric package), which contains examples and exercises.
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------

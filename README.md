@@ -403,11 +403,18 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 ###Generics
 
-Generics enable types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
+**Generics enable** types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
 
 - Stronger type checks at compile time
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
+
+**Generic Methods** can be called with arguments of different types. Based on the types of the arguments to the generic method, the compiler handles each method call approprietary. Generic Method Rules:
+
+- All generic method declarations have a type parameter section delimited by angle brackets (< and >) that precedes the method's return type.
+- Each type parameter section contains one or more type parameters separated by commas. A type parameter, also known as a type variable, is an identifier that specifies a generic type name.
+- The type parameters can be used to declare the return type and act as placeholders for the types of the arguments passed to the generic method, which are known as actual type arguments.
+- A generic method's body is declared like that of any other method. Note that type parameters can represent only reference types, not primitive types (like int, double and char).
 
 ###Applets
 

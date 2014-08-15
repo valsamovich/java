@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics)(Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced)(Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
+Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
@@ -403,12 +403,35 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 ###Generics
 
-Generics enable types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
+**Generics enable** types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
 
 - Stronger type checks at compile time
 - Elimination of casts
 - Enabling programmers to implement generic algorithms
 
+Generic example
+
+	List<String> genericList = new ArrayList<String>();
+
+**Generic Methods** can be called with arguments of different types. Based on the types of the arguments to the generic method, the compiler handles each method call approprietary. Generic Method Rules:
+
+- Declarations have a type parameter with angle brackets < ... >, which precedes with return type.
+- Geneneric type name or Type parameters (type variable) separated by commas. 
+- The type parameters can be used to declare the return type and act as placeholders.
+- A generic method's body is declared any other method. Parameters can represent only reference types.
+
+Generic Method
+
+	public static <E> void printArray(E[] inputArray) {
+		// statement(s)
+	}
+
+**Bounded Type Parameters** can help to restrict the kinds of types that are allowed to be passed to a type parameter. To declare a bounded type parameter, list the type parameters name, followed by the extends keyword, follow by its upper bound.
+
+	public static <T extends Coparable<T>> T maximum(T x, T y, T z) {
+		// statement(s)
+	}
+	
 ###Applets
 
 Using the applet tag

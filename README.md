@@ -432,7 +432,7 @@ Generic Method
 		// statement(s)
 	}
 	
-**Generic Classes** delcarations looks like a non-generic class declarion,exept that the class is followed by a type parameter section.
+**Generic Classes** delcarations looks like a non-generic class declarion,exept that the class is followed by a type parameter section. These classes are known as paramererized and can have one or more parameters separeted by comma.
 
 	public class Box<T> {
 		// statement(s)

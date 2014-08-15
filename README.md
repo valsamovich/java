@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [Java Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
+Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [ Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
@@ -296,8 +296,8 @@ Interface is a class with only empty methods.
 	}
 
 
-Java Advanced
--------------
+Advanced
+--------
 
 ###Annotations
 

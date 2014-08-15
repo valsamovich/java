@@ -432,6 +432,13 @@ Generic Method
 		// statement(s)
 	}
 	
+**Generic Classes** delcarations looks like a non-generic class declarion,exept that the class is followed by a type parameter section.
+
+	public class Box<T> {
+		// statement(s)
+	}
+
+	
 ###Applets
 
 Using the applet tag

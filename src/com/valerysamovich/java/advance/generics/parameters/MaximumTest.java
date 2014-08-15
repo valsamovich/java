@@ -4,6 +4,7 @@
  * @version 1.0.0
  * @date 08/14/2014
  */
+
 package com.valerysamovich.java.advance.generics.parameters;
 
 public class MaximumTest {

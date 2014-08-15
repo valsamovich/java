@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [ Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
+Java development tutorial include the [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), [ Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods), [Java OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced Java ](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails. It's designed to understand the Java Programming language with no experience. Each section contain the examples.
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
@@ -244,6 +244,16 @@ The statements inside your source files are generally executed from top to botto
 	for (initialization; termination; increment) {
     		// statement(s)
 	}
+
+###Methods
+
+**Method** is a collection of statments that are grouped together to perform an operation.
+
+	public static int functionName(int a, int b) {
+ 		// statement(s)
+ 	}
+ 	
+
 
 ###Objects
 

@@ -1,4 +1,4 @@
-package com.valerysamovich.java.advance.generics;
+package com.valerysamovich.java.advance.generics.classes;
 
 import java.util.ArrayList;
 import java.util.List;

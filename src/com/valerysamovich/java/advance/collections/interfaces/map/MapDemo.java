@@ -1,5 +1,5 @@
 /**
- * @file ColectionsDemo.java
+ * @file MapDemo.java
  * @author Valery Samovich
  * @version 1.0.0
  * @date 08/20/2014
@@ -14,7 +14,7 @@ import java.util.Map;
  * Class cCollectionsDemo
  *
  */
-public class CollectionsDemo {
+public class MapDemo {
 
     /**
      * Main method

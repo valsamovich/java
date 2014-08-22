@@ -27,6 +27,7 @@ public class ArrayListDemo {
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add(1, "A2");
+        // Prints the content of the Array List
         System.out.println("Contents of myArrayList: " + myArrayList);
         
         // Remove elements from the ArrayList

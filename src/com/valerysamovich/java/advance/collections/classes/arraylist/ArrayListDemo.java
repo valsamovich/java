@@ -2,7 +2,7 @@
  * @file ArrayListDemo.java
  * @author Valery Samovich
  * @version 1.0.0
- * @date 08/21/2014
+ * @date 08/22/2014
  */
 
 package com.valerysamovich.java.advance.collections.classes.arraylist;

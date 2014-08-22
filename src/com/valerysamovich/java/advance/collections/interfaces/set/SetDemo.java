@@ -33,11 +33,15 @@ public class SetDemo {
             System.out.println(set);
             
             // TreeSet
-            TreeSet sortedSet = new TreeSet<Integer>(set);
+            TreeSet<Integer> sortedSet = new TreeSet<Integer>(set);
+            
+            // Prints the sorted Collection
             System.out.println("The sorted list is: " + sortedSet);
+            // Prints the first element of the collection
             System.out.println("The first element of the set is: " +
                     (Integer)sortedSet.first());
-            
+            // Prints the size of the Collection
+            System.out.println("The size of the list:  " + sortedSet.size());
         } catch (Exception e) {
             // statement(s)
         }

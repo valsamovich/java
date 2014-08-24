@@ -3,7 +3,7 @@ java-tutorial
 
 Java development tutorial include the 
 [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
+[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) (Generics, Annotations, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
@@ -415,7 +415,7 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 ###Generics
 
-**Generics enable** types(classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like *formal parameters* used in method declarations, type parameter provide a vway to re-use the same code with different inputs. Code that uses generics has many benefits:
+Java **Generics** methods and specific classes enable programmers to specify, with a single parameter, a set of related methods or, with a single class declaration, a set of related types, respectively. Code that uses generics has many benefits:
 
 - Stronger type checks at compile time
 - Elimination of casts
@@ -450,7 +450,10 @@ Generic Method
 		// statement(s)
 	}
 
-	
+###Collections
+
+
+
 ###Applets
 
 Using the applet tag

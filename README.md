@@ -221,11 +221,11 @@ The statements inside your source files are generally executed from top to botto
 **The switch Statement** [SwitchExample.java](https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/switchstatement/SwitchDemo.java)
 
 	switch (value) {
-            case 1:  // statement(s)
-                     break;
-            case 2:  // statement(s)
-                     break;
-            // ...and so on
+            	case 1:  // statement(s)
+                	 break;
+            	case 2:  // statement(s)
+                     	break;
+            	// ...and so on
         }
 
 **The while and do-while Statements**

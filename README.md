@@ -460,7 +460,7 @@ A **Collection Framework** is a unified architecture for representing and manipu
 
 **Implementations, i.e., Classes** These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
 
-	// ArrayList
+	// ArrayList Class
 	ArrayList<E> al = new ArrayList<E>();
 	
 	// HashMap Class

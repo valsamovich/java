@@ -456,11 +456,17 @@ A **Collection** (container) is simply an object that groups multiple elements i
 
 A **Collection Framework** is a unified architecture for representing and manipulating collections. All collections frameworks contain:
 
-- **Interfaces** These are abstract data types that represent collections. Interfaces allow collections to be manipulated independently of the details of their representation. In object-oriented languages, interfaces generally form a hierarchy.
+**Interfaces** These are abstract data types that represent collections. Interfaces allow collections to be manipulated independently of the details of their representation. In object-oriented languages, interfaces generally form a hierarchy.
 
-- **Implementations, i.e., Classes** These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
+**Implementations, i.e., Classes** These are the concrete implementations of the collection interfaces. In essence, they are reusable data structures.
 
-- **Algorithms** These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface.
+	// ArrayList
+	ArrayList<E> al = new ArrayList<E>();
+	
+	// HashMap Class
+	HashMap hm = new HashMap();
+
+**Algorithms** These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface.
 
 
 ###Applets

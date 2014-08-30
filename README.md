@@ -351,7 +351,7 @@ The format of an Annotations
 **Anntotation Type** definition is an interface defintion where the keyword *interface* is preceded by the sign (@) (@ = AT, as in annotation type). Annotation types are form of *interface*.
 
 	@ @interface ClassType (
-		// Annotation element definitions
+		// Annotation element definitions.
 	)
 
 **@Deprecated** annotation indicates that the marcked element is deprecated and should no longer be used.

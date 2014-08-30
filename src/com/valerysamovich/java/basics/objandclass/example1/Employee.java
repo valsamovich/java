@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.classandobject;
+package com.valerysamovich.java.basics.objandclass.example1;
 
 public class Employee {
 	

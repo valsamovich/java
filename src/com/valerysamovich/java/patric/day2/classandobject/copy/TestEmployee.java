@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.classandobject;
+package com.valerysamovich.java.patric.day2.classandobject.copy;
 
 public class TestEmployee {
 

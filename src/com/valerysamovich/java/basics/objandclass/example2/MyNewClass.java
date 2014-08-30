@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.classandobject2;
+package com.valerysamovich.java.basics.objandclass.example2;
 
 // New class - MyNewClass
 public class MyNewClass {

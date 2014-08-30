@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.oop.overloading;
+package com.valerysamovich.java.oop.overloading;
 
 public class TestBox {
 

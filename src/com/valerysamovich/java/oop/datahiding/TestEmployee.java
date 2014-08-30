@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.oop.datahiding;
+package com.valerysamovich.java.oop.datahiding;
 
 public class TestEmployee {
 

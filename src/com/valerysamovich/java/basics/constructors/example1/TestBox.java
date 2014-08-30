@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day2.constructors;
+package com.valerysamovich.java.basics.constructors.example1;
 
 public class TestBox {
 	

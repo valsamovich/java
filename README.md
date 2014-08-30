@@ -36,8 +36,8 @@ Basics
 The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
 
 **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
-        
-        // var declaration
+
+	// var declaration
 	int value = 10;
 
 **Class Variables (Static Fields)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.

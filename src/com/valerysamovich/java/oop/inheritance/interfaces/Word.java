@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.interfaces;
+package com.valerysamovich.java.oop.inheritance.interfaces;
 
 public class Word implements Office{
 	

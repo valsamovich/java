@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.overloading;
+package com.valerysamovich.java.oop.polymorphism.overloading;
 
 public class TestBox {
 

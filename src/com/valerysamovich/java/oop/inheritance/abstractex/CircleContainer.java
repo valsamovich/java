@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.abstractex;
+package com.valerysamovich.java.oop.inheritance.abstractex;
 
 public class CircleContainer extends Container {
 

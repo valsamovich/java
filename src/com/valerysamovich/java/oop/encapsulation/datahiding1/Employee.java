@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.datahiding;
+package com.valerysamovich.java.oop.encapsulation.datahiding1;
 
 public class Employee {
 

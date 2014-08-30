@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day1.exercises;
+package com.valerysamovich.java.basics.exercises;
 
 public class ExerciseB {
 

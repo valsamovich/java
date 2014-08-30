@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day1.examples;
+package com.valerysamovich.java.basics.operators.andor;
 
 public class ExampleAndOr {
 

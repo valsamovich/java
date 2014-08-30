@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day5.finalkeyword;
+package com.valerysamovich.java.advance.finalkeyword;
 
 public class ExampleFinal {
 	

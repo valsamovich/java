@@ -1,4 +1,4 @@
-package com.valerysamovich.java.patric.day5.varargs;
+package com.valerysamovich.java.advance.varargs;
 
 public class ExampleVarArgs {
 	

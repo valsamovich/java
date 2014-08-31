@@ -8,6 +8,12 @@ Java development tutorial include the
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
 
+Object Oriented Programming Language      | C | Java/C++              
+------------------------------------------|---|----------
+Encapsualtion: Data Hiding                | x | x
+Polymorphism: Overloading, Overriding     | x | x
+Inheritance: Abstract classes, Interfaces |   | x
+
 ###Object
 
 Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in **fields** (variables in some programming languages) and exposes its behavior through **methods** (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.

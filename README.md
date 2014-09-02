@@ -64,7 +64,8 @@ The Java programming language use both **"fields"** and **"variables"** as part 
 ###Primitive Data Types
 
 The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
-
+	
+	// var declaration
 	int gear = 1;
 
 Data Type | Default Value | Bit                            | Min and Max Value              

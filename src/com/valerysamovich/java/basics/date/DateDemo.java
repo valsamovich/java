@@ -7,6 +7,7 @@
 
 package com.valerysamovich.java.basics.date;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateDemo {
@@ -17,11 +18,18 @@ public class DateDemo {
      */
     public static void main(String[] args) {
         // Instantiate the Date Object
-        Date date = new Date();
+        Date date1 = new Date();
+        Date date2 = new Date();
+        
+        // Create simple format
+        SimpleDateFormat simple = 
+                new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
         
         // Display Date and Time using toString();
-        System.out.println(date.toString());
-
+        System.out.println(date1.toString());
+        
+        // Display Date and Time using simple format
+        System.out.println("Current date: " + simple.format(date2));
     }
 
 }

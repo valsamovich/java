@@ -3,10 +3,16 @@ java-tutorial
 
 Java development tutorial include the 
 [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
+[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
 
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
+
+Object Oriented Programming Language      | C | Java/C++              
+------------------------------------------|---|----------
+Encapsualtion: Data Hiding                | x | x
+Polymorphism: Overloading, Overriding     | x | x
+Inheritance: Abstract classes, Interfaces |   | x
 
 ###Object
 
@@ -58,7 +64,8 @@ The Java programming language use both **"fields"** and **"variables"** as part 
 ###Primitive Data Types
 
 The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
-
+	
+	// var declaration
 	int gear = 1;
 
 Data Type | Default Value | Bit                            | Min and Max Value              

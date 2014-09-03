@@ -12,7 +12,7 @@ import java.util.Date;
 public class DateDemo {
     
     /**
-     * Main Method
+     * Main Method. Getting current Date and Time. Display the input as String.
      * @param args
      */
     public static void main(String[] args) {

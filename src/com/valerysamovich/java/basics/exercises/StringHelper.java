@@ -1,11 +1,18 @@
+/**
+ * @file StringHelper.java
+ * @author Valery Samovich
+ * @version 1.0.0
+ * @date 08/27/2014
+ */
+
 package com.valerysamovich.java.basics.exercises;
 
 public class StringHelper {
     
     /**
      * Remove all characters 'A' in first 2 positions of the given string.
-     * @param str
-     * @return
+     * @param str   Given String value
+     * @return      Return String value
      */
     public String truncateAInFirstTwoPositions(String str) {
         

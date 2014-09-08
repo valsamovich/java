@@ -11,6 +11,7 @@ public class StringHelper {
     
     /**
      * Remove all characters 'A' in first 2 positions of the given string.
+     * Example: "AACD" => "CD", "ABCD" => "BCD", "BBCA" => "BBCA"
      * @param str   Given String value
      * @return      Return String value
      */

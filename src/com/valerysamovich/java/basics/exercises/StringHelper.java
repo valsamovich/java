@@ -2,6 +2,11 @@ package com.valerysamovich.java.basics.exercises;
 
 public class StringHelper {
     
+    /**
+     * Remove all characters 'A' in first 2 positions of the given string.
+     * @param str
+     * @return
+     */
     public String truncateAInFirstTwoPositions(String str) {
         
         // If string equal 0

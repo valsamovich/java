@@ -479,7 +479,11 @@ A **Collection Framework** is a unified architecture for representing and manipu
 
 Java provides a mechanism, called **object serialization** where an object can be represented as a sequence of bytes that includes the object's data as well as information about the object's type and the types of data stored in the object. Classes **ObjectInputStream** and **ObjectOutputStream** are high-level streams that contain the methods for serializing and deserializing an object.
 
+	// ObjectOutputStream class contains many write methods for writing various data types
+	public final void writeObject(Object x) throws IOException
 	
+	// ObjectInputStream class contains the following method for deserializing an object
+	public final Object readObject() throws IOException, ClassNotFoundException
 
 ###Applets
 

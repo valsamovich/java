@@ -2,7 +2,7 @@ java-tutorial
 =============
 
 Java development tutorial include the 
-[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts)(Object,Class), 
+[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts) (Object, Class, Inheritance), 
 [Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
 
 Object-Oriented Programming (OOP) Concepts

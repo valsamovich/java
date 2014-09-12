@@ -8,7 +8,7 @@ Java development tutorial include the
 Object-Oriented Programming (OOP) Concepts
 ------------------------------------------
 
-Object-Oriented Programming Language      | C | Java/C++              
+Object-Oriented Programming Language(s)   | C | Java/C++              
 ------------------------------------------|---|----------
 Encapsualtion: Data Hiding                | x | x
 Polymorphism: Overloading, Overriding     | x | x

@@ -7,7 +7,7 @@
 
 package com.valerysamovich.java.advance.multithreading;
 
-public class RunnableDemo implements Runnable{
+public class RunnableDemo implements Runnable, java.lang.Runnable{
 	
 	// Declare variables
 	private Thread t;
@@ -19,13 +19,16 @@ public class RunnableDemo implements Runnable{
 		System.out.println("Creating" + threadName);
 	}
 	
+	/**
+	 * Run the thread
+	 */
 	public void run() {
 		System.out.println("Running" + threadName);
 		try {
 			for (int i = 4; i > 0; i--) {
 				System.out.println("Thread: " + threadName + ", " + i);
 				// Let the thread sleep for a while
-				Thread.sleep(1000);
+				Thread.sleep(5000);
 			}
 		} catch (InterruptedException e) {
 			System.out.println("Thread " + threadName + " interrupted");
@@ -33,7 +36,16 @@ public class RunnableDemo implements Runnable{
 		System.out.println("Thread " + threadName + " exiting.");
 	}
 	
+	/**
+	 * Start the thread
+	 */
 	public void start() {
+		
+		System.out.println("Starting " + threadName);
+		if(null == t) {
+			t = new Thread(this, threadName);
+			t.start();
+		}
 		
 	}
 }

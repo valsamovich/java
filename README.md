@@ -492,6 +492,10 @@ Using the applet tag
 	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
 	<object>Name of the object-applet</object>
 
+###Multithreding
+
+//TO-DO
+
 Testing
 -------
 

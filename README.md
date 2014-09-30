@@ -3,7 +3,7 @@ java-tutorial
 
 Java development tutorial include the 
 [OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts) (Object, Class, Inheritance, Interface, Package), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings) (JUNit, JBehave), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
+[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings) (JUNit, JBehave), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages).
 
 Object-Oriented Programming (OOP) Concept(s)
 ------------------------------------------
@@ -569,3 +569,8 @@ Appendix
 - "Final" keyword can be applied to data,methods, and classes.
 - "Super" keyword id used to access superclass data and methods
 - "This" keyword is used to access  class level data
+
+Verify the Java version
+
+	// mac
+	java -version

@@ -570,7 +570,4 @@ Appendix
 - "Super" keyword id used to access superclass data and methods
 - "This" keyword is used to access  class level data
 
-Verify the Java version
-
-	// mac
-	java -version
+To verify the Java version on machine: **java -version**

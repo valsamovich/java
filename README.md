@@ -572,18 +572,7 @@ Appendix
 
 To verify the Java version on machine: **java -version**
 
-Java is:
---------
+Description:
+------------
 
-Object Oriented
-Platform independent:
-Simple
-Secure
-Architectural- neutral
-Portable
-Robust
-Multi-threaded
-Interpreted
-High Performance
-Distributed
-Dynamic
+Java is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.

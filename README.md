@@ -575,4 +575,4 @@ To verify the Java version on machine: **java -version**
 Description:
 ------------
 
-Java is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
+**Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.

@@ -55,7 +55,7 @@ Modifiers
 ---------
 Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
 
-- Access Modifiers: `default, public , protected, private`
+Access Modifiers: `default, public , protected, private`
 
 Modifier      |	Class 	  | Package   | Subclass  | Project   
 --------------|-----------|-----------|-----------|------------
@@ -64,7 +64,7 @@ protected     |	Y     	  | Y	      | Y         | N
 default       |	Y     	  | Y	      | N         | N
 private	      |	N     	  | N	      | N         | N
 
-- Non-access Modifiers: `final, abstract, strictfp`
+Non-access Modifiers: `final, abstract, strictfp`
 
 Variables
 ---------
@@ -328,69 +328,65 @@ A **block** is a group of zero or more statements between balanced braces and ca
 Control Flow Statements
 -----------------------
 
-The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code. The section describes the decision-making statements (if-then, if-then-else, switch), the looping statements (for, while, do-while), and the branching statements (break, continue, return) supported by the Java programming language.
+The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
 
-**The if-then Statement**
+**The if-then Statement** An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
 
-	/*
-	 * An if statement can be followed by an optional else statement, 
-	 * which executes when the Boolean expression is false.
-	 */
+	// if-else statement
 	if (condition) {
 		// statement(s)
 	}
 
-**The if-then-else Statement**
+**The if-then-else Statement** An if statement can be followed by an optional else if...else statement, which is very usefull to test various conditions using single if...else if statement.
 	
-	/*
-	 * An if statement can be followed by an optional else if...else statement, 
-	 * which is very usefull to test various conditions using single if...else if statement.
-	 */
+	// if-then-else statement
 	if (condition) {
 		// statement(s)
 	} else {
 		// statement(s)
 	}
 
-**Nested if-else Statement**
+**Nested if-else Statement** It is always legal to nest if-else statements. When using if , else if , else statements there are few points to keep in mind.
+- An if can have zero or one else's and it must come after any else if's.
+- An if can have zero to many else if's and they must come before the else.
+- Once an else if succeeds, none of he remaining else if's or else's will be tested.
 
-	//TODO
+	if(Boolean_expression 1){
+		// executes when the Boolean expression 1 is true
+		if(Boolean_expression 2){
+			// executes when the Boolean expression 2 is true
+		}
+	}
 
-**The switch Statement**
-
+**The switch Statement** A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.
+	
+	// switch statement
 	switch (value) {
             	case 1:  // statement(s)
 			break;
             	case 2:  // statement(s)
                      	break;
             	// ...and so on
+            	default: // optional statement
         }
 
-**The while and do-while Statements**
-	
-	/*
-	 * A while loop is a control structure that allows you to repeat a task 
-	 * a certain number of times.
-	 */
+**The while Statement** A while loop is a control structure that allows you to repeat a task a certain number of times.
+
+	// while statement
 	while (condition) {
 		// statement(s)
 	}
-	
-	/*
-	 * A do...while loop is similar to a while loop, except that a do...while 
-	 * loop is guaranteed to execute at least one time.
-	 * /
+
+**The do-while Statement** A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+
+	// do-while statement
 	do{
 		// statement(s)
 	} while (expression);
 	
-**The for Statement**
-
-	/*
-	 * A for loop is a repetition control structure that allows you to efficiently 
-	 * write a loop that needs to execute a specific number of times.
-	 * A for loop is useful when you know how many times a task is to be repeated.
-	 */
+**The for Statement** A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. A for loop is useful when you know how many times a task is to be repeated.
+	
+	// for loop (infinite loop)
 	for (initialization; termination; increment) {
 		// statement(s)
 	}

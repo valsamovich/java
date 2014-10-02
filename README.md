@@ -332,18 +332,30 @@ The statements inside your source files are generally executed from top to botto
 
 **The if-then Statement**
 
+	/*
+	 * An if statement can be followed by an optional else statement, 
+	 * which executes when the Boolean expression is false.
+	 */
 	if (condition) {
 		// statement(s)
 	}
 
 **The if-then-else Statement**
-
+	
+	/*
+	 * An if statement can be followed by an optional else if...else statement, 
+	 * which is very usefull to test various conditions using single if...else if statement.
+	 */
 	if (condition) {
 		// statement(s)
 	} else {
 		// statement(s)
 	}
-	
+
+**Nested if-else Statement**
+
+	//TODO
+
 **The switch Statement**
 
 	switch (value) {
@@ -356,19 +368,29 @@ The statements inside your source files are generally executed from top to botto
 
 **The while and do-while Statements**
 	
-	// A while loop is a control structure that allows you to repeat a task a certain number of times.
+	/*
+	 * A while loop is a control structure that allows you to repeat a task 
+	 * a certain number of times.
+	 */
 	while (condition) {
 		// statement(s)
 	}
 	
-	// A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+	/*
+	 * A do...while loop is similar to a while loop, except that a do...while 
+	 * loop is guaranteed to execute at least one time.
+	 * /
 	do{
 		// statement(s)
 	} while (expression);
 	
 **The for Statement**
 
-	// infinite loop
+	/*
+	 * A for loop is a repetition control structure that allows you to efficiently 
+	 * write a loop that needs to execute a specific number of times.
+	 * A for loop is useful when you know how many times a task is to be repeated.
+	 */
 	for (initialization; termination; increment) {
 		// statement(s)
 	}

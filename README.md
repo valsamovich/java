@@ -78,27 +78,28 @@ Variables
 
 The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
 
-**Local Variables (Non static variables)** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
+**Local variables ** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
 	
 	// var declaration
 	int count = 0;
+
+**Class variables (static Variables)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
+	
+	// var declaration
+	static int value = value++;
 
 **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
 
 	// var declaration
 	int value = 10;
 
-**Class Variables (Static Variables)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
-	
-	// var declaration
-	static int value = value++;
-
 **Parameters** Parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers).
 
 	// args variable is the parameter to main method
 	public static void main(String[] args) {} 
 
-###Primitive Data Types
+Primitive Data Types
+--------------------
 
 The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
 	
@@ -118,9 +119,10 @@ String    | null          |                                |
 boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
 
-###Arrays
+Arrays
+------
 
-An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
+An **Array** is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
 	
 	class ArrayDemo {
 		publis stativ void main (String[] args) {
@@ -143,9 +145,30 @@ An array is a container object that holds a fixed number of values of a single t
 
 	// system class has an arraycopy() method
 	// can use to efficiently copy data from one array into another
-	public static void arraycopy(Object src, int srcPos,
-        	Object dest, int destPos, int length)
-        	
+	public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
+
+Enums
+-----
+
+**Enums** restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums. With the use of enums it is possible to reduce the number of bugs in your code. For example if we consider an application for a fresh juice shop it would be possible to restrict the glass size to small, medium and Large. This would make sure that it would not allow anyone to order any size other than the small, medium or large.
+
+	class FreshJuice{
+
+   		enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   		FreshJuiceSize size;
+	}
+
+	public class FreshJuiceTest{
+
+		public static void main(String args[]){
+			FreshJuice juice = new FreshJuice();
+			juice.size = FreshJuice. FreshJuiceSize.MEDIUM ;
+			System.out.println("Size :" + juice.size);
+		}
+	}
+
+**Note:** enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
 ###Operators
 
 Operators are special symbols that perform operations on one, two, or three operands, and then return a result.

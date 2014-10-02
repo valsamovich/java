@@ -34,8 +34,45 @@ An interface is a contract between a class and the outside world. When a class i
 
 A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
 
-Basics
-------
+What is Java
+------------
+
+**Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
+
+Java Basic Syntax
+-----------------
+
+**Object** - Objects have states or **fields** and behaviors or **methods**. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
+
+**Class** - A class can be defined as a template/ blue print that describe the behaviors/states that object of its type support.
+
+**Methods** - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.
+
+**Instant Variables** - Each object has its unique set of instant variables. An object's state is created by the values assigned to these instant variables.
+
+Simple Java Program
+-------------------
+
+Simple code that would print the words Hello World:
+
+	public class MyJavaProgram{
+	
+		/* 
+		 * This is a java program.  
+		 * This will print 'Hello World' as the output
+		 */
+		
+		public static void main(String []args){
+			// prints Hello World
+			System.out.println("Hello World"); 
+		}
+	}
+
+- **Case Sensitivity** - Java is case sensitive which means identifier Hello and hello would have different meaning in Java.
+- **Class Names** - For all class names the first letter should be in Upper Case. If several words are used to form a name of the class each inner words first letter should be in Upper Case. Example: `class MyJavaClass`
+- **Method Names** - All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case. Example `public void myMethodName()` or `main`
+- **Program File Name** - Name of the program file should exactly match the class name. Example: Assume `'MyFirstJavaProgram'` is the class name. Then the file should be saved as `'MyFirstJavaProgram.java'`
+- `public static void main(String args[])` - java program processing starts from the `main()` method which is a mandatory part of every java program.
 
 ###Variables
 

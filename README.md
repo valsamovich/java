@@ -63,8 +63,8 @@ All Java components require names. Names used for classes, variables and methods
 Modifiers
 ---------
 Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
+
 - Access Modifiers: `default, public , protected, private`
-- Non-access Modifiers: `final, abstract, strictfp`
 
 Modifier      |	Class 	  | Package   | Subclass  | Project   
 --------------|-----------|-----------|-----------|------------
@@ -72,6 +72,8 @@ public	      | Y     	  | Y	      | Y         | Y
 protected     |	Y     	  | Y	      | Y         | N
 default       |	Y     	  | Y	      | N         | N
 private	      |	N     	  | N	      | N         | N
+
+- Non-access Modifiers: `final, abstract, strictfp`
 
 Variables
 ---------
@@ -98,10 +100,10 @@ The Java programming language use both **"fields"** and **"variables"** as part 
 	// args variable is the parameter to main method
 	public static void main(String[] args) {} 
 
-Primitive Data Types
---------------------
+Data Types
+----------
 
-The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
+**Primitive Data Types** - The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
 	
 	// var declaration
 	int gear = 1;
@@ -118,6 +120,42 @@ char      | '\u0000'      | 16-bit Unicode character       | '\u0000' (or 0) and
 String    | null          |                                |
 boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
+
+- **Reference Data Types** - Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy etc.
+- Class objects, and various type of array variables come under reference data type.
+- Default value of any reference variable is null.
+- A reference variable can be used to refer to any object of the declared type or any compatible type.
+- Example : `Animal animal = new Animal("giraffe");`
+
+Literals
+--------
+
+A **Literal** is a source code representation of a fixed value. They are represented directly in the code without any computation. Literals can be assigned to any primitive type variable. For example:
+
+	byte a = 68;
+	char a = 'A';
+
+String literals in Java are specified like they are in most other languages by enclosing a sequence of characters between a pair of double quotes. Examples of string literals are:
+
+	"Hello World"
+	"two\nlines"
+	"\"This is in quotes\""
+
+Java language supports few special escape sequences for String and char literals as well. They are:
+
+Notation | Character represented
+---------|------------------------
+\n	 | Newline (0x0a)
+\r	 | Carriage return (0x0d)
+\f	 | Formfeed (0x0c)
+\b	 | Backspace (0x08)
+\s	 | Space (0x20)
+\t	 | tab
+\"	 | Double quote
+\'	 | Single quote
+\\	 | backslash
+\ddd	 | Octal character (ddd)
+\uxxxx	 | Hexadecimal UNICODE character (xxxx)
 
 Arrays
 ------
@@ -141,7 +179,7 @@ An **Array** is a container object that holds a fixed number of values of a sing
 		}
 	}
 
-**Copying Arrays**
+Copying **Arrays**
 
 	// system class has an arraycopy() method
 	// can use to efficiently copy data from one array into another
@@ -168,6 +206,34 @@ Enums
 	}
 
 **Note:** enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
+Keywords
+--------
+
+---------|--------------|---------------|------------
+abstract | assert	| boolean 	|break
+byte	 | case		| catch		| char
+class	 | const	| continue	| default
+do	 | double	| else		| enum
+extends	 | final	| finally	| float
+for	 | goto		| if		| implements
+import	 | instanceof	| int		| interface
+long	 | native	| new		| package
+private	 | protected	| public	| return
+short	 | static	| strictfp	| super
+switch	 | synchronized | this		| throw
+throws	 | transient	| try		| void
+volatile | while	|		|
+
+Comments
+--------
+
+Java language supports three kinds of **comments**:
+
+- `/* text */` The compiler ignores everything from `/* to */`.
+- `/** documentation */` This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use `/* and */`. The JDK javadoc tool uses doc comments when preparing automatically generated documentation. For more information on javadoc, see the Java tool documentation.
+- `// text` The compiler ignores everything from `//` to the end of the line.
+
 
 ###Operators
 

@@ -346,10 +346,7 @@ The statements inside your source files are generally executed from top to botto
 		// statement(s)
 	}
 
-**Nested if-else Statement** It is always legal to nest if-else statements. When using if , else if , else statements there are few points to keep in mind.
-- An if can have zero or one else's and it must come after any else if's.
-- An if can have zero to many else if's and they must come before the else.
-- Once an else if succeeds, none of he remaining else if's or else's will be tested.
+**Nested if-else Statement** It is always legal to nest if-else statements. When using if, else if, else statements there are few points to keep in mind: An if can have zero or one else's and it must come after any else if's.An if can have zero to many else if's and they must come before the else. Once an else if succeeds, none of he remaining else if's or else's will be tested.
 
 	if(Boolean_expression 1){
 		// executes when the Boolean expression 1 is true
@@ -385,7 +382,7 @@ The statements inside your source files are generally executed from top to botto
 	} while (expression);
 	
 **The for Statement** A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. A for loop is useful when you know how many times a task is to be repeated.
-	
+
 	// for loop (infinite loop)
 	for (initialization; termination; increment) {
 		// statement(s)
@@ -405,27 +402,73 @@ Methods
 -------
 
 **Method** is a collection of statments that are grouped together to perform an operation.
-
+	
 	public static int functionName(int a, int b) {
- 		// statement(s)
+		// statement(s)
  	}
  	
+ 	// structure of th method
+	modifier returnValueType methodName(list of parameters) {
+		// method body;
+	}
 
+- **Modifiers** The modifier, which is optional, tells the compiler how to call the method. This defines the access type of the method.
 
-###Objects
+- **Return Type** A method may return a value. The returnValueType is the data type of the value the method returns. Some methods perform the desired operations without returning a value. In this case, the returnValueType is the keyword void.
 
-Object is a copy or instance of a class:
+- **Method Name** This is the actual name of the method. The method name and the parameter list together constitute the method signature.
 
+- **Parameters** A parameter is like a placeholder. When a method is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.
+
+- **Method Body** The method body contains a collection of statements that define what the method does.
+ 	
+Objects & Classes
+-----------------
+
+**Object** - Object is a copy or instance of a class. Objects have states and behaviors. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
+	
+	// sample object statement
 	Object object  = new Object();
+
+**Class** - A class can be defined as a template/ blue print that describe the behaviors/states that object of its type support. Class is a template for an object. Class has data & methods.
+	
+	// sample class
+	public class Dog{
+		String breed;
+		int age;
+		String color;
+
+		void barking(){
+		}
+   
+		void hungry(){
+		}
+   
+		void sleeping(){
+		}
+	}
+
+A **class** can contain any of the following variable types.
+
+- **Local variables** Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
+
+- **Instance variables** Instance variables are variables within a class but outside any method. These variables are instantiated when the class is loaded. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
+
+- **Class variables** Class variables are variables declared with in a class, outside any method, with the static keyword.
+
+
+
+
+
+
+//////////////////////////////////TODO
 
 	Constructor is a method that has the same name as the class.
 	It is executed when an object is created.
 	It is used to set default values.
 	Does not return anything including void.
 
-###Classes
-
- - Class is a template for an object. Class has data & methods.
+ - 
 
 
 OOP
@@ -437,14 +480,7 @@ Encapsulation is a data & methods that act on the data.
 
             Getter and Setter - Accessor and Mutator
 
-Data hiding is help to protect the data and used "access modifiers".
 	
-	Modifier      |	Class 	  | Package   | Subclass  | Project   
-	--------------|-----------|-----------|-----------|------------
-	public	      | Y     	  | Y	      | Y         | Y
-	protected     |	Y     	  | Y	      | Y         | N
-	default       |	Y     	  | Y	      | N         | N
-	private	      |	N     	  | N	      | N         | N
 
 ###Java OOP - Polymorphism (Overloading, Overriding)
 

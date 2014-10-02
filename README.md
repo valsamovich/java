@@ -3,15 +3,6 @@ java-tutorial
 
 **Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
-Object-Oriented Programming (OOP) Concept(s)
---------------------------------------------
-
-Object-Oriented Programming Language(s)   | C | Java/C++              
-------------------------------------------|---|----------
-Encapsualtion: Data Hiding                | x | x
-Polymorphism: Overloading, Overriding     | x | x
-Inheritance: Abstract classes, Interfaces |   | x
-
 Syntax
 ------
 
@@ -121,7 +112,7 @@ String    | null          |                                |
 boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
 
-- **Reference Data Types** - Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy etc.
+**Reference Data Types** - Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy etc.
 - Class objects, and various type of array variables come under reference data type.
 - Default value of any reference variable is null.
 - A reference variable can be used to refer to any object of the declared type or any compatible type.
@@ -210,6 +201,7 @@ Enums
 Keywords
 --------
 
+Keywords |		| 		|
 ---------|--------------|---------------|------------
 abstract | assert	| boolean 	|break
 byte	 | case		| catch		| char
@@ -235,11 +227,12 @@ Java language supports three kinds of **comments**:
 - `// text` The compiler ignores everything from `//` to the end of the line.
 
 
-###Operators
+Operators
+---------
 
-Operators are special symbols that perform operations on one, two, or three operands, and then return a result.
+**Operators** are special symbols that perform operations on one, two, or three operands, and then return a result.
 
-Operators by Presedence | Precedence	   
+Operators by Presedence	| Precedence	   
 ------------------------|----------------------------------------
 postfix	                | expr++ expr--   	  
 unary                   | ++expr --expr +expr -expr ~ !    	  
@@ -318,10 +311,8 @@ Operator | Description
 
 An **expresions** is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.
 
-
 	// arithmetic expression
 	int result = 1 + 2; 
-
 
 A **statement** is a forms a complete unit of execution. The following types of expressions can be made into a statement by terminating the expression with a semicolon (;).
 
@@ -333,17 +324,18 @@ A **block** is a group of zero or more statements between balanced braces and ca
 	// if block
 	if(condition) {...}
 
-###Control Flow Statements
+Control Flow Statements
+-----------------------
 
 The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code. The section describes the decision-making statements (if-then, if-then-else, switch), the looping statements (for, while, do-while), and the branching statements (break, continue, return) supported by the Java programming language.
 
-**The if-then Statement**. [IfExample.java](https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/ifstatement/IfExample.java)
+**The if-then Statement**
 
 	if (condition) {
 		// statement(s)
 	}
 
-**The if-then-else Statement** [IfElseExample.java](https://github.com/valerysamovich/java-tutorial/tree/master/src/com/valerysamovich/java/trail/basic/statements/ifelsestatement)
+**The if-then-else Statement**
 
 	if (condition) {
 		// statement(s)
@@ -351,11 +343,11 @@ The statements inside your source files are generally executed from top to botto
 		// statement(s)
 	}
 	
-**The switch Statement** [SwitchExample.java](https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/switchstatement/SwitchDemo.java)
+**The switch Statement**
 
 	switch (value) {
             	case 1:  // statement(s)
-                	 break;
+			break;
             	case 2:  // statement(s)
                      	break;
             	// ...and so on
@@ -377,10 +369,21 @@ The statements inside your source files are generally executed from top to botto
 
 	// infinite loop
 	for (initialization; termination; increment) {
-    		// statement(s)
+		// statement(s)
 	}
 
-###Methods
+Keywords
+--------
+
+**Break** The `break` keyword is used to stop the entire loop. The break keyword must be used inside any loop or a switch statement. The break keyword will stop the execution of the innermost loop and start executing the next line of code after the block.
+
+**Continue** The `continue` keyword can be used in any of the loop control structures. It causes the loop to immediately jump to the next iteration of the loop. In a for loop, the continue keyword causes flow of control to immediately jump to the update statement. In a while loop or do/while loop, flow of control immediately jumps to the Boolean expression.
+	
+	// The syntax of a continue is a single statement inside any loop
+	continue;
+
+Methods
+-------
 
 **Method** is a collection of statments that are grouped together to perform an operation.
 
@@ -697,6 +700,15 @@ Appendix
 - "This" keyword is used to access  class level data
 
 To verify the Java version on machine: **java -version**
+
+Object-Oriented Programming (OOP) Concept(s)
+--------------------------------------------
+
+Object-Oriented Programming Language(s)   | C | Java/C++              
+------------------------------------------|---|----------
+Encapsualtion: Data Hiding                | x | x
+Polymorphism: Overloading, Overriding     | x | x
+Inheritance: Abstract classes, Interfaces |   | x
 
 Description
 -----------

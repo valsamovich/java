@@ -1,12 +1,10 @@
 java-tutorial
 =============
 
-Java development tutorial include the 
-[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts) (Object, Class, Inheritance, Interface, Package), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings) (JUNit, JBehave), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages).
+**Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
 Object-Oriented Programming (OOP) Concept(s)
-------------------------------------------
+--------------------------------------------
 
 Object-Oriented Programming Language(s)   | C | Java/C++              
 ------------------------------------------|---|----------
@@ -14,33 +12,8 @@ Encapsualtion: Data Hiding                | x | x
 Polymorphism: Overloading, Overriding     | x | x
 Inheritance: Abstract classes, Interfaces |   | x
 
-###Object
-
-Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in **fields** (variables in some programming languages) and exposes its behavior through **methods** (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
-
-###Class
-
-A class is a blueprint or prototype from which objects are created. In object-oriented terms, Any Sub-Object is an instance of the class of objects known as Main-Object.
-
-###Inheritance
-
-Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses.
-
-###Interface
-
-An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.
-
-###Package
-
-A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
-
-What is Java
-------------
-
-**Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
-
-Java Basic Syntax
------------------
+Syntax
+------
 
 **Object** - Objects have states or **fields** and behaviors or **methods**. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
 
@@ -50,8 +23,10 @@ Java Basic Syntax
 
 **Instant Variables** - Each object has its unique set of instant variables. An object's state is created by the values assigned to these instant variables.
 
-Simple Java Program
--------------------
+**Package** - Package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
+
+Program
+-------
 
 Simple code that would print the words Hello World:
 
@@ -74,24 +49,49 @@ Simple code that would print the words Hello World:
 - **Program File Name** - Name of the program file should exactly match the class name. Example: Assume `'MyFirstJavaProgram'` is the class name. Then the file should be saved as `'MyFirstJavaProgram.java'`
 - `public static void main(String args[])` - java program processing starts from the `main()` method which is a mandatory part of every java program.
 
-###Variables
+Identifiers
+-----------
+
+All Java components require names. Names used for classes, variables and methods are called identifiers.
+- All identifiers should begin with a letter (A to Z or a to z ), currency character ($) or an underscore (_).
+- After the first character identifiers can have any combination of characters.
+- A key word cannot be used as an identifier.
+- Most importantly identifiers are case sensitive.
+- Examples of legal identifiers:age, `$salary, value, __1_value`
+- Examples of illegal identifiers : `123abc, -salary`
+
+Modifiers
+---------
+Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
+- Access Modifiers: `default, public , protected, private`
+- Non-access Modifiers: `final, abstract, strictfp`
+
+Modifier      |	Class 	  | Package   | Subclass  | Project   
+--------------|-----------|-----------|-----------|------------
+public	      | Y     	  | Y	      | Y         | Y
+protected     |	Y     	  | Y	      | Y         | N
+default       |	Y     	  | Y	      | N         | N
+private	      |	N     	  | N	      | N         | N
+
+Variables
+---------
 
 The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
+
+**Local Variables (Non static variables)** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
+	
+	// var declaration
+	int count = 0;
 
 **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
 
 	// var declaration
 	int value = 10;
 
-**Class Variables (Static Fields)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
+**Class Variables (Static Variables)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
 	
 	// var declaration
 	static int value = value++;
- 
-**Local Variables** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
-	
-	// var declaration
-	int count = 0;
 
 **Parameters** Parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers).
 

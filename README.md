@@ -201,7 +201,7 @@ Enums
 Keywords
 --------
 
-Keywords |		| 		|
+Keywords |		| 		|	
 ---------|--------------|---------------|------------
 abstract | assert	| boolean 	|break
 byte	 | case		| catch		| char
@@ -307,7 +307,8 @@ Operator | Description
 ^        | Bitwise exclusive  OR - perform a bitwise exclusive OR operation
 &#124;   | Bitwise inclusive  OR - perform a bitwise inclusive OR operation
 
-###Expressions, Statements, and Blocks
+Expressions, Statements, and Blocks
+-----------------------------------
 
 An **expresions** is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.
 
@@ -355,12 +356,12 @@ The statements inside your source files are generally executed from top to botto
 
 **The while and do-while Statements**
 	
-	// while statement
+	// A while loop is a control structure that allows you to repeat a task a certain number of times.
 	while (condition) {
 		// statement(s)
 	}
 	
-	// do-while statement
+	// A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
 	do{
 		// statement(s)
 	} while (expression);

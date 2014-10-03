@@ -497,7 +497,14 @@ The **finally** keyword is used to create a block of code that follows a `try bl
 Object Oriented Programming concepts
 ------------------------------------
 
-Object Oriented programming (OOP) is an engineering approach for building software systems. Based on the concepts of class and objects that are used for modeling the real world entities
+Object Oriented programming (OOP) is an engineering approach for building software systems. Based on the concepts of class and objects that are used for modeling the real world entities. The Principles of OOP includes Inheritance, Abstraction, Encapsulation, Polymorphism.
+
+Inheritance
+-----------
+
+**Inheritance** is when a class acquires(extend) the properties of another class. With the use of inheritance the information is made manageable in a hierarchical order.
+
+When we talk about inheritance, the most commonly used keyword would be extends and implements. These words would determine whether one object IS-A type of another. By using these keywords we can make one object acquire the properties of another object.
 
 **Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
 

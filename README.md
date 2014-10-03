@@ -201,8 +201,8 @@ Enums
 Keywords
 --------
 
-Java	 | reserved	| keywords	|	
----------|--------------|---------------|------------
+Java	 | language 	| reserved	| keywords	
+---------|--------------|---------------|-------------
 abstract | assert	| boolean 	|break
 byte	 | case		| catch		| char
 class	 | const	| continue	| default
@@ -494,12 +494,10 @@ The **finally** keyword is used to create a block of code that follows a `try bl
 		// the finally block always executes
 	}
 
-Object Oriented Principles
---------------------------
+Object Oriented Programming concepts
+------------------------------------
 
-
-Encapsulation
--------------
+Object Oriented programming (OOP) is an engineering approach for building software systems. Based on the concepts of class and objects that are used for modeling the real world entities
 
 **Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
 
@@ -513,8 +511,12 @@ Polymorphism
 Inheritance
 -----------
 
-- Inheritance is when a class acquires(extend) the properties of another class.
-- Abstract class is a class which has empty methods and fully defined methods.
+**Inheritance** is when a class acquires(extend) the properties of another class.
+
+Abstraction
+-----------
+
+**Abstract** class is a class which has empty methods and fully defined methods.
 
 Interface is a class with only empty methods.
 
@@ -790,8 +792,8 @@ Appendix
 
 To verify the Java version on machine: **java -version**
 
-Object-Oriented Programming (OOP) Concept(s)
---------------------------------------------
+Object-Oriented Programming
+---------------------------
 
 Object-Oriented Programming Language(s)   | C | Java/C++              
 ------------------------------------------|---|----------

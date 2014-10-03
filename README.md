@@ -499,6 +499,12 @@ Object Oriented Programming concepts
 
 Object Oriented programming (OOP) is an engineering approach for building software systems. Based on the concepts of class and objects that are used for modeling the real world entities. The Principles of OOP includes Inheritance, Abstraction, Encapsulation, Polymorphism.
 
+Object-Oriented Programming Language(s)   | C | Java/C++              
+------------------------------------------|---|----------
+Encapsualtion: Data Hiding                | x | x
+Polymorphism: Overloading, Overriding     | x | x
+Inheritance: Abstract classes, Interfaces |   | x
+
 Inheritance
 -----------
 
@@ -676,7 +682,8 @@ Generic Method
 		// statement(s)
 	}
 
-###Collections
+Collections
+-----------
 
 A **Collection** (container) is simply an object that groups multiple elements in to a single unit. Collections are used to store, retrieve, manipulate, and communicate aggregate data. 
 
@@ -691,10 +698,17 @@ A **Collection Framework** is a unified architecture for representing and manipu
 	
 	// HashMap Class
 	HashMap hm = new HashMap();
+	
+	// Non generic list
+	List list = new ArrayList();
+	
+	// Generic list
+	List<String> gList = new ArrayList<String>();
 
 **Algorithms** These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface.
 
-###Serialization
+Serialization
+-------------
 
 Java provides a mechanism, called **object serialization** where an object can be represented as a sequence of bytes that includes the object's data as well as information about the object's type and the types of data stored in the object. Classes **ObjectInputStream** and **ObjectOutputStream** are high-level streams that contain the methods for serializing and deserializing an object.
 
@@ -704,23 +718,23 @@ Java provides a mechanism, called **object serialization** where an object can b
 	// ObjectInputStream class contains the following method for deserializing an object
 	public final Object readObject() throws IOException, ClassNotFoundException
 
-###Applets
+Applets
+--------=
 
 Using the applet tag
 	
 	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
 	<object>Name of the object-applet</object>
 
-###Multithreding
+Multithreding
+-------------
 
-//TO-DO
+Java is a multithreaded programming language which means we can develop multithreaded program using Java. A multithreaded program contains two or more parts that can run concurrently and each part can handle different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
 
 Testing
 -------
 
-####Unit testing with JUnit
-
-A unit test is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
+A **Unit test** is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
 
 Java Class
 
@@ -746,37 +760,12 @@ JUnit Test
 
 	public class MyClassTest {
   
-  		@Test(expected = IllegalArgumentException.class)
-  		public void testExceptionIsThrown() {
-    			MyClass tester = new MyClass();
-    		tester.multiply(1000, 5);
-  		}
+		@Test(expected = IllegalArgumentException.class)
+		public void testExceptionIsThrown() {
+			MyClass tester = new MyClass();
+		tester.multiply(1000, 5);
+		}
   	}
-
-Debugging
----------
-
-- Break points -> Step Into, Over and Return
-- Exception and conditional Breakpoints
-- Change the variables value
-
-Exception handler components: 
-
-	try { 
-		// code block to be executed
-	} catch (ExceptionType name) {
-		// code block to be executed - exception
-	}
-
-### Java Collections (List, ArrayList, HashMap, generics)
-
-Non generic list, can add anything:  
-
-	List list = new ArrayList();
-	
-Generic list, can add specific: 
-
-	List<String> gList = new ArrayList<String>();
 
 Appendix
 --------
@@ -790,17 +779,3 @@ Appendix
 - "This" keyword is used to access  class level data
 
 To verify the Java version on machine: **java -version**
-
-Object-Oriented Programming
----------------------------
-
-Object-Oriented Programming Language(s)   | C | Java/C++              
-------------------------------------------|---|----------
-Encapsualtion: Data Hiding                | x | x
-Polymorphism: Overloading, Overriding     | x | x
-Inheritance: Abstract classes, Interfaces |   | x
-
-Description
------------
-
-**Java** is Object Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.

@@ -502,11 +502,32 @@ Object Oriented programming (OOP) is an engineering approach for building softwa
 Inheritance
 -----------
 
-**Inheritance** is when a class acquires(extend) the properties of another class. With the use of inheritance the information is made manageable in a hierarchical order.
+**Inheritance** is when a class acquires(extend) the properties of another class. `Inheritance` commonly used keyword would be `extends` and `implements`. These words would determine whether one object **IS-A** type of another. With use of the extends keyword the subclasses will be able to inherit all the properties of the superclass except for the private properties of the superclass.
+	
+	// Animal is a super class
+	public class Animal{
+	}
+	
+	// Mammal is a subclass of Animal or Mammal IS-A Animal
+	public class Mammal extends Animal{
+	}
+	
+	// Dog is a subclass of Mammal and Animal
+	public class Dog extends Mammal{
+	}
 
-When we talk about inheritance, the most commonly used keyword would be extends and implements. These words would determine whether one object IS-A type of another. By using these keywords we can make one object acquire the properties of another object.
+Abstraction
+-----------
 
+**Abstraction** refers to the ability to make a class abstract in OOP. An abstract class is one that cannot be instantiated. All other functionality of the class still exists, and its fields, methods, and constructors are all accessed in the same manner. You just cannot create an instance of the abstract class. **Abstract** class is a class which has empty methods and fully defined methods.
+
+An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+Encapsulation
+-------------
 **Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
+
+**Constructor** is a method that has the same name as the class. It is executed when an object is created. It is used to set default values. Does not return anything including void.
 
 Polymorphism
 ------------
@@ -515,37 +536,8 @@ Polymorphism
 
 **Overriding** is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
 
-Inheritance
+Annotations
 -----------
-
-**Inheritance** is when a class acquires(extend) the properties of another class.
-
-Abstraction
------------
-
-**Abstract** class is a class which has empty methods and fully defined methods.
-
-Interface is a class with only empty methods.
-
-	public interface NameOfInterface {
-   		// empty methods 
-	}
-
-
-//////////////////////////////////TODO
-
-	Constructor is a method that has the same name as the class.
-	It is executed when an object is created.
-	It is used to set default values.
-	Does not return anything including void.
-
- - 
-
-
-Advanced
---------
-
-###Annotations
 
 **Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate. Annotations can be applied to declarations: declarations of classes, fields, methods, and other program elements. As of the [Java SE 8 release](http://docs.oracle.com/javase/8/docs/api/), annotations can also be applied to the use of types.
  
@@ -621,7 +613,6 @@ The format of an Annotations
 
 **@FunctionalInterface** annotation, introduduced in Java SE 8, indicates that the type declaration is intended to be a functional interface.
 
-
 Meta-Annotations is annotation that apply to other annotations. Defined in java.lan.annotation. 
 
 **@Retention** annotation specifies how the marked annotation is stored.
@@ -647,7 +638,8 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 **@Repeatable** annotation, introduced in Java SE 8, indicates that the marked annotation can be applied more than once to the same declaration or type use.
 
-###Generics
+Generics
+--------
 
 Java **Generics** methods and specific classes enable programmers to specify, with a single parameter, a set of related methods or, with a single class declaration, a set of related types, respectively. Code that uses generics has many benefits:
 

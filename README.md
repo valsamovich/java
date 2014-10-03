@@ -720,7 +720,7 @@ Java provides a mechanism, called **object serialization** where an object can b
 	public final Object readObject() throws IOException, ClassNotFoundException
 
 Applets
---------=
+-------
 
 Using the applet tag
 	

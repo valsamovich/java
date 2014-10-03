@@ -483,7 +483,7 @@ The **throws** and **throw** keywords If a method does not handle a checked exce
 
 The **finally** keyword is used to create a block of code that follows a `try block`. A `finally` block of code always executes, whether or not an exception has occurred. Using a finally block allows you to run any cleanup-type statements that you want to execute, no matter what happens in the protected code. A finally block appears at the end of the catch blocks.
 
-		// multiple catch block
+	// multiple catch block
 	try{
 		// protected code
 	}catch(ExceptionType1 e1){

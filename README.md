@@ -182,7 +182,7 @@ Enums
 **Enums** restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums. With the use of enums it is possible to reduce the number of bugs in your code. For example if we consider an application for a fresh juice shop it would be possible to restrict the glass size to small, medium and Large. This would make sure that it would not allow anyone to order any size other than the small, medium or large.
 
 	class FreshJuice{
-
+	
    		enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
    		FreshJuiceSize size;
 	}
@@ -201,7 +201,7 @@ Enums
 Keywords
 --------
 
-Keywords |		| 		|	
+Java	 | reserved	| keywords	|	
 ---------|--------------|---------------|------------
 abstract | assert	| boolean 	|break
 byte	 | case		| catch		| char
@@ -222,9 +222,11 @@ Comments
 
 Java language supports three kinds of **comments**:
 
-- `/* text */` The compiler ignores everything from `/* to */`.
-- `/** documentation */` This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use `/* and */`. The JDK javadoc tool uses doc comments when preparing automatically generated documentation. For more information on javadoc, see the Java tool documentation.
-- `// text` The compiler ignores everything from `//` to the end of the line.
+`/* text */` The compiler ignores everything from `/* to */`.
+
+`/** documentation */` This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use `/* and */`. The JDK javadoc tool uses doc comments when preparing automatically generated documentation. For more information on javadoc, see the Java tool documentation.
+
+`// text` The compiler ignores everything from `//` to the end of the line.
 
 
 Operators
@@ -392,6 +394,8 @@ Keywords
 --------
 
 **Break** The `break` keyword is used to stop the entire loop. The break keyword must be used inside any loop or a switch statement. The break keyword will stop the execution of the innermost loop and start executing the next line of code after the block.
+	// stop the loop or switch statement
+	break;
 
 **Continue** The `continue` keyword can be used in any of the loop control structures. It causes the loop to immediately jump to the next iteration of the loop. In a for loop, the continue keyword causes flow of control to immediately jump to the update statement. In a while loop or do/while loop, flow of control immediately jumps to the Boolean expression.
 	
@@ -412,25 +416,25 @@ Methods
 		// method body;
 	}
 
-- **Modifiers** The modifier, which is optional, tells the compiler how to call the method. This defines the access type of the method.
+**Modifiers** The modifier, which is optional, tells the compiler how to call the method. This defines the access type of the method.
 
-- **Return Type** A method may return a value. The returnValueType is the data type of the value the method returns. Some methods perform the desired operations without returning a value. In this case, the returnValueType is the keyword void.
+**Return Type** A method may return a value. The returnValueType is the data type of the value the method returns. Some methods perform the desired operations without returning a value. In this case, the returnValueType is the keyword void.
 
-- **Method Name** This is the actual name of the method. The method name and the parameter list together constitute the method signature.
+**Method Name** This is the actual name of the method. The method name and the parameter list together constitute the method signature.
 
-- **Parameters** A parameter is like a placeholder. When a method is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.
+**Parameters** A parameter is like a placeholder. When a method is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.
 
-- **Method Body** The method body contains a collection of statements that define what the method does.
+**Method Body** The method body contains a collection of statements that define what the method does.
  	
 Objects & Classes
 -----------------
 
-**Object** - Object is a copy or instance of a class. Objects have states and behaviors. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
+**Object** is a copy or instance of a class. Objects have states and behaviors. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
 	
 	// sample object statement
 	Object object  = new Object();
 
-**Class** - A class can be defined as a template/ blue print that describe the behaviors/states that object of its type support. Class is a template for an object. Class has data & methods.
+**Class** can be defined as a template/ blue print that describe the behaviors/states that object of its type support. Class is a template for an object. Class has data & methods.
 	
 	// sample class
 	public class Dog{
@@ -448,17 +452,75 @@ Objects & Classes
 		}
 	}
 
-A **class** can contain any of the following variable types.
+A **class** can contain any of the following variable types:
 
 - **Local variables** Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
-
 - **Instance variables** Instance variables are variables within a class but outside any method. These variables are instantiated when the class is loaded. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
-
 - **Class variables** Class variables are variables declared with in a class, outside any method, with the static keyword.
 
+Exceptions Handling
+-------------------
+
+A method catches an exception using a combination of the `try` and `catch` keywords. A **try/catch block** is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+	
+	// try-catch block
+	try{
+		// protected code
+	}catch(ExceptionName e1){
+		// catch block
+	}
+
+	// multiple catch block
+	try{
+		// protected code
+	}catch(ExceptionType1 e1){
+		// catch block
+	}catch(ExceptionType2 e2){
+		// catch block
+	}
+
+The **throws** and **throw** keywords If a method does not handle a checked exception, the method must declare it using the `throws` keyword. The `throw`s keyword appears at the end of a method's signature.
+
+The **finally** keyword is used to create a block of code that follows a `try block`. A `finally` block of code always executes, whether or not an exception has occurred. Using a finally block allows you to run any cleanup-type statements that you want to execute, no matter what happens in the protected code. A finally block appears at the end of the catch blocks.
+
+		// multiple catch block
+	try{
+		// protected code
+	}catch(ExceptionType1 e1){
+		// catch block
+	}catch(ExceptionType2 e2){
+		// catch block
+	}finally{
+		// the finally block always executes
+	}
+
+Object Oriented Principles
+--------------------------
 
 
+Encapsulation
+-------------
 
+**Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
+
+Polymorphism
+------------
+
+**Overloading** is when methods of the same name are differentiated by their passing arguments.
+
+**Overriding** is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
+
+Inheritance
+-----------
+
+- Inheritance is when a class acquires(extend) the properties of another class.
+- Abstract class is a class which has empty methods and fully defined methods.
+
+Interface is a class with only empty methods.
+
+	public interface NameOfInterface {
+   		// empty methods 
+	}
 
 
 //////////////////////////////////TODO
@@ -469,34 +531,6 @@ A **class** can contain any of the following variable types.
 	Does not return anything including void.
 
  - 
-
-
-OOP
----
-
-### Java OOP - Encapsulation (Data hiding - Access modifiers)
-
-Encapsulation is a data & methods that act on the data.
-
-            Getter and Setter - Accessor and Mutator
-
-	
-
-###Java OOP - Polymorphism (Overloading, Overriding)
-
-- Overloading is when methods of the same name are differentiated by their passing arguments.
-- Overriding is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
-
-###Java OOP - Inheritance (Abstract classes, Interfaces)
-
-- Inheritance is when a class acquires(extend) the properties of another class.
-- Abstract class is a class which has empty methods and fully defined methods.
-
-Interface is a class with only empty methods.
-
-	public interface NameOfInterface {
-   		// empty methods 
-	}
 
 
 Advanced

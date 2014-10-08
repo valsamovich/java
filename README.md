@@ -16,6 +16,8 @@ Syntax
 
 **Package** - Package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
 
+Note: To verify the Java version on machine: **java -version**
+
 Program
 -------
 
@@ -772,11 +774,9 @@ Appendix
 --------
 
 - "Static" is one per class, but not one per object 
--"Static" methods can only access other static data & methods
+- "Static" methods can only access other static data & methods
 - Final data is constant. Cannot be changed.
 - Final methods cannot be overridden. Final classes cannot be sub classed.
 - "Final" keyword can be applied to data,methods, and classes.
 - "Super" keyword id used to access superclass data and methods
 - "This" keyword is used to access  class level data
-
-To verify the Java version on machine: **java -version**

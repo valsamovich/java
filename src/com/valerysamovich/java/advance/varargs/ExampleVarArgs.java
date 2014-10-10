@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.valerysamovich.java.advance.varargs;
 
 public class ExampleVarArgs {

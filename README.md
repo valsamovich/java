@@ -1,69 +1,102 @@
 java-tutorial
 =============
 
-Java development tutorial include the 
-[OOP Concepts](https://github.com/valerysamovich/java-tutorial#object-oriented-programming-concepts) (Object, Class, Inheritance, Interface, Package), 
-[Basics](https://github.com/valerysamovich/java-tutorial#basics) (Variables, Primitive Data Types, Operators, Control Flow Statements, Arrays, Methods, Objects and Classes, Strings, Numbers), [OOP](https://github.com/valerysamovich/java-tutorial#OOP), [Advanced](https://github.com/valerysamovich/java-tutorial#advanced) ( Annotations, Generics, Collections, Applets), [Testing](https://github.com/valerysamovich/java-tutorial#testings) (JUNit, JBehave), and [Debugging](https://github.com/valerysamovich/java-tutorial#testings) trails (packages). 
+**Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
-Object-Oriented Programming (OOP) Concept(s)
-------------------------------------------
-
-Object-Oriented Programming Language(s)   | C | Java/C++              
-------------------------------------------|---|----------
-Encapsualtion: Data Hiding                | x | x
-Polymorphism: Overloading, Overriding     | x | x
-Inheritance: Abstract classes, Interfaces |   | x
-
-###Object
-
-Objects are key to understanding object-oriented technology and a software bundle of related state and behavior. An object stores its state in **fields** (variables in some programming languages) and exposes its behavior through **methods** (functions in some programming languages). Bundling code into individual software objects provides a number of benefits: modularity, information-hiding (data encapsulation), code re-use, and pluggability and debugging ease.
-
-###Class
-
-A class is a blueprint or prototype from which objects are created. In object-oriented terms, Any Sub-Object is an instance of the class of objects known as Main-Object.
-
-###Inheritance
-
-Inheritance provides a powerful and natural mechanism for organizing and structuring your software. Object-oriented programming allows classes to inherit commonly used state and behavior from other classes. In the Java programming language, each class is allowed to have one direct superclass, and each superclass has the potential for an unlimited number of subclasses.
-
-###Interface
-
-An interface is a contract between a class and the outside world. When a class implements an interface, it promises to provide the behavior published by that interface.
-
-###Package
-
-A package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
-
-Basics
+Syntax
 ------
 
-###Variables
+**Object** - Objects have states or **fields** and behaviors or **methods**. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
+
+**Class** - A class can be defined as a template/ blue print that describe the behaviors/states that object of its type support.
+
+**Methods** - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.
+
+**Instant Variables** - Each object has its unique set of instant variables. An object's state is created by the values assigned to these instant variables.
+
+**Package** - Package is a namespace that organizes a set of related classes and interfaces. Placing your code into packages makes large software projects easier to manage. The Java platform provides an enormous class library (a set of packages) suitable for use in your own applications. This library is known as the "Application Programming Interface", or "API" for short. Java Platform API Specification - http://docs.oracle.com/javase/8/docs/api/index.html
+
+Note: To verify the Java version on machine: **java -version**
+
+Program
+-------
+
+Simple code that would print the words Hello World:
+
+	public class MyJavaProgram{
+	
+		/* 
+		 * This is a java program.  
+		 * This will print 'Hello World' as the output
+		 */
+		
+		public static void main(String []args){
+			// prints Hello World
+			System.out.println("Hello World"); 
+		}
+	}
+
+- **Case Sensitivity** - Java is case sensitive which means identifier Hello and hello would have different meaning in Java.
+- **Class Names** - For all class names the first letter should be in Upper Case. If several words are used to form a name of the class each inner words first letter should be in Upper Case. Example: `class MyJavaClass`
+- **Method Names** - All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case. Example `public void myMethodName()` or `main`
+- **Program File Name** - Name of the program file should exactly match the class name. Example: Assume `'MyFirstJavaProgram'` is the class name. Then the file should be saved as `'MyFirstJavaProgram.java'`
+- `public static void main(String args[])` - java program processing starts from the `main()` method which is a mandatory part of every java program.
+
+Identifiers
+-----------
+
+All Java components require names. Names used for classes, variables and methods are called identifiers.
+- All identifiers should begin with a letter (A to Z or a to z ), currency character ($) or an underscore (_).
+- After the first character identifiers can have any combination of characters.
+- A key word cannot be used as an identifier.
+- Most importantly identifiers are case sensitive.
+- Examples of legal identifiers:age, `$salary, value, __1_value`
+- Examples of illegal identifiers : `123abc, -salary`
+
+Modifiers
+---------
+Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
+
+Access Modifiers: `default, public , protected, private`
+
+Modifier      |	Class 	  | Package   | Subclass  | Project   
+--------------|-----------|-----------|-----------|------------
+public	      | Y     	  | Y	      | Y         | Y
+protected     |	Y     	  | Y	      | Y         | N
+default       |	Y     	  | Y	      | N         | N
+private	      |	N     	  | N	      | N         | N
+
+Non-access Modifiers: `final, abstract, strictfp`
+
+Variables
+---------
 
 The Java programming language use both **"fields"** and **"variables"** as part of its terminology. 
+
+**Local variables ** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
+	
+	// var declaration
+	int count = 0;
+
+**Class variables (static Variables)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
+	
+	// var declaration
+	static int value = value++;
 
 **Instance variables (non-static fields)** Objects store their individual states in "non-static fields", that is, fields declared without the static keyword. Non-static fields are also known as **instance variables** because their values are unique to each instance of a class (to each object, in other words).
 
 	// var declaration
 	int value = 10;
 
-**Class Variables (Static Fields)** A class variable is any field declared with the static modifier; this tells the compiler that there is exactly one copy of this variable in existence, regardless of how many times the class has been instantiated. Additionally, the keyword final could be added to indicate that the value will never change.
-	
-	// var declaration
-	static int value = value++;
- 
-**Local Variables** Similar to how an object stores its state in fields, a method will often store its temporary state in local variables. The syntax for declaring a local variable is similar to declaring a field. Local variables are only visible to the methods in which they are declared; they are not accessible from the rest of the class.
-	
-	// var declaration
-	int count = 0;
-
 **Parameters** Parameters are always classified as "variables" not "fields". This applies to other parameter-accepting constructs as well (such as constructors and exception handlers).
 
 	// args variable is the parameter to main method
 	public static void main(String[] args) {} 
 
-###Primitive Data Types
+Data Types
+----------
 
-The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
+**Primitive Data Types** - The eight primitive data types are: **byte, short, int, long, float, double, boolean, and char**. The Java programming language is statically-typed, which means that all variables must first be declared before they can be used. 
 	
 	// var declaration
 	int gear = 1;
@@ -81,9 +114,46 @@ String    | null          |                                |
 boolean   | false         | 1-bit and "size" isn't defined | true and false
 Object    | null          |                                |
 
-###Arrays
+**Reference Data Types** - Reference variables are created using defined constructors of the classes. They are used to access objects. These variables are declared to be of a specific type that cannot be changed. For example, Employee, Puppy etc.
+- Class objects, and various type of array variables come under reference data type.
+- Default value of any reference variable is null.
+- A reference variable can be used to refer to any object of the declared type or any compatible type.
+- Example : `Animal animal = new Animal("giraffe");`
 
-An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
+Literals
+--------
+
+A **Literal** is a source code representation of a fixed value. They are represented directly in the code without any computation. Literals can be assigned to any primitive type variable. For example:
+
+	byte a = 68;
+	char a = 'A';
+
+String literals in Java are specified like they are in most other languages by enclosing a sequence of characters between a pair of double quotes. Examples of string literals are:
+
+	"Hello World"
+	"two\nlines"
+	"\"This is in quotes\""
+
+Java language supports few special escape sequences for String and char literals as well. They are:
+
+Notation | Character represented
+---------|------------------------
+\n	 | Newline (0x0a)
+\r	 | Carriage return (0x0d)
+\f	 | Formfeed (0x0c)
+\b	 | Backspace (0x08)
+\s	 | Space (0x20)
+\t	 | tab
+\"	 | Double quote
+\'	 | Single quote
+\\	 | backslash
+\ddd	 | Octal character (ddd)
+\uxxxx	 | Hexadecimal UNICODE character (xxxx)
+
+Arrays
+------
+
+An **Array** is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created. After creation, its length is fixed. 
 	
 	class ArrayDemo {
 		publis stativ void main (String[] args) {
@@ -102,18 +172,71 @@ An array is a container object that holds a fixed number of values of a single t
 		}
 	}
 
-**Copying Arrays**
+Copying **Arrays**
 
 	// system class has an arraycopy() method
 	// can use to efficiently copy data from one array into another
-	public static void arraycopy(Object src, int srcPos,
-        	Object dest, int destPos, int length)
-        	
-###Operators
+	public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)
 
-Operators are special symbols that perform operations on one, two, or three operands, and then return a result.
+Enums
+-----
 
-Operators by Presedence | Precedence	   
+**Enums** restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums. With the use of enums it is possible to reduce the number of bugs in your code. For example if we consider an application for a fresh juice shop it would be possible to restrict the glass size to small, medium and Large. This would make sure that it would not allow anyone to order any size other than the small, medium or large.
+
+	class FreshJuice{
+	
+   		enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
+   		FreshJuiceSize size;
+	}
+
+	public class FreshJuiceTest{
+
+		public static void main(String args[]){
+			FreshJuice juice = new FreshJuice();
+			juice.size = FreshJuice. FreshJuiceSize.MEDIUM ;
+			System.out.println("Size :" + juice.size);
+		}
+	}
+
+**Note:** enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.
+
+Keywords
+--------
+
+Java	 | language 	| reserved	| keywords	
+---------|--------------|---------------|-------------
+abstract | assert	| boolean 	|break
+byte	 | case		| catch		| char
+class	 | const	| continue	| default
+do	 | double	| else		| enum
+extends	 | final	| finally	| float
+for	 | goto		| if		| implements
+import	 | instanceof	| int		| interface
+long	 | native	| new		| package
+private	 | protected	| public	| return
+short	 | static	| strictfp	| super
+switch	 | synchronized | this		| throw
+throws	 | transient	| try		| void
+volatile | while	|		|
+
+Comments
+--------
+
+Java language supports three kinds of **comments**:
+
+`/* text */` The compiler ignores everything from `/* to */`.
+
+`/** documentation */` This indicates a documentation comment (doc comment, for short). The compiler ignores this kind of comment, just like it ignores comments that use `/* and */`. The JDK javadoc tool uses doc comments when preparing automatically generated documentation. For more information on javadoc, see the Java tool documentation.
+
+`// text` The compiler ignores everything from `//` to the end of the line.
+
+
+Operators
+---------
+
+**Operators** are special symbols that perform operations on one, two, or three operands, and then return a result.
+
+Operators by Presedence	| Precedence	   
 ------------------------|----------------------------------------
 postfix	                | expr++ expr--   	  
 unary                   | ++expr --expr +expr -expr ~ !    	  
@@ -188,14 +311,13 @@ Operator | Description
 ^        | Bitwise exclusive  OR - perform a bitwise exclusive OR operation
 &#124;   | Bitwise inclusive  OR - perform a bitwise inclusive OR operation
 
-###Expressions, Statements, and Blocks
+Expressions, Statements, and Blocks
+-----------------------------------
 
 An **expresions** is a construct made up of variables, operators, and method invocations, which are constructed according to the syntax of the language, that evaluates to a single value.
 
-
 	// arithmetic expression
 	int result = 1 + 2; 
-
 
 A **statement** is a forms a complete unit of execution. The following types of expressions can be made into a statement by terminating the expression with a semicolon (;).
 
@@ -207,118 +329,224 @@ A **block** is a group of zero or more statements between balanced braces and ca
 	// if block
 	if(condition) {...}
 
-###Control Flow Statements
+Control Flow Statements
+-----------------------
 
-The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code. The section describes the decision-making statements (if-then, if-then-else, switch), the looping statements (for, while, do-while), and the branching statements (break, continue, return) supported by the Java programming language.
+The statements inside your source files are generally executed from top to bottom, in the order that they appear. **Control flow statements**, however, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
 
-**The if-then Statement**. [IfExample.java](https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/ifstatement/IfExample.java)
+**The if-then Statement** An if statement can be followed by an optional else statement, which executes when the Boolean expression is false.
 
+	// if-else statement
 	if (condition) {
 		// statement(s)
 	}
 
-**The if-then-else Statement** [IfElseExample.java](https://github.com/valerysamovich/java-tutorial/tree/master/src/com/valerysamovich/java/trail/basic/statements/ifelsestatement)
-
+**The if-then-else Statement** An if statement can be followed by an optional else if...else statement, which is very usefull to test various conditions using single if...else if statement.
+	
+	// if-then-else statement
 	if (condition) {
 		// statement(s)
 	} else {
 		// statement(s)
 	}
-	
-**The switch Statement** [SwitchExample.java](https://github.com/valerysamovich/java-tutorial/blob/master/src/com/valerysamovich/java/trail/basic/statements/switchstatement/SwitchDemo.java)
 
+**Nested if-else Statement** It is always legal to nest if-else statements. When using if, else if, else statements there are few points to keep in mind: An if can have zero or one else's and it must come after any else if's.An if can have zero to many else if's and they must come before the else. Once an else if succeeds, none of he remaining else if's or else's will be tested.
+
+	if(Boolean_expression 1){
+		// executes when the Boolean expression 1 is true
+		if(Boolean_expression 2){
+			// executes when the Boolean expression 2 is true
+		}
+	}
+
+**The switch Statement** A switch statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.
+	
+	// switch statement
 	switch (value) {
             	case 1:  // statement(s)
-                	 break;
+			break;
             	case 2:  // statement(s)
                      	break;
             	// ...and so on
+            	default: // optional statement
         }
 
-**The while and do-while Statements**
-	
+**The while Statement** A while loop is a control structure that allows you to repeat a task a certain number of times.
+
 	// while statement
 	while (condition) {
 		// statement(s)
 	}
-	
+
+**The do-while Statement** A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+
 	// do-while statement
 	do{
 		// statement(s)
 	} while (expression);
 	
-**The for Statement**
+**The for Statement** A for loop is a repetition control structure that allows you to efficiently write a loop that needs to execute a specific number of times. A for loop is useful when you know how many times a task is to be repeated.
 
-	// infinite loop
+	// for loop (infinite loop)
 	for (initialization; termination; increment) {
-    		// statement(s)
+		// statement(s)
 	}
 
-###Methods
-
-**Method** is a collection of statments that are grouped together to perform an operation.
-
-	public static int functionName(int a, int b) {
- 		// statement(s)
- 	}
- 	
-
-
-###Objects
-
-Object is a copy or instance of a class:
-
-	Object object  = new Object();
-
-	Constructor is a method that has the same name as the class.
-	It is executed when an object is created.
-	It is used to set default values.
-	Does not return anything including void.
-
-###Classes
-
- - Class is a template for an object. Class has data & methods.
-
-
-OOP
----
-
-### Java OOP - Encapsulation (Data hiding - Access modifiers)
-
-Encapsulation is a data & methods that act on the data.
-
-            Getter and Setter - Accessor and Mutator
-
-Data hiding is help to protect the data and used "access modifiers".
-	
-	Modifier      |	Class 	  | Package   | Subclass  | Project   
-	--------------|-----------|-----------|-----------|------------
-	public	      | Y     	  | Y	      | Y         | Y
-	protected     |	Y     	  | Y	      | Y         | N
-	default       |	Y     	  | Y	      | N         | N
-	private	      |	N     	  | N	      | N         | N
-
-###Java OOP - Polymorphism (Overloading, Overriding)
-
-- Overloading is when methods of the same name are differentiated by their passing arguments.
-- Overriding is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
-
-###Java OOP - Inheritance (Abstract classes, Interfaces)
-
-- Inheritance is when a class acquires(extend) the properties of another class.
-- Abstract class is a class which has empty methods and fully defined methods.
-
-Interface is a class with only empty methods.
-
-	public interface NameOfInterface {
-   		// empty methods 
-	}
-
-
-Advanced
+Keywords
 --------
 
-###Annotations
+**Break** The `break` keyword is used to stop the entire loop. The break keyword must be used inside any loop or a switch statement. The break keyword will stop the execution of the innermost loop and start executing the next line of code after the block.
+	// stop the loop or switch statement
+	break;
+
+**Continue** The `continue` keyword can be used in any of the loop control structures. It causes the loop to immediately jump to the next iteration of the loop. In a for loop, the continue keyword causes flow of control to immediately jump to the update statement. In a while loop or do/while loop, flow of control immediately jumps to the Boolean expression.
+	
+	// The syntax of a continue is a single statement inside any loop
+	continue;
+
+Methods
+-------
+
+**Method** is a collection of statments that are grouped together to perform an operation.
+	
+	public static int functionName(int a, int b) {
+		// statement(s)
+ 	}
+ 	
+ 	// structure of th method
+	modifier returnValueType methodName(list of parameters) {
+		// method body;
+	}
+
+**Modifiers** The modifier, which is optional, tells the compiler how to call the method. This defines the access type of the method.
+
+**Return Type** A method may return a value. The returnValueType is the data type of the value the method returns. Some methods perform the desired operations without returning a value. In this case, the returnValueType is the keyword void.
+
+**Method Name** This is the actual name of the method. The method name and the parameter list together constitute the method signature.
+
+**Parameters** A parameter is like a placeholder. When a method is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.
+
+**Method Body** The method body contains a collection of statements that define what the method does.
+ 	
+Objects & Classes
+-----------------
+
+**Object** is a copy or instance of a class. Objects have states and behaviors. Example: A dog has states-color, name, breed as well as behaviors -wagging, barking, eating. An object is an instance of a class.
+	
+	// sample object statement
+	Object object  = new Object();
+
+**Class** can be defined as a template/ blue print that describe the behaviors/states that object of its type support. Class is a template for an object. Class has data & methods.
+	
+	// sample class
+	public class Dog{
+		String breed;
+		int age;
+		String color;
+
+		void barking(){
+		}
+   
+		void hungry(){
+		}
+   
+		void sleeping(){
+		}
+	}
+
+A **class** can contain any of the following variable types:
+
+- **Local variables** Variables defined inside methods, constructors or blocks are called local variables. The variable will be declared and initialized within the method and the variable will be destroyed when the method has completed.
+- **Instance variables** Instance variables are variables within a class but outside any method. These variables are instantiated when the class is loaded. Instance variables can be accessed from inside any method, constructor or blocks of that particular class.
+- **Class variables** Class variables are variables declared with in a class, outside any method, with the static keyword.
+
+Exceptions Handling
+-------------------
+
+A method catches an exception using a combination of the `try` and `catch` keywords. A **try/catch block** is placed around the code that might generate an exception. Code within a try/catch block is referred to as protected code.
+	
+	// try-catch block
+	try{
+		// protected code
+	}catch(ExceptionName e1){
+		// catch block
+	}
+
+	// multiple catch block
+	try{
+		// protected code
+	}catch(ExceptionType1 e1){
+		// catch block
+	}catch(ExceptionType2 e2){
+		// catch block
+	}
+
+The **throws** and **throw** keywords If a method does not handle a checked exception, the method must declare it using the `throws` keyword. The `throw`s keyword appears at the end of a method's signature.
+
+The **finally** keyword is used to create a block of code that follows a `try block`. A `finally` block of code always executes, whether or not an exception has occurred. Using a finally block allows you to run any cleanup-type statements that you want to execute, no matter what happens in the protected code. A finally block appears at the end of the catch blocks.
+
+	// multiple catch block
+	try{
+		// protected code
+	}catch(ExceptionType1 e1){
+		// catch block
+	}catch(ExceptionType2 e2){
+		// catch block
+	}finally{
+		// the finally block always executes
+	}
+
+Object Oriented Programming concepts
+------------------------------------
+
+Object Oriented programming (OOP) is an engineering approach for building software systems. Based on the concepts of class and objects that are used for modeling the real world entities. The Principles of OOP includes Inheritance, Abstraction, Encapsulation, Polymorphism.
+
+Object-Oriented Programming Language(s)   | C | Java/C++              
+------------------------------------------|---|----------
+Encapsualtion: Data Hiding                | x | x
+Polymorphism: Overloading, Overriding     | x | x
+Inheritance: Abstract classes, Interfaces |   | x
+
+OOP: Inheritance
+----------------
+
+**Inheritance** is when a class acquires(extend) the properties of another class. `Inheritance` commonly used keyword would be `extends` and `implements`. These words would determine whether one object **IS-A** type of another. With use of the extends keyword the subclasses will be able to inherit all the properties of the superclass except for the private properties of the superclass.
+	
+	// Animal is a super class
+	public class Animal{
+	}
+	
+	// Mammal is a subclass of Animal or Mammal IS-A Animal
+	public class Mammal extends Animal{
+	}
+	
+	// Dog is a subclass of Mammal and Animal
+	public class Dog extends Mammal{
+	}
+
+OOP: Abstraction
+----------------
+
+**Abstraction** refers to the ability to make a class abstract in OOP. An abstract class is one that cannot be instantiated. All other functionality of the class still exists, and its fields, methods, and constructors are all accessed in the same manner. You just cannot create an instance of the abstract class. **Abstract** class is a class which has empty methods and fully defined methods.
+
+An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
+
+OOP: Encapsulation
+------------------
+
+**Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
+
+**Constructor** is a method that has the same name as the class. It is executed when an object is created. It is used to set default values. Does not return anything including void.
+
+OOP: Polymorphism
+-----------------
+
+**Overloading** is when methods of the same name are differentiated by their passing arguments.
+
+**Overriding** is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
+
+Annotations
+-----------
 
 **Annotations**, a form of metadata, provide data about a program that is not part of the program itself. Annotations have no direct effect on the operation of the code they annotate. Annotations can be applied to declarations: declarations of classes, fields, methods, and other program elements. As of the [Java SE 8 release](http://docs.oracle.com/javase/8/docs/api/), annotations can also be applied to the use of types.
  
@@ -394,7 +622,6 @@ The format of an Annotations
 
 **@FunctionalInterface** annotation, introduduced in Java SE 8, indicates that the type declaration is intended to be a functional interface.
 
-
 Meta-Annotations is annotation that apply to other annotations. Defined in java.lan.annotation. 
 
 **@Retention** annotation specifies how the marked annotation is stored.
@@ -420,7 +647,8 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 **@Repeatable** annotation, introduced in Java SE 8, indicates that the marked annotation can be applied more than once to the same declaration or type use.
 
-###Generics
+Generics
+--------
 
 Java **Generics** methods and specific classes enable programmers to specify, with a single parameter, a set of related methods or, with a single class declaration, a set of related types, respectively. Code that uses generics has many benefits:
 
@@ -457,7 +685,8 @@ Generic Method
 		// statement(s)
 	}
 
-###Collections
+Collections
+-----------
 
 A **Collection** (container) is simply an object that groups multiple elements in to a single unit. Collections are used to store, retrieve, manipulate, and communicate aggregate data. 
 
@@ -472,10 +701,17 @@ A **Collection Framework** is a unified architecture for representing and manipu
 	
 	// HashMap Class
 	HashMap hm = new HashMap();
+	
+	// Non generic list
+	List list = new ArrayList();
+	
+	// Generic list
+	List<String> gList = new ArrayList<String>();
 
 **Algorithms** These are the methods that perform useful computations, such as searching and sorting, on objects that implement collection interfaces. The algorithms are said to be polymorphic: that is, the same method can be used on many different implementations of the appropriate collection interface.
 
-###Serialization
+Serialization
+-------------
 
 Java provides a mechanism, called **object serialization** where an object can be represented as a sequence of bytes that includes the object's data as well as information about the object's type and the types of data stored in the object. Classes **ObjectInputStream** and **ObjectOutputStream** are high-level streams that contain the methods for serializing and deserializing an object.
 
@@ -485,19 +721,23 @@ Java provides a mechanism, called **object serialization** where an object can b
 	// ObjectInputStream class contains the following method for deserializing an object
 	public final Object readObject() throws IOException, ClassNotFoundException
 
-###Applets
+Applets
+-------
 
 Using the applet tag
 	
 	<!-- The purpose of the <object> element is to support HTML helpers (plug-ins).-->
 	<object>Name of the object-applet</object>
 
+Multithreding
+-------------
+
+Java is a multithreaded programming language which means we can develop multithreaded program using Java. A multithreaded program contains two or more parts that can run concurrently and each part can handle different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
+
 Testing
 -------
 
-####Unit testing with JUnit
-
-A unit test is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
+A **Unit test** is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
 
 Java Class
 
@@ -523,43 +763,18 @@ JUnit Test
 
 	public class MyClassTest {
   
-  		@Test(expected = IllegalArgumentException.class)
-  		public void testExceptionIsThrown() {
-    			MyClass tester = new MyClass();
-    		tester.multiply(1000, 5);
-  		}
+		@Test(expected = IllegalArgumentException.class)
+		public void testExceptionIsThrown() {
+			MyClass tester = new MyClass();
+		tester.multiply(1000, 5);
+		}
   	}
-
-Debugging
----------
-
-- Break points -> Step Into, Over and Return
-- Exception and conditional Breakpoints
-- Change the variables value
-
-Exception handler components: 
-
-	try { 
-		// code block to be executed
-	} catch (ExceptionType name) {
-		// code block to be executed - exception
-	}
-
-### Java Collections (List, ArrayList, HashMap, generics)
-
-Non generic list, can add anything:  
-
-	List list = new ArrayList();
-	
-Generic list, can add specific: 
-
-	List<String> gList = new ArrayList<String>();
 
 Appendix
 --------
 
 - "Static" is one per class, but not one per object 
--"Static" methods can only access other static data & methods
+- "Static" methods can only access other static data & methods
 - Final data is constant. Cannot be changed.
 - Final methods cannot be overridden. Final classes cannot be sub classed.
 - "Final" keyword can be applied to data,methods, and classes.

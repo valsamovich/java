@@ -732,7 +732,7 @@ Using the applet tag
 Multithreding
 -------------
 
-Java is a multithreaded programming language which means we can develop multithreaded program using Java. A multithreaded program contains two or more parts that can run concurrently and each part can handle different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
+Java is a **multithreaded programming language** which means we can develop multithreaded program using Java. A **multithreaded program** contains two or more parts that can run concurrently and each part can handle different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
 
 Testing
 -------

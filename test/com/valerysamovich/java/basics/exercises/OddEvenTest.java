@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.valerysamovich.java.exercises.OddEven;
+
 public class OddEvenTest {
 
     @Test

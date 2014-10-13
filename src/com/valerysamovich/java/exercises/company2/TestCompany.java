@@ -1,4 +1,4 @@
-package com.valerysamovich.java.exercises.project;
+package com.valerysamovich.java.exercises.company2;
 
 public class TestCompany {
     

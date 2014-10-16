@@ -33,6 +33,16 @@ public class EnumDemo {
         t1 = Tutorials.topic1;
         t2 = Tutorials.topic2;
         t3 = Tutorials.topic3;
+        
+        if(t1.compareTo(t2) > 0) {
+            System.out.println(t2 + " completed before " + t1);
+        }
+        if(t1.compareTo(t2) < 0) {
+            System.out.println(t1 + " completed before " + t2);
+        }
+        if(t1.compareTo(t3) == 0) {
+            System.out.println(t1 + " completed before " + t3);
+        }
     }
 
 }

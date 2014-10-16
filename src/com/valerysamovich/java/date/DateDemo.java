@@ -2,7 +2,7 @@
  * @file DateDemo.java
  * @author Valery Samovich
  * @version 1.0.0
- * @date 009/03/2014
+ * @date 09/03/2014
  */
 
 package com.valerysamovich.java.date;

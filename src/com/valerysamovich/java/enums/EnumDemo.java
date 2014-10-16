@@ -16,6 +16,10 @@ enum Tutorials {
 
 public class EnumDemo {
 
+    /**
+     * Main class
+     * @param args
+     */
     public static void main(String[] args) {
     
         /**

@@ -7,6 +7,13 @@
 
 package com.valerysamovich.java.enums;
 
+/**
+ * Enum showing topics covered under Tutorials
+ */
+enum Tutorials {
+    topic1, topic2, topic3;
+}
+
 public class EnumDemo {
 
     public static void main(String[] args) {
@@ -21,7 +28,11 @@ public class EnumDemo {
          * o - This is object to be compared
          */
         
+        Tutorials t1, t2,t3;
         
+        t1 = Tutorials.topic1;
+        t2 = Tutorials.topic2;
+        t3 = Tutorials.topic3;
     }
 
 }

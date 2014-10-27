@@ -11,11 +11,11 @@ public class RegexMatches {
         String pattern = "(.*)(\\d+)(.*)";
         
         // Create a Pattern object.
-        Pattern r = new Pattern();
-        r.compile(pattern);
+        // Pattern r = new Pattern();
+        // r.compile(pattern);
         
         // No create matcher object.
-        Matcher m = r.matcher(line);
+        // Matcher m = r.matcher(line);
         
         // TO-DO: Test and Output... 
         

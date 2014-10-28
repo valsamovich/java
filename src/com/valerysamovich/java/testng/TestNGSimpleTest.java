@@ -7,11 +7,11 @@
 
 package com.valerysamovich.java.testng;
 
-import static org.junit.Assert.assertEquals;
-
-import org.junit.Test;
+import org.testng.annotations.Test;
+import static org.testng.Assert.assertEquals;
 
 public class TestNGSimpleTest {
+
     @Test
     public void testAdd() {
         String str = "TestNG is working fine";

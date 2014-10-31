@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.valerysamovich.java.advanced.junit.first.MyClass;
+
 public class MyClassTest {
     
     @Test (expected  = IllegalArgumentException.class)

@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.valerysamovich.java.exercises.StringHelper;
+import com.valerysamovich.java.basic.exercises.exerciseE.StringHelper;
 
 public class StringHelperTest {
 

@@ -25,6 +25,7 @@
         </configuration>
       </plugin>
     </plugins>
+  </build>
   <!-- Dependencies -->
   <dependencies>
     <dependency>
@@ -40,8 +41,7 @@
        <artifactId>testng</artifactId>
        <scope>system</scope>
        <version>6.8.8</version>
-       <systemPath>${basedir}/src/lib/testng.jar</systemPath>
+       <systemPath>/Users/samov004/Software/testng-6.8.8.jar</systemPath>
     </dependency>
   </dependencies>
-  </build>
 </project>

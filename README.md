@@ -1,7 +1,7 @@
 java-tutorial
 =============
 
-**Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural- neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
+**Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural-Neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
 Requirements
 ------------

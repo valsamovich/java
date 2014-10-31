@@ -10,5 +10,5 @@ package com.valerysamovich.java.annotations.type;
     reviewers = {"Alice","Bob","Cindy"}
 )
 public class Generation3List extends Generation2List {
-    // class code
+    // Class code
 }

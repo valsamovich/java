@@ -1,10 +1,8 @@
 package com.valerysamovich.java.basic.exercises.exerciseD;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import com.valerysamovich.java.basic.exercises.exerciseD.OddEven;
 
 public class OddEvenTest {
 

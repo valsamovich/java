@@ -1,6 +1,5 @@
 package com.valerysamovich.java.basic.regex;
 
-import java.util.regex.*;
 
 public class RegexMatches {
     

@@ -1,10 +1,8 @@
 package com.valerysamovich.java.advanced.junit;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
-
-import com.valerysamovich.java.advanced.junit.MyClass;
 
 public class MyClassTest {
     

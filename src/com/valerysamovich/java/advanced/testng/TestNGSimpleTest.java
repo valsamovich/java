@@ -7,8 +7,9 @@
 
 package com.valerysamovich.java.advanced.testng;
 
-import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
+
+import org.testng.annotations.Test;
 
 public class TestNGSimpleTest {
 

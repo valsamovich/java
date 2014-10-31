@@ -7,7 +7,7 @@
 package com.valerysamovich.java.advanced.annotations.type;
 
 // import statement to use @Documented
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
 /**
  * Define the annotation type. It's define with interface by the at sign (@).
  * @ = AT, as in annotation type.

@@ -9,7 +9,7 @@
  *
  */
 
-package com.valerysamovich.java.advanced.junit.first;
+package com.valerysamovich.java.advanced.junit;
 
 public class MyClass {
     

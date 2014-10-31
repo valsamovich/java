@@ -1,10 +1,10 @@
-package com.valerysamovich.java.junit.first;
+package com.valerysamovich.java.advanced.junit;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.valerysamovich.java.advanced.junit.first.MyClass;
+import com.valerysamovich.java.advanced.junit.MyClass;
 
 public class MyClassTest {
     

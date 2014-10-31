@@ -1,4 +1,4 @@
-package com.valerysamovich.java.basics.exercises;
+package com.valerysamovich.java.basic.exercises.exerciseD;
 
 import static org.junit.Assert.*;
 

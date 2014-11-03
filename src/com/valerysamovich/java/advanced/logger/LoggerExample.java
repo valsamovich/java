@@ -4,8 +4,7 @@
  * @version 1.0.0
  * @date 11/3/2014
  * 
- * GreetingClient is a client program that connects to a server by using a 
- * socket and send a greeting, and then waits for response.
+ * Example of logger class with LOGGER object which is used to log messages.
  */
 
 package com.valerysamovich.java.advanced.logger;

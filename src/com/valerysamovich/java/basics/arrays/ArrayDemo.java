@@ -1,3 +1,12 @@
+/**
+ * @file ArrayDemo.java
+ * @author Valery Samovich
+ * @version 1.0.0
+ * @date 11/3/2014
+ * 
+ * Example of Java Array use.
+ */
+
 package com.valerysamovich.java.basics.arrays;
 
 public class ArrayDemo {

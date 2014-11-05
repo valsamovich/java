@@ -512,8 +512,8 @@ Encapsualtion: Data Hiding                | x | x
 Polymorphism: Overloading, Overriding     | x | x
 Inheritance: Abstract classes, Interfaces |   | x
 
-OOP: Inheritance
-----------------
+Inheritance
+-----------
 
 **Inheritance** is when a class acquires(extend) the properties of another class. `Inheritance` commonly used keyword would be `extends` and `implements`. These words would determine whether one object **IS-A** type of another. With use of the extends keyword the subclasses will be able to inherit all the properties of the superclass except for the private properties of the superclass.
 	
@@ -529,26 +529,37 @@ OOP: Inheritance
 	public class Dog extends Mammal{
 	}
 
-OOP: Abstraction
-----------------
+Abstraction
+-----------
 
 **Abstraction** refers to the ability to make a class abstract in OOP. An abstract class is one that cannot be instantiated. All other functionality of the class still exists, and its fields, methods, and constructors are all accessed in the same manner. You just cannot create an instance of the abstract class. **Abstract** class is a class which has empty methods and fully defined methods.
 
 An interface is a collection of abstract methods. A class implements an interface, thereby inheriting the abstract methods of the interface.
 
-OOP: Encapsulation
-------------------
+Encapsulation
+-------------
 
 **Encapsulation** is a data & methods that act on the data. Getter and Setter - Accessor and Mutator
 
 **Constructor** is a method that has the same name as the class. It is executed when an object is created. It is used to set default values. Does not return anything including void.
 
-OOP: Polymorphism
------------------
+Polymorphism
+------------
 
 **Overloading** is when methods of the same name are differentiated by their passing arguments.
 
 **Overriding** is when a method in the subclass has the same signature as a method in the super class, then the subclass method takes precedence
+
+Super
+-----
+
+**Super** keyword is used to access super class data and methods.
+	
+	// Access super class data
+	System.out.println("Name from subclass : " + super.name);
+	
+	// Access super class data
+	System.out.println("Name from subclass : " + super.name);
 
 Annotations
 -----------

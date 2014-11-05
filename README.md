@@ -558,8 +558,8 @@ Super
 	// Access super class data
 	System.out.println("Name from subclass : " + super.name);
 	
-	// Access super class data
-	System.out.println("Name from subclass : " + super.name);
+	// Invoke Super class's 'getClassName()' method 
+        super.getClassName();
 
 Annotations
 -----------

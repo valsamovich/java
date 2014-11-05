@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.superex;
+package com.valerysamovich.java.oop.superex.example1;
 
 public class TestBox {
 

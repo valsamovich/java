@@ -26,7 +26,7 @@ Note: To verify the Java version on machine: **java -version**
 Program
 -------
 
-Simple code that would print the words Hello World:
+Simple code that would print the words `Hello World`:
 
 	public class MyJavaProgram{
 	
@@ -738,6 +738,19 @@ Multithreding
 -------------
 
 Java is a **multithreaded programming language** which means we can develop multithreaded program using Java. A **multithreaded program** contains two or more parts that can run concurrently and each part can handle different task at the same time making optimal use of the available resources specially when your computer has multiple CPUs.
+
+Logger
+------
+
+**Logging** is the process of writing log messages during the execution of a program to a central place. This logging allows you to report and persist error and warning messages as well as info messages (e.g., runtime statistics) so that the messages can later be retrieved and analyzed.
+
+Java contains the **Java Logging API**. This logging API allows you to configure which message types are written. Individual classes can use this logger to write messages to the configured log files.
+
+	// The java.util.logging package provides the logging capabilities via the Logger class.
+	import java.util.logging.Logger;
+	
+	// Assumes the current class is called logger
+	private final static Logger LOGGER = Logger.getLogger(MyClass.class.getName());
 
 Testing
 -------

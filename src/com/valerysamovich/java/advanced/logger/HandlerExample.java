@@ -38,11 +38,22 @@ public class HandlerExample {
             //Assigning handlers to LOGGER object
             LOGGER.addHandler(consoleHandler);
             LOGGER.addHandler(fileHandler);
-
-        } catch (IOException exception) {
             
+            //Setting levels to handlers and LOGGER
+            consoleHandler.setLevel(Level.ALL);
+            fileHandler.setLevel(Level.ALL);
+            LOGGER.setLevel(Level.ALL);
+            
+            LOGGER.config("Configuration done.");
+            
+            //Console handler removed
+            LOGGER.removeHandler(consoleHandler);
+            LOGGER.log(Level.FINE, "Finer logged");
+        } catch (IOException exception) {
+            LOGGER.log(Level.SEVERE, "Error occur in FileHandler.", exception);
         }
-
+        
+        LOGGER.finer("Finest example on LOGGER handler completed.");
     }
 
 }

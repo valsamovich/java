@@ -553,7 +553,7 @@ Polymorphism
 Super
 -----
 
-**Super** keyword is used to access super class data and methods.
+**Super** keyword is used to access super class data and methods. 
 	
 	// Access super class data
 	System.out.println("Name from subclass : " + super.name);
@@ -807,5 +807,4 @@ Appendix
 - Final data is constant. Cannot be changed.
 - Final methods cannot be overridden. Final classes cannot be sub classed.
 - "Final" keyword can be applied to data,methods, and classes.
-- "Super" keyword id used to access superclass data and methods
 - "This" keyword is used to access  class level data

@@ -26,7 +26,7 @@ Note: To verify the Java version on machine: **java -version**
 Program
 -------
 
-Simple code that would print the words Hello World:
+Simple code that would print the words `Hello World`:
 
 	public class MyJavaProgram{
 	

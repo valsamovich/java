@@ -512,6 +512,13 @@ Encapsualtion: Data Hiding                | x | x
 Polymorphism: Overloading, Overriding     | x | x
 Inheritance: Abstract classes, Interfaces |   | x
 
+Constructor
+-----------
+- Constructor is a method that has the same name as the class.
+- It is executed when an object is created.
+- It is used to set default values.
+- Does not return anything including void.
+
 Inheritance
 -----------
 

@@ -43,5 +43,15 @@
        <version>6.8.8</version>
        <systemPath>/Users/samov004/Software/testng-6.8.8.jar</systemPath>
     </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-firefox-driver</artifactId>
+      <version>2.42.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-htmlunit-driver</artifactId>
+      <version>2.42.2</version>
+    </dependency>
   </dependencies>
 </project>

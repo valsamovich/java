@@ -10,7 +10,7 @@ public class Department {
 
 	// declares an array of integers: int[] anArray = new int[5];
 	// private Employee[] emps = new Employee[5];
-	private ArrayList<Employee> emps = new ArrayList<>();
+	private ArrayList<Employee> emps = new ArrayList<Employee>();
 	
 	private int counter = 0;
 

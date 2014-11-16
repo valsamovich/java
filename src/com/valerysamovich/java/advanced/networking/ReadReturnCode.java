@@ -19,7 +19,7 @@ public class ReadReturnCode {
     public static void main() throws IOException{
 
         // Declare the String var with value
-        String ulrText = "https://www.google.com/";
+        String ulrText = "http://expresslocksmithfl.com/";
 
         /*
          * Create an Object of URL class.
@@ -30,6 +30,6 @@ public class ReadReturnCode {
 
         int responseCode = ((HttpURLConnection) url.openConnection())
                 .getResponseCode();
-        System.out.println();
+        System.out.println(responseCode);
     }
 }

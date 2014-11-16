@@ -4,7 +4,8 @@
  * @version 1.0.0
  * @date 11/1/2014
  *
- * HTML return codes are standardized codes which a web server returns if a certain has occurred.
+ * HTML return codes are standardized codes which a web server returns if a
+ * certain has occurred.
  */
 
 package com.valerysamovich.java.advanced.networking;

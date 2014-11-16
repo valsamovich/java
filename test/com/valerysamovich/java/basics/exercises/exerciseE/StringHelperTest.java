@@ -1,11 +1,14 @@
+/**
+ * @file StringHelperTest.java
+ * @author Valery Samovich
+ * @version 1.0.0
+ * @date 11/16/2014
+ */
+
 package com.valerysamovich.java.basics.exercises.exerciseE;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
-
-import com.valerysamovich.java.basics.exercises.exerciseE.StringHelper;
-
+import static org.junit.Assert.assertEquals;
 public class StringHelperTest {
 
     @Test

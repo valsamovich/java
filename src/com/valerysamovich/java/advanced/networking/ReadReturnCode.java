@@ -11,6 +11,7 @@
 package com.valerysamovich.java.advanced.networking;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ReadReturnCode {
@@ -26,5 +27,9 @@ public class ReadReturnCode {
          * a pointer to a "resource" on the World Wide Web.
          */
         URL url = new URL(ulrText);
+
+        int responseCode = ((HttpURLConnection) url.openConnection())
+                .getResponseCode();
+        System.out.println();
     }
 }

@@ -8,7 +8,7 @@ public class HelloWorld {
         
         // shortcut: type 'syso' and press control + space bar (Mac)
         // prints 'Hello World!' in the console
-        System.out.println(); 
+        System.out.println("Hello World!");
 
     }
 

@@ -1,3 +1,12 @@
+/**
+ * @file GreetingClient.java
+ * @author Valery Samovich
+ * @version 1.0.0
+ * @date 11/1/2014
+ *
+ * Main method in java.
+ */
+
 package com.valerysamovich.java.basics.main;
 
 public class MyFirstClass {

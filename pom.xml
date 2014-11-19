@@ -53,5 +53,11 @@
       <artifactId>selenium-htmlunit-driver</artifactId>
       <version>2.42.2</version>
     </dependency>
+    <!-- HttpClient -->
+    <dependency>
+      <groupId>commons-httpclient</groupId>
+      <artifactId>commons-httpclient</artifactId>
+      <version>3.1</version>
+    </dependency>
   </dependencies>
 </project>

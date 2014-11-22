@@ -520,6 +520,7 @@ Constructor
 - It is executed when an object is created.
 - It is used to set default values.
 - Does not return anything including void.
+- Cunstructor can be oveloaded (i.e. can create multiply constructor).
 
 ```
 class Programming {

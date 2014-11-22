@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.constructors.example1;
+package com.valerysamovich.java.oop.constructors.box;
 
 public class TestBox {
 	

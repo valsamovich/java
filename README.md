@@ -514,10 +514,25 @@ Inheritance: Abstract classes, Interfaces |   | x
 
 Constructor
 -----------
-- Constructor is a method that has the same name as the class.
+**Constructors** are the methods which are used to initiliaze objects. They are called or invoced when an object of class is created and can't be called explicitly. It is optional to write constructor mehtod in a class but due to therir utility they are used.
+
+- Constructor is a method that has the same name as the class. 
 - It is executed when an object is created.
 - It is used to set default values.
 - Does not return anything including void.
+
+```
+class Programming {
+	// Constructor method
+	Programming() {
+		System.out.println("Constructor method called.");	
+	}
+	public static void main(String[] args) {
+		// Creating the Programming object
+		Programming object = new Programming();
+	}
+}
+```
 
 Inheritance
 -----------

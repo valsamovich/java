@@ -9,5 +9,21 @@
 
 package com.valerysamovich.java.oop.constructors.chaining;
 
-public class Parent {
+public class Parent extends GrandParent {
+
+    int classB;
+
+    // Constructor Method.
+    Parent(int constructorA, int constructorB) {
+        super(constructorA);
+        this.classB = constructorB;
+    }
+
+    // Show method for Print
+    void show() {
+        System.out.println("GrandParent's classA = " + classA);
+        System.out.println("Parent's classB = " + classB);
+    }
+
+
 }

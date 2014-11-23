@@ -514,7 +514,7 @@ Inheritance: Abstract classes, Interfaces |   | x
 
 Constructor
 -----------
-**Constructors** are the methods which are used to initiliaze objects. They are called or invoced when an object of class is created and can't be called explicitly. It is optional to write constructor mehtod in a class but due to therir utility they are used.
+**Constructors** are the methods which are used to initiliaze objects. They are called or invoked when an object of class is created and can't be called explicitly. It is optional to write constructor mehtod in a class but due to therir utility they are used.
 
 - Constructor is a method that has the same name as the class. 
 - It is executed when an object is created.
@@ -534,6 +534,8 @@ class Programming {
 	}
 }
 ```
+
+**Constructor chaining** occurs when a class inherits another class i.e. in inheritance, as in inheritance sub class inherits the properties of superclass. Both the super and sub class may have constructor methods, when an object of sub class is created it's constructor is invoked it initializes subclass attributes, now super class constructor needs to be invoked, to achieve this java provides a `super` keyword through we can pass arguments to super class constructor.
 
 Inheritance
 -----------

@@ -24,6 +24,7 @@ public class TemperatureConverter {
         System.out.println("Enter temperature in Fahrenheit:");
         temperature = in.nextInt();
 
+        // For Celsius to Fahrenheit conversion: T = 9 * T / 5 + 32;
         temperature = ((temperature - 32) * 5) / 9;
 
         System.out.println("Temperature in Celsius = " + temperature);

@@ -6,7 +6,7 @@ java-tutorial
 Requirements
 ------------
 
-External dependencies: TestNg, JUnit, Selenium WebDriver
+External dependencies: TestNg, JUnit, Selenium WebDriver.
 
 Syntax
 ------

@@ -16,7 +16,7 @@ public class MultiplicationTable {
 
     public static void main(String[] args) {
 
-        // Local vars
+        // Local vars.
         int n, c;
 
         System.out.println(

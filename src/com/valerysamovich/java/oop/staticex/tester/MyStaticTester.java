@@ -1,4 +1,4 @@
-package com.valerysamovich.java.oop.staticex.example2;
+package com.valerysamovich.java.oop.staticex.tester;
 
 public class MyStaticTester {
 

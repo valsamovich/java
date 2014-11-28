@@ -1,4 +1,11 @@
-package com.valerysamovich.java.oop.staticex.example2;
+/**
+ * @file MyStaticExample.java
+ * @author Valery Samovich
+ * @version 1.0.0
+ * @date 11/22/2014
+ */
+
+package com.valerysamovich.java.oop.staticex.tester;
 
 public class MyStaticExample {
     

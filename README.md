@@ -589,11 +589,26 @@ Super
 This
 -----
 
+**This** keyword is used to access  class level data
+
 Static
 ------
-**Static** is one per class, but not one per object
+**Static** is one per class, but not one per object. **Static** methods can only access other static data & methods.
 
-...
+```
+// Static data.
+static int staticVariable;
+
+// Static method.
+static public void  staticMethod(){
+        // method body.
+}
+```
+
+Final
+-----
+
+**Final** data is constant and Cannot be changed. Final methods cannot be overridden and Final classes cannot be sub classed. Final keyword can be applied to data,methods, and classes.
 
 Annotations
 -----------
@@ -832,13 +847,3 @@ JUnit Test
 		tester.multiply(1000, 5);
 		}
   	}
-
-Appendix
---------
-
-- "Static" is one per class, but not one per object 
-- "Static" methods can only access other static data & methods
-- Final data is constant. Cannot be changed.
-- Final methods cannot be overridden. Final classes cannot be sub classed.
-- "Final" keyword can be applied to data,methods, and classes.
-- "This" keyword is used to access  class level data

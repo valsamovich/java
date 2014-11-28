@@ -585,9 +585,13 @@ Super
 	
 	// Invoke Super class's 'getClassName()' method 
         super.getClassName();
-        
+      
 This
 -----
+
+Static
+------
+**Static** is one per class, but not one per object
 
 ...
 

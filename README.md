@@ -3,10 +3,7 @@ java-tutorial
 
 **Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural-Neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
-Requirements
-------------
-
-External dependencies: TestNg, JUnit, Selenium WebDriver.
+Dependencies: TestNg, JUnit, Selenium WebDriver.
 
 Syntax
 ------

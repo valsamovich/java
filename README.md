@@ -48,7 +48,7 @@ Identifiers
 -----------
 
 All Java components require names. Names used for classes, variables and methods are called identifiers.
-- All identifiers should begin with a letter (A to Z or a to z ), currency character ($) or an underscore (_).
+- All identifiers should begin with a letter `A` to `Z` or `a` to `z`, currency character ($) or an underscore (_).
 - After the first character identifiers can have any combination of characters.
 - A key word cannot be used as an identifier.
 - Most importantly identifiers are case sensitive.

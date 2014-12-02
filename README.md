@@ -688,9 +688,9 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 **@Retention** annotation specifies how the marked annotation is stored.
 
-- RetentionPolicy.SOURCE – The marked annotation is retained only in the source level and is ignored by the compiler.
-- RetentionPolicy.CLASS – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM).
-- RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment.
+- `RetentionPolicy.SOURCE` – The marked annotation is retained only in the source level and is ignored by the compiler.
+- `RetentionPolicy.CLASS` – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM).
+- `RetentionPolicy.RUNTIME` – The marked annotation is retained by the JVM so it can be used by the runtime environment.
 
 **@Documented** annotation indicates that whenever the specified annotation is used those elements should be documented using the Javadoc tool.
 

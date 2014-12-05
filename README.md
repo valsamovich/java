@@ -696,14 +696,14 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 **@Target** annotation marks another annotation to restrict what kind of Java elements the annotation can be applied to. A target annotation specifies one of the following element types as its value:
 
-- ElementType.ANNOTATION_TYPE can be applied to an annotation type.
-- ElementType.CONSTRUCTOR can be applied to a constructor.
-- ElementType.FIELD can be applied to a field or property.
-- ElementType.LOCAL_VARIABLE can be applied to a local variable.
-- ElementType.METHOD can be applied to a method-level annotation.
-- ElementType.PACKAGE can be applied to a package declaration.
-- ElementType.PARAMETER can be applied to the parameters of a method.
-- ElementType.TYPE can be applied to any element of a class.
+- `ElementType.ANNOTATION_TYPE` can be applied to an annotation type.
+- `ElementType.CONSTRUCTOR` can be applied to a constructor.
+- `ElementType.FIELD` can be applied to a field or property.
+- `ElementType.LOCAL_VARIABLE` can be applied to a local variable.
+- `ElementType.METHOD` can be applied to a method-level annotation.
+- `ElementType.PACKAGE` can be applied to a package declaration.
+- `ElementType.PARAMETER` can be applied to the parameters of a method.
+- `ElementType.TYP`E can be applied to any element of a class.
 
 **@Inherited** annotation indicates that the annotation type can be inherited from the super class.
 

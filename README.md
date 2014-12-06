@@ -724,7 +724,7 @@ Generic example
 
 **Generic Methods** can be called with arguments of different types. Based on the types of the arguments to the generic method, the compiler handles each method call approprietary. Generic Method Rules:
 
-- Declarations have a type parameter with angle brackets < ... >, which precedes with return type.
+- Declarations have a type parameter with angle brackets `<` ... `>`, which precedes with return type.
 - Geneneric type name or Type parameters (type variable) separated by commas. 
 - The type parameters can be used to declare the return type and act as placeholders.
 - A generic method's body is declared any other method. Parameters can represent only reference types.

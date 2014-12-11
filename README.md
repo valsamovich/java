@@ -3,10 +3,7 @@ java-tutorial
 
 **Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural-Neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
-Requirements
-------------
-
-External dependencies: TestNg, JUnit, Selenium WebDriver.
+Dependencies: TestNg, JUnit, Selenium WebDriver.
 
 Syntax
 ------
@@ -51,7 +48,7 @@ Identifiers
 -----------
 
 All Java components require names. Names used for classes, variables and methods are called identifiers.
-- All identifiers should begin with a letter (A to Z or a to z ), currency character ($) or an underscore (_).
+- All identifiers should begin with a letter `A` to `Z` or `a` to `z`, currency character `$` or an underscore `_`.
 - After the first character identifiers can have any combination of characters.
 - A key word cannot be used as an identifier.
 - Most importantly identifiers are case sensitive.
@@ -589,11 +586,26 @@ Super
 This
 -----
 
+**This** keyword is used to access  class level data
+
 Static
 ------
-**Static** is one per class, but not one per object
+**Static** is one per class, but not one per object. **Static** methods can only access other static data & methods.
 
-...
+```
+// Static data.
+static int staticVariable;
+
+// Static method.
+static public void  staticMethod(){
+        // method body.
+}
+```
+
+Final
+-----
+
+**Final** data is constant and Cannot be changed. Final methods cannot be overridden and Final classes cannot be sub classed. Final keyword can be applied to data,methods, and classes.
 
 Annotations
 -----------
@@ -676,22 +688,22 @@ Meta-Annotations is annotation that apply to other annotations. Defined in java.
 
 **@Retention** annotation specifies how the marked annotation is stored.
 
-- RetentionPolicy.SOURCE – The marked annotation is retained only in the source level and is ignored by the compiler.
-- RetentionPolicy.CLASS – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM).
-- RetentionPolicy.RUNTIME – The marked annotation is retained by the JVM so it can be used by the runtime environment.
+- `RetentionPolicy.SOURCE` – The marked annotation is retained only in the source level and is ignored by the compiler.
+- `RetentionPolicy.CLASS` – The marked annotation is retained by the compiler at compile time, but is ignored by the Java Virtual Machine (JVM).
+- `RetentionPolicy.RUNTIME` – The marked annotation is retained by the JVM so it can be used by the runtime environment.
 
 **@Documented** annotation indicates that whenever the specified annotation is used those elements should be documented using the Javadoc tool.
 
 **@Target** annotation marks another annotation to restrict what kind of Java elements the annotation can be applied to. A target annotation specifies one of the following element types as its value:
 
-- ElementType.ANNOTATION_TYPE can be applied to an annotation type.
-- ElementType.CONSTRUCTOR can be applied to a constructor.
-- ElementType.FIELD can be applied to a field or property.
-- ElementType.LOCAL_VARIABLE can be applied to a local variable.
-- ElementType.METHOD can be applied to a method-level annotation.
-- ElementType.PACKAGE can be applied to a package declaration.
-- ElementType.PARAMETER can be applied to the parameters of a method.
-- ElementType.TYPE can be applied to any element of a class.
+- `ElementType.ANNOTATION_TYPE` can be applied to an annotation type.
+- `ElementType.CONSTRUCTOR` can be applied to a constructor.
+- `ElementType.FIELD` can be applied to a field or property.
+- `ElementType.LOCAL_VARIABLE` can be applied to a local variable.
+- `ElementType.METHOD` can be applied to a method-level annotation.
+- `ElementType.PACKAGE` can be applied to a package declaration.
+- `ElementType.PARAMETER` can be applied to the parameters of a method.
+- `ElementType.TYP`E can be applied to any element of a class.
 
 **@Inherited** annotation indicates that the annotation type can be inherited from the super class.
 
@@ -712,7 +724,7 @@ Generic example
 
 **Generic Methods** can be called with arguments of different types. Based on the types of the arguments to the generic method, the compiler handles each method call approprietary. Generic Method Rules:
 
-- Declarations have a type parameter with angle brackets < ... >, which precedes with return type.
+- Declarations have a type parameter with angle brackets `<` ... `>`, which precedes with return type.
 - Geneneric type name or Type parameters (type variable) separated by commas. 
 - The type parameters can be used to declare the return type and act as placeholders.
 - A generic method's body is declared any other method. Parameters can represent only reference types.
@@ -832,13 +844,3 @@ JUnit Test
 		tester.multiply(1000, 5);
 		}
   	}
-
-Appendix
---------
-
-- "Static" is one per class, but not one per object 
-- "Static" methods can only access other static data & methods
-- Final data is constant. Cannot be changed.
-- Final methods cannot be overridden. Final classes cannot be sub classed.
-- "Final" keyword can be applied to data,methods, and classes.
-- "This" keyword is used to access  class level data

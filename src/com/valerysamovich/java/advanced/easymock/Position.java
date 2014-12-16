@@ -10,5 +10,7 @@
 package com.valerysamovich.java.advanced.easymock;
 
 public enum Position {
-    BOSS, PROGRAMMER, SURFER
+
+    BOSS, PROGRAMMER, SURFER;
+
 }

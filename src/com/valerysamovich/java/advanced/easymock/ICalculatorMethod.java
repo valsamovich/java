@@ -1,5 +1,5 @@
 /**
- * @file ICalcMethod.java
+ * @file ICalculatorMethod.java
  * @author Valery Samovich
  * @version 1.0.0
  * @date 12/16/2014

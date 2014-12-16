@@ -15,9 +15,30 @@ public class IncomeCalculator {
     private ICalculatorMethod calculatorMethod;
     private Position position;
 
-    // Setter for I CalculatorMethod
+    // Setter for private ICalculatorMethod field (object).
     public void setCalculatorMethod(ICalculatorMethod calculatorMethod) {
         this.calculatorMethod = calculatorMethod;
+    }
+
+    // Setter for private Position filed (object).
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+    /*
+     * Calculate method.
+     */
+    public double calculate() {
+
+        if(calculatorMethod == null) {
+            throw new RuntimeException("CalculatorMethod not yet maintained.");
+        }
+
+        if(position == null) {
+            throw new RuntimeException("Position not yet maintained.");
+        }
+
+        return calculatorMethod.calculator(position);
+
     }
 }
 

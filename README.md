@@ -809,6 +809,20 @@ Java contains the **Java Logging API**. This logging API allows you to configure
 	// Assumes the current class is called logger
 	private final static Logger LOGGER = Logger.getLogger(MyClass.class.getName());
 
+EasyMock
+--------
+
+**EasyMock** is a mock framework which can be easly used in conjunction with JUnit. EasyMock instantiates an object based on an interface or class.
+
+```
+import static org.easymock.EasyMock.createNiceMock;
+...
+// ICalculateMethod is the object whitch is mocked
+ICalculateMethod calculateMethod = createNiceMock(ICalculateMethod.class);
+```
+
+The `createNiceMock()` method creates a mock whic returns default values for methods which are not overiden. A mock ceated with th `Mock()` method will fails is such a case.
+
 Testing
 -------
 

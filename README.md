@@ -823,6 +823,17 @@ ICalculateMethod calculateMethod = createNiceMock(ICalculateMethod.class);
 
 The `createNiceMock()` method creates a mock whic returns default values for methods which are not overiden. A mock ceated with th `Mock()` method will fails is such a case.
 
+Junit
+-----
+
+**JUnit** is a testing framework for the Java Programming Language. It's a test driven developement, and is one of a family of unit testing frameworks collectively known as xUnit. **JUnit** includes the features:
+
+- It's an open source framework.
+- Provides Annotations, Assertions, and Test Runners.
+- It's simple and can be run automatically.
+
+A **Unit Test Case** is a part of code which ensures that the another part of the code (method)works as expected. A formal written test-case is characterized by a known input and by an expected output, which is worked out before the test is executed. There must be at least two test cases for each requirement: one positive and one negative.
+
 Testing
 -------
 

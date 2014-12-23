@@ -3,8 +3,6 @@
  * @author Valery Samovich
  * @version 1.0.0
  * @date 12/23/2014
- *
- * Demonstrates the assert with if statement with input.
  */
 
 package com.valerysamovich.java.advanced.junit;

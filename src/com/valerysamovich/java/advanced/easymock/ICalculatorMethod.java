@@ -7,7 +7,6 @@
  * Using the Easymock and JUnit
  */
 
-
 package com.valerysamovich.java.advanced.easymock;
 
 public interface ICalculatorMethod {

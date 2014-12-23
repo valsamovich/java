@@ -826,7 +826,7 @@ The `createNiceMock()` method creates a mock whic returns default values for met
 Junit
 -----
 
-**JUnit** is a testing framework for the Java Programming Language. It's a test driven developement, and is one of a family of unit testing frameworks collectively known as xUnit. **JUnit** includes the features:
+**JUnit** is a testing framework for the Java Programming Language. A **Unit test** is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests). Features:
 
 - It's an open source framework.
 - Provides Annotations, Assertions, and Test Runners.
@@ -834,38 +834,62 @@ Junit
 
 A **Unit Test Case** is a part of code which ensures that the another part of the code (method)works as expected. A formal written test-case is characterized by a known input and by an expected output, which is worked out before the test is executed. There must be at least two test cases for each requirement: one positive and one negative.
 
-Testing
--------
-
-A **Unit test** is a piece of code written by a developer that executes a specific functionality in the code to be tested. The percentage of code which is tested by unit tests is typically called test coverage. A unit test targets a small unit of code, e.g., a method or a class, (local tests).
-
 Java Class
 
-	package com.valerysamovich.java.junit.first;
-	
-	// My Class
-	public class MyClass {
-  		public int multiply(int x, int y) {
-    			// the following is just an example
-    			if (x > 999) {
-      				throw new IllegalArgumentException("X should be less than 1000");
-    			}
-    			return x / y;
-  		}
-	} 
-	
+```
+package com.valerysamovich.java.junit.first;
+
+// My Class
+public class MyClass {
+  	public int multiply(int x, int y) {
+    		// the following is just an example
+    		if (x > 999) {
+      			throw new IllegalArgumentException("X should be less than 1000");
+    		}
+    		return x / y;
+  	}
+} 
+```
+
 JUnit Test
 
-	package com.valerysamovich.junit.first;
+```
+package com.valerysamovich.junit.first;
 
-	import static org.junit.Assert.assertEquals;
-	import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
-	public class MyClassTest {
-  
-		@Test(expected = IllegalArgumentException.class)
-		public void testExceptionIsThrown() {
-			MyClass tester = new MyClass();
-		tester.multiply(1000, 5);
-		}
-  	}
+public class MyClassTest {
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testExceptionIsThrown() {
+		MyClass tester = new MyClass();
+	tester.multiply(1000, 5);
+	}
+  }
+```
+
+JSON
+----
+
+**JSON** or JavaScript Object Notation is a lightweight is a text-based open standard designed for human-readable data interchange. The JSON format was originally specified by Douglas Crockford, and is described in RFC 4627. The official Internet media type for JSON is application/json. The JSON filename extension is `.json`.
+
+**JSON** syntax is basically considered as subset of JavaScript. Data is represented in name/value pairs. Curly braces `{}` hold objects and each name is followed by `:` (colon), the name/value pairs are separated by `,` (comma). Square brackets `[]` hold arraysand values are separated by `,` (comma). **JSON** supports following two data structures: **Collections of name/value pairs**, **Ordered list of values**.
+ 
+```
+{
+    "book": [
+    {
+       "id":"01",
+       "language": "Java",
+       "edition": "third",
+       "author": "Herbert Schildt"
+    },
+    {
+       "id":"07",
+       "language": "C++",
+       "edition": "second"
+       "author": "E.Balagurusamy"
+    }]
+}
+```

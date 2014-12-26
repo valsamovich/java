@@ -3,7 +3,7 @@ java-tutorial
 
 **Java** is Object-Oriented, Platform independent, Simple, Secure, Architectural-Neutral, Portable, Robust, Multi-threaded, Interpreted, High Performance, Distributed, Dynamic, etc.
 
-Dependencies: TestNg, JUnit, Selenium WebDriver, Hamcrest, EasyMock, JSON.
+Dependencies: JSON, TestNg, JUnit, Selenium WebDriver, Hamcrest, EasyMock.
 
 Syntax
 ------

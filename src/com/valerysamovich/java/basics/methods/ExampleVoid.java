@@ -5,7 +5,7 @@
  * @date 11/29/2014
  */
 
-package com.valerysamovich.java.basics.exercises.methods;
+package com.valerysamovich.java.basics.methods;
 
 public class ExampleVoid {
 

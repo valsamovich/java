@@ -3,6 +3,13 @@
  * @author Valery Samovich
  * @version 1.0.0
  * @date 11/29/2014
+ *
+ * While working under calling process, arguments is to be passed. These should
+ * be in the same order as their respective parameters in the method specification.
+ * Parameters can be passed by value or by reference.
+ *
+ * Passing Parameters by Value means calling a method with a parameter. Through
+ * this the argument value is passed to the parameter.
  */
 
 package com.valerysamovich.java.basics.methods;

@@ -1,7 +1,7 @@
 /**
  * @file Student.java
  * @author Valery Samovich
- * @version 1.0.0
+ * @version 1
  * @date 2015/01/05
  */
 

@@ -5,7 +5,7 @@
  * @date 10/15/2014
  */
 
-package com.valerysamovich.java.basics.enums;
+package com.valerysamovich.java.advanced.enums;
 
 /**
  * Enum showing topics covered under Tutorials

@@ -823,8 +823,15 @@ ICalculateMethod calculateMethod = createNiceMock(ICalculateMethod.class);
 
 The `createNiceMock()` method creates a mock whic returns default values for methods which are not overiden. A mock ceated with th `Mock()` method will fails is such a case.
 
-Concurrence
+Concurrency
 -----------
+
+Computer users take it for granted that their systems can do more than one thing at a time. They assume that they can continue to work in a word processor, while other applications download files, manage the print queue, and stream audio. Software that can do such things is known as **concurrent software**. The Basic concurrency support defided in ``java.util.concurrent`` packages. In concurrent programming, there are two basic units of execution: **processes** and **threads**.
+
+A **Process** has a self-contained execution environment. A process generally has a complete, private set of basic run-time resources; in particular, each process has its own memory space.
+
+**Threads** are sometimes called lightweight processes. Both processes and threads provide an execution environment, but creating a new thread requires fewer resources than creating a new process.
+
 
 Junit
 -----

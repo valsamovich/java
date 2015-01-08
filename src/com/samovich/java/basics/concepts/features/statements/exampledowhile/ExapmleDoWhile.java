@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.statements.exampledowhile;
+package com.samovich.java.basics.concepts.features.statements.exampledowhile;
 
 public class ExapmleDoWhile {
 

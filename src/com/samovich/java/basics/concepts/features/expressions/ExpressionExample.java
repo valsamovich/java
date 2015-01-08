@@ -5,7 +5,7 @@
  * @date 07/14/2014
  */
 
-package com.samovich.java.basics.oldpath.expressions;
+package com.samovich.java.basics.concepts.features.expressions;
 
 public class ExpressionExample {
 

@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.statements.exampleif;
+package com.samovich.java.basics.concepts.features.statements.exampleif;
 
 public class IfExample {
 

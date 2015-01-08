@@ -5,7 +5,7 @@
  * @date 07/23/2014
  */
 
-package com.samovich.java.basics.oldpath.statements.exampleswitch;
+package com.samovich.java.basics.concepts.features.statements.exampleswitch;
 
 public class SwitchDemo {
 

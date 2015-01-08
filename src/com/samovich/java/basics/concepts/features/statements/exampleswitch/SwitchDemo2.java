@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.statements.exampleswitch;
+package com.samovich.java.basics.concepts.features.statements.exampleswitch;
 
 public class SwitchDemo2 {
 

@@ -11,7 +11,7 @@
  * @date 07/24/2014
  */
 
-package com.samovich.java.basics.oldpath.statements.examplewhile;
+package com.samovich.java.basics.concepts.features.statements.examplewhile;
 
 public class WhileExample {
     

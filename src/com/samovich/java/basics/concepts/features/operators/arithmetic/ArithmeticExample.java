@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.operators.arithmetic;
+package com.samovich.java.basics.concepts.features.operators.arithmetic;
 
 public class ArithmeticExample {
 

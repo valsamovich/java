@@ -5,7 +5,7 @@
  * @date 07/14/2014
  */
 
-package com.samovich.java.basics.oldpath.operators.bit;
+package com.samovich.java.basics.concepts.features.operators.bit;
 
 public class BitExample {
 

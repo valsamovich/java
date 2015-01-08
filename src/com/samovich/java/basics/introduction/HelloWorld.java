@@ -1,5 +1,5 @@
 
-package com.samovich.java.basics.oldpath.main;
+package com.samovich.java.basics.introduction;
 
 public class HelloWorld {
     

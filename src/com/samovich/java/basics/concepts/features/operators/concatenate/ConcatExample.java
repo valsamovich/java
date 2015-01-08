@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.operators.concatenate;
+package com.samovich.java.basics.concepts.features.operators.concatenate;
 
 public class ConcatExample {
 

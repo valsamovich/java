@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.operators.andor;
+package com.samovich.java.basics.concepts.features.operators.andor;
 
 public class ExampleAndOr {
 

@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.operators.conditional.instance;
+package com.samovich.java.basics.concepts.features.operators.conditional.instance;
 
 public class InstanceofExample {
 

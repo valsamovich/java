@@ -5,7 +5,7 @@
  * @date 07/14/2014
  */
 
-package com.samovich.java.basics.oldpath.operators.relational;
+package com.samovich.java.basics.concepts.features.operators.relational;
 
 public class ComparisonExample {
 

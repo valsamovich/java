@@ -1,4 +1,4 @@
-package com.samovich.java.basics.oldpath.variables;
+package com.samovich.java.basics.concepts.features.variables;
 
 public class Variables {
 

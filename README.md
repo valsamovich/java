@@ -823,6 +823,9 @@ ICalculateMethod calculateMethod = createNiceMock(ICalculateMethod.class);
 
 The `createNiceMock()` method creates a mock whic returns default values for methods which are not overiden. A mock ceated with th `Mock()` method will fails is such a case.
 
+Concurrence
+-----------
+
 Junit
 -----
 

@@ -942,7 +942,7 @@ class MyClass extends MySuperClass implements YourInterface {
 2. The field's type.
 3. The field's name.
 
-**Access modifiers**. Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
+**Access modifiers** Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
 
 Access Modifiers: `default, public , protected, private`
 
@@ -953,4 +953,12 @@ protected     |	Y     	  | Y	      | Y         | N
 default       |	Y     	  | Y	      | N         | N
 private	      |	N     	  | N	      | N         | N
 
+**Defining Methods** More generally, method declarations have six components, in order:
+
+- Modifiers—such as public, private, and others you will learn about later.
+- The return type—the data type of the value returned by the method, or void if the method does not return a value.
+- The method name—the rules for field names apply to method names as well, but the convention is a little different.
+- The parameter list in parenthesis—a comma-delimited list of input parameters, preceded by their data types, enclosed by parentheses, (). If there are no parameters, you must use empty parentheses.
+- An exception list—to (optional).
+- The method body, enclosed between braces—the method's code, including the declaration of local variables, goes here.
 

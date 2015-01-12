@@ -930,3 +930,27 @@ class MyClass extends MySuperClass implements YourInterface {
 }
 ```
 
+**Member varibles** There are several kinds of variables:
+
+- Member variables in a class—these are called fields.
+- Variables in a method or block of code—these are called local variables.
+- Variables in method declarations—these are called parameters.
+
+**Field declarations** are composed of three components, in order:
+
+1. Zero or more modifiers, such as public or private.
+2. The field's type.
+3. The field's name.
+
+**Access modifiers**. Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers.
+
+Access Modifiers: `default, public , protected, private`
+
+Modifier      |	Class 	  | Package   | Subclass  | Project   
+--------------|-----------|-----------|-----------|------------
+public	      | Y     	  | Y	      | Y         | Y
+protected     |	Y     	  | Y	      | Y         | N
+default       |	Y     	  | Y	      | N         | N
+private	      |	N     	  | N	      | N         | N
+
+

@@ -8,7 +8,7 @@ java-tutorial
 Appendix
 --------
 
-[Maven repositories](http://mvnrepository.com/) is used to hold build artifacts and dependencies of varying types.
-[JSON Online Editor](http://jsoneditoronline.org/) is a web-based tool to view, edit, and format JSON. It shows your data side by side in a clear, editable treeview and in a code editor.
-[Vogella](http://www.vogella.com/) Provides premium Java, Eclipse, Android and Git training and development support.
+- [Maven repositories](http://mvnrepository.com/) is used to hold build artifacts and dependencies of varying types.
+- [JSON Online Editor](http://jsoneditoronline.org/) is a web-based tool to view, edit, and format JSON. It shows your data side by side in a clear, editable treeview and in a code editor.
+- [Vogella](http://www.vogella.com/) Provides premium Java, Eclipse, Android and Git training and development support.
 

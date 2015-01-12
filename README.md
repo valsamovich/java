@@ -903,3 +903,30 @@ JSON
     }]
 }
 ```
+
+Classes
+-------
+
+**Class** - A class can be defined as a template/ blue print that describe the behaviors/states that object of its type support. The class declarations can include these components, in order:
+
+1. Modifiers such as public, private, and a number of others that you will encounter later.
+2. The class name, with the initial letter capitalized by convention.
+3. The name of the class's parent (superclass), if any, preceded by the keyword extends. A class can only extend (subclass) one parent.
+4. A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+5. The class body, surrounded by braces, {}.
+
+```
+class MyClass {
+    // field, constructor, and 
+    // method declarations
+}
+```
+
+```
+// MyClass is a subclass of MySuperClass and that it implements the YourInterface interface
+class MyClass extends MySuperClass implements YourInterface {
+    // field, constructor, and
+    // method declarations
+}
+```
+

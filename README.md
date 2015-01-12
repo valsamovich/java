@@ -962,10 +962,14 @@ private	      |	N     	  | N	      | N         | N
 - An exception list—to (optional).
 - The method body, enclosed between braces—the method's code, including the declaration of local variables, goes here.
 
-Required elements of a method declaration are the method's return type, name, a pair of parentheses, `()`, and a body between braces, `{}`.
-
 ```
 public double calculateAnswer(double wingSpan, int numberOfEngines, double length, double grossTons) {
     //do the calculation here
 }
 ```
+
+Required elements of a method declaration are the method's return type, name, a pair of parentheses, `()`, and a body between braces, `{}`.
+
+---
+**Definition**: Two of the components of a method declaration comprise the method signature—the method's name and the parameter types.
+---

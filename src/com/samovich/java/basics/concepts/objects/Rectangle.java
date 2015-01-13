@@ -14,9 +14,7 @@ public class Rectangle {
     public int height = 0;
     public Point origin;
 
-    /*
-     * Collection of four constructors.
-     */
+    // collection of four constructors.
     public Rectangle() {
         origin = new Point(0, 0);
     }

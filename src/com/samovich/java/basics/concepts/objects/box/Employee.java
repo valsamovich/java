@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.objects.example1;
+package com.samovich.java.basics.concepts.objects.box;
 
 public class Employee {
 	

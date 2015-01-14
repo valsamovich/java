@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.objects.example2;
+package com.samovich.java.basics.concepts.objects.object;
 
 public class Main {
 

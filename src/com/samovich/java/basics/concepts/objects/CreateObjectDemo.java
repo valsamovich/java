@@ -16,6 +16,14 @@ public class CreateObjectDemo {
         Rectangle rectOne = new Rectangle(originOne, 100 ,200);
         Rectangle rectTwo = new Rectangle(50, 100);
 
+        // optional declaration
+        int heightOne = new Rectangle().height;
+        int heightTwo = rectTwo.height;
+        int heightThree = 0;
+
+        System.out.println(heightOne);
+        System.out.println(heightTwo);
+
         // display rectOne's width, height, and area
         System.out.println("Width of rectOne: " + rectOne.width);
         System.out.println("Height of rectOne: " + rectOne.height);

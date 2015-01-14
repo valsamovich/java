@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.objects.example2;
+package com.samovich.java.basics.concepts.objects.object;
 
 // New class - MyNewClass
 public class MyNewClass {

@@ -3,7 +3,7 @@
  * provides a compact way to iterate over a range of values. The general form 
  * of for loop is contain three parts: initialization, termination, increment.
  * 
- * @file DoWhileExample.java
+ * @file ForDemo.java
  * @author - Valery Samovich
  * @version 1.0
  * @date 07/24/2014
@@ -11,7 +11,7 @@
 
 package com.samovich.java.basics.concepts.features.statements.forex;
 
-public class ForExample {
+public class ForDemo {
 
     public static void main(String[] args) {
         

@@ -13,7 +13,7 @@
  * 4. A comma-separated list of interfaces implemented by the class, if any, 
  *    preceded by the keyword implements. A class can implement more than one 
  *    interface.
-The class body, surrounded by braces, {}.  
+ * 5. The class body, surrounded by braces, {}.
  */
 
 package com.samovich.java.basics.concepts.classes;

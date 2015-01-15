@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.features.statements.examplewhile;
+package com.samovich.java.basics.concepts.features.statements.whileex;
 
 public class ExampleWhile {
 

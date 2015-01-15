@@ -9,7 +9,7 @@
  * @date 07/24/2014
  */
 
-package com.samovich.java.basics.concepts.features.statements.exampledowhile;
+package com.samovich.java.basics.concepts.features.statements.dowhileex;
 
 public class DoWhileExample {
 

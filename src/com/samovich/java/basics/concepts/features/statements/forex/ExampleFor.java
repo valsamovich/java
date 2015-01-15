@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.features.statements.examplefor;
+package com.samovich.java.basics.concepts.features.statements.forex;
 
 public class ExampleFor {
 

@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.features.statements.exampleifelse;
+package com.samovich.java.basics.concepts.features.statements.ifelseex;
 
 public class IfElseExample {
 

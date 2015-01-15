@@ -7,7 +7,7 @@
 // * @date 07/24/2014
 // */
 //
-//package com.valerysamovich.java.basics.statements.exampleswitch;
+//package com.valerysamovich.java.basics.statements.switchex;
 //
 //public class SwitchStringExample {
 //    /**

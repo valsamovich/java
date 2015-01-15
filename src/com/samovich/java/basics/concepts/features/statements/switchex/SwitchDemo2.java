@@ -1,4 +1,4 @@
-package com.samovich.java.basics.concepts.features.statements.exampleswitch;
+package com.samovich.java.basics.concepts.features.statements.switchex;
 
 public class SwitchDemo2 {
 

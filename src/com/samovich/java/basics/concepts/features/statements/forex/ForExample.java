@@ -9,7 +9,7 @@
  * @date 07/24/2014
  */
 
-package com.samovich.java.basics.concepts.features.statements.examplefor;
+package com.samovich.java.basics.concepts.features.statements.forex;
 
 public class ForExample {
 

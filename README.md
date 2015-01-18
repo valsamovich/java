@@ -1,5 +1,5 @@
-java-tutorial
-=============
+java-technologies
+=================
 
 **Java** is Simple, Object oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The **Java Tutorials** are practical guides for programmers who want to use the Java programming language to create applications.
 

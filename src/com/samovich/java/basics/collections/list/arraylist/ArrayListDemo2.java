@@ -22,8 +22,7 @@ public class ArrayListDemo2 {
         for (Object temp : list) {
             System.out.println(temp);
         }
-        
-        
+
         System.out.println(" "); // space
         
         // generic list can only add specific

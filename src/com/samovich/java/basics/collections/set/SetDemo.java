@@ -5,7 +5,7 @@
  * @date 08/21/2014
  */
 
-package com.samovich.java.basics.collections.interfaces.set;
+package com.samovich.java.basics.collections.set;
 
 import java.util.HashSet;
 import java.util.Set;

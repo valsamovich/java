@@ -5,7 +5,7 @@
  * @date 08/22/2014
  */
 
-package com.samovich.java.basics.collections.classes.arraylist;
+package com.samovich.java.basics.collections.list.arraylist;
 
 import java.util.ArrayList;
 

@@ -7,10 +7,9 @@
 
 package com.samovich.java.basics.collections.list;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ArrayList;
-import java.util.Objects;
 
 public class ListDemo {
 
@@ -23,9 +22,9 @@ public class ListDemo {
         listA.add("element 2");
         
         // access via index
-        Object element0 = listA.get(0);
-        Object element1 = listA.get(1);
-        Object element2 = listA.get(2);
+        String element0 = (String) listA.get(0);
+        String element1 = (String) listA.get(1);
+        String element2 = (String) listA.get(2);
         
         // access via Iterator
         Iterator iterator = listA.iterator();

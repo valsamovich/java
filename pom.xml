@@ -1,6 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" 
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Project -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>java-technologies</groupId>
     <artifactId>java-technologies</artifactId>
@@ -9,11 +11,13 @@
     
     <!-- Build -->
     <build>
-        <sourceDirectory>src</sourceDirectory>
-        <testSourceDirectory>test</testSourceDirectory>
+        <!-- Define what folders contain source code -->
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <!-- Define what folders contain our tests -->
+        <testSourceDirectory>src/test/java</testSourceDirectory>
         <resources>
             <resource>
-                <directory>src</directory>
+                <directory>src1</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>

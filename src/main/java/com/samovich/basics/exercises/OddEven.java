@@ -1,11 +1,11 @@
 /**
- * @file StringHelper.java
+ * @file OddEven.java
  * @author Valery Samovich
- * @version 1.0.0
- * @date 08/27/2014
+ * @version 1
+ * @date 2015/01/21
  */
 
-package com.samovich.basics.exercises.exerciseD;
+package com.samovich.basics.exercises;
 
 public class OddEven {
 
@@ -18,5 +18,7 @@ public class OddEven {
             System.out.println(false);
             return false;
         }
+        
     }
+    
 }

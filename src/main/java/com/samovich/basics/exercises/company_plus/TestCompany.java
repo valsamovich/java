@@ -1,4 +1,4 @@
-package com.samovich.basics.exercises.company2;
+package com.samovich.basics.exercises.company_plus;
 
 public class TestCompany {
     

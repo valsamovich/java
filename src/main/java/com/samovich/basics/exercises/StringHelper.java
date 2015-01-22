@@ -1,11 +1,11 @@
 /**
  * @file StringHelper.java
  * @author Valery Samovich
- * @version 1.0.0
- * @date 08/27/2014
+ * @version 2
+ * @date 2015/01/21
  */
 
-package com.samovich.basics.exercises.exerciseE;
+package com.samovich.basics.exercises;
 
 public class StringHelper {
     
@@ -33,4 +33,5 @@ public class StringHelper {
         // Return the result
         return first2Char.replaceAll("A", "") + afterFirst2Char;
     }
+    
 }

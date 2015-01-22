@@ -5,7 +5,7 @@
  * @date 2014/01/20
  */
 
-package com.samovich.basics.collections.map;
+package com.samovich.basics.collections.interfaces.map;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -5,7 +5,7 @@
  * @date 08/22/2014
  */
 
-package com.samovich.basics.collections.list.arraylist;
+package com.samovich.basics.collections.interfaces.list.arraylist;
 
 import java.util.ArrayList;
 

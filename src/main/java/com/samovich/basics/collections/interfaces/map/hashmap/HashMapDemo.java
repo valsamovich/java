@@ -5,7 +5,7 @@
  * @date 08/27/2014
  */
 
-package com.samovich.basics.collections.map.hashmap;
+package com.samovich.basics.collections.interfaces.map.hashmap;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -8,7 +8,7 @@
  * user using a for loop.
  */
 
-package com.samovich.scripts;
+package com.samovich.programs;
 
 import java.util.Scanner;
 

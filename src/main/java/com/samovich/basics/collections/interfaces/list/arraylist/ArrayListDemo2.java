@@ -1,4 +1,4 @@
-package com.samovich.basics.collections.list.arraylist;
+package com.samovich.basics.collections.interfaces.list.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;

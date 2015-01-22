@@ -7,7 +7,7 @@
  * Java Program to convert Fahrenheit to Celsius
  */
 
-package com.samovich.scripts;
+package com.samovich.programs;
 
 import java.util.Scanner;
 

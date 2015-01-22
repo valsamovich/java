@@ -9,7 +9,7 @@
  * InetAddress object which represents localhost.
  */
 
-package com.samovich.scripts;
+package com.samovich.programs;
 
 import java.net.InetAddress;
 

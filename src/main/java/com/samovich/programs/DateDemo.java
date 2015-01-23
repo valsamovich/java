@@ -5,7 +5,7 @@
  * @date 09/03/2014
  */
 
-package com.samovich.programs.date;
+package com.samovich.programs;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

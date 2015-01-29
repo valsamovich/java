@@ -23,8 +23,25 @@ public class SerializationApp {
         participant.add(new Participant("Michael", "Thomas", 21));
         participant.add(new Participant("Julia", "Webster", 19));
 
-        // Print the output.
+        // Display the "Participants" output.
         System.out.println("Participant" + participant);
+
+        // Create a instance of the SerializationDemo
+        SerializationDemo demo = new SerializationDemo();
+        // Serialize the participants.
+        demo.serialize(participant,
+                "src/main/resources/com/samovich/specialized/Participants.ser");
+
+        // Display the string message.
+        System.out.println("Serialization is done!");
+
+        List<Participant> newList = demo.deserialize(
+                "src/main/resources/com/samovich/specialized/Participants.ser");
+
+        System.out.println("New List: " + newList);
+
+        // Display the string message.
+        System.out.println("Deserialization is done!");
     }
 
 }

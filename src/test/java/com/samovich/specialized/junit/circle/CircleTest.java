@@ -9,22 +9,33 @@ package com.samovich.specialized.junit.circle;
 
 import org.junit.Test;
 
-import static org.junit.Assert.fail;
+import static org.junit.Assert.assertEquals;
 
 public class CircleTest {
 
-    @Test
-    public void testCircle()  {
-        fail("Not yet implemented");
+    private Circle c = new Circle(10);
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCircleWith0()  {
+        new Circle(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCircleWithNegativeRadius()  {
+        new Circle(-10);
     }
 
     @Test
     public void testArea() {
-        fail("Not yet implemented");
+        double expected = 100 * Math.PI;
+        double actual = c.area();
+        assertEquals(expected, actual, 0.01);
     }
 
     @Test
     public void testToString() {
-        fail("Not yet implemented");
+        String expected = "Circle with radius 10.0";
+        String actual = c.toString();
+        assertEquals(expected, actual);
     }
 }

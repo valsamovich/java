@@ -1,4 +1,9 @@
-
+/**
+ * @file MyClassTest.java
+ * @author Valery Samovich
+ * @version 2
+ * @date 2015/02/03
+ */
 
 package com.samovich.specialized.junit;
 

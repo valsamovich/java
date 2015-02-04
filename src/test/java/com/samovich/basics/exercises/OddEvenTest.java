@@ -1,27 +1,27 @@
 /**
  * @file OddEvenTest.java
  * @author Valery Samovich
- * @version 2
- * @date 2015/01/21
+ * @version 1
+ * @date 2015/02/03
  */
 
 package com.samovich.basics.exercises;
 
-import static org.junit.Assert.assertEquals;
-import com.samovich.basics.exercises.OddEven;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class OddEvenTest {
 
     @Test
     public void testEvenNum() {
-        
+
         boolean answer = true;
         boolean value;
         double num = 6;
-        
+
         value = OddEven.evenNum(num);
         assertEquals(answer, value);
-    }
 
+    }
 }

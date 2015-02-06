@@ -1,15 +1,16 @@
 /**
  * @file StringHelperTest.java
  * @author Valery Samovich
- * @version 2
- * @date 2015/01/21
+ * @version 1
+ * @date 2015/02/03
  */
 
 package com.samovich.basics.exercises;
 
-import com.samovich.basics.exercises.StringHelper;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
+
 public class StringHelperTest {
 
     @Test
@@ -25,6 +26,6 @@ public class StringHelperTest {
 
         // Assert the values by assertEquals() method
         assertEquals(actualValue, expectedValue);
+        
     }
-
 }

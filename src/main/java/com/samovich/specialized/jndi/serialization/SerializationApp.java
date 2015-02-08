@@ -30,13 +30,13 @@ public class SerializationApp {
         SerializationDemo demo = new SerializationDemo();
         // Serialize the participants.
         demo.serialize(participant,
-                "src/main/resources/com/samovich/specialized/Participants.ser");
+                "src/main/resources/com/samovich/specialized/jndi/serialization/Participants.ser");
 
         // Display the string message.
         System.out.println("Serialization is done!");
 
         List<Participant> newList = demo.deserialize(
-                "src/main/resources/com/samovich/specialized/Participants.ser");
+                "src/main/resources/com/samovich/specialized/jndi/serialization/Participants.ser");
 
         System.out.println("New List: " + newList);
 

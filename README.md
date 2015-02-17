@@ -4,7 +4,7 @@ java-technologies
 [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The [**Java Tutorials**](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the Java programming language to create applications.
 
 [Oracle Java Documentations:](http://docs.oracle.com/javase/tutorial/index.html)
-- Trails Covering the Basics (Objects and Classes, Annotations, Interfaces and Inheritance, Generics etc.)
+- Trails Covering the Basics
 - Creating Graphical User Interfaces
 - Specialized Trails and Lessons
 

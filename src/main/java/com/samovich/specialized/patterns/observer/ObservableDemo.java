@@ -8,6 +8,12 @@
  * called the subject, maintains a list of its dependents, called observers, 
  * and notifies them automatically of any state changes, usually by calling 
  * one of their methods.
+ * 
+ * Observer vs. Observable
+ *  - Observable is a class, Observer is an interface
+ *  - Observable class maintain a list of observers
+ *  - When an Observable object is updated it invokes the update() method of 
+ *    each of its observers
  */
 
 package com.samovich.specialized.patterns.observer;

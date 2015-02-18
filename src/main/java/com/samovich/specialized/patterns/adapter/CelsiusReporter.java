@@ -7,16 +7,22 @@
 
 package com.samovich.specialized.patterns.adapter;
 
+/*
+ * The adaptee class. It stores temperature value in Celsius.
+ */
 public class CelsiusReporter {
 
     double temperatureInC;
 
+    // Constructor
     public CelsiusReporter() {}
 
+    // Getter
     public double getTemperature() {
         return temperatureInC;
     }
 
+    // Setter
     public void setTemperature(double temperatureInC) {
         this.temperatureInC = temperatureInC;
     }

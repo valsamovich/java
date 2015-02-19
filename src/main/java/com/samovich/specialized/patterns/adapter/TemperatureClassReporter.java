@@ -21,12 +21,12 @@ public class TemperatureClassReporter extends CelsiusReporter implements Tempera
     }
 
     @Override
-    public void setGetTemperatureInF(double temperatureInF) {
+    public void setTemperatureInF(double temperatureInF) {
         this.temperatureInC = fToC(temperatureInF);
     }
 
     @Override
-    public double getGetTemperatureInC() {
+    public double getTemperatureInC() {
         return temperatureInC;
     }
 

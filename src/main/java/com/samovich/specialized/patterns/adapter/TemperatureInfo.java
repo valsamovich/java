@@ -14,8 +14,8 @@ package com.samovich.specialized.patterns.adapter;
 public interface TemperatureInfo {
 
     public double getTemperatureInF();
-    public void setGetTemperatureInF(double temperatureInF);
-    public double getGetTemperatureInC();
+    public void setTemperatureInF(double temperatureInF);
+    public double getTemperatureInC();
     public void setTemperatureInC(double temperatureInC);
 
 }

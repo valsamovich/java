@@ -1,4 +1,4 @@
-package com.samovich.basics.concepts.encapsulation;
+package com.samovich.basics.concepts.classes.encapsulation;
 
 public class Employee {
 

@@ -1,4 +1,4 @@
-package com.samovich.basics.concepts.overloading;
+package com.samovich.basics.concepts.classes.overloading;
 
 public class TestBox {
 

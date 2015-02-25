@@ -22,7 +22,7 @@ public class SmallBox {
     SmallBox(){ 
         this.length = 5;
         this.width = 6;
-        System.out.println("Constructor fired");
+        System.out.println("Constructor fired!");
     }
     
     // Constructor Method with parameters.

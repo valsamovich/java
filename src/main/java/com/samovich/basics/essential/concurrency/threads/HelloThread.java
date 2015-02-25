@@ -5,7 +5,7 @@
  * @date 2014/01/09
  */
 
-package com.samovich.basics.essential.concurrency;
+package com.samovich.basics.essential.concurrency.threads;
 
 public class HelloThread extends Thread {
 

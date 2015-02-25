@@ -7,7 +7,7 @@
  * The SleepMessage uses sleep to print messages at four-second intervals.
  */
 
-package com.samovich.basics.essential.concurrency;
+package com.samovich.basics.essential.concurrency.threads;
 
 public class SleepMessages {
 

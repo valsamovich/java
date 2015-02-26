@@ -24,3 +24,8 @@ Appendix
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java Core, EE and Testing Frameworks, Web Services Build Tools examples and etc.
 
+Glossary
+--------
+
+**Generics** are a facility of **generic** programming that were added to the Java programming language in 2004 within J2SE 5.0. They allow "a type or method to operate on objects of various types while providing compile-time type safety." This feature specifies the type of objects stored in a Java Collection.
+

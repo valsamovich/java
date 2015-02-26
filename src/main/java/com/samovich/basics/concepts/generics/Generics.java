@@ -1,16 +1,24 @@
 /**
  * @file GenericsExample.java
  * @author Valery Samovich
- * @version 1.0.0
+ * @version 2
  * @date 08/7/2014
+ *
+ * Generics are a facility of generic programming that were added to the Java
+ * programming language in 2004 within J2SE 5.0. They allow "a type or method
+ * to operate on objects of various types while providing compile-time type
+ * safety." This feature specifies the type of objects stored in a Java
+ * Collection.
+ *
+ *  class name<T1, T2, ..., Tn> { // body... }
  */
 
-package com.samovich.basics.concepts.generics.simple;
+package com.samovich.basics.concepts.generics;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class GenericsExample {
+public class Generics {
 
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {

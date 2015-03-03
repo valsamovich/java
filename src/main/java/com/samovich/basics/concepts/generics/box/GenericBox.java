@@ -23,4 +23,5 @@ public class GenericBox<T> {
     public void setT(T t) {
         this.t = t;
     }
+
 }

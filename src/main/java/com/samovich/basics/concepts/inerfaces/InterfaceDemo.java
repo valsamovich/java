@@ -18,10 +18,13 @@ public interface InterfaceDemo {
 
     // constant declarations.
 
-    // base of natural logarithms
-    double E = 2.718282;
+    // base of natural logarithms.
+    public static final double E = 2.718282;
+    // all constants are implicitly public, static, and final.
+    // they can be omitted.
+     int F = 100;
 
-    // method signatures
+    // method signatures: abstract, default, or static.
     void doSomething(int i, double x);
     int doSomethingElse(String s);
 

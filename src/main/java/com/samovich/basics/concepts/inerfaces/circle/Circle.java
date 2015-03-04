@@ -5,7 +5,7 @@
  * @date 2015/01/31
  */
 
-package com.samovich.basics.concepts.inerfaces;
+package com.samovich.basics.concepts.inerfaces.circle;
 
 public class Circle implements Comparable<Circle>{
     

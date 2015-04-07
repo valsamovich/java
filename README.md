@@ -20,7 +20,7 @@ Appendix
 - [JSON Online Editor](http://jsoneditoronline.org/) is a web-based tool to view, edit, and format `JSON` with tree view.
 - [JSON Lint](http://jsonlint.com/) is a web-based `JSON` Validator.
 - [JSON Path](http://ashphy.com/JSONPathOnlineEvaluator/) is a web-based online tool `JSON` Path evaluator.
-- [Vogella](http://www.vogella.com/) Provides premium Java, Eclipse, Android and Git training and development support.
+- [Vogella](http://www.vogella.com/) Provides premium **Java**, Eclipse, Android and Git training and development support.
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java Core, EE and Testing Frameworks, Web Services Build Tools examples and etc.
 

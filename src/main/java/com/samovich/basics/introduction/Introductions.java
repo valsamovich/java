@@ -7,8 +7,5 @@
 
 package com.samovich.basics.introduction;
 
-/**
- * Created by Samovich on 4/7/2015.
- */
 public class Introductions {
 }

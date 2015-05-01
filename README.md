@@ -5,7 +5,7 @@ java-technologies
 
 [Oracle Java Documentations:](http://docs.oracle.com/javase/tutorial/index.html)
 - Trails Covering the Basics.
-- Creating Graphical User Interfaces (GUI).
+- Creating Graphical User Interfaces (**GUI**).
 - Specialized Trails and Lessons.
 
 Dependencies

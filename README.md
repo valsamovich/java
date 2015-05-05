@@ -1,11 +1,11 @@
 java-technologies
 =================
 
-[**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The [**Java Tutorials**](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the Java programming language to create applications.
+[**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The [**Java Tutorials**](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the **Java** programming language to create applications.
 
 [Oracle Java Documentations:](http://docs.oracle.com/javase/tutorial/index.html)
 - Trails Covering the Basics.
-- Creating Graphical User Interfaces.
+- Creating Graphical User Interfaces (**GUI**).
 - Specialized Trails and Lessons.
 
 Dependencies
@@ -22,5 +22,5 @@ Appendix
 - [JSON Path](http://ashphy.com/JSONPathOnlineEvaluator/) is a web-based online tool `JSON` Path evaluator.
 - [Vogella](http://www.vogella.com/) Provides premium **Java**, Eclipse, Android and Git training and development support.
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
-- [Mkyong](http://www.mkyong.com/) Java Core, EE and Testing Frameworks, Web Services Build Tools examples and etc.
+- [Mkyong](http://www.mkyong.com/) Java Core, EE and Testing Frameworks, **Web Services** Build Tools examples and etc.
 

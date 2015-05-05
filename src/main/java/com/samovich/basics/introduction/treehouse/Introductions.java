@@ -21,6 +21,7 @@ public class Introductions {
         String firstName = "Valery";
         // thisIsAnExampleOfCamelCasing
         console.printf("Hello, my name is %s\n", firstName);
+        console.printf("%s is learning how to write Java\n", firstName);
     }
 
 }

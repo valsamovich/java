@@ -14,8 +14,7 @@ public class Introductions {
     public static void main(String[] args) throws NullPointerException{
         Console console = System.console();
         // Welcome to the Introductions program!
-        String firstName;
-        firstName = console.readLine("What is your name? ");
+        String firstName = console.readLine("What is your name? ");
         // thisIsAnExampleOfCamelCasing
         console.printf("Hello, my name is %s\n", firstName);
         console.printf("%s is learning how to write Java\n", firstName);

@@ -7,11 +7,11 @@
 
 package com.samovich.basics.introduction.treehouse;
 
-import java.io.Console;
+import java.io.*;
 
 public class Introductions {
 
-    public static void main(String[] args) throws NullPointerException{
+    public static void main(String[] args) {
         Console console = System.console();
         // Welcome to the Introductions program!
         String firstName = console.readLine("What is your name? ");

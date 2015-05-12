@@ -7,7 +7,8 @@
 
 package com.samovich.basics.introduction.treehouse;
 
-import java.io.*;
+import java.io.Console;
+import java.io.IOException;
 
 public class Introductions {
 

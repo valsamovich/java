@@ -25,5 +25,16 @@ public class TreeStory {
         System.out.println("Enter an adjective: ");
         String adjective = scanner.nextLine();
         System.out.println(name + " is very " + adjective + "!");
+
+        // __Name is a __adjective__ __noun__.
+        // They are always __adverb__ __verb__.
+        String name = console.readLine("Enter a name:  ");
+        String adjective = console.readLine("Enter an adjective:  ");
+        String noun = console.readLine("Enter a noun:  ");
+        String adverb = console.readLine("Enter an adverb:  ");
+        String verb = console.readLine("Enter a verb ending with -ing:  ");
+        console.printf("Your TreeStory:\n----------------\n");
+        console.printf("%s is a $s %s", name, adjective, noun);
+        conosle.printf("They are always")
     }
 }

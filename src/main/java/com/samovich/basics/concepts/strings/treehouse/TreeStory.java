@@ -40,6 +40,6 @@ public class TreeStory {
         String verb = scanner.nextLine();
         // Print the prototype
         System.out.println(name + " is a " + adjective + " " + noun + ".");
-        System.out.println("They are always " + adverb + " " + verb + ".");
+        System.out.println("He is always " + adverb + " " + verb + ".");
     }
 }

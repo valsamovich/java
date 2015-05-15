@@ -13,7 +13,6 @@ import java.util.Scanner;
 public class TreeStory {
 
     public static void main(String[] args) {
-
         // __Name__ is a __adjective__ __noun__.
         // They are always __adverb__ __verb__.
 
@@ -27,6 +26,12 @@ public class TreeStory {
         // console.printf("%s is a $s %s. ", name, adjective, noun);
         // console.printf("They are always %s %s.\n", adverb, verb);
 
+        int age = 12;
+        if (age < 13) {
+            // Insert exit code
+            System.out.println("You must be at least 13 to use this program.\n");
+            System.exit(0);
+        }
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a name:  ");
         String name = scanner.nextLine();

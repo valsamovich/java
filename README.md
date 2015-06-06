@@ -1,5 +1,4 @@
-java-technologies
-=================
+# java-technologies
 
 [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The [**Java** Tutorials](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) programming language to create applications.
 
@@ -8,13 +7,12 @@ java-technologies
 - Creating Graphical User Interfaces (GUI).
 - Specialized Trail and Lessons.
 
-Dependencies
-------------
+## Dependencies
 
 > **Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client and EasyMock.
 
-Appendix
---------
+## Appendix
+
 - [Java](https://github.com/valerysamovich/engineering/blob/master/docs/java-tutorial.md) tutorial for basics, gui, and specialised.
 - [Java Reference Guide](http://www.tutorialspoint.com/java/java_quick_guide.htm) is a free tutorial for syntax and examples.
 - [Maven repositories](http://mvnrepository.com/) is used to hold build artifacts and dependencies of varying types.

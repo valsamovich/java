@@ -3,6 +3,9 @@
  * @author Valery Samovich
  * @version 0.0.1
  * @date 2015/01/09
+ *
+ * This program helps to understand fo parallel processing of Hadoop.
+ * URL: https://amalgjose.wordpress.com/2013/04/25/a-simple-mapreduce-program-wordcount/
  */
 
 package com.samovich.specialized.mapreduce;

@@ -19,6 +19,7 @@
         <httpclient.version>3.1</httpclient.version>
         <easymock.version>3.3</easymock.version>
         <hadoop.mapreduce.version>2.6.0</hadoop.mapreduce.version>
+        <hadoop.common.version>2.6.0</hadoop.common.version>
     </properties>
     
     <!-- Build -->
@@ -108,6 +109,11 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-mapreduce-client-core</artifactId>
             <version>${hadoop.mapreduce.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>${hadoop.common.version}</version>
         </dependency>
     </dependencies>
 </project>

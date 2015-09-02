@@ -14,7 +14,6 @@ public class FilePathExample {
 
     public static void main(String[] args) {
 
-
         String fileName = "filePathFile.txt";
         String workingDirectory = System.getProperty("user.dir");
         String absoluteFilePath = "";

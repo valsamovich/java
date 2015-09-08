@@ -26,13 +26,17 @@ public class TreeStory {
         // console.printf("%s is a $s %s. ", name, adjective, noun);
         // console.printf("They are always %s %s.\n", adverb, verb);
 
-        int age = 12;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("How old are you? ");
+        String ageScanner = scanner.nextLine();
+
+        int age = Integer.parseInt(ageScanner);
         if (age < 13) {
             // Insert exit code
             System.out.println("You must be at least 13 to use this program.\n");
             System.exit(0);
         }
-        Scanner scanner = new Scanner(System.in);
+        // Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a name:  ");
         String name = scanner.nextLine();
         System.out.println("Enter an adjective:  ");

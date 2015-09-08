@@ -26,29 +26,40 @@ public class TreeStory {
         // console.printf("%s is a $s %s. ", name, adjective, noun);
         // console.printf("They are always %s %s.\n", adverb, verb);
 
+        // Create the scanner object
         Scanner scanner = new Scanner(System.in);
         System.out.println("How old are you? ");
+        // Convert and store age as integer
         String ageScanner = scanner.nextLine();
 
         int age = Integer.parseInt(ageScanner);
+        // Age validation.
         if (age < 13) {
-            // Insert exit code
+            // Exit code
             System.out.println("You must be at least 13 to use this program.\n");
             System.exit(0);
         }
-        // Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter a name:  ");
+        // Accept user input for name
         String name = scanner.nextLine();
         System.out.println("Enter an adjective:  ");
         String adjective = scanner.nextLine();
+
         System.out.println("Enter a noun: ");
         String noun = scanner.nextLine();
+        // Noun validation.
+        if(noun.equalsIgnoreCase("dork")) {
+            System.out.println("This language is not allowed. Exiting. \n\n");
+            System.exit(0);
+        }
+
         System.out.println("Enter an adverb: ");
         String adverb = scanner.nextLine();
         System.out.println("Enter a verb ending with -ing:  ");
         String verb = scanner.nextLine();
         // Print the prototype
-        System.out.println("Your TreeStory:\n-------------------------\n");
+        System.out.println("Your TreeStory:\n--------------\n");
         System.out.println(name + " is a " + adjective + " " + noun + ".");
         System.out.println("He is always " + adverb + " " + verb + ".");
     }

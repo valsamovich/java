@@ -35,7 +35,7 @@ public class TreeStory {
         int age = Integer.parseInt(ageScanner);
         // Age validation.
         if (age < 13) {
-            // Exit code
+            // Exit the rpogram.
             System.out.println("You must be at least 13 to use this program.\n");
             System.exit(0);
         }
@@ -46,13 +46,18 @@ public class TreeStory {
         System.out.println("Enter an adjective:  ");
         String adjective = scanner.nextLine();
 
-        System.out.println("Enter a noun: ");
-        String noun = scanner.nextLine();
-        // Noun validation.
-        if(noun.equalsIgnoreCase("dork")) {
-            System.out.println("This language is not allowed. Exiting. \n\n");
-            System.exit(0);
-        }
+        String noun;
+        boolean isInvalidWord;
+        do {
+            System.out.println("Enter a noun: ");
+            noun = scanner.nextLine();
+            isInvalidWord = (noun.equalsIgnoreCase("dork") ||
+                                     noun.equalsIgnoreCase("jerk"));
+            // Noun validation.
+            if (isInvalidWord) {
+                System.out.println("This language is not allowed. Try again. \n\n");
+            }
+        } while(isInvalidWord);
 
         System.out.println("Enter an adverb: ");
         String adverb = scanner.nextLine();

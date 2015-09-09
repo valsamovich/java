@@ -9,5 +9,5 @@ package com.samovich.basics.concepts.objects.treehouse;
 
 public class PezDispenser {
 
-
+    public String characterName = "Yoda";
 }

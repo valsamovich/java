@@ -9,5 +9,16 @@ package com.samovich.basics.concepts.objects.treehouse;
 
 public class PezDispenser {
 
-    public String characterName = "Yoda";
+    private String characterName;
+
+    // Constructor
+    public PezDispenser(String characterName){
+        this.characterName = characterName;
+    }
+
+    // Getter
+    public String getCharacterName() {
+        return characterName;
+    }
+
 }

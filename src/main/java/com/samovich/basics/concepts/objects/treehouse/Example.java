@@ -12,7 +12,7 @@ public class Example {
     public static void main(String[] args) {
 
         System.out.println("Wea are making a new Pez Dispenser.");
-        PezDispenser dispenser = new PezDispenser();
-        System.out.println("The dispenser character is " + dispenser.characterName + ".");
+        PezDispenser dispenser = new PezDispenser("Yoda");
+        System.out.println("The dispenser character is " + dispenser.getCharacterName() + ".");
     }
 }

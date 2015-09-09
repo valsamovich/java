@@ -35,7 +35,7 @@ public class TreeStory {
         int age = Integer.parseInt(ageScanner);
         // Age validation.
         if (age < 13) {
-            // Exit the rpogram.
+            // Exit the program.
             System.out.println("You must be at least 13 to use this program.\n");
             System.exit(0);
         }

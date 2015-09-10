@@ -9,11 +9,14 @@ package com.samovich.basics.concepts.objects.treehouse;
 
 public class PezDispenser {
 
+    public static final int MAX_PEZ = 12;
     private String characterName;
+    private int pezCount;
 
     // Constructor
     public PezDispenser(String characterName){
         this.characterName = characterName;
+        this.pezCount = 0;
     }
 
     // Getter
@@ -21,4 +24,7 @@ public class PezDispenser {
         return characterName;
     }
 
+    public void load(){
+        this.pezCount = MAX_PEZ;
+    }
 }

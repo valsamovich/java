@@ -19,6 +19,10 @@ public class PezDispenser {
         this.pezCount = 0;
     }
 
+    public boolean isEmpty() {
+       return pezCount == 0;
+    }
+
     // Getter
     public String getCharacterName() {
         return characterName;

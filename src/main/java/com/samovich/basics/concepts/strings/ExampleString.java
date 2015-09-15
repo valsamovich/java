@@ -9,7 +9,7 @@
 
 package com.samovich.basics.concepts.strings;
 
-public class ExapmleString {
+public class ExampleString {
 
     public static void main(String[] args) {
         

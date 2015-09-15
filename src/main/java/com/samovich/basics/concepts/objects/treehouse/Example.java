@@ -14,5 +14,18 @@ public class Example {
         System.out.println("Wea are making a new Pez Dispenser.");
         PezDispenser dispenser = new PezDispenser("Yoda");
         System.out.println("The dispenser character is " + dispenser.getCharacterName() + ".");
+
+        // Check if dispenser is empty.
+        if (dispenser.isEmpty()) {
+            System.out.println("It is currently empty!");
+        }
+
+        System.out.println("Loading...");
+        // Load the dispenser.
+        dispenser.load();
+
+        if (!dispenser.isEmpty()) {
+            System.out.println("It is no longer empty.");
+        }
     }
 }

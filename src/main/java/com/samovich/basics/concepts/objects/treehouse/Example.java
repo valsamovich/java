@@ -27,12 +27,21 @@ public class Example {
         if (!dispenser.isEmpty()) {
             System.out.println("It is no longer empty.");
         }
+
         while(dispenser.despense()) {
             System.out.println("Chomp!");
         }
 
+        // Message for empty dispenser.
         if (dispenser.isEmpty()) {
             System.out.println("It is currently empty.");
+        }
+
+        dispenser.load(4);
+        dispenser.load(2);
+
+        while(dispenser.despense()) {
+            System.out.println("Chomp!");
         }
     }
 }

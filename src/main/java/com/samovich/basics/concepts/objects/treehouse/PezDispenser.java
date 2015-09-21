@@ -37,7 +37,11 @@ public class PezDispenser {
         return characterName;
     }
 
-    public void load(){
-        this.pezCount = MAX_PEZ;
+    public void load() {
+        load(MAX_PEZ);
+    }
+
+    public void load(int pezAmount) {
+        pezCount += pezAmount;
     }
 }

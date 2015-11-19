@@ -4,7 +4,7 @@
 
 [Oracle Java Documentations:](http://docs.oracle.com/javase/tutorial/index.html)
 - Trail Covering the Basics.
-- Creating Graphical User Interfaces (GUI).
+- Creating Graphical User Interfaces (**GUI**).
 - Specialized Trail and Lessons.
 
 ## Dependencies

@@ -9,7 +9,7 @@
 
 ## Dependencies
 
-**Depedencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
+**Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
 
 ## Appendix
 

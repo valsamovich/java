@@ -9,10 +9,9 @@
 
 ## Dependencies
 
-**Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
+**Depedencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
 
 ## Appendix
-
 
 - [Java Reference Guide](http://www.tutorialspoint.com/java/java_quick_guide.htm) is a free tutorial for syntax and examples.
 - [Maven repositories](http://mvnrepository.com/) is used to hold build artifacts and dependencies of varying types.

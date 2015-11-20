@@ -13,7 +13,7 @@
 
 ## Appendix
 
-- [Java]
+
 - [Java Reference Guide](http://www.tutorialspoint.com/java/java_quick_guide.htm) is a free tutorial for syntax and examples.
 - [Maven repositories](http://mvnrepository.com/) is used to hold build artifacts and dependencies of varying types.
 - [JSON Online Editor](http://jsoneditoronline.org/) is a web-based tool to view, edit, and format `JSON` with tree view.

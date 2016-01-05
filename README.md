@@ -21,3 +21,18 @@
 - [Vogella](http://www.vogella.com/) Provides premium **Java**, Android and Git training and support.
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java, and Testing Frameworks, **Web Services** Build Tools examples and etc.
+
+Related Links
+
+Change Android Studio to Use 'm' Prefix
+Things to Consider
+
+## Notes
+
+- DRY (Don't Repeat Yourself) and other tips from The Pragmatic Programmer
+- SOLID Principles of Object-Oriented Programming:
+  - S: Single Responsibility Principle
+  - O: Open/Closed Principle
+  - L: Liskov Substitution Principle
+  - I: Interface Segregation Principle
+  - D: Dependency Inversion Principle

@@ -1,4 +1,4 @@
-# Java technologies [![Build Status](https://travis-ci.org/valerysamovich/java-technologies.svg?branch=master)](https://travis-ci.org/vsamov/java-technologies)
+# Java technologies [![Build Status](https://travis-ci.org/vsamov/java-technologies.svg?branch=master)](https://travis-ci.org/vsamov/java-technologies)
 
 [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is *Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure*. The [**Java** Tutorial](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) programming language to create applications.
 

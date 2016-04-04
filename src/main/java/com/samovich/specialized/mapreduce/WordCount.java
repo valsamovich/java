@@ -18,7 +18,6 @@ import java.util.StringTokenizer;
 
 public class WordCount {
 
-
     public static class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
         private final static IntWritable one = new IntWritable(1);
         private Text word = new Text();

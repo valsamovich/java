@@ -25,7 +25,8 @@ JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Com
 
 ## MapReduce
 
-[**WordCount**](/src/main/java/com/samovich/specialized/mapreduce/WordCount.java) example reads text files and counts how often words occur. To run mapreduce **Hadoop** environment is required. To run example:
+[**WordCount**](/src/main/java/com/samovich/specialized/mapreduce/WordCount.java) example reads text files and counts how often words occur. To run mapreduce **Hadoop** environment is required. [Read more](
+http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/) To run example:
 
 - Run `mvn clean verify` for java-technologies project
 - Optional: Copy `.jar` file to server which is connected to Hadoop

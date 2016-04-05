@@ -9,7 +9,7 @@
 
 ## Dependencies
 
-**Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
+JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, EasyMock, and Hadoop.
 
 ## Appendix
 
@@ -21,10 +21,22 @@
 - [Vogella](http://www.vogella.com/) Provides premium **Java**, Android and Git training and support.
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java, and Testing Frameworks, **Web Services** Build Tools examples and etc.
+- [Michael Noll](http://www.michael-noll.com/) Applied Research. Big Data. Distributed Systems. Open Source.
 
 ## MapReduce
 
-[**WordCount**]() example reads text files and counts how often words occur. The input is text files and the output is text files, each line of which contains a word and the count of how often it occured, separated by a tab.
+[**WordCount**](/src/main/java/com/samovich/specialized/mapreduce/WordCount.java) example reads text files and counts how often words occur. To run mapreduce **Hadoop** environment is required. [Read more](
+http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/) To run example:
+
+- Run `mvn clean verify` for java-technologies project
+- Optional: Copy `.jar` file to server which is connected to Hadoop
+  - `scp -p target/*.jar [server-name]:` 
+- Assume `hdfs` location is `/user/[user-name]/java-mapreduce`
+- Copy file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
+- Run hadoop command below:
+        
+        # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]
+        hadoop jar java-technologies-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output
 
 ## Notes
 

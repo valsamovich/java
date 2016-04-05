@@ -24,7 +24,19 @@
 
 ## MapReduce
 
-[**WordCount**]() example reads text files and counts how often words occur. The input is text files and the output is text files, each line of which contains a word and the count of how often it occured, separated by a tab.
+[**WordCount**](/src/main/java/com/samovich/specialized/mapreduce/WordCount.java) example reads text files and counts how often words occur. To run mapreduce **Hadoop** environment is required. To run example:
+
+- Run `mvn clean verify` for java-technologies project
+- Optional: Copy `.jar` file to server which is connected to Hadoop
+  - `scp -p target/*.jar [server-name]:` 
+- Assume `hdfs` location is `/user/[user-name]/java-mapreduce`
+- Copy file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
+- Run hadoop command below:
+        
+        # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]
+        hadoop jar java-technologies-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output
+
+
 
 ## Notes
 

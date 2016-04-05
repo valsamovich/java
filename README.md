@@ -32,7 +32,8 @@ http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node
 - Optional: Copy `.jar` file to server which is connected to Hadoop
   - `scp -p target/*.jar [server-name]:` 
 - Assume `hdfs` location is `/user/[user-name]/java-mapreduce`
-- Copy [resource(s)]() file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
+- Copy [resource(s)](
+https://github.com/vsamov/java-technologies/tree/master/src/main/resources/com/samovich/specialized/mapreduce) file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
 - Run hadoop command below:
         
         # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]

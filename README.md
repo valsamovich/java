@@ -43,8 +43,8 @@ https://github.com/vsamov/java-technologies/tree/master/src/main/resources/com/s
 
 - DRY (Don't Repeat Yourself) and other tips from The Pragmatic Programmer
 - SOLID Principles of Object-Oriented Programming:
-  - S: Single Responsibility Principle
-  - O: Open/Closed Principle
-  - L: Liskov Substitution Principle
-  - I: Interface Segregation Principle
-  - D: Dependency Inversion Principle
+  - S : Single Responsibility Principle
+  - O : Open/Closed Principle
+  - L : Liskov Substitution Principle
+  - I : Interface Segregation Principle
+  - D : Dependency Inversion Principle

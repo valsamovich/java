@@ -22,10 +22,9 @@
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java, and Testing Frameworks, **Web Services** Build Tools examples and etc.
 
-Related Links
+## MapReduce
 
-Change Android Studio to Use 'm' Prefix
-Things to Consider
+[**WordCount**]() example reads text files and counts how often words occur. The input is text files and the output is text files, each line of which contains a word and the count of how often it occured, separated by a tab.
 
 ## Notes
 

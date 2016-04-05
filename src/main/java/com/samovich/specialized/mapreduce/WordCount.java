@@ -1,3 +1,10 @@
+/**
+ * @file WordCount.java
+ * @author Valery Samovich
+ * @version 1
+ * @date 03/04/2016
+ */
+
 package com.samovich.specialized.mapreduce;
 
 import org.apache.hadoop.fs.Path;
@@ -12,9 +19,13 @@ import java.util.StringTokenizer;
 
 public class WordCount {
 
+    /**
+     * Mapper class
+     */
     public static class Map extends MapReduceBase implements
             Mapper<LongWritable, Text, Text, IntWritable> {
 
+        // Map method
         @Override
         public void map(LongWritable key, Text value, OutputCollector<Text,
                 IntWritable> output, Reporter reporter) throws IOException {
@@ -30,9 +41,13 @@ public class WordCount {
         }
     }
 
+    /**
+     * Reducer class
+     */
     public static class Reduce extends MapReduceBase implements
             Reducer<Text, IntWritable, Text, IntWritable> {
 
+        // Reducer method
         @Override
         public void reduce(Text key, Iterator<IntWritable> values,
                            OutputCollector<Text, IntWritable> output, Reporter reporter)
@@ -46,6 +61,9 @@ public class WordCount {
         }
     }
 
+    /**
+     * Main class
+     */
     public static void main(String[] args) throws Exception {
 
         JobConf conf = new JobConf(WordCount.class);

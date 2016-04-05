@@ -9,7 +9,7 @@
 
 ## Dependencies
 
-**Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock.
+**Dependencies:** JSON Simple, JUnit, Hamcrest, TestNG, Selenium WebDriver, HTTP Client Hadoop Common, and EasyMock, Hadoop commaon and mapreduce.
 
 ## Appendix
 
@@ -21,6 +21,7 @@
 - [Vogella](http://www.vogella.com/) Provides premium **Java**, Android and Git training and support.
 - [Java Brains](http://javabrains.koushik.org/) Learn and advance your Java skills online.
 - [Mkyong](http://www.mkyong.com/) Java, and Testing Frameworks, **Web Services** Build Tools examples and etc.
+- [Michael Noll](http://www.michael-noll.com/) Applied Research. Big Data. Distributed Systems. Open Source.
 
 ## MapReduce
 
@@ -35,8 +36,6 @@
         
         # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]
         hadoop jar java-technologies-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output
-
-
 
 ## Notes
 

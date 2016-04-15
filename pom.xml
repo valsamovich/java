@@ -1,14 +1,18 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" 
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <!-- Project -->
+    <!-- project coordinates -->
     <modelVersion>4.0.0</modelVersion>
     <groupId>java-technologies</groupId>
     <artifactId>java-technologies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>java-technologies</name>
+
+    <!-- project properties -->
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
         <json.version>1.1</json.version>
         <junit.version>4.12</junit.version>
@@ -21,12 +25,21 @@
         <hadoop.mapreduce.version>2.6.0</hadoop.mapreduce.version>
         <hadoop.common.version>2.6.0</hadoop.common.version>
     </properties>
-    
-    <!-- Build -->
+
+    <!-- developers -->
+    <developers>
+        <developer>
+            <id>vsamov</id>
+            <name>Valery Samovich</name>
+            <email>valerysamovich@gmail.com</email>
+        </developer>
+    </developers>
+
+    <!-- build plugin(s) and configuration(s) -->
     <build>
-        <!-- Define what folders contain source code -->
+        <!-- define what folders contain source code -->
         <sourceDirectory>src/main/java</sourceDirectory>
-        <!-- Define what folders contain our tests -->
+        <!-- define what folders contain our tests -->
         <testSourceDirectory>src/test/java</testSourceDirectory>
         <resources>
             <resource>
@@ -60,8 +73,8 @@
             </plugin>
         </plugins>
     </build>
-    
-    <!-- Dependencies -->
+
+    <!-- project dependencies -->
     <dependencies>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>

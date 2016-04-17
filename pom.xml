@@ -26,7 +26,7 @@
         <hadoop.common.version>2.6.0</hadoop.common.version>
     </properties>
 
-    <!-- developers -->
+    <!-- developer -->
     <developers>
         <developer>
             <id>vsamov</id>

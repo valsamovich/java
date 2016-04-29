@@ -1,5 +1,5 @@
 /**
- * @file HashMapDemo.java
+ * @file HashMapDemo2.java
  * @author Valery Samovich
  * @version 1
  * @date 2014/01/20

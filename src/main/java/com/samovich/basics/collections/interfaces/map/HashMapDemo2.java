@@ -1,18 +1,18 @@
 /**
- * @file HashMapDemo.java
+ * @file HashMapDemo2.java
  * @author Valery Samovich
  * @version 1.0.0
  * @date 08/27/2014
  */
 
-package com.samovich.basics.collections.interfaces.map.hashmap;
+package com.samovich.basics.collections.interfaces.map;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapDemo {
+public class HashMapDemo2 {
 
     /**
      * Main method

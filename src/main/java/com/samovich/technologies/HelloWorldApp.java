@@ -5,7 +5,7 @@
  * @date 2015/01/09
  */
 
-package com.samovich;
+package com.samovich.technologies;
 
 /**
  * The HelloWorldApp class implements an application that

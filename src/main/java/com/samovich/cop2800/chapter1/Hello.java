@@ -1,4 +1,4 @@
-package com.samovich.cop2800.chpater1;
+package com.samovich.cop2800.chapter1;
 
 public class Hello {
 

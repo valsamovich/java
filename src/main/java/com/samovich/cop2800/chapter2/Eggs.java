@@ -1,6 +1,6 @@
 package com.samovich.cop2800.chapter2;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 /**
  * Filename Eggs.java
@@ -12,34 +12,34 @@ public class Eggs {
     public static void main(String[] args) {
 
         // declare variables
-        String eggsAsString;
-        int eggsAsNumber;
-        int numberOfDozen;
-        int remainderDozen;
-        double dozenOfEggs = 3;
-        double singleEggPrize = 0.3;
+        String eggString;
+        int eggNumber;
+        int dozenNumber;
+        int dozenRemainder;
+        final double COST_PER_DOZEN = 3;
+        final double COST_PER_EGG = 0.3;
         double totalPrice;
 
         // prompt the user to accept value
-        eggsAsString = JOptionPane.showInputDialog(
+        eggString = JOptionPane.showInputDialog(
                 null,
-                "Enter the number of eggs purchased:",
+                "Enter the number of eggs you purchased:",
                 "Egg Count",
                 JOptionPane.INFORMATION_MESSAGE);
 
         // convert string to an number
-        eggsAsNumber = Integer.parseInt(eggsAsString);
+        eggNumber = Integer.parseInt(eggString);
 
         // dozen calculation based on input
-        numberOfDozen= eggsAsNumber/12;
-        remainderDozen = eggsAsNumber%12;
+        dozenNumber = eggNumber / 12;
+        dozenRemainder = eggNumber % 12;
 
         // total price calculation
-        totalPrice = numberOfDozen * dozenOfEggs + remainderDozen * singleEggPrize;
+        totalPrice = dozenNumber * COST_PER_DOZEN + dozenRemainder * COST_PER_EGG;
 
         // prompt the dialog box with price information
         JOptionPane.showMessageDialog(null,
-                "The total price of your eggs is " + totalPrice,
+                "The total price of your eggs is $" + String.format("%.2f", totalPrice),
                 "Egg Prices",
                 JOptionPane.INFORMATION_MESSAGE);
     }

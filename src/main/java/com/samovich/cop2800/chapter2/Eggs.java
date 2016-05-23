@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 /**
  * Filename Eggs.java
  * Created by Valery Samovich
- * Written on 5/16/16
+ * Written on 5/18/16
  */
 public class Eggs {
 
@@ -34,8 +34,12 @@ public class Eggs {
         dozenNumber = eggNumber / 12;
         dozenRemainder = eggNumber % 12;
 
+        System.out.println("Dozen number: " + dozenNumber);
+        System.out.println("Dozen remainder: " + dozenRemainder);
+
         // total price calculation
         totalPrice = dozenNumber * COST_PER_DOZEN + dozenRemainder * COST_PER_EGG;
+        System.out.println("Total price: " + totalPrice);
 
         // prompt the dialog box with price information
         JOptionPane.showMessageDialog(null,

@@ -11,6 +11,10 @@ public class SpaService {
     private String serviceDescription;
     private double price;
 
+    public SpaService(){
+        serviceDescription = "default";
+        price = 0;
+    }
     // set field  values
     public void setServiceDescription(String serviceDesc){
         serviceDescription = serviceDesc;

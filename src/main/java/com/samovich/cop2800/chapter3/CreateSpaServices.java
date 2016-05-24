@@ -18,6 +18,7 @@ public class CreateSpaServices {
         // declare objects
         SpaService firstService = new SpaService();
         SpaService secondService = new SpaService();
+        SpaService thirdService = new SpaService();
         Scanner keyboard = new Scanner(System.in);
 
         // prompt the user for first service
@@ -50,5 +51,8 @@ public class CreateSpaServices {
         System.out.println("Second service details:");
         System.out.println(secondService.getServiceDescription() + " $" +
                 secondService.getPrice());
+        System.out.println("Third service details:");
+        System.out.println(thirdService.getServiceDescription() + " $" +
+                thirdService.getPrice());
     }
 }

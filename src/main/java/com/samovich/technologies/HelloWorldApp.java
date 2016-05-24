@@ -14,7 +14,7 @@ package com.samovich.technologies;
 public class HelloWorldApp {
     // shortcut: type 'main' and press ctrl + space bar (Windows)
     public static void main(String[] args) {
-        // shortcut: type 'syso' and press control + space bar (Mac)
+        // shortcut: type 'sout' and press "TAB"
         System.out.println("Hello World!"); // Display the string.
     }
 

@@ -11,12 +11,28 @@ public class CreateSpaServices {
 
     public static void main(String[] args) {
 
-        // declare objects
-        SpaService firstService = new SpaService();
-        SpaService secondService = new SpaService();
-        SpaService thirdService = new SpaService();
+        // declare variables
+        String service;
+        double price;
 
-        firstService = getData(firstService);
+        // declare objects
+        SpaService firstService = new SpaService();     // by Scanner
+        SpaService secondService = new SpaService();    // by Data Entry
+        SpaService thirdService = new SpaService();     // by Constructor
+
+        // declare object
+        Scanner keyboard = new Scanner(System.in);
+
+        System.out.print("Enter service >> ");
+        service = keyboard.nextLine();
+        System.out.print("Enter price >> ");
+        price = keyboard.nextDouble();
+
+        // recall the set methods
+        firstService.setServiceDescription(service);
+        firstService.setPrice(price);
+
+        // call data entry method
         secondService = getData(secondService);
 
         // display the details for first service

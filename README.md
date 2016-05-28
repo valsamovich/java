@@ -18,7 +18,7 @@ http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node
 - Assume `hdfs` location is `/user/[user-name]/java-mapreduce`
 - Copy [resource(s)](
 https://github.com/vsamov/java-technologies/tree/master/src/main/resources/com/samovich/specialized/mapreduce) file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
-- Run hadoop command below:
+- Run command below:
         
         # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]
         hadoop jar java-technologies-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output

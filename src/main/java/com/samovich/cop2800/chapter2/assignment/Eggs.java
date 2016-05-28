@@ -1,4 +1,4 @@
-package com.samovich.cop2800.chapter2;
+package com.samovich.cop2800.chapter2.assignment;
 
 import javax.swing.JOptionPane;
 

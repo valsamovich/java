@@ -1,6 +1,5 @@
 package com.samovich.cop2800.chapter4.assignment;
 
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
 
@@ -16,8 +15,8 @@ public class EventPlanner {
         // declare variables
         String eventID;         // event number
         int numberOfGuests;     // number of guests
-        int monthOfEvent;       // event month
         String eventDate;       // event date
+        int monthOfEvent;       // event month
         int dateOfEvent;        // event day
         int yearOfEvent;        // event year
 
@@ -44,17 +43,24 @@ public class EventPlanner {
 
         // create a GregorianCalendar object using a specific date
         GregorianCalendar inputDate = new GregorianCalendar(yearOfEvent, monthOfEvent, dateOfEvent);
+        eventDate = inputDate.get(GregorianCalendar.MONTH) + "-" +
+                inputDate.get(GregorianCalendar.DAY_OF_MONTH) + "-" +
+                inputDate.get(GregorianCalendar.YEAR);
 
         // instantiate an object of the Event class
         Event event2 = new Event(eventID, numberOfGuests);
         event2.setEventID(eventID);
         event2.setNumberOfGuests(numberOfGuests);
-        //TODO: set input date from now object
+        event2.setEventDate(eventDate);
 
         // display event information
         displayEvent(event2);
     }
 
+    /**
+     * Help to display information about event.
+     * @param event
+     */
     public static void displayEvent(Event event) {
         System.out.println("********************************");
         System.out.println("        Event ID: " + event.getEventID());

@@ -1,6 +1,5 @@
 package com.samovich.cop2800.chapter4.assignment;
 
-import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
@@ -20,39 +19,100 @@ public class Event {
     // create a GregorianCalendar object using default constructor
     GregorianCalendar now = new GregorianCalendar();
 
-    // set methods, header documentation omitted to save space
-    public void setEventID(String eventID) {this.eventID = eventID;}
-    public void setNumberOfGuests(int numberOfGuests) {this.numberOfGuests = numberOfGuests;}
-    public void setEventDate(String eventDate) {this.eventDate = eventDate;}
+    /**
+     * set(mutator) method for eventID.
+     * @param eventID
+     */
+    public void setEventID(String eventID) {
+        this.eventID = eventID;
+    }
 
-    // get methods, header documentation omitted to save space
-    public String getEventID() {return eventID;}
-    public int getNumberOfGuests() {return numberOfGuests;}
-    public String getEventDate() {return eventDate;}
-    public int getPrice(int price){return  price;}
+    /**
+     * set(mutator) method for numberOfGuests.
+     * @param numberOfGuests
+     */
+    public void setNumberOfGuests(int numberOfGuests) {
+        this.numberOfGuests = numberOfGuests;
+    }
 
-    // default contractor
-    public Event(){
+    /**
+     * set(mutator) method for eventDate.
+     * @param eventDate
+     */
+    public void setEventDate(String eventDate) {
+        this.eventDate = eventDate;
+    }
+
+    /**
+     * get(accessor) method for eventID.
+     * @return
+     */
+    public String getEventID() {
+        return eventID;
+    }
+
+    /**
+     * get(accessor) method for numberOfGusts.
+     * @return
+     */
+    public int getNumberOfGuests() {
+        return numberOfGuests;
+    }
+
+    /**
+     * get(accessor) method for ventDate.
+     * @return
+     */
+    public String getEventDate() {
+        return eventDate;
+    }
+
+    /**
+     * get(accessor) method for price.
+     * @return
+     */
+    public int getPrice(int price) {
+        return price;
+    }
+
+    /**
+     * Default constructor.
+     */
+    public Event() {
         eventID = "not assigned";
-        eventDate = "1-11-2014";
+        eventDate = (now.get(GregorianCalendar.MONTH) + 1) + "-" +
+                now.get(GregorianCalendar.DAY_OF_MONTH) + "-" +
+                now.get(GregorianCalendar.YEAR);
         numberOfGuests = 0;
     }
 
-    // overloaded constructor with 3 arguments
-    public Event(String eventID, int numberOfGuests, String eventDate){
+    /**
+     * Overloaded constructor.
+     * @param eventID
+     * @param numberOfGuests
+     * @param eventDate
+     */
+    public Event(String eventID, int numberOfGuests, String eventDate) {
         this.eventID = eventID;
         this.numberOfGuests = numberOfGuests;
         this.eventDate = eventDate;
     }
 
-    // overloaded constructor with 2 arguments
-    public Event(String eventID, int numberOfGuests){
+    /**
+     * Overloaded constructor.
+     * @param eventID
+     * @param numberOfGuests
+     */
+    public Event(String eventID, int numberOfGuests) {
         this.eventID = eventID;
         this.numberOfGuests = numberOfGuests;
     }
 
-    // calculate the price
-    public double calculatePrice(){
+    /**
+     * Calculate price based on number of guest.
+     * @return
+     */
+    public double calculatePrice() {
         return PRICE_PER_GUEST * numberOfGuests;
     }
 }

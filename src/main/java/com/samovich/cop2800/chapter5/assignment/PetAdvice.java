@@ -10,9 +10,6 @@ import javax.swing.JOptionPane;
 public class PetAdvice {
 
     public static void main(String[] args) {
-    }
-
-    public static int typeOfDwelling(int number){
 
         // declare variables
         String dwellingType;
@@ -21,13 +18,26 @@ public class PetAdvice {
         // prompt the user to accept value
         dwellingType = JOptionPane.showInputDialog(
                 null,
-                "Enter 1(apartment), 2(house), 3(dorm):",
+                "Enter 1 (apartment), 2 (house), 3 (dorm):",
                 "Dwelling Type",
                 JOptionPane.QUESTION_MESSAGE);
 
         // convert string to an number
         dwellingNumber = Integer.parseInt(dwellingType);
 
-        return dwellingNumber;
+        // test if entered value is valid
+        if (dwellingNumber < 1 || dwellingNumber > 3) {
+            // display error message
+            JOptionPane.showMessageDialog(
+                    null,
+                    "The value for dwelling type must be 1 (apartment), 2 (house), or 3 (dorm)",
+                    "Dwelling Type Error",
+                    JOptionPane.ERROR_MESSAGE);
+            // stop the application
+            System.exit(0);
+        }
+
+        // print the entered value
+        System.out.println(dwellingNumber);
     }
 }

@@ -14,7 +14,6 @@ public class PetAdvice {
      * @param args
      */
     public static void main(String[] args) {
-
         // declare variables
         int validDwellingNumber;
         int validHoursPerWeek;
@@ -105,7 +104,6 @@ public class PetAdvice {
      * @param validHoursPerWeek hold the hours per week
      */
     private static void getRecommendedPet(int validDwellingNumber, int validHoursPerWeek) {
-
         // declare variables
         String jOptionPaneTitle = "Recommended Pet";
 
@@ -170,7 +168,5 @@ public class PetAdvice {
                         JOptionPane.INFORMATION_MESSAGE);
             }
         }
-
     }
-
 }

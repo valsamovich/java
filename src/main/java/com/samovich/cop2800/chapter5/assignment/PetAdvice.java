@@ -9,6 +9,10 @@ import javax.swing.JOptionPane;
  */
 public class PetAdvice {
 
+    /**
+     * Main method
+     * @param args
+     */
     public static void main(String[] args) {
 
         // declare variables
@@ -16,8 +20,11 @@ public class PetAdvice {
         int validHoursPerWeek;
 
         // get valid values
-        validDwellingNumber = getDwellingNumber();
-        validHoursPerWeek = getHoursPerWeek();
+        validDwellingNumber = PetAdvice.getDwellingNumber();
+        validHoursPerWeek = PetAdvice.getHoursPerWeek();
+
+        // get recommended pet based on dwelling and hours
+        PetAdvice.getRecommendedPet(validDwellingNumber, validHoursPerWeek);
 
         // print the entered value
         System.out.println(validDwellingNumber);
@@ -25,8 +32,7 @@ public class PetAdvice {
     }
 
     /**
-     * Method design to process user input and return type of dwelling as a
-     * number if it's valid.
+     * Process user input and return type of dwelling as a number, if it's valid.
      * @return dwellingNumber
      */
     private static int getDwellingNumber() {
@@ -37,7 +43,7 @@ public class PetAdvice {
         // prompt the user to enter the value for dwelling
         dwellingType = JOptionPane.showInputDialog(
                 null,
-                "Enter 1 (apartment), 2 (house), 3 (dorm):",
+                "Enter 1 (apartment), 2 (house), 3 (dorm).",
                 "Dwelling Type",
                 JOptionPane.QUESTION_MESSAGE);
 
@@ -60,8 +66,7 @@ public class PetAdvice {
     }
 
     /**
-     * Method design to process user input for hours per week and return value
-     * as number if it's valid.
+     * Process user input for hours per week and return value as number, if it's valid.
      * @return hoursPerWeekAsNumber
      */
     private static int getHoursPerWeek(){
@@ -92,6 +97,80 @@ public class PetAdvice {
             System.exit(0);
         }
         return hoursPerWeekAsNumber;
+    }
+
+    /**
+     * Accept two parameters and based on values determine the commended pet.
+     * @param validDwellingNumber hold the dwelling number
+     * @param validHoursPerWeek hold the hours per week
+     */
+    private static void getRecommendedPet(int validDwellingNumber, int validHoursPerWeek) {
+
+        // declare variables
+        String jOptionPaneTitle = "Recommended Pet";
+
+        // conditional statements for apartment
+        if (validDwellingNumber == 1) {
+            if (validHoursPerWeek >= 10) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Cat!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (validHoursPerWeek < 10) {
+                JOptionPane.showMessageDialog(
+
+                        null,
+                        "You should get a Hamster!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+
+        // conditional statements for house
+        if (validDwellingNumber == 2) {
+            if (validHoursPerWeek >= 18) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Pot-bellied pig!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (validHoursPerWeek >= 10 && validHoursPerWeek <= 17 ) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Dog!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (validHoursPerWeek < 10 ) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Snake!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
+
+        // conditional statements for dormitory
+        if (validDwellingNumber == 3) {
+            if (validHoursPerWeek >= 6) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Fish!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+            if (validHoursPerWeek < 6) {
+                JOptionPane.showMessageDialog(
+                        null,
+                        "You should get a Ant farm!",
+                        jOptionPaneTitle,
+                        JOptionPane.INFORMATION_MESSAGE);
+            }
+        }
 
     }
+
 }

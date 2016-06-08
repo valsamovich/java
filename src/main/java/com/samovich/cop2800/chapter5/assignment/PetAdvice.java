@@ -24,10 +24,6 @@ public class PetAdvice {
 
         // get recommended pet based on dwelling and hours
         PetAdvice.getRecommendedPet(validDwellingNumber, validHoursPerWeek);
-
-        // print the entered value
-        System.out.println(validDwellingNumber);
-        System.out.println(validHoursPerWeek);
     }
 
     /**
@@ -76,7 +72,7 @@ public class PetAdvice {
         // prompt the user to enter the value for hours
         hoursPerWeek = JOptionPane.showInputDialog(
                 null,
-                "Enter the number of hours per week you are home:",
+                "Enter the number of hours per week you are home.",
                 "Hours at Home",
                 JOptionPane.QUESTION_MESSAGE);
 

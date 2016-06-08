@@ -23,7 +23,7 @@ public class DivideEvenly {
         int number;
         for(number = 1; number <= LIMIT_2; ++number) {
             System.out.print(LIMIT_2 + " is evenly divisible by ");
-            for (var2 = 1; var2 <= LIMIT_2; ++var2) {
+            for (var2 = 1; var2 <= number; ++var2) {
                 if (number % var2 == 0)
                     // display the number and a space
                     System.out.print(var2 + " ");

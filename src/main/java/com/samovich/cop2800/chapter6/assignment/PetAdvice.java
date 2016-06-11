@@ -118,7 +118,6 @@ public class PetAdvice {
             }
             if (validHoursPerWeek < 10) {
                 JOptionPane.showMessageDialog(
-
                         null,
                         "You should get a Hamster!",
                         jOptionPaneTitle,

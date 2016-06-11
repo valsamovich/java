@@ -52,7 +52,7 @@ public class PetAdvice {
                 JOptionPane.showMessageDialog(
                         null,
                         "The value for dwelling type must be " +
-                                "1(apartment), 2(house), or 3(dorm)",
+                                "1(apartment), 2(house), or 3(dorm).",
                         "Dwelling Type Error",
                         JOptionPane.ERROR_MESSAGE);
             }
@@ -90,10 +90,8 @@ public class PetAdvice {
                                 "between 0 and 168 inclusive",
                         "Hours at Home Error",
                         JOptionPane.ERROR_MESSAGE);
-                // stop the application
-                System.exit(0);
             }
-        } while(hoursPerWeekAsNumber <= 0 || hoursPerWeekAsNumber >= 169);
+        } while(hoursPerWeekAsNumber <= -1 || hoursPerWeekAsNumber >= 169);
 
         return hoursPerWeekAsNumber;
     }

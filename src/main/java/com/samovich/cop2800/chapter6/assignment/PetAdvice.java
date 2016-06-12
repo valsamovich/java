@@ -17,13 +17,23 @@ public class PetAdvice {
         // declare variables
         int validDwellingNumber;
         int validHoursPerWeek;
+        String userInput;
 
-        // get valid values
-        validDwellingNumber = PetAdvice.getDwellingNumber();
-        validHoursPerWeek = PetAdvice.getHoursPerWeek();
+        do {
+            // get valid values
+            validDwellingNumber = PetAdvice.getDwellingNumber();
+            validHoursPerWeek = PetAdvice.getHoursPerWeek();
 
-        // get recommended pet based on dwelling and hours
-        PetAdvice.getRecommendedPet(validDwellingNumber, validHoursPerWeek);
+            // get recommended pet based on dwelling and hours
+            PetAdvice.getRecommendedPet(validDwellingNumber, validHoursPerWeek);
+
+            // prompt the user to enter the value for dwelling
+            userInput = JOptionPane.showInputDialog(
+                    null,
+                    "Enter Y to continue; anything else to stop.",
+                    "Continue Pet Advice",
+                    JOptionPane.QUESTION_MESSAGE);
+        } while(userInput.equalsIgnoreCase("Y"));
     }
 
     /**

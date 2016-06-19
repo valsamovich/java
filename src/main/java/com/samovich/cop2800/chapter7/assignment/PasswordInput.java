@@ -8,13 +8,38 @@ import javax.swing.JOptionPane;
  * Written on 6/17/2016
  */
 public class PasswordInput {
+
+    /**
+     * Main method
+     * @param args
+     */
     public static void main(String[] args) {
-        String inputString;
-        // prompt a user
-        inputString = JOptionPane.showInputDialog(
+        // declare fields
+        String password;
+        // prompt a user to type password
+        password = JOptionPane.showInputDialog(
                 null,
                 "Please enter your password",
                 "Password",
                 JOptionPane.QUESTION_MESSAGE);
+        // validate the password
+        if (PasswordChecker.checkPassword(password)) {
+            // display valid message
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Password is valid!",
+                    "Password Check Result",
+                    JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            // display error message
+            JOptionPane.showMessageDialog(
+                    null,
+                    "Password is invalid!\n" +
+                            "Password must contain letter,\n" +
+                            "a number, a special character\n" +
+                            "and be 8 characters or longer with no spases",
+                    "Password Check Result",
+                    JOptionPane.ERROR_MESSAGE);
+        }
     }
 }

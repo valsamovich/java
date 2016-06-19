@@ -53,7 +53,8 @@ public class PasswordChecker {
                 if (Character.isDigit(character)) {
                     number++;
                 }
-                if (character >= 33 && character <= 46 || character == 64) {
+                // check for special character
+                if (!Character.isDigit(character) && !Character.isLetter(character)) {
                     specialCharacter++;
                 }
             }

@@ -35,9 +35,10 @@ public class PasswordInput {
             JOptionPane.showMessageDialog(
                     null,
                     "Password is invalid!\n" +
-                            "Password must contain letter,\n" +
-                            "a number, a special character\n" +
-                            "and be 8 characters or longer with no spases",
+                            "Password must contain \n" +
+                            "a uppercase letter, a lowercase letter,\n" +
+                            "a number, a special character,\n" +
+                            "and be 8 characters or longer with no spaces",
                     "Password Check Result",
                     JOptionPane.ERROR_MESSAGE);
         }

@@ -3,11 +3,11 @@ package com.samovich.cop2800.chapter8;
 import java.util.Scanner;
 
 /**
- * Filename BowlingTeamDemo1.java
+ * Filename BowlingTeamDemo.java
  * Created by Valery Samovich
  * Written on 6/21/16
  */
-public class BowlingTeamDemo1 {
+public class BowlingTeamDemo {
     public static void main(String[] args) {
         // declare files, objects
         String name;

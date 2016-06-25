@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Created by Valery Samovich
  * Written on 6/21/2016
  */
-public class BubbleSortDemo {
+public class InsertionSortDemo {
 
     /**
      * Main method.
@@ -16,7 +16,6 @@ public class BubbleSortDemo {
     public static void main(String[] args) {
         // declare fields
         int[] someNums = new int[5];
-        int comparisonsToMake = someNums.length - 1;
         Scanner keyboard = new Scanner(System.in);
         int a, b, temp;
 
@@ -29,19 +28,18 @@ public class BubbleSortDemo {
         // call display method
         display(someNums, 0);
 
-        // nested loops to perform bubble sort algorithm
-        // outer loop controls the number of passes through the list
-        for (a = 0; a < someNums.length - 1; ++a) {
-            // inner loop controls the comparisons on each pass though the list
-            for (b = 0; b < comparisonsToMake; ++b) {
-                if (someNums[b] > someNums[b + 1]) {
-                    temp = someNums[b];
-                    someNums[b] = someNums[b +1];
-                    someNums[b + 1] = temp;
-                }
+        // statements that perform the insertion sort
+        a = 1;
+        while (a < someNums.length) {
+            temp = someNums[a];
+            b = a - 1;
+            while ( b >= 0 && someNums[b] > temp) {
+                someNums[b + 1] = someNums[b];
+                --b;
             }
-            display(someNums, (a + 1));
-            --comparisonsToMake;
+            someNums[b + 1] = temp;
+            display(someNums, a);
+            ++a;
         }
     }
 

@@ -29,6 +29,11 @@ public class MCChecker {
      */
     public int numberCorrect () {
         int correctAnswers = 0;
+        for (int i = 0; i < answerKeys.length; i++) {
+            if (answerKeys[i] == examBeingGraded[i]) {
+                ++correctAnswers;
+            }
+        }
         return correctAnswers;
     }
 
@@ -39,6 +44,11 @@ public class MCChecker {
      */
     public int numberIncorrect () {
         int incorrectAnswers = 0;
+        for (int i = 0; i < answerKeys.length; i++) {
+            if (answerKeys[i] != examBeingGraded[i]) {
+                ++incorrectAnswers;
+            }
+        }
         return incorrectAnswers;
     }
 
@@ -48,7 +58,6 @@ public class MCChecker {
      * @return
      */
     public boolean isPassingGrade () {
-        // TODO: add logic
         return true;
     }
 
@@ -59,10 +68,8 @@ public class MCChecker {
      * question was answered correctly.
      * @return
      */
-    public int[] problemsMissed() {
-        // TODO: add array with flexible size
-        int[] numbers = new int[0];
+    public int[] problemsMissed () {
+        int[] numbers = new int[9];
         return numbers;
-
     }
 }

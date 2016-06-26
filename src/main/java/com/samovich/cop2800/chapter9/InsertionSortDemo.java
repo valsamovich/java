@@ -3,7 +3,7 @@ package com.samovich.cop2800.chapter9;
 import java.util.Scanner;
 
 /**
- * Filename BubbleSortDemo.java
+ * Filename InsertionSortDemo.java
  * Created by Valery Samovich
  * Written on 6/21/2016
  */

@@ -11,6 +11,8 @@ public class MCChecker {
     private char[] examBeingGraded;
     public static final int SIZE_OF_ARRAY = 10;
     public static final double PERCENT_REQUIRED_TO_PASS = 0.7;
+    int correctAnswers = 0;
+    int incorrectAnswers = 0;
 
     /**
      * Public constructor
@@ -28,7 +30,7 @@ public class MCChecker {
      * @return
      */
     public int numberCorrect () {
-        int correctAnswers = 0;
+        // loop over answers for for correct answers
         for (int i = 0; i < answerKeys.length; i++) {
             if (answerKeys[i] == examBeingGraded[i]) {
                 ++correctAnswers;
@@ -43,7 +45,7 @@ public class MCChecker {
      * @return
      */
     public int numberIncorrect () {
-        int incorrectAnswers = 0;
+        // loop over answers for for incorrect answers
         for (int i = 0; i < answerKeys.length; i++) {
             if (answerKeys[i] != examBeingGraded[i]) {
                 ++incorrectAnswers;
@@ -58,6 +60,14 @@ public class MCChecker {
      * @return
      */
     public boolean isPassingGrade () {
+        // declare fields
+        double percentPass = correctAnswers;
+        // move the decimal place in double
+        percentPass /= 10;
+        // run check for boolean
+        if (percentPass < PERCENT_REQUIRED_TO_PASS) {
+            return false;
+        }
         return true;
     }
 

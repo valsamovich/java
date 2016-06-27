@@ -12,8 +12,8 @@ public class GradeExams {
      */
     public static void main(String[] args) {
         // declare fields
-        char[] answerKeys = {'A', 'B', 'C', 'D', 'B', 'C', 'A', 'A', 'D', 'B'};
-   char[] examBeingGraded = {'A', 'B', 'C', 'D', 'A', 'A', 'A', 'C', 'B', 'B'};
+        char[] answerKeys = {'A', 'B', 'C', 'D', 'B', 'A', 'A', 'A', 'D', 'B'};
+        char[] examBeingGraded = {'B', 'C', 'D', 'A', 'A', 'B', 'B', 'B', 'A', 'B'};
         MCChecker checkerOne = new MCChecker(answerKeys, examBeingGraded);
         int[] numbers = new int[9];
         String correct = "correct";

@@ -61,25 +61,36 @@ public class MCChecker {
      */
     public boolean isPassingGrade () {
         // declare fields
+        boolean examPass = false;
         double percentPass = correctAnswers;
         // move the decimal place in double
-        percentPass /= 10;
+        percentPass /= SIZE_OF_ARRAY;
         // run check for boolean
-        if (percentPass < PERCENT_REQUIRED_TO_PASS) {
-            return false;
+        if (percentPass >= PERCENT_REQUIRED_TO_PASS) {
+            return true;
         }
-        return true;
+        return examPass;
     }
 
     /**
-     * Public method named problemsMissedThis will return an integer array.
-     * Each element in the array will have either a 0 or a 1. It will have a 0
-     * if that question was answered incorrectly. It will have a 1 if that
-     * question was answered correctly.
+     * Public method named problemsMissed will return an integer array. Each
+     * element in the array will have either a 0 or a 1. It will have a 0 if
+     * that question was answered incorrectly. It will have a 1 if that question
+     * was answered correctly.
      * @return
      */
     public int[] problemsMissed () {
-        int[] numbers = new int[9];
+        // declare fields
+        int[] numbers = new int[SIZE_OF_ARRAY];
+        // loop over answers
+        for (int i = 0; i < numbers.length; i++) {
+            if (answerKeys[i] != examBeingGraded[i]) {
+                numbers[i] = 0;
+            }
+            if (answerKeys[i] == examBeingGraded[i]) {
+                numbers[i] = 1;
+            }
+        }
         return numbers;
     }
 }

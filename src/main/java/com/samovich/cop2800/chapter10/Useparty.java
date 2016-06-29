@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 /**
  * Example demonstrating inheritance.
- * Filename PartyUse.java
+ * Filename UseParty.java
  * Created by Valery Samovich
  * Written on 6/28/2016
  */
-public class PartyUse {
+public class UseParty {
     public static void main(String[] args) {
         // declare fields and objects
         int guests;

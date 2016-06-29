@@ -4,11 +4,16 @@ import java.util.Scanner;
 
 /**
  * Example demonstrating inheritance.
- * Filename UseParty.java
+ * Filename UseDinnerParty.java
  * Created by Valery Samovich
  * Written on 6/28/2016
  */
-public class UseParty {
+public class UseDinnerParty {
+
+    /**
+     * Main method.
+     * @param args
+     */
     public static void main(String[] args) {
         // declare fields and objects
         int guests;

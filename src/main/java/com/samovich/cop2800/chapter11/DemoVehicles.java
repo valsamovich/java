@@ -3,6 +3,7 @@ package com.samovich.cop2800.chapter11;
 import javax.swing.*;
 
 /**
+ * Example of how to use abstract class.
  * Filename DemoVehicles.java
  * Created by Valery Samovich
  * Written on 7/2/2016

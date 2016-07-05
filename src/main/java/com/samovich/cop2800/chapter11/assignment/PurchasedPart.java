@@ -14,6 +14,13 @@ public class PurchasedPart extends Part {
 
     /**
      * Public constructor.
+     */
+    public PurchasedPart() {
+        super(0, DEFAULT_PART_DESCRIPTION, 0);
+    }
+
+    /**
+     * Public constructor.
      * @param id
      */
     public PurchasedPart(int id) {
@@ -113,5 +120,13 @@ public class PurchasedPart extends Part {
                 "\tPurchase Price: " + this.getPurchasePrice() + "\n" +
                 "\tVendor: " + this.getVendor() + "\n" +
                 "\tHandling Cost: " + this.getHandlingCost();
+    }
+
+    /**
+     * Getter(accessor) method.
+     * @return
+     */
+    public double getProductCost() {
+        return purchasePrice + handlingCost;
     }
 }

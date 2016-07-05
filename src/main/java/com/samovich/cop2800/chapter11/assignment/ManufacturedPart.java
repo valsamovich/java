@@ -12,6 +12,13 @@ public class ManufacturedPart extends Part {
 
     /**
      * Public constructor.
+     */
+    public ManufacturedPart() {
+        super(0, DEFAULT_PART_DESCRIPTION, 0);
+    }
+
+    /**
+     * Public constructor.
      * @param id
      */
     public ManufacturedPart(int id) {
@@ -84,5 +91,13 @@ public class ManufacturedPart extends Part {
         return super.toString() + "\n" +
                 "\tLabor Cost: " + this.getLaborCost() + "\n" +
                 "\tMaterial Cost: " + this.getMaterialCost();
+    }
+
+    /**
+     * Getter(accessor) method.
+     * @return
+     */
+    public double getProductCost() {
+        return laborCost + materialCost;
     }
 }

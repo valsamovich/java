@@ -12,6 +12,13 @@ public class SubcontractedPart extends ManufacturedPart {
     public static final String DEFAULT_PROCESS_DESCRIPTION = "no process description";
 
     /**
+     * Public constructor.
+     */
+    public SubcontractedPart(){
+        super(0);
+    }
+
+    /**
      * Public constructor. Create minimal object.
      * @param id
      */
@@ -94,5 +101,13 @@ public class SubcontractedPart extends ManufacturedPart {
         return super.toString() + "\n" +
                 "\tProcess Description: " + this.getProcessDescription()  + "\n" +
                 "\tSubcontract Cost: " + this.getSubcontractCost();
+    }
+
+    /**
+     * Getter(accessor) method.
+     * @return
+     */
+    public double getProductCost() {
+        return getProductCost() + subcontractCost;
     }
 }

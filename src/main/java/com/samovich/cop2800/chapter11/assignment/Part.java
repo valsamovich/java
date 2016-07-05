@@ -5,7 +5,7 @@ package com.samovich.cop2800.chapter11.assignment;
  * Created by Valery Samovich
  * Written on 6/25/2016
  */
-public class Part {
+public abstract class Part {
     // declare fields
     private int partID;
     private String partDescription;
@@ -92,4 +92,10 @@ public class Part {
                 "\tDescription: " +this.getPartDescription() + "\n" +
                 "\tSell Price: " + this.getPartSellPrice();
     }
+
+    /**
+     * Abstract method.
+     * @return
+     */
+    public abstract double getProductCost();
 }

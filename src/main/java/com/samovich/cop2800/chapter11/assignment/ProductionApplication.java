@@ -17,75 +17,97 @@ public class ProductionApplication {
         Scanner scan = new Scanner(System.in);
         Part[] parts = new Part[2];
         int userChoice = 0;
-        int[] counts = new int[3];
-        int count;
+        int i = 0;
 
-        for(count = 0; count < counts.length; ++count) {
-            if (userChoice != 5) {
-                userChoice = getUserChoice();
-                if (userChoice == 1) {
-                    System.out.print("One: ");
-                    int one = scan.nextInt();
-                    /*System.out.print("Enter the part ID: ");
-                    int partId = scan.nextInt();
-                    System.out.print("Enter the part description: ");
-                    String partDescription = scan.nextLine();
-                    scan.nextLine();
-                    System.out.print("Enter the part sell price: ");
-                    double partSellPrice = scan.nextDouble();
-                    System.out.print("Enter the purchase price: ");
-                    double purchasePrice = scan.nextDouble();
-                    System.out.print("Enter the vendor: ");
-                    String vendor = scan.nextLine();
-                    scan.nextLine();
-                    System.out.print("Enter the handling cost: ");
-                    double handlingCost = scan.nextInt();*/
-                    //TODO: Create Purchased Part object with user input
-                }
-                // accept user input. if choice equal 2
-                if (userChoice == 2) {
-                    System.out.print("Two: ");
-                    int two = scan.nextInt();
-                    /*System.out.print("Enter the part ID: ");
-                    int partId = scan.nextInt();
-                    System.out.print("Enter the part description: ");
-                    String partDescription = scan.nextLine();
-                    scan.nextLine();
-                    System.out.print("Enter the part sell price: ");
-                    double partSellPrice = scan.nextDouble();
-                    System.out.print("Enter the labor cost: ");
-                    double laborCost = scan.nextDouble();
-                    System.out.print("Enter the material cost: ");
-                    double materialCost = scan.nextDouble();*/
-                    //TODO: Create Manufactured Part object with user input
-                }
-                // accept user input. if choice equal 3
-                if (userChoice == 3) {
-                    System.out.print("Three: ");
-                    int three = scan.nextInt();
-                    /*System.out.print("Enter the part ID: ");
-                    int partId = scan.nextInt();
-                    System.out.print("Enter the part description: ");
-                    String partDescription = scan.nextLine();
-                    scan.nextLine();
-                    System.out.print("Enter the part sell price: ");
-                    double partSellPrice = scan.nextDouble();
-                    System.out.print("Enter the labor cost: ");
-                    double laborCost = scan.nextDouble();
-                    System.out.print("Enter the material cost: ");
-                    double materialCost = scan.nextDouble();
-                    System.out.print("Enter the subcontract process description: ");
-                    String subcontractProcessDescription = scan.nextLine();
-                    scan.nextLine();
-                    System.out.print("Enter the subcontract cost: ");
-                    double subcontractCost = scan.nextDouble();*/
-                    //TODO: Create Subcontracted Part object with user input
-                }
-            } else {
-                System.out.println("The array is full");
+        while (userChoice != 5 && i < parts.length) {
+            userChoice = getUserChoice();
+            if (userChoice == 1) {
+                System.out.print("Enter the part ID: ");
+                int partId = scan.nextInt();
+                System.out.print("Enter the part description: ");
+                String partDescription = scan.nextLine();
+                scan.nextLine();
+                System.out.print("Enter the part sell price: ");
+                double partSellPrice = scan.nextDouble();
+                System.out.print("Enter the purchase price: ");
+                double purchasePrice = scan.nextDouble();
+                System.out.print("Enter the vendor: ");
+                String vendor = scan.nextLine();
+                scan.nextLine();
+                System.out.print("Enter the handling cost: ");
+                double handlingCost = scan.nextInt();
+                // create Purchased Part object with user input
+                // TODO: store object in array
+                PurchasedPart pp = new PurchasedPart(
+                        partId,
+                        partDescription,
+                        partSellPrice,
+                        purchasePrice,
+                        vendor,
+                        handlingCost);
+
             }
+            // accept user input. if choice equal 2
+            if (userChoice == 2) {
+                System.out.print("Enter the part ID: ");
+                int partId = scan.nextInt();
+                System.out.print("Enter the part description: ");
+                String partDescription = scan.nextLine();
+                scan.nextLine();
+                System.out.print("Enter the part sell price: ");
+                double partSellPrice = scan.nextDouble();
+                System.out.print("Enter the labor cost: ");
+                double laborCost = scan.nextDouble();
+                System.out.print("Enter the material cost: ");
+                double materialCost = scan.nextDouble();
+                // create Manufactured Part object with user input
+                // TODO: store object in array
+                ManufacturedPart mp = new ManufacturedPart(
+                        partId,
+                        partDescription,
+                        partSellPrice,
+                        laborCost,
+                        materialCost);
+            }
+            // accept user input. if choice equal 3
+            if (userChoice == 3) {
+                System.out.print("Enter the part ID: ");
+                int partId = scan.nextInt();
+                System.out.print("Enter the part description: ");
+                String partDescription = scan.nextLine();
+                scan.nextLine();
+                System.out.print("Enter the part sell price: ");
+                double partSellPrice = scan.nextDouble();
+                System.out.print("Enter the labor cost: ");
+                double laborCost = scan.nextDouble();
+                System.out.print("Enter the material cost: ");
+                double materialCost = scan.nextDouble();
+                System.out.print("Enter the subcontract process description: ");
+                String subcontractProcessDescription = scan.nextLine();
+                scan.nextLine();
+                System.out.print("Enter the subcontract cost: ");
+                double subcontractCost = scan.nextDouble();
+                // create Subcontracted Part object with user input
+                // TODO: store object in array
+                SubcontractedPart sp = new SubcontractedPart(
+                        partId,
+                        partDescription,
+                        partSellPrice,
+                        laborCost,
+                        materialCost,
+                        subcontractProcessDescription,
+                        subcontractCost);
+            }
+            i++;
+        }
+        if (userChoice != 5) {
+            userChoice = getUserChoice();
+            System.out.println("The array is full");
+            // TODO: print objects with values
+            // TODO: Add loop over objects
         }
     }
+
         /*  switch (userChoice) {
                 case 1:
                     // Part p = new Part(1001, "52 inch HD TV", 1100.55);

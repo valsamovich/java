@@ -98,6 +98,8 @@ public class ManufacturedPart extends Part {
      * @return
      */
     public double getProductCost() {
-        return laborCost + materialCost;
+        double mpProductCost;
+        mpProductCost = laborCost + materialCost;
+        return  mpProductCost;
     }
 }

@@ -108,6 +108,8 @@ public class SubcontractedPart extends ManufacturedPart {
      * @return
      */
     public double getProductCost() {
-        return getProductCost() + subcontractCost;
+        double mpProductCost;
+        mpProductCost = super.getProductCost();
+        return mpProductCost + subcontractCost;
     }
 }

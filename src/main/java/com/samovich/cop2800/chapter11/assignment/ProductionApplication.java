@@ -50,9 +50,9 @@ public class ProductionApplication {
             if (userChoice == 2) {
                 System.out.print("Enter the part ID: ");
                 int partId = scan.nextInt();
+                scan.nextLine();
                 System.out.print("Enter the part description: ");
                 String partDescription = scan.nextLine();
-                scan.nextLine();
                 System.out.print("Enter the part sell price: ");
                 double partSellPrice = scan.nextDouble();
                 System.out.print("Enter the labor cost: ");
@@ -71,18 +71,18 @@ public class ProductionApplication {
             if (userChoice == 3) {
                 System.out.print("Enter the part ID: ");
                 int partId = scan.nextInt();
+                scan.nextLine();
                 System.out.print("Enter the part description: ");
                 String partDescription = scan.nextLine();
-                scan.nextLine();
                 System.out.print("Enter the part sell price: ");
                 double partSellPrice = scan.nextDouble();
                 System.out.print("Enter the labor cost: ");
                 double laborCost = scan.nextDouble();
                 System.out.print("Enter the material cost: ");
                 double materialCost = scan.nextDouble();
+                scan.nextLine();
                 System.out.print("Enter the subcontract process description: ");
                 String subcontractProcessDescription = scan.nextLine();
-                scan.nextLine();
                 System.out.print("Enter the subcontract cost: ");
                 double subcontractCost = scan.nextDouble();
                 // create Subcontracted Part object with user input

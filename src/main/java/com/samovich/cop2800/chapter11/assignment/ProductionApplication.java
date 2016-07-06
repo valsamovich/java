@@ -15,7 +15,7 @@ public class ProductionApplication {
     public static void main(String [] args) {
         // declare fields, objects.
         Scanner scan = new Scanner(System.in);
-        Part[] parts = new Part[3];
+        Part[] parts = new Part[10];
         int userChoice = 0;
         int i = 0;
 
@@ -117,6 +117,7 @@ public class ProductionApplication {
             if (parts[i] instanceof PurchasedPart) {
                 printPartInformation(parts[i]);
             }
+            // TODO: add check for specific object
             if (parts[i] instanceof ManufacturedPart) {
                 printPartInformation(parts[i]);
             }

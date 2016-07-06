@@ -24,16 +24,16 @@ public class ProductionApplication {
             if (userChoice == 1) {
                 System.out.print("Enter the part ID: ");
                 int partId = scan.nextInt();
+                scan.nextLine();
                 System.out.print("Enter the part description: ");
                 String partDescription = scan.nextLine();
-                scan.nextLine();
                 System.out.print("Enter the part sell price: ");
                 double partSellPrice = scan.nextDouble();
                 System.out.print("Enter the purchase price: ");
                 double purchasePrice = scan.nextDouble();
+                scan.nextLine();
                 System.out.print("Enter the vendor: ");
                 String vendor = scan.nextLine();
-                scan.nextLine();
                 System.out.print("Enter the handling cost: ");
                 double handlingCost = scan.nextDouble();
                 // create Purchased Part object with user input
@@ -103,7 +103,7 @@ public class ProductionApplication {
         }
 
         // display that array is full
-        System.out.println("The array is full");
+        // System.out.println("The array is full");
 
         // loop over objects and display information
         for (i = 0; i < parts.length; ++i) {

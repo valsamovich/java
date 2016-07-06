@@ -15,7 +15,7 @@ public class ProductionApplication {
     public static void main(String [] args) {
         // declare fields, objects.
         Scanner scan = new Scanner(System.in);
-        Part[] parts = new Part[2];
+        Part[] parts = new Part[3];
         int userChoice = 0;
         int i = 0;
 
@@ -35,10 +35,10 @@ public class ProductionApplication {
                 String vendor = scan.nextLine();
                 scan.nextLine();
                 System.out.print("Enter the handling cost: ");
-                double handlingCost = scan.nextInt();
+                double handlingCost = scan.nextDouble();
                 // create Purchased Part object with user input
                 // TODO: store object in array
-                PurchasedPart pp = new PurchasedPart(
+                parts[i] = new PurchasedPart(
                         partId,
                         partDescription,
                         partSellPrice,
@@ -62,7 +62,7 @@ public class ProductionApplication {
                 double materialCost = scan.nextDouble();
                 // create Manufactured Part object with user input
                 // TODO: store object in array
-                ManufacturedPart mp = new ManufacturedPart(
+                parts[i] = new ManufacturedPart(
                         partId,
                         partDescription,
                         partSellPrice,
@@ -89,7 +89,7 @@ public class ProductionApplication {
                 double subcontractCost = scan.nextDouble();
                 // create Subcontracted Part object with user input
                 // TODO: store object in array
-                SubcontractedPart sp = new SubcontractedPart(
+                parts[i] = new SubcontractedPart(
                         partId,
                         partDescription,
                         partSellPrice,
@@ -98,13 +98,30 @@ public class ProductionApplication {
                         subcontractProcessDescription,
                         subcontractCost);
             }
+            // accept user input. if choice equal 4
+            if (userChoice == 4) {
+                break;
+            }
             i++;
         }
-        if (userChoice != 5) {
-            userChoice = getUserChoice();
-            System.out.println("The array is full");
-            // TODO: print objects with values
-            // TODO: Add loop over objects
+
+        // display that array is full
+        System.out.println("The array is full");
+
+        // loop over objects and display information
+        for (i = 0; i < parts.length; ++i) {
+            if (parts[i] instanceof PurchasedPart) {
+                System.out.println("********");
+                System.out.println(parts[i].toString());
+            }
+            if (parts[i] instanceof ManufacturedPart) {
+                System.out.println("********");
+                System.out.println(parts[i].toString());
+            }
+            if (parts[i] instanceof SubcontractedPart) {
+                System.out.println("********");
+                System.out.println(parts[i].toString());
+            }
         }
     }
 

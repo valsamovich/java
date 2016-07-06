@@ -17,6 +17,7 @@ public class PurchasedPart extends Part {
      */
     public PurchasedPart() {
         super(0, DEFAULT_PART_DESCRIPTION, 0);
+
     }
 
     /**

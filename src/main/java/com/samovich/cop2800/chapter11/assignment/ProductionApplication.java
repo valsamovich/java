@@ -37,7 +37,6 @@ public class ProductionApplication {
                 System.out.print("Enter the handling cost: ");
                 double handlingCost = scan.nextDouble();
                 // create Purchased Part object with user input
-                // TODO: store object in array
                 parts[i] = new PurchasedPart(
                         partId,
                         partDescription,
@@ -61,7 +60,6 @@ public class ProductionApplication {
                 System.out.print("Enter the material cost: ");
                 double materialCost = scan.nextDouble();
                 // create Manufactured Part object with user input
-                // TODO: store object in array
                 parts[i] = new ManufacturedPart(
                         partId,
                         partDescription,
@@ -88,7 +86,6 @@ public class ProductionApplication {
                 System.out.print("Enter the subcontract cost: ");
                 double subcontractCost = scan.nextDouble();
                 // create Subcontracted Part object with user input
-                // TODO: store object in array
                 parts[i] = new SubcontractedPart(
                         partId,
                         partDescription,

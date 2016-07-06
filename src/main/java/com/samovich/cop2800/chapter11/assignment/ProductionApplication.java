@@ -102,8 +102,15 @@ public class ProductionApplication {
             i++;
         }
 
-        // display that array is full
-        // System.out.println("The array is full");
+        while(i == 3) {
+            // display that array is full
+            System.out.println("The array is full");
+            userChoice = getUserChoice();
+            // accept user input. if choice equal 4
+            if (userChoice == 4) {
+                break;
+            }
+        }
 
         // loop over objects and display information
         for (i = 0; i < parts.length; ++i) {

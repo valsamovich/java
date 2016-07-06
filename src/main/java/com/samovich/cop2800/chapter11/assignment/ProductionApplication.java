@@ -111,61 +111,26 @@ public class ProductionApplication {
         // loop over objects and display information
         for (i = 0; i < parts.length; ++i) {
             if (parts[i] instanceof PurchasedPart) {
-                System.out.println("********");
-                System.out.println(parts[i].toString());
+                printPartInformation(parts[i]);
             }
             if (parts[i] instanceof ManufacturedPart) {
-                System.out.println("********");
-                System.out.println(parts[i].toString());
+                printPartInformation(parts[i]);
             }
             if (parts[i] instanceof SubcontractedPart) {
-                System.out.println("********");
-                System.out.println(parts[i].toString());
+                printPartInformation(parts[i]);
             }
         }
     }
 
-        /*  switch (userChoice) {
-                case 1:
-                    // Part p = new Part(1001, "52 inch HD TV", 1100.55);
-                    // System.out.println("Part info: " );
-                    // System.out.println(p);  // remember this calls p.toString
-                    break;
-                case 2:
-                    *//*
-                     * public PurchasedPart(int id, String desc, double sellPrice,    //for Part object
-                            double purPrice, String vend, double hCost)  //for this object
-                     *//*
-                    PurchasedPart pp = new PurchasedPart(1002, "AAA battery for rmeote control", 1.12,
-                            0.28, "Tesla Electric", .59);
-                    System.out.println("Purchased Part info: " );
-                    System.out.println(pp);//remember this calls pp.toString
-                    break;
-                case 3:
-                    *//*
-                     * 	public ManufacturedPart(int id, String desc, double sellPrice,  //for Part object
-                            double lCost, double mCost)  //for this object
-                     *//*
-                    ManufacturedPart mp = new ManufacturedPart(1003, "3 inch standard plastic stand", 98.59,
-                            45.99, 12.99);
-                    System.out.println("Manufactured Part info: ");
-                    System.out.println(mp);		//remember this calls mp.toString
-                    break;
-                case 4:
-                    *//*
-                     * public SubcontractedPart(int id, String partDesc, double sellPrice,   //for Part object
-                            double  lCost, double mCost,  //for ManufacturedCost object
-                            String processDesc, double sCost)  //for SubcontractedPArt object
-                     *//*
-                    SubcontractedPart sp = new SubcontractedPart(1004, "1/8 inch x 52 inch gorilla glass", 1210.99,
-                            45.15, 12.59,
-                            "add high glaze finish", 800.52);
-                    System.out.println("Subcontracted Part info: ");
-                    System.out.println(sp); //remember this calls sp.toString
-                    break;
-            }
-        } // end while*/
-
+    /**
+     * Print part information
+     * @param part
+     */
+    public static void printPartInformation(Part part) {
+        System.out.println("********");
+        System.out.println(part.toString());
+        System.out.println("The product cost is " + part.getProductCost());
+    }
 
     /**
      * Get user input.

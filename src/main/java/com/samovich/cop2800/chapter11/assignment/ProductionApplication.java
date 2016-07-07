@@ -118,7 +118,8 @@ public class ProductionApplication {
                 printPartInformation(parts[i]);
             }
             // TODO: add check for specific object
-            if (parts[i] instanceof ManufacturedPart) {
+            if (parts[i] instanceof ManufacturedPart
+                    && !(parts[i] instanceof SubcontractedPart)) {
                 printPartInformation(parts[i]);
             }
             if (parts[i] instanceof SubcontractedPart) {

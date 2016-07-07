@@ -2,8 +2,8 @@ package com.samovich.cop2800.chapter11.assignment;
 
 /**
  * Filename ManufacturedPart.java
- * Created by Valery Samovich
- * Written on 6/25/2016
+ * Created on 3/2014 by R Grant
+ * Updated on 6/25/2016 by Valery Samovich
  */
 public class ManufacturedPart extends Part {
     // declare fields

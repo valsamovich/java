@@ -1,9 +1,9 @@
 package com.samovich.cop2800.chapter11.assignment;
 
 /**
- * Filename Part.java
- * Created by Valery Samovich
- * Written on 6/25/2016
+ * Filename ManufacturedPart.java
+ * Created on 3/2014 by R Grant
+ * Updated on 6/25/2016 by Valery Samovich
  */
 public abstract class Part {
     // declare fields

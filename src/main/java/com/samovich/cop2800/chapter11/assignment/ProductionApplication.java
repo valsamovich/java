@@ -3,9 +3,9 @@ package com.samovich.cop2800.chapter11.assignment;
 import java.util.Scanner;
 
 /**
- * Filename ProductionApplication.java
- * Created by Valery Samovich
- * Written on 6/25/2016
+ * Filename ManufacturedPart.java
+ * Created on 3/2014 by R Grant
+ * Updated on 6/25/2016 by Valery Samovich
  */
 public class ProductionApplication {
     /**

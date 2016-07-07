@@ -13,14 +13,16 @@ public class ProductionApplication {
      * @param args
      */
     public static void main(String [] args) {
-        // declare fields, objects.
+        // declare fields, objects
         Scanner scan = new Scanner(System.in);
         Part[] parts = new Part[10];
         int userChoice = 0;
         int i = 0;
 
+        // loop over user inputs to fill array
         while (userChoice != 5 && i < parts.length) {
             userChoice = getUserChoice();
+            // accept user input. if choice equal 2
             if (userChoice == 1) {
                 System.out.print("Enter the part ID: ");
                 int partId = scan.nextInt();
@@ -44,7 +46,6 @@ public class ProductionApplication {
                         purchasePrice,
                         vendor,
                         handlingCost);
-
             }
             // accept user input. if choice equal 2
             if (userChoice == 2) {
@@ -102,7 +103,8 @@ public class ProductionApplication {
             i++;
         }
 
-        while(i == 3) {
+        // loop over user inputs, if array is full
+        while(i == 10) {
             // display that array is full
             System.out.println("The array is full");
             userChoice = getUserChoice();

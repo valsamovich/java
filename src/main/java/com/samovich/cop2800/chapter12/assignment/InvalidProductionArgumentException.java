@@ -11,11 +11,12 @@ public class InvalidProductionArgumentException
         extends Exception implements Serializable {
     // declare fields
     private static final long serialVersionUID = 1L;
-
+    String message;
     /**
      * Constructor
      * @param customErrorMessage
      */
     public InvalidProductionArgumentException(String customErrorMessage) {
+        message = customErrorMessage;
     }
 }

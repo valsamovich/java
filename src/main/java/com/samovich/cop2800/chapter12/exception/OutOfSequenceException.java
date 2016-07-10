@@ -1,3 +1,5 @@
+package com.samovich.cop2800.chapter12.exception;
+
 /*
 AUTHOR: Dick Grant
 PURPOSE: Demonstrate the creation of a custom exception.  The class below 

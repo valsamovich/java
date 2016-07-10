@@ -1,4 +1,4 @@
-/*
+package com.samovich.cop2800.chapter12.exception;/*
 AUTHOR: Dick Grant
 PURPOSE: Demonstrate the use of a custom exception.  The class below throws an OutOfSequenceException
 when the array it receives as argument in the constructor is not in ascending sequence.  Note the 

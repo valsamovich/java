@@ -1,4 +1,6 @@
-	/*
+package com.samovich.cop2800.chapter12.exception;
+
+/*
 AUTHOR: Dick Grant
 PURPOSE: Demonstrate the use of try and catch blocks.  The class below attempts 
 to create an object of the Taxes class.  However the Taxes class can throw an 
@@ -11,7 +13,7 @@ this exception, resort the array and instantiate the object.
 SOURCE:D:\chap15\chap15_code_examples\ProcessArray.java
 */
 public class ProcessArray{
-	public static void main (String [] args) { throws Exception
+	public static void main (String [] args) throws OutOfSequenceException {
 		int [] taxArray = {15, 29, 27, 33, 37};
 		Taxes myTaxes = null;
 		try {

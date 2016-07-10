@@ -34,7 +34,6 @@ public class ProductionApplication {
                         temp = scan.nextLine();
                         pp.setHandlingCost(Double.parseDouble(temp));
                         inventory[idx++] = pp;
-
                     /*
                     case 2:
                         ManufacturedPart mp = new ManufacturedPart();
@@ -94,47 +93,39 @@ public class ProductionApplication {
 
     //Code below is used for each part object to get common data
     public static void getPartInfo(Part p) {
-        System.out.print("Enter the part ID: ");
-        String temp = scan.nextLine();
-        int ID = Integer.parseInt(temp);
         try {
+            System.out.print("Enter the part ID: ");
+            String temp = scan.nextLine();
+            int ID = Integer.parseInt(temp);
             p.setPartID(ID);
-        } catch (InvalidProductionArgumentException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Please retry.");
-        } catch
-        System.out.print("Enter the part description: ");
-        temp = scan.nextLine();
-        try {
+            System.out.print("Enter the part description: ");
+            temp = scan.nextLine();
             p.setPartDescription(temp);
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }
-        System.out.print("Enter the part sell price: ");
-        temp = scan.nextLine();
-        double price = Double.parseDouble(temp);
-        try {
+            System.out.print("Enter the part sell price: ");
+            temp = scan.nextLine();
+            double price = Double.parseDouble(temp);
             p.setPartSellPrice(price);
         } catch (InvalidProductionArgumentException e) {
             System.out.println(e.getMessage());
+            System.out.println("Please retry.");
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+            System.out.println("Please retry.");
         }
     }
 
     //Code below is used for each "manufactured" part object to get common data
     public static void getMfgPartInfo(ManufacturedPart mp) {
-        System.out.print("Enter the labor cost: ");
-        String temp = scan.nextLine();
         try {
+            System.out.print("Enter the labor cost: ");
+            String temp = scan.nextLine();
             mp.setLaborCost(Double.parseDouble(temp));
-        } catch (InvalidProductionArgumentException e) {
-            System.out.println(e.getMessage());
-        }
-        System.out.print("Enter the material cost: ");
-        temp = scan.nextLine();
-        try {
+            System.out.print("Enter the material cost: ");
+            temp = scan.nextLine();
             mp.setMaterialCost(Double.parseDouble(temp));
         } catch (InvalidProductionArgumentException e) {
             System.out.println(e.getMessage());
+            System.out.println("Please retry.");
         }
     }
 }

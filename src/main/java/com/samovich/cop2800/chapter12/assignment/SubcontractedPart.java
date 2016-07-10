@@ -50,10 +50,10 @@ public class SubcontractedPart extends ManufacturedPart {
     }
 
     public void setProcessDescription(String newProcessDescription) throws NullPointerException{
-        if (newProcessDescription != null)
-            processDescription = newProcessDescription;
-        else
+        if (newProcessDescription.isEmpty())
             throw new NullPointerException("The process description was invalid");
+        else
+            processDescription = newProcessDescription;
     }
 
     public double getSubcontractCost() {

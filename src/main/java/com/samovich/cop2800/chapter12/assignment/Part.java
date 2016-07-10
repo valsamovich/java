@@ -28,7 +28,7 @@ public abstract class Part    // <--------------------- Made this class abstract
         return partID;
     }
 
-    public void setPartID(int newPartID) throws InvalidProductionArgumentException{
+    public void setPartID(int newPartID) throws InvalidProductionArgumentException {
         if (newPartID >= 0)
             partID = newPartID;
         else
@@ -40,10 +40,11 @@ public abstract class Part    // <--------------------- Made this class abstract
     }
 
     public void setPartDescription(String newPartDescription) throws NullPointerException {
-        if (newPartDescription != null)
-            partDescription = newPartDescription;
-        else
+        if (newPartDescription.isEmpty())
             throw new NullPointerException("The part description was invalid");
+        else
+            partDescription = newPartDescription;
+
     }
 
     public double getPartSellPrice() {

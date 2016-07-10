@@ -58,10 +58,10 @@ public class PurchasedPart extends Part {
     }
 
     public void setVendor(String newVendor) throws NullPointerException {
-        if (newVendor != null)
-            vendor = newVendor;
-        else
+        if (newVendor.isEmpty())
             throw new NullPointerException("The vendor description was invalid");
+        else
+            vendor = newVendor;
     }
 
     public double getHandlingCost() {

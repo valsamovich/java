@@ -19,7 +19,7 @@ public class ProcessArray{
         try {
             myTaxes = new Taxes(taxArray);
         }
-        catch (OutOfSequenceException excep)		{
+        catch (OutOfSequenceException excep){
             System.out.println(excep.getMessage());//just for demo purposes
             System.out.println(myTaxes);//just for demo purposes
             resortArray(taxArray); //put the array in order

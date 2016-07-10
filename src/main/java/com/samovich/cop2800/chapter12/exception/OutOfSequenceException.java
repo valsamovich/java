@@ -12,8 +12,8 @@ public class OutOfSequenceException extends Exception{
         public OutOfSequenceException( ) { }  //default constructor
 
         public OutOfSequenceException(String str){  //overloaded constructor
-			//the value of str will be set by the class that uses this exception
+            //the value of str will be set by the class that uses this exception
                 super (str);  //call the superclass constructor and pass 
-							  //the String object
+                              //the String object
         }
 }

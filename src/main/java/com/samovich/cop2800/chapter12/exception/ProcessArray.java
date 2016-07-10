@@ -13,25 +13,25 @@ this exception, resort the array and instantiate the object.
 SOURCE:D:\chap15\chap15_code_examples\ProcessArray.java
 */
 public class ProcessArray{
-	public static void main (String [] args) throws OutOfSequenceException {
-		int [] taxArray = {15, 29, 27, 33, 37};
-		Taxes myTaxes = null;
-		try {
-			myTaxes = new Taxes(taxArray);
-		}
-		catch (OutOfSequenceException excep)		{
-			System.out.println(excep.getMessage());//just for demo purposes
-			System.out.println(myTaxes);//just for demo purposes
-			resortArray(taxArray); //put the array in order
-			myTaxes = new Taxes(taxArray);//now instantiate the object
-		}	
-		//process rest of code normally
-		System.out.println(myTaxes);
-		
-	}
-	public static void resortArray(int [ ]taxArray)	{
-		//"resort" the array - just to save code and space
-		taxArray[1] = 22;
-		return;
-	}
+    public static void main (String [] args) throws OutOfSequenceException {
+        int [] taxArray = {15, 29, 27, 33, 37};
+        Taxes myTaxes = null;
+        try {
+            myTaxes = new Taxes(taxArray);
+        }
+        catch (OutOfSequenceException excep)		{
+            System.out.println(excep.getMessage());//just for demo purposes
+            System.out.println(myTaxes);//just for demo purposes
+            resortArray(taxArray); //put the array in order
+            myTaxes = new Taxes(taxArray);//now instantiate the object
+        }
+        //process rest of code normally
+        System.out.println(myTaxes);
+
+    }
+    public static void resortArray(int [ ]taxArray)	{
+        //"resort" the array - just to save code and space
+        taxArray[1] = 22;
+        return;
+    }
 }

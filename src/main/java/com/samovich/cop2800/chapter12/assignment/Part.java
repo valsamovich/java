@@ -3,6 +3,7 @@ package com.samovich.cop2800.chapter12.assignment;
 /*
  * AUTHOR:	R Grant
  * DATE:	3/2014
+ * Updated: Valery Samovich on 7/10/2016
  */
 public abstract class Part    // <--------------------- Made this class abstract
 {

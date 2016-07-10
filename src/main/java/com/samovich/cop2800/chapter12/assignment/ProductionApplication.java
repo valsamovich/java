@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ProductionApplication {
     private static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) throws InvalidProductionArgumentException, NullPointerException{
+    public static void main(String[] args) {
         Part[] inventory = new Part[10];
         int idx = 0;
         int userChoice = 0;
@@ -21,48 +21,76 @@ public class ProductionApplication {
             } else //if array is not full do the following ....
                 switch (userChoice) {
                     case 1:
-                        PurchasedPart pp = null;
-                        pp = new PurchasedPart();
-                        getPartInfo(pp);
-                        System.out.print("Enter the purchase price: ");
-                        String temp = scan.nextLine();
-                        pp.setPurchasePrice(Double.parseDouble(temp));
-                        System.out.print("Enter the vendor: ");
-                        temp = scan.nextLine();
-                        pp.setVendor(temp);
-                        System.out.print("Enter the handling cost: ");
-                        temp = scan.nextLine();
-                        pp.setHandlingCost(Double.parseDouble(temp));
-                        inventory[idx++] = pp;
-                    /*
-                    case 2:
-                        ManufacturedPart mp = new ManufacturedPart();
-                        getPartInfo(mp);
-                        getMfgPartInfo(mp);
-                        inventory[idx++] = mp;
-                        break;
-                    case 3:
-                        SubcontractedPart sp = new SubcontractedPart();
-                        getPartInfo(sp);
-                        getMfgPartInfo(sp);
-
-                        System.out.print("Enter the subcontract process description: ");
-                        temp = scan.nextLine();
-                        sp.setProcessDescription(temp);
-                        System.out.print("Enter the subcontract cost: ");
-                        temp = scan.nextLine();
                         try {
-                            sp.setSubcontractCost(Double.parseDouble(temp));
+                            PurchasedPart pp = null;
+                            pp = new PurchasedPart();
+                            getPartInfo(pp);
+                            System.out.print("Enter the purchase price: ");
+                            String temp = scan.nextLine();
+                            pp.setPurchasePrice(Double.parseDouble(temp));
+                            System.out.print("Enter the vendor: ");
+                            temp = scan.nextLine();
+                            pp.setVendor(temp);
+                            System.out.print("Enter the handling cost: ");
+                            temp = scan.nextLine();
+                            pp.setHandlingCost(Double.parseDouble(temp));
+                            inventory[idx++] = pp;
+                            break;
                         } catch (InvalidProductionArgumentException e) {
-                            e.getMessage();
+                            System.out.println("Failed to create a purchased part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
+                        } catch (NullPointerException e) {
+                            System.out.println("Failed to create a purchased part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
                         }
-                        inventory[idx++] = sp;
-                        break;
+                    case 2:
+                        try {
+                            ManufacturedPart mp = new ManufacturedPart();
+                            getPartInfo(mp);
+                            getMfgPartInfo(mp);
+                            inventory[idx++] = mp;
+                            break;
+                        } catch (InvalidProductionArgumentException e) {
+                            System.out.println("Failed to create a manufactured part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
+                        } catch (NullPointerException e) {
+                            System.out.println("Failed to create a manufactured part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
+                        }
+                    case 3:
+                        try {
+                            SubcontractedPart sp = new SubcontractedPart();
+                            getPartInfo(sp);
+                            getMfgPartInfo(sp);
+                            System.out.print("Enter the subcontract process description: ");
+                            String temp = scan.nextLine();
+                            sp.setProcessDescription(temp);
+                            System.out.print("Enter the subcontract cost: ");
+                            temp = scan.nextLine();
+                            try {
+                                sp.setSubcontractCost(Double.parseDouble(temp));
+                            } catch (InvalidProductionArgumentException e) {
+                                e.getMessage();
+                            }
+                            inventory[idx++] = sp;
+                            break;
+                        } catch (InvalidProductionArgumentException e) {
+                            System.out.println("Failed to create a purchased part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
+                        } catch (NullPointerException e) {
+                            System.out.println("Failed to create a purchased part due to a data error.");
+                            System.out.println(e.getMessage());
+                            System.out.println("Please retry.");
+                        }
                     case 4:
                         //display all objects
                         displayPartInfo(inventory);    // <--------------------- New method call added
                         break;
-                        */
                 }
         }//end while
     }//end main
@@ -92,40 +120,27 @@ public class ProductionApplication {
     }
 
     //Code below is used for each part object to get common data
-    public static void getPartInfo(Part p) {
-        try {
-            System.out.print("Enter the part ID: ");
-            String temp = scan.nextLine();
-            int ID = Integer.parseInt(temp);
-            p.setPartID(ID);
-            System.out.print("Enter the part description: ");
-            temp = scan.nextLine();
-            p.setPartDescription(temp);
-            System.out.print("Enter the part sell price: ");
-            temp = scan.nextLine();
-            double price = Double.parseDouble(temp);
-            p.setPartSellPrice(price);
-        } catch (InvalidProductionArgumentException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Please retry.");
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Please retry.");
-        }
+    public static void getPartInfo(Part p) throws InvalidProductionArgumentException, NullPointerException{
+        System.out.print("Enter the part ID: ");
+        String temp = scan.nextLine();
+        int ID = Integer.parseInt(temp);
+        p.setPartID(ID);
+        System.out.print("Enter the part description: ");
+        temp = scan.nextLine();
+        p.setPartDescription(temp);
+        System.out.print("Enter the part sell price: ");
+        temp = scan.nextLine();
+        double price = Double.parseDouble(temp);
+        p.setPartSellPrice(price);
     }
 
     //Code below is used for each "manufactured" part object to get common data
-    public static void getMfgPartInfo(ManufacturedPart mp) {
-        try {
-            System.out.print("Enter the labor cost: ");
-            String temp = scan.nextLine();
-            mp.setLaborCost(Double.parseDouble(temp));
-            System.out.print("Enter the material cost: ");
-            temp = scan.nextLine();
-            mp.setMaterialCost(Double.parseDouble(temp));
-        } catch (InvalidProductionArgumentException e) {
-            System.out.println(e.getMessage());
-            System.out.println("Please retry.");
-        }
+    public static void getMfgPartInfo(ManufacturedPart mp) throws InvalidProductionArgumentException {
+        System.out.print("Enter the labor cost: ");
+        String temp = scan.nextLine();
+        mp.setLaborCost(Double.parseDouble(temp));
+        System.out.print("Enter the material cost: ");
+        temp = scan.nextLine();
+        mp.setMaterialCost(Double.parseDouble(temp));
     }
 }

@@ -9,17 +9,17 @@ public class SubcontractedPart extends ManufacturedPart {
     private double subcontractCost;
     public static final String DEFAULT_PROCESS_DESCRIPTION = "no process description";
 
-    public SubcontractedPart()     // <--------------------- New constructor added
+    public SubcontractedPart() throws InvalidProductionArgumentException     // <--------------------- New constructor added
     {
         this(0, DEFAULT_PROCESS_DESCRIPTION, 0);
     }
 
-    public SubcontractedPart(int id)     //create minimal object
+    public SubcontractedPart(int id) throws InvalidProductionArgumentException     //create minimal object
     {
         this(id, DEFAULT_PROCESS_DESCRIPTION, 0);
     }
 
-    public SubcontractedPart(int id, String processDesc, double sCost) {
+    public SubcontractedPart(int id, String processDesc, double sCost) throws InvalidProductionArgumentException {
         super(id, 0, 0);  //call ManufacturedPart ctor
         this.setProcessDescription(processDesc);
         this.setSubcontractCost(sCost);
@@ -28,7 +28,7 @@ public class SubcontractedPart extends ManufacturedPart {
     //object with sub, mfg, and part object info
     public SubcontractedPart(int id, String partDesc, double sellPrice,   //for Part object
                              double lCost, double mCost,  //for ManufacturedCost object
-                             String processDesc, double sCost)  //for SubcontractedPArt object
+                             String processDesc, double sCost) throws InvalidProductionArgumentException  //for SubcontractedPArt object
     {
         super(id,  //for Part
                 partDesc, //
@@ -48,16 +48,22 @@ public class SubcontractedPart extends ManufacturedPart {
         return processDescription;
     }
 
-    public void setProcessDescription(String newProcessDescription) {
-        processDescription = newProcessDescription;
+    public void setProcessDescription(String newProcessDescription) throws NullPointerException{
+        if (newProcessDescription != null)
+            processDescription = newProcessDescription;
+        else
+            throw new NullPointerException("The process description was invalid");
     }
 
     public double getSubcontractCost() {
         return subcontractCost;
     }
 
-    public void setSubcontractCost(double newSubcontractCost) {
-        subcontractCost = newSubcontractCost;
+    public void setSubcontractCost(double newSubcontractCost) throws InvalidProductionArgumentException{
+        if(subcontractCost >= 0)
+            subcontractCost = newSubcontractCost;
+        else
+            throw new InvalidProductionArgumentException("The subcontract cost was invalid");
     }
 
     public String toString() {

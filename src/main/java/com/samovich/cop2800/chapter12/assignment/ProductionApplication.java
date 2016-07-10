@@ -35,7 +35,6 @@ public class ProductionApplication {
                             temp = scan.nextLine();
                             pp.setHandlingCost(Double.parseDouble(temp));
                             inventory[idx++] = pp;
-                            break;
                         } catch (InvalidProductionArgumentException e) {
                             System.out.println("Failed to create a purchased part due to a data error.");
                             System.out.println(e.getMessage());
@@ -45,13 +44,14 @@ public class ProductionApplication {
                             System.out.println(e.getMessage());
                             System.out.println("Please retry.");
                         }
+                        break;
                     case 2:
                         try {
                             ManufacturedPart mp = new ManufacturedPart();
                             getPartInfo(mp);
                             getMfgPartInfo(mp);
                             inventory[idx++] = mp;
-                            break;
+
                         } catch (InvalidProductionArgumentException e) {
                             System.out.println("Failed to create a manufactured part due to a data error.");
                             System.out.println(e.getMessage());
@@ -61,6 +61,7 @@ public class ProductionApplication {
                             System.out.println(e.getMessage());
                             System.out.println("Please retry.");
                         }
+                        break;
                     case 3:
                         try {
                             SubcontractedPart sp = new SubcontractedPart();
@@ -77,7 +78,7 @@ public class ProductionApplication {
                                 e.getMessage();
                             }
                             inventory[idx++] = sp;
-                            break;
+
                         } catch (InvalidProductionArgumentException e) {
                             System.out.println("Failed to create a purchased part due to a data error.");
                             System.out.println(e.getMessage());
@@ -87,6 +88,7 @@ public class ProductionApplication {
                             System.out.println(e.getMessage());
                             System.out.println("Please retry.");
                         }
+                        break;
                     case 4:
                         //display all objects
                         displayPartInfo(inventory);    // <--------------------- New method call added

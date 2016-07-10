@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class ProductionApplication {
     private static Scanner scan = new Scanner(System.in);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InvalidProductionArgumentException, NullPointerException{
         Part[] inventory = new Part[10];
         int idx = 0;
         int userChoice = 0;
@@ -21,7 +21,8 @@ public class ProductionApplication {
             } else //if array is not full do the following ....
                 switch (userChoice) {
                     case 1:
-                        PurchasedPart pp = new PurchasedPart();
+                        PurchasedPart pp = null;
+                        pp = new PurchasedPart();
                         getPartInfo(pp);
                         System.out.print("Enter the purchase price: ");
                         String temp = scan.nextLine();
@@ -33,7 +34,8 @@ public class ProductionApplication {
                         temp = scan.nextLine();
                         pp.setHandlingCost(Double.parseDouble(temp));
                         inventory[idx++] = pp;
-                        break;
+
+                    /*
                     case 2:
                         ManufacturedPart mp = new ManufacturedPart();
                         getPartInfo(mp);
@@ -50,13 +52,18 @@ public class ProductionApplication {
                         sp.setProcessDescription(temp);
                         System.out.print("Enter the subcontract cost: ");
                         temp = scan.nextLine();
-                        sp.setSubcontractCost(Double.parseDouble(temp));
+                        try {
+                            sp.setSubcontractCost(Double.parseDouble(temp));
+                        } catch (InvalidProductionArgumentException e) {
+                            e.getMessage();
+                        }
                         inventory[idx++] = sp;
                         break;
                     case 4:
                         //display all objects
                         displayPartInfo(inventory);    // <--------------------- New method call added
                         break;
+                        */
                 }
         }//end while
     }//end main
@@ -90,25 +97,44 @@ public class ProductionApplication {
         System.out.print("Enter the part ID: ");
         String temp = scan.nextLine();
         int ID = Integer.parseInt(temp);
-        p.setPartID(ID);
-
+        try {
+            p.setPartID(ID);
+        } catch (InvalidProductionArgumentException e) {
+            System.out.println(e.getMessage());
+            System.out.println("Please retry.");
+        } catch
         System.out.print("Enter the part description: ");
         temp = scan.nextLine();
-        p.setPartDescription(temp);
-
+        try {
+            p.setPartDescription(temp);
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.print("Enter the part sell price: ");
         temp = scan.nextLine();
         double price = Double.parseDouble(temp);
-        p.setPartSellPrice(price);
+        try {
+            p.setPartSellPrice(price);
+        } catch (InvalidProductionArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     //Code below is used for each "manufactured" part object to get common data
     public static void getMfgPartInfo(ManufacturedPart mp) {
         System.out.print("Enter the labor cost: ");
         String temp = scan.nextLine();
-        mp.setLaborCost(Double.parseDouble(temp));
+        try {
+            mp.setLaborCost(Double.parseDouble(temp));
+        } catch (InvalidProductionArgumentException e) {
+            System.out.println(e.getMessage());
+        }
         System.out.print("Enter the material cost: ");
         temp = scan.nextLine();
-        mp.setMaterialCost(Double.parseDouble(temp));
+        try {
+            mp.setMaterialCost(Double.parseDouble(temp));
+        } catch (InvalidProductionArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }

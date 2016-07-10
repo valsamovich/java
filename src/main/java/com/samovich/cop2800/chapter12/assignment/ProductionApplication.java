@@ -123,7 +123,7 @@ public class ProductionApplication {
     }
 
     //Code below is used for each part object to get common data
-    public static void getPartInfo(Part p) throws InvalidProductionArgumentException, NullPointerException{
+    public static void getPartInfo(Part p) throws InvalidProductionArgumentException, NullPointerException {
         System.out.print("Enter the part ID: ");
         String temp = scan.nextLine();
         int ID = Integer.parseInt(temp);

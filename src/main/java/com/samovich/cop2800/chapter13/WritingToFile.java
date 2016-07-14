@@ -15,7 +15,7 @@ import static java.nio.file.StandardOpenOption.CREATE;
  */
 public class WritingToFile {
     public static void main(String[] args) {
-        String path = "C:\\Users\\vsamov\\GitHub\\java-technologies\\src\\main\\resources\\Grades.txt";
+        String path = "C:\\Users\\vsamov\\GitHub\\java-technologies\\src\\main\\resources\\Employees.txt";
         Path file = Paths.get(path);
         String s = "ABCDF";
         byte[] data = s.getBytes();

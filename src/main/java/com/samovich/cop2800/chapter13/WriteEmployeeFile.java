@@ -17,7 +17,7 @@ public class WriteEmployeeFile {
     public static void main(String[] args) {
         // declare fields, objects
         Scanner input = new Scanner(System.in);
-        String filePath = "C:\\Users\\vsamov\\GitHub\\java-technologies\\src\\main\\resources\\Grades.txt";
+        String filePath = "C:\\Users\\vsamov\\GitHub\\java-technologies\\src\\main\\resources\\Employees.txt";
         Path file = Paths.get(filePath);
         String s = "";
         String delimiter = ",";

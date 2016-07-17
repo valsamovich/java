@@ -1,11 +1,14 @@
 package com.samovich.cop2800.chapter13.assignment;
 
+import java.io.Serializable;
+
 /*
  * AUTHOR:	R Grant
  * DATE:	3/2014
  */
-public class PurchasedPart extends Part
+public class PurchasedPart extends Part implements Serializable
 {
+	private static final long serialVersionUID = 1L;
 	private double purchasePrice; //what does this part cost to buy?
 	private String vendor;  //who do we buy this part from?
 	private double handlingCost; //shipping and handling costs when we buy it

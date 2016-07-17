@@ -1,11 +1,14 @@
 package com.samovich.cop2800.chapter13.assignment;
 
+import java.io.Serializable;
+
 /*
  * AUTHOR:	R Grant
  * DATE:	3/2014
  */
-public abstract class Part 
+public abstract class Part implements Serializable
 {
+	private static final long serialVersionUID = 1L;
 	private int partID;
 	private String partDescription;
 	private double partSellPrice;

@@ -1,11 +1,14 @@
 package com.samovich.cop2800.chapter13.assignment;
 
+import java.io.Serializable;
+
 /*
  * AUTHOR:	R Grant
  * DATE:	3/2014
  */
-public class ManufacturedPart extends Part
+public class ManufacturedPart extends Part implements Serializable
 {
+	private static final long serialVersionUID = 1L;
 	private double laborCost;
 	private double materialCost;
 	public ManufacturedPart() throws InvalidProductionArgumentException

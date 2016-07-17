@@ -1,11 +1,14 @@
 package com.samovich.cop2800.chapter13.assignment;
 
+import java.io.Serializable;
+
 /*
  * AUTHOR:	R Grant
  * DATE:	3/2014
  */
-public class SubcontractedPart extends ManufacturedPart
+public class SubcontractedPart extends ManufacturedPart implements Serializable
 {
+	private static final long serialVersionUID = 1L;
 	private String processDescription;
 	private double subcontractCost;
 	public static final String DEFAULT_PROCESS_DESCRIPTION = "no process description";

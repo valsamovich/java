@@ -18,6 +18,3 @@ tmp/
 # Package Files
 *.jar
 *.war
-*.ear
-*.gz
-*.zip

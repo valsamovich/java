@@ -4,6 +4,9 @@ package com.samovich.cop2800.chapter13.assignment;
  * DATE:	3/2014
  */
 
+import org.apache.commons.lang.ObjectUtils;
+
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -14,8 +17,15 @@ public class ProductionApplication {
         ArrayList<Part> inventory = new ArrayList<Part>();
         int idx = 0;
         int userChoice = 0;
+        // TODO: fix the path
 
-        while (userChoice != 4) {
+        File output = new File("parts.dat");
+        FileOutputStream fos = null;
+        ObjectOutputStream oos = null;
+        FileInputStream fis = null;
+        ObjectInputStream ois = null;
+
+        while (userChoice != 5) {
             userChoice = getUserChoice();
             switch (userChoice) {
                 case 1:
@@ -78,15 +88,59 @@ public class ProductionApplication {
                     }
                     break;
                 case 4:
-                    // display all objects
-                    displayPartInfo(inventory);
-                    break;
-                case 5:
-                    // TODO: save objects to file (byte oriented string)
-                    System.out.println("Buy!");
+                    if (inventory.isEmpty() && !(output.exists())) {
+                        System.out.println("There are no parts to lists.");
+                    } else {
+                        if (!(output.exists())) {
+                            // display all objects
+                            displayPartInfo(inventory);
+                        } else {
+                            try {
+                                // create File Object
+                                output = new File("parts.dat");
+                                // use File object
+                                fis = new FileInputStream(output);
+                                ois = new ObjectInputStream(fis);
+                                ArrayList<Part> inventoryFile = (ArrayList<Part>) ois.readObject();
+                                displayPartInfo(inventoryFile);
+                                ois.close();
+                            } catch (NullPointerException e) {
+                                System.out.print("Message: " + e);
+                            } catch (FileNotFoundException e) {
+                                System.out.print("Message: " + e);
+                            } catch (IOException e) {
+                                System.out.print("Message: " + e);
+                            } catch (ClassNotFoundException e) {
+                                e.printStackTrace();
+                            }
+                            // display all objects
+                            displayPartInfo(inventory);
+                        }
+                    }
                     break;
             }
         } // end while
+
+        if(userChoice == 5) {
+            if (!(output.exists())) {
+                try {
+                    // use File object
+                    fos = new FileOutputStream(output);
+                    oos = new ObjectOutputStream(fos);
+                    oos.writeObject(inventory);
+                    oos.close();
+                } catch (NullPointerException e) {
+                    System.out.print("Message: " + e);
+                } catch (FileNotFoundException e) {
+                    System.out.print("Message: " + e);
+                } catch (IOException e) {
+                    System.out.print("Message: " + e);
+                }
+            }
+            if (output.exists()) {
+                // TODO: if file exists
+            }
+        }
     }
 
     public static int getUserChoice() {

@@ -4,8 +4,6 @@ package com.samovich.cop2800.chapter13.assignment;
  * DATE:	3/2014
  */
 
-import org.apache.commons.lang.ObjectUtils;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,7 +15,6 @@ public class ProductionApplication {
         ArrayList<Part> inventory = new ArrayList<Part>();
         int idx = 0;
         int userChoice = 0;
-        // TODO: fix the path
 
         File output = new File("parts.dat");
         FileOutputStream fos = null;
@@ -122,23 +119,22 @@ public class ProductionApplication {
         } // end while
 
         if(userChoice == 5) {
-            if (!(output.exists())) {
-                try {
-                    // use File object
-                    fos = new FileOutputStream(output);
-                    oos = new ObjectOutputStream(fos);
-                    oos.writeObject(inventory);
-                    oos.close();
-                } catch (NullPointerException e) {
-                    System.out.print("Message: " + e);
-                } catch (FileNotFoundException e) {
-                    System.out.print("Message: " + e);
-                } catch (IOException e) {
-                    System.out.print("Message: " + e);
-                }
-            }
-            if (output.exists()) {
-                // TODO: if file exists
+            try {
+                // use File object
+                fos = new FileOutputStream(output, true);
+                oos = new ObjectOutputStream(fos);
+                oos.writeObject(inventory);
+                oos.reset();
+                oos.flush ();
+                oos.close();
+            } catch (NullPointerException e) {
+                System.out.print("Message: " + e);
+            } catch (FileNotFoundException e) {
+                System.out.print("Message: " + e);
+            } catch (StreamCorruptedException e) {
+                System.out.print("Message: " + e);
+            } catch (IOException e) {
+                System.out.print("Message: " + e);
             }
         }
     }

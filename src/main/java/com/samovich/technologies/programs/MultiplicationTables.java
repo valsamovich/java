@@ -7,7 +7,7 @@
  * This java program to prints tables of number between a given range say a to b.
  */
 
-package com.samovich.programs;
+package com.samovich.technologies.programs;
 
 import java.util.Scanner;
 

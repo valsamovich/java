@@ -1,4 +1,4 @@
-package com.samovich.programs;
+package com.samovich.technologies.programs;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

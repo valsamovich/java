@@ -48,7 +48,7 @@ public class JResortCalculator extends JFrame implements ItemListener {
     }
 
     /**
-     * Method that executes when  the user selects oe deselects
+     * Method that executes when  the user selects or deselects
      * @param event
      */
     public void itemStateChanged (ItemEvent event) {

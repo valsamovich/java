@@ -1,9 +1,6 @@
 package com.samovich.cop2800.chapter14.assignment;
 
-import org.apache.hadoop.yarn.webapp.ResponseInfo;
-
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,12 +15,16 @@ import java.awt.event.ItemListener;
 public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListener {
     // declare components, fields, objects, constants
     final double TAX_RATE = 7;
-    final double BUDGET_ROOM = 100;
-    final double BUSINESS_ROOM = 150;
-    final double DELUXE_ROOM = 300;
+    final double BUDGET_ROOM_CHARGE = 100;
+    final double BUSINESS_ROOM_CHARGE = 150;
+    final double DELUXE_ROOM_CHARGE = 300;
     final double BREAKFAST_PKG = 7;
     final double DINNER_PKG = 15;
     final double SMOKING_ROOM = 5;
+    final String STR_BUDGET_ROOM = "Budget ($100/night)";
+    final String STR_BUSINESS_ROOM = "Business ($150/night)";
+    final String STR_DELUXE_ROOM = "Deluxe ($300/night)";
+    int numberOfNights = 0;
     double totalAmount = 0.00;
     private JLabel lblName;
     private JLabel lblNumberOfNights;
@@ -63,9 +64,9 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtNumberOfNights = new JTextField(5);
         lblTypeOfRoom = new JLabel("Type of Room:");
         cmbTypeOfRoom = new JComboBox<String>();
-        cmbTypeOfRoom.addItem("Budget ($100/night)");
-        cmbTypeOfRoom.addItem("Business ($150/night)");
-        cmbTypeOfRoom.addItem("Delux ($300/night)");
+        cmbTypeOfRoom.addItem(STR_BUDGET_ROOM);
+        cmbTypeOfRoom.addItem(STR_BUSINESS_ROOM);
+        cmbTypeOfRoom.addItem(STR_DELUXE_ROOM);
         chkBreakfastPkg = new JCheckBox("Breakfast Pkg ($7.00 per day)");
         chkDinnerPkg = new JCheckBox("Dinner Pkg ($15.00 per day)");
         rdNoSmoking = new JRadioButton("No Smoking");
@@ -90,10 +91,11 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         container.add(btnReserve);
         container.add(btnExit);
         // set default values
-        txtNumberOfNights.setText("0");
+        txtNumberOfNights.setText(String.valueOf(numberOfNights));
         rdNoSmoking.setSelected(true);
         txtAmountOwed.setText("$" + totalAmount);
         // add action listener
+        cmbTypeOfRoom.addItemListener(this);
         chkBreakfastPkg.addItemListener(this);
         chkDinnerPkg.addItemListener(this);
         rdNoSmoking.addItemListener(this);
@@ -133,10 +135,33 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
     @Override
     public void itemStateChanged(ItemEvent event) {
         Object source = event.getSource();
-        int select = event.getStateChange();
+        int state = event.getStateChange();
+        // logic for number of nights
+        //TODO: logic for number of nights
+        // logic for room type
+        if (source == cmbTypeOfRoom) {
+            if (state == ItemEvent.SELECTED) {
+                if (cmbTypeOfRoom.getSelectedItem().equals(STR_BUDGET_ROOM)) {
+                    totalAmount += BUDGET_ROOM_CHARGE;
+                } else {
+                    totalAmount -= BUDGET_ROOM_CHARGE;
+                }
+                if (cmbTypeOfRoom.getSelectedItem().equals(STR_BUSINESS_ROOM)) {
+                    totalAmount += BUSINESS_ROOM_CHARGE;
+                } else {
+                    totalAmount -= BUSINESS_ROOM_CHARGE;
+                }
+                if (cmbTypeOfRoom.getSelectedItem().equals(STR_DELUXE_ROOM)) {
+                    totalAmount += DELUXE_ROOM_CHARGE;
+                } else {
+                    totalAmount -= DELUXE_ROOM_CHARGE;
+                }
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
         // logic for breakfast package
         if (source == chkBreakfastPkg) {
-            if (select == ItemEvent.SELECTED) {
+            if (state == ItemEvent.SELECTED) {
                 totalAmount += BREAKFAST_PKG;
             } else {
                 totalAmount -= BREAKFAST_PKG;
@@ -145,7 +170,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtAmountOwed.setText("$" + totalAmount);
         // logic for dinner package
         if (source == chkDinnerPkg) {
-            if (select == ItemEvent.SELECTED) {
+            if (state == ItemEvent.SELECTED) {
                 totalAmount += DINNER_PKG;
             } else {
                 totalAmount -= DINNER_PKG;
@@ -154,13 +179,13 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtAmountOwed.setText("$" + totalAmount);
         // logic for nonsmoking option
         if (source == rdNoSmoking) {
-            if (select == ItemEvent.SELECTED) {
+            if (state == ItemEvent.SELECTED) {
                 rdSmoking.setSelected(false);
             }
         }
         // logic for smoking option
         if (source == rdSmoking) {
-            if (select == ItemEvent.SELECTED) {
+            if (state == ItemEvent.SELECTED) {
                 rdNoSmoking.setSelected(false);
                 totalAmount += SMOKING_ROOM;
             } else {

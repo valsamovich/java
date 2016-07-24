@@ -24,7 +24,9 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
     final String STR_BUDGET_ROOM = "Budget ($100/night)";
     final String STR_BUSINESS_ROOM = "Business ($150/night)";
     final String STR_DELUXE_ROOM = "Deluxe ($300/night)";
-    int numberOfNights = 0;
+    final int DEFAULT_NUMBER_OF_NIGHT = 0;
+    final double DEFAULT_AMOUNT = 0.0;
+    int intNumberOfNights = 0;
     double totalAmount = 0.00;
     private JLabel lblName;
     private JLabel lblNumberOfNights;
@@ -44,6 +46,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
 
     /**
      * Constructor
+     *
      * @param
      */
     public ReserveRoomGUI() {
@@ -61,7 +64,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         lblName = new JLabel("Name:");
         txtName = new JTextField(10);
         lblNumberOfNights = new JLabel("Number of Nights:");
-        txtNumberOfNights = new JTextField(5);
+        txtNumberOfNights = new JFormattedTextField(5);
         lblTypeOfRoom = new JLabel("Type of Room:");
         cmbTypeOfRoom = new JComboBox<String>();
         cmbTypeOfRoom.addItem(STR_BUDGET_ROOM);
@@ -91,7 +94,8 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         container.add(btnReserve);
         container.add(btnExit);
         // set default values
-        txtNumberOfNights.setText(String.valueOf(numberOfNights));
+        txtNumberOfNights.setText(String.valueOf(DEFAULT_NUMBER_OF_NIGHT));
+        txtNumberOfNights.setColumns(5);
         rdNoSmoking.setSelected(true);
         txtAmountOwed.setText("$" + totalAmount);
         // add action listener
@@ -105,7 +109,94 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
     }
 
     /**
+     * Method update state for amount
+     *
+     * @param event
+     */
+    @Override
+    public void itemStateChanged(ItemEvent event) {
+        String selectedRoom = (String) cmbTypeOfRoom.getSelectedItem();
+        String strNumberOfNights = txtNumberOfNights.getText();
+        intNumberOfNights = Integer.parseInt(strNumberOfNights);
+        Object source = event.getSource();
+        int state = event.getStateChange();
+
+        // logic for number of nights
+        /*if (source == txtNumberOfNights) {
+            if (txtNumberOfNights.isValid()) {
+                intNumberOfNights = (int) txtNumberOfNights.getValue();
+            } else {
+                txtNumberOfNights.setValue(DEFAULT_NUMBER_OF_NIGHT);
+            }
+        }*/
+
+        // logic for room type
+        if (source == cmbTypeOfRoom) {
+            if (state == ItemEvent.SELECTED) {
+                if (selectedRoom.equals(STR_BUDGET_ROOM)) {
+                    totalAmount = DEFAULT_AMOUNT;
+                    totalAmount = BUDGET_ROOM_CHARGE * intNumberOfNights +
+                            intNumberOfNights * BUSINESS_ROOM_CHARGE * TAX_RATE / 100;
+                }
+                if (selectedRoom.equals(STR_BUSINESS_ROOM)) {
+                    totalAmount = DEFAULT_AMOUNT;
+                    totalAmount = BUSINESS_ROOM_CHARGE * intNumberOfNights  +
+                            intNumberOfNights * BUSINESS_ROOM_CHARGE * TAX_RATE / 100;
+                }
+                if (selectedRoom.equals(STR_DELUXE_ROOM)) {
+                    totalAmount = DEFAULT_AMOUNT;
+                    totalAmount = DELUXE_ROOM_CHARGE * intNumberOfNights  +
+                            intNumberOfNights * BUSINESS_ROOM_CHARGE * TAX_RATE / 100;
+                }
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+
+        // logic for breakfast package
+        if (source == chkBreakfastPkg) {
+            if (state == ItemEvent.SELECTED) {
+                totalAmount += BREAKFAST_PKG  * intNumberOfNights +
+                        BREAKFAST_PKG  * intNumberOfNights * TAX_RATE / 100;
+            } else {
+                totalAmount -= BREAKFAST_PKG  * intNumberOfNights +
+                        BREAKFAST_PKG  * intNumberOfNights * TAX_RATE / 100;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+
+        // logic for dinner package
+        if (source == chkDinnerPkg) {
+            if (state == ItemEvent.SELECTED) {
+                totalAmount += DINNER_PKG  * intNumberOfNights +
+                        DINNER_PKG  * intNumberOfNights * TAX_RATE / 100;
+            } else {
+                totalAmount -= DINNER_PKG  * intNumberOfNights +
+                        DINNER_PKG  * intNumberOfNights * TAX_RATE / 100;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+
+        // logic for nonsmoking option
+        if (source == rdNoSmoking) {
+            if (state == ItemEvent.SELECTED) {
+                rdSmoking.setSelected(false);
+            }
+        }
+        // logic for smoking option
+        if (source == rdSmoking) {
+            if (state == ItemEvent.SELECTED) {
+                rdNoSmoking.setSelected(false);
+                totalAmount += SMOKING_ROOM  * intNumberOfNights;
+            } else {
+                totalAmount -= SMOKING_ROOM  * intNumberOfNights;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+    }
+
+    /**
      * Display dialog box for click
+     *
      * @param event
      */
     @Override
@@ -117,8 +208,8 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
             // the Reserve button was clicked
             JOptionPane.showMessageDialog(null,
                     txtName.getText() + " has reserved a room for " +
-                    txtNumberOfNights.getText() + " night(s) for a total of " +
-                    txtAmountOwed.getText(),
+                            txtNumberOfNights.getText() + " night(s) for a total of " +
+                            txtAmountOwed.getText(),
                     "Message",
                     JOptionPane.INFORMATION_MESSAGE);
         }
@@ -126,72 +217,5 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
             // the Exit button was clicked
             System.exit(0);
         }
-    }
-
-    /**
-     * Method update state for amount
-     * @param event
-     */
-    @Override
-    public void itemStateChanged(ItemEvent event) {
-        Object source = event.getSource();
-        int state = event.getStateChange();
-        // logic for number of nights
-        //TODO: logic for number of nights
-        // logic for room type
-        if (source == cmbTypeOfRoom) {
-            if (state == ItemEvent.SELECTED) {
-                if (cmbTypeOfRoom.getSelectedItem().equals(STR_BUDGET_ROOM)) {
-                    totalAmount += BUDGET_ROOM_CHARGE;
-                } else {
-                    totalAmount -= BUDGET_ROOM_CHARGE;
-                }
-                if (cmbTypeOfRoom.getSelectedItem().equals(STR_BUSINESS_ROOM)) {
-                    totalAmount += BUSINESS_ROOM_CHARGE;
-                } else {
-                    totalAmount -= BUSINESS_ROOM_CHARGE;
-                }
-                if (cmbTypeOfRoom.getSelectedItem().equals(STR_DELUXE_ROOM)) {
-                    totalAmount += DELUXE_ROOM_CHARGE;
-                } else {
-                    totalAmount -= DELUXE_ROOM_CHARGE;
-                }
-            }
-        }
-        txtAmountOwed.setText("$" + totalAmount);
-        // logic for breakfast package
-        if (source == chkBreakfastPkg) {
-            if (state == ItemEvent.SELECTED) {
-                totalAmount += BREAKFAST_PKG;
-            } else {
-                totalAmount -= BREAKFAST_PKG;
-            }
-        }
-        txtAmountOwed.setText("$" + totalAmount);
-        // logic for dinner package
-        if (source == chkDinnerPkg) {
-            if (state == ItemEvent.SELECTED) {
-                totalAmount += DINNER_PKG;
-            } else {
-                totalAmount -= DINNER_PKG;
-            }
-        }
-        txtAmountOwed.setText("$" + totalAmount);
-        // logic for nonsmoking option
-        if (source == rdNoSmoking) {
-            if (state == ItemEvent.SELECTED) {
-                rdSmoking.setSelected(false);
-            }
-        }
-        // logic for smoking option
-        if (source == rdSmoking) {
-            if (state == ItemEvent.SELECTED) {
-                rdNoSmoking.setSelected(false);
-                totalAmount += SMOKING_ROOM;
-            } else {
-                totalAmount -= SMOKING_ROOM;
-            }
-        }
-        txtAmountOwed.setText("$" + totalAmount);
     }
 }

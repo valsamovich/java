@@ -1,5 +1,7 @@
 package com.samovich.cop2800.chapter14.assignment;
 
+import org.apache.hadoop.yarn.webapp.ResponseInfo;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -13,7 +15,15 @@ import java.awt.event.ItemListener;
  * Written on 7/23/2016
  */
 public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListener {
-    // declare components
+    // declare components, fields, objects, constants
+    final int TAX_RATE = 7;
+    final int BUDGET_ROOM = 100;
+    final int BUSINESS_ROOM = 150;
+    final int DELUXE_ROOM = 300;
+    final int BREAKFAST_PKG = 7;
+    final int DINNER_PKG = 15;
+    final int SMOKING_ROOM = 5;
+    int totalAmount = 0;
     private JLabel lblName;
     private JLabel lblNumberOfNights;
     private JLabel lblTypeOfRoom;
@@ -78,6 +88,17 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         container.add(txtAmountOwed);
         container.add(btnReserve);
         container.add(btnExit);
+        // set default values
+        txtNumberOfNights.setText("0");
+        rdNoSmoking.setSelected(true);
+        txtAmountOwed.setText("$" + totalAmount);
+        // add action listener
+        chkBreakfastPkg.addItemListener(this);
+        chkDinnerPkg.addItemListener(this);
+        rdNoSmoking.addItemListener(this);
+        rdSmoking.addItemListener(this);
+        btnReserve.addActionListener(this);
+        btnExit.addActionListener(this);
     }
 
     /**
@@ -87,17 +108,21 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
     @Override
     public void actionPerformed(ActionEvent event) {
         // code to respond to the button click
-        String strButtonText = btnReserve.getText();
-        if (event.getActionCommand().equals(strButtonText)) {
+        String strReserve = btnReserve.getText();
+        String strExit = btnExit.getText();
+        if (event.getActionCommand().equals(strReserve)) {
             // the Reserve button was clicked
             JOptionPane.showMessageDialog(null,
-                    "...",
+                    txtName.getText() + " has reserved a room for " +
+                    txtNumberOfNights.getText() + " night(s) for a total of $" +
+                    txtAmountOwed.getText(),
                     "Message",
                     JOptionPane.INFORMATION_MESSAGE);
-        } else {
+        }
+        if (event.getActionCommand().equals(strExit)) {
+            // the Exit button was clicked
             System.exit(0);
         }
-
     }
 
     /**
@@ -106,6 +131,41 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
      */
     @Override
     public void itemStateChanged(ItemEvent event) {
-
+        Object source = event.getSource();
+        int select = event.getStateChange();
+        // logic for breakfast package
+        if (source == chkBreakfastPkg) {
+            if (select == ItemEvent.SELECTED) {
+                totalAmount += BREAKFAST_PKG;
+            } else {
+                totalAmount -= BREAKFAST_PKG;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+        // logic for dinner package
+        if (source == chkDinnerPkg) {
+            if (select == ItemEvent.SELECTED) {
+                totalAmount += DINNER_PKG;
+            } else {
+                totalAmount -= DINNER_PKG;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
+        // logic for nonsmoking option
+        if (source == rdNoSmoking) {
+            if (select == ItemEvent.SELECTED) {
+                rdSmoking.setSelected(false);
+            }
+        }
+        // logic for smoking option
+        if (source == rdSmoking) {
+            if (select == ItemEvent.SELECTED) {
+                rdNoSmoking.setSelected(false);
+                totalAmount += SMOKING_ROOM;
+            } else {
+                totalAmount -= SMOKING_ROOM;
+            }
+        }
+        txtAmountOwed.setText("$" + totalAmount);
     }
 }

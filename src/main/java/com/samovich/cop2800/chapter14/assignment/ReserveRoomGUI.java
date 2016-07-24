@@ -3,6 +3,7 @@ package com.samovich.cop2800.chapter14.assignment;
 import org.apache.hadoop.yarn.webapp.ResponseInfo;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,14 +17,14 @@ import java.awt.event.ItemListener;
  */
 public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListener {
     // declare components, fields, objects, constants
-    final int TAX_RATE = 7;
-    final int BUDGET_ROOM = 100;
-    final int BUSINESS_ROOM = 150;
-    final int DELUXE_ROOM = 300;
-    final int BREAKFAST_PKG = 7;
-    final int DINNER_PKG = 15;
-    final int SMOKING_ROOM = 5;
-    int totalAmount = 0;
+    final double TAX_RATE = 7;
+    final double BUDGET_ROOM = 100;
+    final double BUSINESS_ROOM = 150;
+    final double DELUXE_ROOM = 300;
+    final double BREAKFAST_PKG = 7;
+    final double DINNER_PKG = 15;
+    final double SMOKING_ROOM = 5;
+    double totalAmount = 0.00;
     private JLabel lblName;
     private JLabel lblNumberOfNights;
     private JLabel lblTypeOfRoom;
@@ -42,9 +43,9 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
 
     /**
      * Constructor
-     * @param title
+     * @param
      */
-    public ReserveRoomGUI(String title) {
+    public ReserveRoomGUI() {
         initializeUserInterface();
         setSize(220, 330);
     }
@@ -62,13 +63,13 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtNumberOfNights = new JTextField(5);
         lblTypeOfRoom = new JLabel("Type of Room:");
         cmbTypeOfRoom = new JComboBox<String>();
-        cmbTypeOfRoom.addItem("Budget($100/night)");
-        cmbTypeOfRoom.addItem("Business($150/night)");
-        cmbTypeOfRoom.addItem("Delux($300/night)");
-        chkBreakfastPkg = new JCheckBox("Breakfast Pkg($7.00 per day)");
-        chkDinnerPkg = new JCheckBox("Dinner Pkg($15.00 per day)");
+        cmbTypeOfRoom.addItem("Budget ($100/night)");
+        cmbTypeOfRoom.addItem("Business ($150/night)");
+        cmbTypeOfRoom.addItem("Delux ($300/night)");
+        chkBreakfastPkg = new JCheckBox("Breakfast Pkg ($7.00 per day)");
+        chkDinnerPkg = new JCheckBox("Dinner Pkg ($15.00 per day)");
         rdNoSmoking = new JRadioButton("No Smoking");
-        rdSmoking = new JRadioButton("Smoking($5.00 per day)");
+        rdSmoking = new JRadioButton("Smoking ($5.00 per day)");
         lblAmountOwed = new JLabel("Amount owed:");
         txtAmountOwed = new JTextField(5);
         btnReserve = new JButton("Reserve");
@@ -114,7 +115,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
             // the Reserve button was clicked
             JOptionPane.showMessageDialog(null,
                     txtName.getText() + " has reserved a room for " +
-                    txtNumberOfNights.getText() + " night(s) for a total of $" +
+                    txtNumberOfNights.getText() + " night(s) for a total of " +
                     txtAmountOwed.getText(),
                     "Message",
                     JOptionPane.INFORMATION_MESSAGE);

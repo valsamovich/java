@@ -10,8 +10,9 @@ import javax.swing.*;
 public class ReserveRoomApplication {
     public static void main(String[] args) {
         // instantiate an object of the ReserveRoomGUI
-        ReserveRoomGUI reserveRoomGUI = new ReserveRoomGUI("Reserve Room");
+        ReserveRoomGUI reserveRoomGUI = new ReserveRoomGUI();
         reserveRoomGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         reserveRoomGUI.setVisible(true);
+        reserveRoomGUI.setTitle("Reserve Room");
     }
 }

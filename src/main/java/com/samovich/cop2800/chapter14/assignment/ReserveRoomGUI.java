@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.text.DecimalFormat;
 
 /**
  * Filename ReserveRoomGUI.java
@@ -14,6 +15,7 @@ import java.awt.event.ItemListener;
  */
 public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListener {
     // declare components, fields, objects, constants
+    DecimalFormat df2 = new DecimalFormat(".##");
     final double TAX_RATE = 7;
     final double BUDGET_ROOM_CHARGE = 100;
     final double BUSINESS_ROOM_CHARGE = 150;
@@ -97,7 +99,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtNumberOfNights.setText(String.valueOf(DEFAULT_NUMBER_OF_NIGHT));
         txtNumberOfNights.setColumns(5);
         rdNoSmoking.setSelected(true);
-        txtAmountOwed.setText("$" + totalAmount);
+        txtAmountOwed.setText("$0.00");
         // add action listener
         cmbTypeOfRoom.addItemListener(this);
         chkBreakfastPkg.addItemListener(this);
@@ -136,7 +138,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
                 if (selectedRoom.equals(STR_BUDGET_ROOM)) {
                     totalAmount = DEFAULT_AMOUNT;
                     totalAmount = BUDGET_ROOM_CHARGE * intNumberOfNights +
-                            intNumberOfNights * BUSINESS_ROOM_CHARGE * TAX_RATE / 100;
+                            intNumberOfNights * BUDGET_ROOM_CHARGE * TAX_RATE / 100;
                 }
                 if (selectedRoom.equals(STR_BUSINESS_ROOM)) {
                     totalAmount = DEFAULT_AMOUNT;
@@ -146,11 +148,11 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
                 if (selectedRoom.equals(STR_DELUXE_ROOM)) {
                     totalAmount = DEFAULT_AMOUNT;
                     totalAmount = DELUXE_ROOM_CHARGE * intNumberOfNights  +
-                            intNumberOfNights * BUSINESS_ROOM_CHARGE * TAX_RATE / 100;
+                            intNumberOfNights * DELUXE_ROOM_CHARGE * TAX_RATE / 100;
                 }
             }
         }
-        txtAmountOwed.setText("$" + totalAmount);
+        txtAmountOwed.setText("$" + df2.format(totalAmount));
 
         // logic for breakfast package
         if (source == chkBreakfastPkg) {
@@ -162,7 +164,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
                         BREAKFAST_PKG  * intNumberOfNights * TAX_RATE / 100;
             }
         }
-        txtAmountOwed.setText("$" + totalAmount);
+        txtAmountOwed.setText("$" + df2.format(totalAmount));
 
         // logic for dinner package
         if (source == chkDinnerPkg) {
@@ -174,7 +176,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
                         DINNER_PKG  * intNumberOfNights * TAX_RATE / 100;
             }
         }
-        txtAmountOwed.setText("$" + totalAmount);
+        txtAmountOwed.setText("$" + df2.format(totalAmount));
 
         // logic for nonsmoking option
         if (source == rdNoSmoking) {
@@ -191,7 +193,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
                 totalAmount -= SMOKING_ROOM  * intNumberOfNights;
             }
         }
-        txtAmountOwed.setText("$" + totalAmount);
+        txtAmountOwed.setText("$" + df2.format(totalAmount));
     }
 
     /**

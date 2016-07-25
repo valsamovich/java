@@ -117,9 +117,9 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
      */
     @Override
     public void itemStateChanged(ItemEvent event) {
-        String selectedRoom = (String) cmbTypeOfRoom.getSelectedItem();
         String strNumberOfNights = txtNumberOfNights.getText();
         intNumberOfNights = Integer.parseInt(strNumberOfNights);
+        String selectedRoom = (String) cmbTypeOfRoom.getSelectedItem();
         Object source = event.getSource();
         int state = event.getStateChange();
 

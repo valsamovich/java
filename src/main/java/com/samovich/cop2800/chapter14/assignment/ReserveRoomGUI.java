@@ -53,7 +53,7 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
      */
     public ReserveRoomGUI() {
         initializeUserInterface();
-        setSize(220, 330);
+        setSize(230, 330);
     }
 
     /**
@@ -100,6 +100,8 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
         txtNumberOfNights.setColumns(5);
         rdNoSmoking.setSelected(true);
         txtAmountOwed.setText("$0.00");
+        txtAmountOwed.setBackground(null);
+        txtAmountOwed.setBorder(null);
         // add action listener
         cmbTypeOfRoom.addItemListener(this);
         chkBreakfastPkg.addItemListener(this);
@@ -117,20 +119,14 @@ public class ReserveRoomGUI extends JFrame implements ActionListener, ItemListen
      */
     @Override
     public void itemStateChanged(ItemEvent event) {
-        String strNumberOfNights = txtNumberOfNights.getText();
-        intNumberOfNights = Integer.parseInt(strNumberOfNights);
         String selectedRoom = (String) cmbTypeOfRoom.getSelectedItem();
         Object source = event.getSource();
         int state = event.getStateChange();
-
-        // logic for number of nights
-        /*if (source == txtNumberOfNights) {
-            if (txtNumberOfNights.isValid()) {
-                intNumberOfNights = (int) txtNumberOfNights.getValue();
-            } else {
-                txtNumberOfNights.setValue(DEFAULT_NUMBER_OF_NIGHT);
-            }
-        }*/
+        try {
+            intNumberOfNights = Integer.parseInt(txtNumberOfNights.getText());
+        } catch (NumberFormatException e){
+            txtNumberOfNights.setText(String.valueOf(DEFAULT_NUMBER_OF_NIGHT));
+        }
 
         // logic for room type
         if (source == cmbTypeOfRoom) {

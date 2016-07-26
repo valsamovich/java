@@ -36,8 +36,6 @@ public class DateDemo {
         Date now = new Date();
         String strDate = sdfDate.format(now);
         System.out.println(strDate);
-
-
     }
 
 }

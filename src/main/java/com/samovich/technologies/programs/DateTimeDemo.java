@@ -1,5 +1,5 @@
 /**
- * @file DateDemo.java
+ * @file DateTimeDemo.java
  * @author Valery Samovich
  * @version 1.0.0
  * @date 09/03/2014
@@ -10,7 +10,7 @@ package com.samovich.technologies.programs;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DateDemo {
+public class DateTimeDemo {
     
     /**
      * Main Method. Getting current Date and Time. Display the input as String.
@@ -36,6 +36,8 @@ public class DateDemo {
         Date now = new Date();
         String strDate = sdfDate.format(now);
         System.out.println(strDate);
+
+        //
     }
 
 }

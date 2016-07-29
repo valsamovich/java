@@ -2,6 +2,8 @@ package com.samovich.cop2800.chapter15.assignmnet;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 /**
@@ -10,35 +12,58 @@ import java.awt.event.KeyEvent;
  * Created by Valery Samovich
  * Written on 7/27/16
  */
-public class SimpleTextEditorGUI  extends JFrame {
-    private JMenuBar mnuBar = new JMenuBar();
-    private JMenu mnuFile = new JMenu("Edit");
-    private JMenu mnuHelp = new JMenu("Help");
-    JPanel plnContent = new JPanel();
-    JTextArea txtArea = new JTextArea(200, 100);
-    JLabel lblFontSize = new JLabel("Font Size");
-    JTextField txtSetSize = new JTextField();
+public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
+    private JMenuBar mnuBar;
+    private JMenu mnuFile;
+    private JMenu mnuHelp;
+    private JMenuItem mnuOpen;
+    private JMenuItem mnuSave;
+    private JMenuItem mnuExit;
+    private JMenuItem mnuAbout;
+    JTextArea jtxt;
 
     /**
      * Constructor
      */
-    public SimpleTextEditorGUI() {
+    public SimpleTextEditorGUI(String title) {
+        super(title);
         setSize(360, 210);
-        setLayout(new BorderLayout());
-        setJMenuBar(mnuBar);
-        txtArea.setLineWrap(true);
-        txtArea.setWrapStyleWord(true);
+        initializeGUI();
+    }
+
+    /**
+     * InitializeGUI for Simple Text Editor
+     */
+    private void initializeGUI() {
+        // initialize menu components
+        mnuBar = new JMenuBar();
+        mnuFile = new JMenu("File");
+        mnuHelp = new JMenu("Exit");
+        mnuOpen = new JMenuItem("Open");
+        mnuSave = new JMenuItem("Save ...");
+        mnuExit = new JMenuItem("Exit");
+        mnuAbout = new JMenuItem("About");
         // add constants from keyboard
         mnuFile.setMnemonic(KeyEvent.VK_F);
         mnuHelp.setMnemonic(KeyEvent.VK_H);
-        // add menu
+        mnuOpen.setMnemonic(KeyEvent.VK_O);
+        mnuSave.setMnemonic(KeyEvent.VK_S);
+        mnuExit.setMnemonic(KeyEvent.VK_E);
+        mnuAbout.setMnemonic(KeyEvent.VK_A);
         mnuBar.add(mnuFile);
         mnuBar.add(mnuHelp);
-        // text area
-        plnContent.setLayout(new BorderLayout());
-        plnContent.add(txtArea, BorderLayout.EAST);
-        plnContent.add(lblFontSize);
-        plnContent.add(txtSetSize);
-        setContentPane(plnContent);
+        mnuFile.add(mnuOpen);
+        mnuFile.add(mnuSave);
+        mnuFile.addSeparator();
+        mnuFile.add(mnuExit);
+        mnuHelp.add(mnuAbout);
+        // initialize submenu components
+        setJMenuBar(mnuBar);
+        jtxt = new JTextArea();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        // TODO: implement actions
     }
 }

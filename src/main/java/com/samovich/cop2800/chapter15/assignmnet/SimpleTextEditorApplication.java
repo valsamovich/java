@@ -11,9 +11,8 @@ import javax.swing.*;
 public class SimpleTextEditorApplication {
     public static void main(String[] args) {
         // instantiate an object
-        SimpleTextEditorGUI app = new SimpleTextEditorGUI();
+        SimpleTextEditorGUI app = new SimpleTextEditorGUI("Simple Text Editor");
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         app.setVisible(true);
-        app.setTitle("Simple Text Editor");
     }
 }

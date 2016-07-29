@@ -20,7 +20,10 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
     private JMenuItem mnuSave;
     private JMenuItem mnuExit;
     private JMenuItem mnuAbout;
-    JTextArea jtxt;
+    private JPanel panel;
+    private JTextArea textArea;
+    private JScrollPane scrollPane;
+    private JLabel lblFontSize;
 
     /**
      * Constructor
@@ -59,7 +62,18 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         mnuHelp.add(mnuAbout);
         // initialize submenu components
         setJMenuBar(mnuBar);
-        jtxt = new JTextArea();
+
+        panel = new JPanel();
+        panel.setLayout(new BorderLayout());
+        textArea = new JTextArea("Hello World!");
+        scrollPane = new JScrollPane(
+                textArea,
+                ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
+                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+        panel.add(scrollPane, BorderLayout.CENTER);
+        lblFontSize = new JLabel("Font Size");
+        panel.add(lblFontSize, BorderLayout.EAST);
+        setContentPane(panel);
     }
 
     @Override

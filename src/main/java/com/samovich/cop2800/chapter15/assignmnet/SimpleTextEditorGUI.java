@@ -134,14 +134,18 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
     @Override
     public void itemStateChanged(ItemEvent event){
         // logic for font size
-        if(cboFontSize.getSelectedItem().equals(cboFontSize.getSelectedItem())) {
-            lblStatus.setText("The font size was changed to " +
-                    cboFontSize.getSelectedItem());
+        if(event.getSource() == cboFontSize) {
+            if (cboFontSize.getSelectedItem().equals(cboFontSize.getSelectedItem())) {
+                lblStatus.setText("The font size was changed to " +
+                        cboFontSize.getSelectedItem());
+            }
         }
         // logic for font size
-        if(cboFont.getSelectedItem().equals(cboFont.getSelectedItem())) {
-            lblStatus.setText("The font style was changed to " +
-                    cboFont.getSelectedItem());
+        if(event.getSource() == cboFont) {
+            if (cboFont.getSelectedItem().equals(cboFont.getSelectedItem())) {
+                lblStatus.setText("The font style was changed to " +
+                        cboFont.getSelectedItem());
+            }
         }
         // logic for bold text
         if(event.getSource() == chkBold) {

@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 /**
  * Contain the code for the interface and event handling
- * Filename SimpleTextEditorGUI
+ * Filename SimpleTextEditorGUI.java
  * Created by Valery Samovich
  * Written on 7/27/16
  */

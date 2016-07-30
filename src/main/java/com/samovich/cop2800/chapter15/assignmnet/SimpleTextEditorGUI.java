@@ -13,18 +13,33 @@ import java.awt.event.KeyEvent;
  * Written on 7/27/16
  */
 public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
-    private JMenuBar mnuBar;
-    private JMenu mnuFile;
-    private JMenu mnuHelp;
-    private JMenuItem mnuOpen;
-    private JMenuItem mnuSave;
-    private JMenuItem mnuExit;
-    private JMenuItem mnuAbout;
-    private JPanel panel;
-    private JTextArea textArea;
-    private JScrollPane scrollPane;
-    private JLabel lblFontSize;
-
+    // initialize menu components
+    private JMenuBar mnuBar = new JMenuBar();
+    private final JMenu mnuFile = new JMenu("File");
+    private final JMenu mnuHelp = new JMenu("File");
+    private final JMenuItem mnuOpen = new JMenuItem("Open");
+    private final JMenuItem mnuSave = new JMenuItem("Save ...");
+    private final JMenuItem mnuExit = new JMenuItem("Exit");
+    private final JMenuItem mnuAbout = new JMenuItem("About");
+    private JPanel mainPanel = new JPanel();
+    private JTextArea textArea = new JTextArea();
+    private JScrollPane scrollPane = new JScrollPane(
+            textArea,
+            ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
+            ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+    private JPanel subPanel = new JPanel();
+    private final JLabel lblFontSize = new JLabel("Font Size:");
+    private final String[] INT_FONT_SIZE = {"8", "9", "10", "11", "12", "13",
+            "14" ,"15", "16", "17"};
+    private JComboBox<String> cboFontSize = new JComboBox<String>(INT_FONT_SIZE);
+    private final JLabel lblFont = new JLabel("Font:");
+    private final String[] STR_FONT = {"Ariel", "Calibri", "Consolas",
+            "Courier", "System", "Tahoma"};
+    private JComboBox<String> cboFont = new JComboBox<String>(STR_FONT);
+    private final JCheckBox chkBold = new JCheckBox("Bold");
+    private final JCheckBox chkItalic = new JCheckBox("Italic");
+    private final JCheckBox chkUnderline = new JCheckBox("Underline");
+    private final JLabel lblStatus = new JLabel("Status information will appear here");
     /**
      * Constructor
      */
@@ -38,15 +53,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
      * InitializeGUI for Simple Text Editor
      */
     private void initializeGUI() {
-        // initialize menu components
-        mnuBar = new JMenuBar();
-        mnuFile = new JMenu("File");
-        mnuHelp = new JMenu("Exit");
-        mnuOpen = new JMenuItem("Open");
-        mnuSave = new JMenuItem("Save ...");
-        mnuExit = new JMenuItem("Exit");
-        mnuAbout = new JMenuItem("About");
-        // add constants from keyboard
+        // add menu and submenu components
         mnuFile.setMnemonic(KeyEvent.VK_F);
         mnuHelp.setMnemonic(KeyEvent.VK_H);
         mnuOpen.setMnemonic(KeyEvent.VK_O);
@@ -60,20 +67,25 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         mnuFile.addSeparator();
         mnuFile.add(mnuExit);
         mnuHelp.add(mnuAbout);
-        // initialize submenu components
         setJMenuBar(mnuBar);
 
-        panel = new JPanel();
-        panel.setLayout(new BorderLayout());
-        textArea = new JTextArea("Hello World!");
-        scrollPane = new JScrollPane(
-                textArea,
-                ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
-                ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
-        panel.add(scrollPane, BorderLayout.CENTER);
-        lblFontSize = new JLabel("Font Size");
-        panel.add(lblFontSize, BorderLayout.EAST);
-        setContentPane(panel);
+        // add edit components to subpanel
+        subPanel.setLayout(new GridLayout(7, 1));
+        subPanel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 4));
+        subPanel.add(lblFontSize);
+        subPanel.add(cboFontSize);
+        subPanel.add(lblFont);
+        subPanel.add(cboFont);
+        subPanel.add(chkBold);
+        subPanel.add(chkItalic);
+        subPanel.add(chkUnderline);
+
+        // add labels and fields components
+        mainPanel.setLayout(new BorderLayout());
+        mainPanel.add(scrollPane, BorderLayout.CENTER);
+        mainPanel.add(subPanel, BorderLayout.EAST);
+        mainPanel.add(lblStatus, BorderLayout.SOUTH);
+        setContentPane(mainPanel);
     }
 
     @Override

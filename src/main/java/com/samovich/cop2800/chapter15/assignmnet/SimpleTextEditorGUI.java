@@ -2,9 +2,7 @@ package com.samovich.cop2800.chapter15.assignmnet;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
+import java.awt.event.*;
 
 /**
  * Contain the code for the interface and event handling
@@ -12,7 +10,7 @@ import java.awt.event.KeyEvent;
  * Created by Valery Samovich
  * Written on 7/27/16
  */
-public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
+public class SimpleTextEditorGUI  extends JFrame implements ActionListener, ItemListener {
     // initialize menu components
     private JMenuBar mnuBar = new JMenuBar();
     private final JMenu mnuFile = new JMenu("File");
@@ -91,8 +89,12 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
      * Add the listeners for each component that can be source of event
      */
     private void addListeners() {
+        mnuOpen.addActionListener(this);
+        mnuSave.addActionListener(this);
         mnuExit.addActionListener(this);
-        mnuAbout.addActionListener(this);
+        chkBold.addItemListener(this);
+        chkItalic.addItemListener(this);
+        chkUnderline.addItemListener(this);
     }
 
     /**
@@ -101,7 +103,15 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
      */
     @Override
     public void actionPerformed(ActionEvent event) {
-        // logic for exit
+        // logic for open menu
+        if(event.getSource() == mnuOpen) {
+            lblStatus.setText("The Open option on the menu was selected");
+        }
+        // logic for open menu
+        if(event.getSource() == mnuSave) {
+            lblStatus.setText("The Save option on the menu was selected");
+        }
+        // logic for exit menu
         if(event.getSource() == mnuExit) {
             System.exit(0);
         }
@@ -111,6 +121,43 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
                     "Simple Text Editor\nVersion: 1.0\nAuthor: Valery Samovich",
                     "About",
                     JOptionPane.INFORMATION_MESSAGE);
+        }
+    }
+
+    // TODO:implement event for Font Size
+    // TODO:implement event for Font
+
+    /**
+     * Method update state for amount
+     *
+     * @param event
+     */
+    @Override
+    public void itemStateChanged(ItemEvent event){
+        // TODO: implement check for empty or not empty box
+        // logic for bold text
+        if(event.getSource() == chkBold) {
+            if (event.getStateChange() == ItemEvent.SELECTED) {
+                lblStatus.setText("Bold was added");
+            } else {
+                lblStatus.setText("Bold was removed");
+            }
+        }
+        // logic for italic text
+        if(event.getSource() == chkItalic) {
+            if (event.getStateChange() == ItemEvent.SELECTED) {
+                lblStatus.setText("Italic was added");
+            } else {
+                lblStatus.setText("Italic was removed");
+            }
+        }
+        // logic for italic text
+        if(event.getSource() == chkUnderline) {
+            if (event.getStateChange() == ItemEvent.SELECTED) {
+                lblStatus.setText("Underline was added");
+            } else {
+                lblStatus.setText("Underline was removed");
+            }
         }
     }
 }

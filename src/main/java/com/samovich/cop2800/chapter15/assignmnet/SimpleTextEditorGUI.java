@@ -124,8 +124,8 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
         }
     }
 
-    // TODO:implement event for Font Size
-    // TODO:implement event for Font
+    // TODO: implement event for Font Size
+    // TODO: implement event for Font
 
     /**
      * Method update state for amount

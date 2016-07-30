@@ -95,6 +95,8 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
         chkBold.addItemListener(this);
         chkItalic.addItemListener(this);
         chkUnderline.addItemListener(this);
+        cboFontSize.addItemListener(this);
+        cboFont.addItemListener(this);
     }
 
     /**
@@ -124,9 +126,6 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
         }
     }
 
-    // TODO: implement event for Font Size
-    // TODO: implement event for Font
-
     /**
      * Method update state for amount
      *
@@ -134,7 +133,16 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
      */
     @Override
     public void itemStateChanged(ItemEvent event){
-        // TODO: implement check for empty or not empty box
+        // logic for font size
+        if(cboFontSize.getSelectedItem().equals(cboFontSize.getSelectedItem())) {
+            lblStatus.setText("The font size was changed to " +
+                    cboFontSize.getSelectedItem());
+        }
+        // logic for font size
+        if(cboFont.getSelectedItem().equals(cboFont.getSelectedItem())) {
+            lblStatus.setText("The font style was changed to " +
+                    cboFontSize.getSelectedItem());
+        }
         // logic for bold text
         if(event.getSource() == chkBold) {
             if (event.getStateChange() == ItemEvent.SELECTED) {

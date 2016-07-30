@@ -69,8 +69,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         mnuFile.add(mnuExit);
         mnuHelp.add(mnuAbout);
         setJMenuBar(mnuBar);
-
-        // add edit components to subpanel
+        // add components to subpanel
         subPanel.setLayout(new GridLayout(7, 1));
         subPanel.setBorder(BorderFactory.createEmptyBorder(0, 2, 0, 4));
         subPanel.add(lblFontSize);
@@ -80,8 +79,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         subPanel.add(chkBold);
         subPanel.add(chkItalic);
         subPanel.add(chkUnderline);
-
-        // add labels and fields components
+        // add components to main panel
         mainPanel.setLayout(new BorderLayout());
         mainPanel.add(scrollPane, BorderLayout.CENTER);
         mainPanel.add(subPanel, BorderLayout.EAST);

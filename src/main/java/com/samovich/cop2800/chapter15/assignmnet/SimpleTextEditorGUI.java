@@ -94,12 +94,25 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
      */
     private void addListeners() {
         mnuExit.addActionListener(this);
+        mnuAbout.addActionListener(this);
     }
 
+    /**
+     * Method design to perform action based on event(s)
+     * @param event
+     */
     @Override
     public void actionPerformed(ActionEvent event) {
-        if (event.getSource() == mnuExit) {
+        // logic for exit
+        if(event.getSource() == mnuExit) {
             System.exit(0);
+        }
+        // display info about text editor
+        if(event.getSource() == mnuAbout) {
+            JOptionPane.showMessageDialog(null,
+                    "Simple Text Editor\nVersion: 1.0\nAuthor: Valery Samovich",
+                    "About",
+                    JOptionPane.INFORMATION_MESSAGE);
         }
     }
 }

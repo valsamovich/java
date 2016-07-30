@@ -92,6 +92,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
         mnuOpen.addActionListener(this);
         mnuSave.addActionListener(this);
         mnuExit.addActionListener(this);
+        mnuAbout.addActionListener(this);
         chkBold.addItemListener(this);
         chkItalic.addItemListener(this);
         chkUnderline.addItemListener(this);
@@ -100,7 +101,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
     }
 
     /**
-     * Method design to perform action based on event(s)
+     * Method design to perform action based on event(s) for submenu components
      * @param event
      */
     @Override
@@ -127,8 +128,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
     }
 
     /**
-     * Method update state for amount
-     *
+     * Method design to perform action based on state for comboboxes and checkboxes
      * @param event
      */
     @Override
@@ -141,7 +141,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener, Item
         // logic for font size
         if(cboFont.getSelectedItem().equals(cboFont.getSelectedItem())) {
             lblStatus.setText("The font style was changed to " +
-                    cboFontSize.getSelectedItem());
+                    cboFont.getSelectedItem());
         }
         // logic for bold text
         if(event.getSource() == chkBold) {

@@ -23,8 +23,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
     private final JMenuItem mnuAbout = new JMenuItem("About");
     private JPanel mainPanel = new JPanel();
     private JTextArea textArea = new JTextArea();
-    private JScrollPane scrollPane = new JScrollPane(
-            textArea,
+    private JScrollPane scrollPane = new JScrollPane(textArea,
             ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED,
             ScrollPaneConstants.HORIZONTAL_SCROLLBAR_AS_NEEDED);
     private JPanel subPanel = new JPanel();
@@ -40,6 +39,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
     private final JCheckBox chkItalic = new JCheckBox("Italic");
     private final JCheckBox chkUnderline = new JCheckBox("Underline");
     private final JLabel lblStatus = new JLabel("Status information will appear here");
+
     /**
      * Constructor
      */
@@ -47,6 +47,7 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         super(title);
         setSize(360, 210);
         initializeGUI();
+        addListeners();
     }
 
     /**
@@ -88,8 +89,17 @@ public class SimpleTextEditorGUI  extends JFrame implements ActionListener {
         setContentPane(mainPanel);
     }
 
+    /**
+     * Add the listeners for each component that can be source of event
+     */
+    private void addListeners() {
+        mnuExit.addActionListener(this);
+    }
+
     @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO: implement actions
+    public void actionPerformed(ActionEvent event) {
+        if (event.getSource() == mnuExit) {
+            System.exit(0);
+        }
     }
 }

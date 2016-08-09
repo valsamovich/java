@@ -32,12 +32,11 @@ public class DateTimeDemo {
         System.out.println("Current date: " + simple.format(date2));
 
         // YYYY-MM-DD HH:MM:SS
-        SimpleDateFormat sdfDate = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//dd/MM/yyyy
-        Date now = new Date();
-        String strDate = sdfDate.format(now);
-        System.out.println(strDate);
+        SimpleDateFormat sdfDate2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date now2 = new Date();
+        String strDate2 = sdfDate2.format(now2);
+        System.out.println(strDate2);
 
-        //
     }
 
 }

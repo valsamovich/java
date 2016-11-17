@@ -1,4 +1,4 @@
-# Java technologies [![Build Status](https://travis-ci.org/vsamov/java-technologies.svg?branch=master)](https://travis-ci.org/vsamov/java-technologies) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE)
+# java-technologies [![Build Status](https://travis-ci.org/vsamov/java-technologies.svg?branch=master)](https://travis-ci.org/vsamov/java-technologies) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/java-technologies/)
 
 [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The **Java** [tutorial](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) programming language to create applications.
 

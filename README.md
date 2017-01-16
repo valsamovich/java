@@ -1,4 +1,4 @@
-# java-technologies [![Build Status](https://travis-ci.org/vsamov/java-technologies.svg?branch=master)](https://travis-ci.org/vsamov/java-technologies) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/java-technologies/)
+# java [![Build Status](https://travis-ci.org/vsamov/java.svg?branch=master)](https://travis-ci.org/vsamov/java) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](LICENSE) [![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/vsamov/java/)
 
 [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) is Simple, Object Oriented, Distributed, Multithreaded, Dynamic, Architecture neutral, Portable, High performance, Robust, Secure. The **Java** [tutorial](http://docs.oracle.com/javase/tutorial/index.html) are practical guides for programmers who want to use the [**Java**](http://en.wikipedia.org/wiki/Java_%28programming_language%29) programming language to create applications.
 
@@ -12,16 +12,16 @@
 [**WordCount**](/src/main/java/com/samovich/specialized/mapreduce/WordCount.java) example reads text files and counts how often words occur. To run mapreduce **Hadoop** environment is required. [Read more](
 http://www.michael-noll.com/tutorials/running-hadoop-on-ubuntu-linux-single-node-cluster/) To run example:
 
-- Run `mvn clean verify` for java-technologies project
+- Run `mvn clean verify` for java project
 - Optional: Copy `.jar` file to server which is connected to Hadoop
   - `scp -p target/*.jar [server-name]:` 
 - Assume `hdfs` location is `/user/[user-name]/java-mapreduce`
 - Copy [resource(s)](
-https://github.com/vsamov/java-technologies/tree/master/src/main/resources/com/samovich/specialized/mapreduce) file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
+https://github.com/vsamov/java/tree/master/src/main/resources/com/samovich/specialized/mapreduce) file to hdfs: `hdfs dfs -put /user/[user-name]/java-mapreduce`
 - Run command below:
         
         # syntax: hadoop jar [jar-name].jar [java-class] [input-files] [output-dir]
-        hadoop jar java-technologies-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output
+        hadoop jar java-0.0.1-SNAPSHOT.jar com.samovich.specialized.mapreduce.WordCount /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/*.txt /user/WDPRO-CUSTANALYTICS-PROD/java-mapreduce/output
 
 ## Appendix
 

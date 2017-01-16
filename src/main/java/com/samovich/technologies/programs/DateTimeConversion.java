@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Filename java-technologies
+ * Filename DateTimeConversion
  * Created by Valery Samovich
  * Written on 7/28/16
  */

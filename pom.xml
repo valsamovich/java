@@ -5,10 +5,10 @@
 
     <!-- project coordinates -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>java-technologies</groupId>
-    <artifactId>java-technologies</artifactId>
+    <groupId>java</groupId>
+    <artifactId>java</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>java-technologies</name>
+    <name>java</name>
 
     <!-- project properties -->
     <properties>

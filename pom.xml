@@ -128,11 +128,18 @@
             <artifactId>hadoop-common</artifactId>
             <version>${hadoop.common.version}</version>
         </dependency>
+        <!-- lombok https://projectlombok.org/-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
             <scope>provided</scope>
+        </dependency>
+        <!-- spark -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+            <version>2.1.0</version>
         </dependency>
     </dependencies>
 </project>

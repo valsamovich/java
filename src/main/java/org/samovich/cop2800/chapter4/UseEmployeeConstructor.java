@@ -1,8 +1,9 @@
 package org.samovich.cop2800.chapter4;
 
 public class UseEmployeeConstructor {
+
     public static void main(String [] args) {
-                //create employees to pay
+        // create employees to pay
         EmployeeConstructor worker =
             new EmployeeConstructor("Joe Worker", 12345, 1970001);
         EmployeeConstructor contractor = new EmployeeConstructor();

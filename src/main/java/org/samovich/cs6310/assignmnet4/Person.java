@@ -1,10 +1,19 @@
 package org.samovich.cs6310.assignmnet4;
 
 /**
- * ${FILE_NAME}.
- *
- * @author Valery Samovich
- * @see
+ * Person Class.
+ * @author  Valery Samovich
  */
 public class Person {
+
+    // attributes
+    public int uuid;
+    public String name;
+    public String homeAddress;
+    public String phoneNumber;
+
+    // operations
+    public void addPerson(){}
+    public void removePerson(){}
+    public void deletePerson(){}
 }

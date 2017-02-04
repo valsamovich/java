@@ -18,3 +18,6 @@ tmp/
 # Package Files
 *.jar
 *.war
+classes/
+src/main/java/META-INF/
+src/main/resources/META-INF/

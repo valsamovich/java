@@ -1,21 +1,26 @@
 package org.samovich.cs6310.assignment4;
 
-import java.io.*;
-import java.net.URL;
+import java.io.IOException;
 
 /**
- * Main Class for Course Management System Application.
+ * Course Management System Application class.
  * @author  Valery Samovich
  * @see     System
  */
 public class CMSApplication {
-    public static void main(String[] args) throws IOException {
-        System.out.println("Hello, I'm a CMR!");
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("./students.txt")));
-        int lines = 0;
-        while (reader.readLine() != null) lines++;
-        reader.close();
-        System.out.println(lines);
+    /**
+     * Main method.
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException {
+        // print the number of students
+        Student.getNUmberOfStudents();
+        // print the number of instructors
+        Instructor.getNUmberOfInstructors();
+        // print the number of courses
+        Course.getNUmberOfCourses();
     }
+
 }

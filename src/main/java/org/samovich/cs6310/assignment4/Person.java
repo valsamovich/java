@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignmnet4;
+package org.samovich.cs6310.assignment4;
 
 /**
  * Person Class.

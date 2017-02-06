@@ -20,8 +20,10 @@ public class Intersection {
         BufferedReader studentBufferedReader = getBufferedReader(studentFile);
         BufferedReader instructorBufferedReader = getBufferedReader(instructorFile);
 
+        // loop over students records
         while ((studentLine = studentBufferedReader.readLine()) != null) {
             String[] studentValues = studentLine.split(splitBy);
+            // loop over instructors records
             while ((instructorLine = instructorBufferedReader.readLine()) != null) {
                 String[] instructorValues = instructorLine.split(splitBy);
                 if (studentValues[0].equals(instructorValues[0])) {
@@ -29,12 +31,20 @@ public class Intersection {
                     intersectionRecords++;
                 }
             }
+            // return stream to top of file
+            instructorBufferedReader = getBufferedReader(instructorFile);
         }
-        // studentBufferedReader.close();
+        studentBufferedReader.close();
         System.out.println("Number in intersections     " + String.valueOf(intersectionRecords));
     }
 
-    private static BufferedReader getBufferedReader(String inputFile) throws FileNotFoundException {
+    /**
+     * Create reading stream.
+     * @param inputFile
+     * @return
+     * @throws IOException
+     */
+    private static BufferedReader getBufferedReader(String inputFile) throws IOException {
         FileInputStream inputStream = new FileInputStream(inputFile);
         InputStreamReader streamReader = new InputStreamReader(inputStream);
         return new BufferedReader(streamReader);

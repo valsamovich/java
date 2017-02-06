@@ -30,4 +30,43 @@ public class Student {
         bufferedReader.close();
         System.out.println(lines);
     }
+
+    public static void isInstructor() throws IOException {
+        int intersectionRecords = 0;
+        String splitBy = ",";
+        String studentLine;
+        String instructorLine;
+        String studentFile = "./students.csv";
+        String instructorFile = "./instructors.csv";
+        BufferedReader studentBufferedReader = getBufferedReader(studentFile);
+        BufferedReader instructorBufferedReader = getBufferedReader(instructorFile);
+
+        // loop over students records
+        while ((studentLine = studentBufferedReader.readLine()) != null) {
+            String[] studentValues = studentLine.split(splitBy);
+            // loop over instructors records
+            while ((instructorLine = instructorBufferedReader.readLine()) != null) {
+                String[] instructorValues = instructorLine.split(splitBy);
+                if (studentValues[0].equals(instructorValues[0])) {
+                    intersectionRecords++;
+                }
+            }
+            // return stream to top of file
+            instructorBufferedReader = getBufferedReader(instructorFile);
+        }
+        studentBufferedReader.close();
+        System.out.println(String.valueOf(intersectionRecords));
+    }
+
+    /**
+     * Create reading stream.
+     * @param inputFile
+     * @return
+     * @throws IOException
+     */
+    private static BufferedReader getBufferedReader(String inputFile) throws IOException {
+        FileInputStream inputStream = new FileInputStream(inputFile);
+        InputStreamReader streamReader = new InputStreamReader(inputStream);
+        return new BufferedReader(streamReader);
+    }
 }

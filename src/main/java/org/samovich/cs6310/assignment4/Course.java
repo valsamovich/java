@@ -33,4 +33,8 @@ public class Course {
         bufferedReader.close();
         System.out.println(lines);
     }
+
+    public void displayCourses() throws IOException {
+
+    }
 }

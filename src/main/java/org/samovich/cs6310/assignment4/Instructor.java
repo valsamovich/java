@@ -13,7 +13,7 @@ public class Instructor extends Person {
     // attributes
     // operations
 
-    static void getNUmberOfInstructors() throws IOException {
+    public static void getNUmberOfInstructors() throws IOException {
         int lines = 0;
         FileInputStream inputStream = new FileInputStream("./instructors.csv");
         InputStreamReader streamReader = new InputStreamReader(inputStream);

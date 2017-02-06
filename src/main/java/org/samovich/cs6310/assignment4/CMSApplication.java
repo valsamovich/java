@@ -19,6 +19,8 @@ public class CMSApplication {
         Student.getNUmberOfStudents();
         // print the number of instructors
         Instructor.getNUmberOfInstructors();
+        // print the number of students as instructor
+        Student.isInstructor();
         // print the number of courses
         Course.getNUmberOfCourses();
     }

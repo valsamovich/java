@@ -12,11 +12,11 @@ public class Application {
     public static void main(String[] args) {
         List<Instructor> instructors = new ArrayList<>();
         List<Student> students = new ArrayList<>();
-        List<Course>  courses = new ArrayList<>();
+        List<Course> courses = new ArrayList<>();
         List<Term> terms = new ArrayList<>();
         final String STUDENT_FILE = "students.csv";
         final String INSTRUCTORS_FILE = "instructors.csv";
-        final String COPURSES_FILE = "students.csv";
+        final String COURSES_FILE = "courses.csv";
         final String TERM_FILE = "term.csv";
         final String BASE_PATH = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/";
 
@@ -54,7 +54,23 @@ public class Application {
         } catch (Exception e) {
         }
 
+        try {
+            FileInputStream fis = new FileInputStream(BASE_PATH + COURSES_FILE);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] array = line.split(",");
+                Course course = new Course();
+                course.setCourseId(Long.valueOf(array[0]));
+                course.setCourseTitle(array[1]);
+                courses.add(course);
+            }
+        } catch (Exception e) {
+        }
+
         System.out.println(students.size());
         System.out.println(instructors.size());
+        System.out.println(courses.size());
     }
 }

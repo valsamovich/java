@@ -5,10 +5,10 @@ package org.samovich.cs6310.assignment4;
  * @see
  */
 public class Person {
-    public Long uuid;
-    public String name;
-    public String homeAddress;
-    public String phoneNumber;
+    private Long uuid;
+    private String name;
+    private String homeAddress;
+    private String phoneNumber;
 
     public Person(Long uuid, String name, String homeAddress, String phoneNumber) {
         this.uuid = uuid;

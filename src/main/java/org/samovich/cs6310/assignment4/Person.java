@@ -5,12 +5,12 @@ package org.samovich.cs6310.assignment4;
  * @see
  */
 public class Person {
-    public String uuid;
+    public Long uuid;
     public String name;
     public String homeAddress;
     public String phoneNumber;
 
-    public Person(String uuid, String name, String homeAddress, String phoneNumber) {
+    public Person(Long uuid, String name, String homeAddress, String phoneNumber) {
         this.uuid = uuid;
         this.name = name;
         this.homeAddress = homeAddress;
@@ -20,11 +20,11 @@ public class Person {
     public Person() {
     }
 
-    public String getUuid() {
+    public Long getUuid() {
         return uuid;
     }
 
-    public void setUuid(String uuid) {
+    public void setUuid(Long uuid) {
         this.uuid = uuid;
     }
 

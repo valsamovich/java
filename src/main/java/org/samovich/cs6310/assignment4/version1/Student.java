@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4;
+package org.samovich.cs6310.assignment4.version1;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -10,12 +10,6 @@ import java.io.InputStreamReader;
  * @author  Valery Samovich
  */
 public class Student {
-
-    // attributes
-    public String jobInfo;
-
-    // operations
-    public void selectCourse(){}
 
     /**
      * Get number of students.

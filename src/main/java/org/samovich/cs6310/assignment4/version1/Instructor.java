@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4;
+package org.samovich.cs6310.assignment4.version1;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

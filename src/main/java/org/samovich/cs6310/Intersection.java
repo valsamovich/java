@@ -1,6 +1,11 @@
 package org.samovich.cs6310;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * ${FILE_NAME}.
@@ -11,31 +16,44 @@ import java.io.*;
 public class Intersection {
 
     public static void main(String[] args) throws IOException {
-        int intersectionRecords = 0;
+        int lines = 0;
+        ArrayList<String> courseIds = new ArrayList<String>();
         String splitBy = ",";
-        String studentLine;
-        String instructorLine;
-        String studentFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/students.csv";
-        String instructorFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/instructors.csv";
-        BufferedReader studentBufferedReader = getBufferedReader(studentFile);
-        BufferedReader instructorBufferedReader = getBufferedReader(instructorFile);
+        String courseLine;
+        String termLine;
+        String l;
+        String courseFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/courses.csv";
+        String termFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/terms.csv";
+        BufferedReader courseBufferedReader = getBufferedReader(courseFile);
+        BufferedReader termBufferedReader = getBufferedReader(termFile);
+
+        // get all course ids
+        while ((l = termBufferedReader.readLine()) != null) {
+            String[] t = l.split(splitBy);
+            courseIds.add(t[0]);
+            lines++;
+        }
+        System.out.println(courseIds);
 
         // loop over students records
-        while ((studentLine = studentBufferedReader.readLine()) != null) {
-            String[] studentValues = studentLine.split(splitBy);
+        while ((courseLine = courseBufferedReader.readLine()) != null) {
+            String[] courseValues = courseLine.split(splitBy);
             // loop over instructors records
-            while ((instructorLine = instructorBufferedReader.readLine()) != null) {
-                String[] instructorValues = instructorLine.split(splitBy);
-                if (studentValues[0].equals(instructorValues[0])) {
-                    System.out.println("Equal!");
-                    intersectionRecords++;
+            while ((termLine = termBufferedReader.readLine()) != null) {
+                String[] termValues = termLine.split(splitBy);
+                if (Arrays.asList(courseIds).contains(termValues[0])) {
+                    if (courseValues[0].equals(termValues[0])) {
+                        System.out.println(courseLine + "," + termValues[1]);
+                    }
+                } else {
+                    System.out.println(courseLine);
                 }
             }
             // return stream to top of file
-            instructorBufferedReader = getBufferedReader(instructorFile);
+            termBufferedReader = getBufferedReader(termFile);
         }
-        studentBufferedReader.close();
-        System.out.println("Number in intersections     " + String.valueOf(intersectionRecords));
+        courseBufferedReader.close();
+        termBufferedReader.close();
     }
 
     /**

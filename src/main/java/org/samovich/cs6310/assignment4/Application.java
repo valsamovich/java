@@ -18,12 +18,11 @@ public class Application {
         final String INSTRUCTORS_FILE = "instructors.csv";
         final String COURSES_FILE = "courses.csv";
         final String TERM_FILE = "term.csv";
-        final String BASE_PATH = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/";
+        final String BASE_PATH = "./";
 
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + STUDENT_FILE);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-
             String line;
             while ((line = br.readLine()) != null) {
                 String[] array = line.split(",");
@@ -40,7 +39,6 @@ public class Application {
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + INSTRUCTORS_FILE);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-
             String line;
             while ((line = br.readLine()) != null) {
                 String[] array = line.split(",");
@@ -57,7 +55,6 @@ public class Application {
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + COURSES_FILE);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-
             String line;
             while ((line = br.readLine()) != null) {
                 String[] array = line.split(",");

@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4.version1;
+package org.samovich.cs6310.assignment4.legacy;
 
 /**
  * Budget Class.

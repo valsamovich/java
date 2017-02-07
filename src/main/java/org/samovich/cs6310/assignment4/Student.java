@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4.version2;
+package org.samovich.cs6310.assignment4;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -16,7 +16,7 @@ public class Student extends Person {
 
     public static void loadStudents() {
         try {
-            FileInputStream fis = new FileInputStream("/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/students.csv");
+            FileInputStream fis = new FileInputStream("./students.csv");
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
             List<Student> students = new ArrayList<Student>();
             String line;

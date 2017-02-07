@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4.version2;
+package org.samovich.cs6310.assignment4;
 
 /**
  * @author Valery Samovich

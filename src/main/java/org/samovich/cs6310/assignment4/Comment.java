@@ -1,4 +1,4 @@
-package org.samovich.cs6310.assignment4.legacy;
+package org.samovich.cs6310.assignment4;
 
 import java.util.Date;
 
@@ -6,7 +6,7 @@ import java.util.Date;
  * Person Class.
  * @author  Valery Samovich
  */
-public class InstructorComment {
+public class Comment {
 
     // attributes
     public Date date;

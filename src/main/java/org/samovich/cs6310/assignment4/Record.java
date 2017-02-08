@@ -1,15 +1,18 @@
-package org.samovich.cs6310.assignment4.legacy;
+package org.samovich.cs6310.assignment4;
+
+import org.samovich.cs6310.assignment4.legacy.Course;
+import org.samovich.cs6310.assignment4.legacy.Instructor;
 
 import java.util.Date;
 
 /**
- * AcademicRecord Class.
+ * Record Class.
  * @author  Valery Samovich
  */
-public class AcademicRecord {
+public class Record {
 
     // attributes
-    public Student student;
+    public org.samovich.cs6310.assignment4.legacy.Student student;
     public Instructor instructor;
     public Course course;
     public String semester;

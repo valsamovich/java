@@ -17,8 +17,8 @@ public class Application {
         final String STUDENT_FILE = "students.csv";
         final String INSTRUCTORS_FILE = "instructors.csv";
         final String COURSES_FILE = "courses.csv";
-        final String TERM_FILE = "term.csv";
-        final String BASE_PATH = "./";
+        final String TERM_FILE = "terms.csv";
+        final String BASE_PATH = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/";
 
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + STUDENT_FILE);
@@ -66,8 +66,35 @@ public class Application {
         } catch (Exception e) {
         }
 
+        try {
+            FileInputStream fis = new FileInputStream(BASE_PATH + TERM_FILE);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] array = line.split(",");
+                Term term = new Term();
+                term.setUuid(Long.valueOf(array[0]));
+                term.setTermDesignator(array[1]);
+                terms.add(term);
+            }
+        } catch (Exception e) {
+        }
+
+        int studentAsTeacher = 0;
+        for (Student s : students) {
+            for (Instructor i : instructors) {
+                if (s.getUuid().equals(i.getUuid())) {
+                    studentAsTeacher++;
+                }
+            }
+        }
+
+
         System.out.println(students.size());
         System.out.println(instructors.size());
+        System.out.println(String.valueOf(studentAsTeacher));
         System.out.println(courses.size());
+        System.out.println(terms.size());
+
     }
 }

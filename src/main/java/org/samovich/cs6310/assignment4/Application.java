@@ -18,7 +18,7 @@ public class Application {
         final String INSTRUCTORS_FILE = "instructors.csv";
         final String COURSES_FILE = "courses.csv";
         final String TERM_FILE = "terms.csv";
-        final String BASE_PATH = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/";
+        final String BASE_PATH = "./assignment4/";
 
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + STUDENT_FILE);

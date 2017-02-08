@@ -1,8 +1,6 @@
 package org.samovich.cs6310.assignment4;
 
 /**
- * ${FILE_NAME}.
- *
  * @author Valery Samovich
  * @see
  */

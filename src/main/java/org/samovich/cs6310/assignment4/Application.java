@@ -14,11 +14,11 @@ public class Application {
         List<Student> students = new ArrayList<>();
         List<Course> courses = new ArrayList<>();
         List<Term> terms = new ArrayList<>();
+        final String BASE_PATH = "./";
         final String STUDENT_FILE = "students.csv";
         final String INSTRUCTORS_FILE = "instructors.csv";
         final String COURSES_FILE = "courses.csv";
         final String TERM_FILE = "terms.csv";
-        final String BASE_PATH = "./assignment4/";
 
         try {
             FileInputStream fis = new FileInputStream(BASE_PATH + STUDENT_FILE);

@@ -89,7 +89,6 @@ public class Application {
             }
         }
 
-
         System.out.println(students.size());
         System.out.println(instructors.size());
         System.out.println(String.valueOf(studentAsTeacher));

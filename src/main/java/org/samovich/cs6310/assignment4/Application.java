@@ -93,7 +93,15 @@ public class Application {
         System.out.println(instructors.size());
         System.out.println(String.valueOf(studentAsTeacher));
         System.out.println(courses.size());
-        System.out.println(terms.size());
 
+        for (Course c : courses) {
+            for (Term t : terms) {
+                if (c.getCourseId().equals(t.getUuid())) {
+                    System.out.println(c.getCourseId()
+                            + "," + c.getCourseTitle()
+                            + "," + t.getTermDesignator());
+                }
+            }
+        }
     }
 }

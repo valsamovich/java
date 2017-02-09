@@ -2,7 +2,7 @@ package org.samovich.cs6310.assignment4;
 
 public class Application {
 
-    static final String BASE_PATH = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/";
+    static final String BASE_PATH = "./";
 
     public static void main(String[] args) {
 

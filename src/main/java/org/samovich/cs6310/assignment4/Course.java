@@ -1,14 +1,13 @@
 package org.samovich.cs6310.assignment4;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Valery Samovich
  * @see
  */
-public class Course {
+public class Course implements Comparable<Course> {
     private static final String COURSES_FILE = "courses.csv";
     public Long courseId;
     public String courseTitle;
@@ -75,5 +74,52 @@ public class Course {
         course.setCourseId(Long.valueOf(array[0]));
         course.setCourseTitle(array[1]);
         return course;
+    }
+
+    private static Map<Long, Course> mapCourses() {
+        List<Course> courses = loadCourses();
+        Map<Long, Course> courseMap  = new HashMap<>();
+        for(Course c : courses) {
+            courseMap.put(c.getCourseId(), c);
+        }
+        return courseMap;
+    }
+
+    public static Collection<Course> applyTerms(List<Term> terms) {
+        Map<Long, Course> coursesMap = mapCourses();
+        for(Term t : terms) {
+            Course course = coursesMap.get(t.getUuid());
+            if(null != course && null != t) {
+                course.addTerm(t);
+            }
+        }
+        List<Course> courses = new ArrayList<>(coursesMap.values());
+        Collections.sort(courses);
+        return  courses;
+    }
+
+    private void addTerm(Term t) {
+        if (null == terms){
+            terms = new ArrayList<>();
+        }
+        terms.add(t);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(courseId + "," + courseTitle );
+        if(null != terms) {
+            Collections.sort(terms);
+            for(Term t: terms) {
+                sb.append(",")
+                .append(t);
+            }
+        }
+        return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Course c) {
+        return courseId.compareTo(c.courseId);
     }
 }

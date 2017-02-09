@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Term {
+public class Term implements  Comparable<Term> {
     private static final String TERM_FILE = "terms.csv";
     private Long uuid;
     private String termDesignator;
@@ -55,5 +55,16 @@ public class Term {
         term.setUuid(Long.valueOf(array[0]));
         term.setTermDesignator(array[1]);
         return term;
+    }
+
+
+    @Override
+    public String toString() {
+        return termDesignator;
+    }
+
+    @Override
+    public int compareTo(Term t) {
+        return uuid.compareTo(t.getUuid());
     }
 }

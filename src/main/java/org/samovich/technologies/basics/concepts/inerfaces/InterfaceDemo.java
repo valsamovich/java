@@ -4,7 +4,7 @@
  * @version 1
  * @date 2015/03/04
  *
- * In the Java programming language, an interface is a reference type, similar
+ * In the Java programming Language, an interface is a reference type, similar
  * to a class, that can contain only constants, method signatures, default
  * methods, static methods, and nested types.
  */

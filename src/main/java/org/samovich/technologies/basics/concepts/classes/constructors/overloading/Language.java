@@ -26,9 +26,9 @@ public class Language {
     // Main method.
     public static void main(String[] args) {
 
-        // Creating the language objects with Constructor without parameter.
+        // Creating the Language objects with Constructor without parameter.
         Language cpp = new Language();
-        // Creating the language objects with Constructor and parameter.
+        // Creating the Language objects with Constructor and parameter.
         Language java = new Language("Java");
 
         cpp.setName("C++");

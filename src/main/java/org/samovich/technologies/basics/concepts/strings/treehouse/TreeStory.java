@@ -55,7 +55,7 @@ public class TreeStory {
                                      noun.equalsIgnoreCase("jerk"));
             // Noun validation.
             if (isInvalidWord) {
-                System.out.println("This language is not allowed. Try again. \n\n");
+                System.out.println("This Language is not allowed. Try again. \n\n");
             }
         } while(isInvalidWord);
 

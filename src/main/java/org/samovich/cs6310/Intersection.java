@@ -22,8 +22,8 @@ public class Intersection {
         String courseLine;
         String termLine;
         String l;
-        String courseFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/courses.csv";
-        String termFile = "/Users/samov004/GitHub/java/src/main/resources/org/samovich/cs6310/assignment4/terms.csv";
+        String courseFile = "./courses.csv";
+        String termFile = "./terms.csv";
         BufferedReader courseBufferedReader = getBufferedReader(courseFile);
         BufferedReader termBufferedReader = getBufferedReader(termFile);
 

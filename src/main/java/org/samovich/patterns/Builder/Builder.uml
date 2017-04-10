@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.samovich.patterns.Builder.Application</OriginalElement>
+  <nodes>
+    <node x="414.0" y="0.0">org.samovich.patterns.Builder.Application</node>
+    <node x="33.0" y="0.0">org.samovich.patterns.Builder.User</node>
+    <node x="0.0" y="235.0">org.samovich.patterns.Builder.User.UserBuilder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.samovich.patterns.Builder.Application" target="org.samovich.patterns.Builder.User.UserBuilder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.samovich.patterns.Builder.User.UserBuilder" target="org.samovich.patterns.Builder.User">
+      <point x="0.0" y="-136.5" />
+      <point x="0.0" y="92.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="74.0" y="275.0" />
+  <SelectedNodes>
+    <node>org.samovich.patterns.Builder.Application</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.samovich.patterns.Factory.App</OriginalElement>
+  <nodes>
+    <node x="0.0" y="343.0">org.samovich.patterns.Factory.App</node>
+    <node x="0.0" y="101.0">org.samovich.patterns.Factory.ShortestPath</node>
+    <node x="105.0" y="0.0">org.samovich.patterns.Factory.Algorithm</node>
+    <node x="210.0" y="101.0">org.samovich.patterns.Factory.SpanningTree</node>
+    <node x="81.5" y="202.0">org.samovich.patterns.Factory.AlgoritmFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.samovich.patterns.Factory.ShortestPath" target="org.samovich.patterns.Factory.Algorithm">
+      <point x="0.0" y="-25.5" />
+      <point x="95.0" y="76.0" />
+      <point x="152.5" y="76.0" />
+      <point x="-47.5" y="25.5" />
+    </edge>
+    <edge source="org.samovich.patterns.Factory.AlgoritmFactory" target="org.samovich.patterns.Factory.SpanningTree">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.samovich.patterns.Factory.AlgoritmFactory" target="org.samovich.patterns.Factory.ShortestPath">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.samovich.patterns.Factory.SpanningTree" target="org.samovich.patterns.Factory.Algorithm">
+      <point x="0.0" y="-25.5" />
+      <point x="305.0" y="76.0" />
+      <point x="247.5" y="76.0" />
+      <point x="47.5" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="200.0" y="197.0" />
+  <SelectedNodes>
+    <node>org.samovich.patterns.Factory.App</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
